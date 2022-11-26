@@ -1,0 +1,869 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms/Avatar Default 1`] = `
+.c0 {
+  width: 1.87rem;
+  height: 1.87rem;
+  border-radius: 100%;
+  background-color: #ececec;
+  overflow: hidden;
+}
+
+<div
+  className="c0"
+  size="small"
+/>
+`;
+
+exports[`Storyshots Atoms/Avatar Static Image 1`] = `
+.c0 {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 100%;
+  background-color: #ececec;
+  overflow: hidden;
+}
+
+.c1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+<div
+  className="c0"
+  size="medium"
+>
+  <span
+    style={
+      Object {
+        "background": "none",
+        "border": 0,
+        "boxSizing": "border-box",
+        "display": "inline-block",
+        "height": "initial",
+        "margin": 0,
+        "maxWidth": "100%",
+        "opacity": 1,
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "relative",
+        "width": "initial",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "background": "none",
+          "border": 0,
+          "boxSizing": "border-box",
+          "display": "block",
+          "height": "initial",
+          "margin": 0,
+          "maxWidth": "100%",
+          "opacity": 1,
+          "padding": 0,
+          "width": "initial",
+        }
+      }
+    >
+      <img
+        alt=""
+        aria-hidden={true}
+        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+        style={
+          Object {
+            "background": "none",
+            "border": 0,
+            "display": "block",
+            "height": "initial",
+            "margin": 0,
+            "maxWidth": "100%",
+            "opacity": 1,
+            "padding": 0,
+            "width": "initial",
+          }
+        }
+      />
+    </span>
+    <img
+      className="c1"
+      data-nimg="intrinsic"
+      decoding="async"
+      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+      style={
+        Object {
+          "border": "none",
+          "bottom": 0,
+          "boxSizing": "border-box",
+          "display": "block",
+          "height": 0,
+          "left": 0,
+          "margin": "auto",
+          "maxHeight": "100%",
+          "maxWidth": "100%",
+          "minHeight": "100%",
+          "minWidth": "100%",
+          "objectFit": undefined,
+          "objectPosition": undefined,
+          "padding": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "width": 0,
+        }
+      }
+    />
+    <noscript>
+      <img
+        className="c1"
+        data-nimg="intrinsic"
+        decoding="async"
+        loading="lazy"
+        src="/img.jpg"
+        style={
+          Object {
+            "border": "none",
+            "bottom": 0,
+            "boxSizing": "border-box",
+            "display": "block",
+            "height": 0,
+            "left": 0,
+            "margin": "auto",
+            "maxHeight": "100%",
+            "maxWidth": "100%",
+            "minHeight": "100%",
+            "minWidth": "100%",
+            "objectFit": undefined,
+            "objectPosition": undefined,
+            "padding": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": 0,
+          }
+        }
+      />
+    </noscript>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Atoms/Avatar Url Image 1`] = `
+.c0 {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  background-color: #ececec;
+  overflow: hidden;
+}
+
+.c1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+<div
+  className="c0"
+  size="large"
+>
+  <span
+    style={
+      Object {
+        "background": "none",
+        "border": 0,
+        "boxSizing": "border-box",
+        "display": "inline-block",
+        "height": "initial",
+        "margin": 0,
+        "maxWidth": "100%",
+        "opacity": 1,
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "relative",
+        "width": "initial",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "background": "none",
+          "border": 0,
+          "boxSizing": "border-box",
+          "display": "block",
+          "height": "initial",
+          "margin": 0,
+          "maxWidth": "100%",
+          "opacity": 1,
+          "padding": 0,
+          "width": "initial",
+        }
+      }
+    >
+      <img
+        alt=""
+        aria-hidden={true}
+        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+        style={
+          Object {
+            "background": "none",
+            "border": 0,
+            "display": "block",
+            "height": "initial",
+            "margin": 0,
+            "maxWidth": "100%",
+            "opacity": 1,
+            "padding": 0,
+            "width": "initial",
+          }
+        }
+      />
+    </span>
+    <img
+      className="c1"
+      data-nimg="intrinsic"
+      decoding="async"
+      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+      style={
+        Object {
+          "border": "none",
+          "bottom": 0,
+          "boxSizing": "border-box",
+          "display": "block",
+          "height": 0,
+          "left": 0,
+          "margin": "auto",
+          "maxHeight": "100%",
+          "maxWidth": "100%",
+          "minHeight": "100%",
+          "minWidth": "100%",
+          "objectFit": undefined,
+          "objectPosition": undefined,
+          "padding": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "width": 0,
+        }
+      }
+    />
+    <noscript>
+      <img
+        className="c1"
+        data-nimg="intrinsic"
+        decoding="async"
+        loading="lazy"
+        src="https://i1.sndcdn.com/avatars-EavWtcIVfiIYyIML-q1Eppg-t500x500.jpg"
+        style={
+          Object {
+            "border": "none",
+            "bottom": 0,
+            "boxSizing": "border-box",
+            "display": "block",
+            "height": 0,
+            "left": 0,
+            "margin": "auto",
+            "maxHeight": "100%",
+            "maxWidth": "100%",
+            "minHeight": "100%",
+            "minWidth": "100%",
+            "objectFit": undefined,
+            "objectPosition": undefined,
+            "padding": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": 0,
+          }
+        }
+      />
+    </noscript>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Atoms/Button Default 1`] = `
+.c0 {
+  padding: 0.56rem 1.56rem;
+  border: none;
+  border-radius: 4px;
+  background-color: "#e0e1e2";
+  font-weight: bold;
+  font-size: 0.87rem;
+  color: rgba(0,0,0,0.6);
+  cursor: pointer;
+  -webkit-transition: 0.12s;
+  transition: 0.12s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+.c0:hover {
+  -webkit-filter: brightness(90%);
+  filter: brightness(90%);
+}
+
+.c0:active {
+  -webkit-filter: brightness(75%);
+  filter: brightness(75%);
+}
+
+<button
+  className="c0"
+>
+  Button
+</button>
+`;
+
+exports[`Storyshots Atoms/Forms/Field Default 1`] = `
+.c0 {
+  font-size: 0.813rem;
+  font-weight: bold;
+  color: rgba(51,51,51,0.87);
+  margin-bottom: 0.3rem;
+}
+
+.c1 {
+  padding: 0.62rem 1.06rem;
+  border-radius: 4px;
+  border: solid 1px #dededf;
+  background-color: #fff;
+}
+
+.c1::-webkit-input-placeholder {
+  color: #b5b5b5;
+}
+
+.c1::-moz-placeholder {
+  color: #b5b5b5;
+}
+
+.c1:-ms-input-placeholder {
+  color: #b5b5b5;
+}
+
+.c1::placeholder {
+  color: #b5b5b5;
+}
+
+<div>
+  <div
+    className="c0"
+  >
+    LabelStyled
+  </div>
+  <input
+    className="c1"
+    placeholder="Placeholder Text"
+  />
+</div>
+`;
+
+exports[`Storyshots Atoms/Icon Home 1`] = `
+<div
+  className=""
+>
+  <svg
+    aria-hidden={true}
+    className="MuiSvgIcon-root"
+    focusable="false"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Storyshots Atoms/Typography/H1 Default 1`] = `
+.c0 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  line-height: 1.29;
+  color: rgba(0,0,0,0.87);
+  font-size: 1.5rem;
+}
+
+<h1
+  className="c0"
+  fontSize={3}
+>
+  This is header.
+</h1>
+`;
+
+exports[`Storyshots Atoms/Typography/P Default 1`] = `
+.c0 {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: rgba(0,0,0,0.8);
+}
+
+<p
+  className="c0"
+>
+  this is pargraph.
+</p>
+`;
+
+exports[`Storyshots Atoms/Typography/Span Bold 1`] = `
+.c0 {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: rgba(0,0,0,0.8);
+  font-weight: bold;
+}
+
+<span
+  className="c0"
+>
+  Span
+</span>
+`;
+
+exports[`Storyshots Atoms/Typography/Span Color 1`] = `
+.c0 {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: rgba(0,0,0,0.8);
+  color: #2185d0;
+}
+
+<span
+  className="c0"
+  color="primary"
+>
+  Span
+</span>
+`;
+
+exports[`Storyshots Atoms/Typography/Span Default 1`] = `
+.c0 {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: rgba(0,0,0,0.8);
+}
+
+<span
+  className="c0"
+>
+  Span
+</span>
+`;
+
+exports[`Storyshots Molecules/CardHeader Default 1`] = `
+.c1 {
+  width: 1.87rem;
+  height: 1.87rem;
+  border-radius: 100%;
+  background-color: #ececec;
+  overflow: hidden;
+}
+
+.c3 {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: rgba(0,0,0,0.8);
+  font-weight: bold;
+}
+
+.c5 {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: rgba(0,0,0,0.8);
+  color: rgba(0,0,0,0.4);
+}
+
+.c0 {
+  position: relative;
+  background-color: #fff;
+  padding: 0.93rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  margin-left: 0.75rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  position: absolute;
+  right: 0.93rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    size="small"
+  />
+  <div
+    className="c2"
+  >
+    <span
+      className="c3"
+    >
+      Span
+    </span>
+  </div>
+  <div
+    className="c4"
+  >
+    <span
+      className="c5"
+      color="gray2"
+    >
+      Span
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Organisms/Card Default 1`] = `
+.c2 {
+  width: 1.87rem;
+  height: 1.87rem;
+  border-radius: 100%;
+  background-color: #ececec;
+  overflow: hidden;
+}
+
+.c3 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.c5 {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: rgba(0,0,0,0.8);
+  font-weight: bold;
+}
+
+.c7 {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: rgba(0,0,0,0.8);
+  color: rgba(0,0,0,0.4);
+}
+
+.c1 {
+  position: relative;
+  background-color: #fff;
+  padding: 0.93rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  margin-left: 0.75rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  position: absolute;
+  right: 0.93rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  max-width: 18.31rem;
+  border-radius: 0.4rem;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: rgb(243 243 243 / 44%) 0px 5px 16px, rgb(24 24 43 / 3%) 0px 1.3478px 6px,rgb(0 0 0 / 3%) 0px 2.0217px 16.6957px;
+}
+
+.c8 {
+  width: 100%;
+  height: 15rem;
+  position: relative;
+}
+
+<h1
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+      size="small"
+    >
+      <span
+        style={
+          Object {
+            "background": "none",
+            "border": 0,
+            "boxSizing": "border-box",
+            "display": "inline-block",
+            "height": "initial",
+            "margin": 0,
+            "maxWidth": "100%",
+            "opacity": 1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "relative",
+            "width": "initial",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "background": "none",
+              "border": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": "initial",
+              "margin": 0,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "padding": 0,
+              "width": "initial",
+            }
+          }
+        >
+          <img
+            alt=""
+            aria-hidden={true}
+            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+            style={
+              Object {
+                "background": "none",
+                "border": 0,
+                "display": "block",
+                "height": "initial",
+                "margin": 0,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "padding": 0,
+                "width": "initial",
+              }
+            }
+          />
+        </span>
+        <img
+          className="c3"
+          data-nimg="intrinsic"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style={
+            Object {
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": undefined,
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+        <noscript>
+          <img
+            className="c3"
+            data-nimg="intrinsic"
+            decoding="async"
+            loading="lazy"
+            src="static/media/public/images/avatar.png"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+        </noscript>
+      </span>
+    </div>
+    <div
+      className="c4"
+    >
+      <span
+        className="c5"
+      >
+        Dylan
+      </span>
+    </div>
+    <div
+      className="c6"
+    >
+      <span
+        className="c7"
+        color="gray2"
+      >
+        17h
+      </span>
+    </div>
+  </div>
+  <div
+    className="c8"
+  >
+    <span
+      style={
+        Object {
+          "background": "none",
+          "border": 0,
+          "bottom": 0,
+          "boxSizing": "border-box",
+          "display": "block",
+          "height": "initial",
+          "left": 0,
+          "margin": 0,
+          "opacity": 1,
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "width": "initial",
+        }
+      }
+    >
+      <img
+        className=""
+        data-nimg="fill"
+        decoding="async"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        style={
+          Object {
+            "border": "none",
+            "bottom": 0,
+            "boxSizing": "border-box",
+            "display": "block",
+            "height": 0,
+            "left": 0,
+            "margin": "auto",
+            "maxHeight": "100%",
+            "maxWidth": "100%",
+            "minHeight": "100%",
+            "minWidth": "100%",
+            "objectFit": "cover",
+            "objectPosition": undefined,
+            "padding": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": 0,
+          }
+        }
+      />
+      <noscript>
+        <img
+          className=""
+          data-nimg="fill"
+          decoding="async"
+          loading="lazy"
+          src="/img.jpg"
+          style={
+            Object {
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": "cover",
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+      </noscript>
+    </span>
+  </div>
+</h1>
+`;

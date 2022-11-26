@@ -1,0 +1,53 @@
+{
+  "name": "linkedin-clone",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "test": "jest --watchAll",
+    "start": "next start",
+    "sb": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "next": "^12.1.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-interactions": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/addon-storyshots": "^6.5.10",
+    "@storybook/builder-webpack5": "^6.5.10",
+    "@storybook/manager-webpack5": "^6.5.10",
+    "@storybook/react": "^6.5.10",
+    "@storybook/testing-library": "^0.0.13",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "12.1.5",
+    "@types/jest": "^29.0.3",
+    "@types/node": "18.7.6",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "18.0.6",
+    "@types/styled-components": "^5.1.26",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "eslint": "8.22.0",
+    "eslint-config-next": "12.2.5",
+    "eslint-plugin-storybook": "^0.6.4",
+    "jest": "^28.1.3",
+    "jest-environment-jsdom": "^28.1.3",
+    "jest-styled-components": "^7.1.1",
+    "sass-loader": "^13.0.2",
+    "storybook-addon-sass-postcss": "^0.1.3",
+    "style-loader": "^3.3.1",
+    "ts-jest": "^29.0.1",
+    "typescript": "4.7.4"
+  }
+}
