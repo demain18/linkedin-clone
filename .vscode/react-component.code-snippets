@@ -1,0 +1,52 @@
+{
+  "generate react.tsx": {
+    "prefix": "rtsx",
+    "body": [
+      "import React from \"react\";",
+      "import { $1Styled } from \"./$1Styles\";",
+      "",
+      "export interface Props {}",
+      "",
+      "const $1 = ({ ...rest }: Props) => {",
+      "  return <$1Styled {...rest}></$1Styled>;",
+      "};",
+      "export default $1;",
+      "",
+      "export const defaultProps: Props = {};",
+      "$1.defaultProps = {};",
+      ""
+    ],
+    "description": "react.tsx를 생성합니다."
+  },
+  "generate reactStyles.ts": {
+    "prefix": "rstyles",
+    "body": [
+      "import styled, { css } from \"styled-components\";",
+      "import { Props } from \"./$1\";",
+      "",
+      "export const $1Styled = styled.div<Props>``;",
+      ""
+    ],
+    "description": "reactStyles.ts를 생성합니다."
+  },
+  "generate react.stories.tsx": {
+    "prefix": "rstories",
+    "body": [
+      "import React from \"react\";",
+      "import { ComponentStory, ComponentMeta } from \"@storybook/react\";",
+      "import $1, { defaultProps } from \"./$1\";",
+      "",
+      "export default {",
+      "  title: \"$2/$1\",",
+      "  component: $1,",
+      "} as unknown as ComponentMeta<typeof $1>;",
+      "",
+      "const Template: ComponentStory<typeof $1> = (args) => <$1 {...args}></$1>;",
+      "",
+      "export const Default = Template.bind({});",
+      "Default.args = {};",
+      ""
+    ],
+    "description": "react.stories.tsx를 생성합니다."
+  }
+}
