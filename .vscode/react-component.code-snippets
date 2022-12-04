@@ -48,5 +48,10 @@
       ""
     ],
     "description": "react.stories.tsx를 생성합니다."
+  },
+  "styled-component const syntax": {
+    "prefix": "stcConst",
+    "body": ["export const $1 = styled.div<Props>``;"],
+    "description": "styled-component const 문법을 생성합니다."
   }
 }

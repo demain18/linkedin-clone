@@ -1,22 +1,22 @@
 import React from "react";
-import { Gnb, GnbWrap, LogoImageWrap, LogoImage } from "./GnbStyles";
+import { GnbC, GnbWrap, LogoImageWrap, LogoImage } from "./GnbStyles";
 import logoImg from "@/public/images/logo.png";
 
 export interface Props {}
 
-const GnbC = ({ ...rest }: Props) => {
+const Gnb = ({ ...rest }: Props) => {
   return (
-    <Gnb>
+    <GnbC>
       <GnbWrap>
         <LogoImageWrap>
           <LogoImage src={logoImg} layout="fill" objectFit="cover" />
         </LogoImageWrap>
         menu
       </GnbWrap>
-    </Gnb>
+    </GnbC>
   );
 };
-export default GnbC;
+export default Gnb;
 
 export const defaultProps: Props = {};
-GnbC.defaultProps = {};
+Gnb.defaultProps = {};
