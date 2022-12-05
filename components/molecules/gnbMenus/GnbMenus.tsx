@@ -75,4 +75,6 @@ export const defaultProps: Props = {
     { icon: <Notifications />, content: "Notifications", active: false },
   ],
 };
-GnbMenus.defaultProps = {};
+GnbMenus.defaultProps = {
+  menuList: defaultProps.menuList,
+};

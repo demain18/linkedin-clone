@@ -1,6 +1,16 @@
 import React from "react";
-import { GnbStyled, GnbWrap, LogoImageWrap, LogoImage } from "./GnbStyles";
+import {
+  GnbStyled,
+  GnbWrap,
+  FlexWrap,
+  LogoImageWrap,
+  LogoImage,
+  InputWrap,
+  GnbMenusWrap,
+} from "./GnbStyles";
 import logoImg from "@/public/images/logo.png";
+import Input from "@/components/atoms/forms/field/Input";
+import GnbMenus from "@/components/molecules/gnbMenus/GnbMenus";
 
 export interface Props {}
 
@@ -8,10 +18,17 @@ const Gnb = ({ ...rest }: Props) => {
   return (
     <GnbStyled>
       <GnbWrap>
-        <LogoImageWrap>
-          <LogoImage src={logoImg} layout="fill" objectFit="cover" />
-        </LogoImageWrap>
-        menu
+        <FlexWrap>
+          <LogoImageWrap>
+            <LogoImage src={logoImg} layout="fill" objectFit="cover" />
+          </LogoImageWrap>
+
+          <InputWrap>
+            <Input />
+          </InputWrap>
+        </FlexWrap>
+
+        <GnbMenus />
       </GnbWrap>
     </GnbStyled>
   );

@@ -8,11 +8,11 @@ export const GnbMenusStyled = styled.div`
 `;
 
 export const MenuStyled = styled.div<MenuProps>`
+  width: 80px;
+  padding: 5px 0px;
   display: flex;
   flex-direction: column;
-  width: 80px;
   align-items: center;
-  padding-bottom: 3px;
   cursor: pointer;
   transition: 0.1s;
   transition-timing-function: ease;
