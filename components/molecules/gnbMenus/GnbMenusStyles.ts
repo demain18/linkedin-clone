@@ -1,16 +1,17 @@
 import styled, { css } from "styled-components";
-import { Props } from "./GnbMenus";
+import { Props, MenuProps } from "./GnbMenus";
 import { palette } from "../../../styles/paletteStyles";
 
-export const GnbMenusStyled = styled.div<Props>`
+export const GnbMenusStyled = styled.div`
   display: flex;
 `;
 
-export const MenuStyled = styled.div<Props>`
+export const MenuStyled = styled.div<MenuProps>`
   display: flex;
   flex-direction: column;
   width: 80px;
   align-items: center;
+  padding-bottom: 3px;
   cursor: pointer;
   transition: 0.1s;
   transition-timing-function: ease;
@@ -29,4 +30,15 @@ export const MenuStyled = styled.div<Props>`
       color: black;
     }
   }
+
+  ${(props) =>
+    props.active
+      ? css`
+          border-bottom: 2px solid black;
+          color: black;
+          span {
+            color: black;
+          }
+        `
+      : undefined}
 `;
