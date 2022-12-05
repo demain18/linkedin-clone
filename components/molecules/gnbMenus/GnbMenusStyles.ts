@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { Props, MenuProps } from "./GnbMenus";
+import { MenuProps } from "./GnbMenus";
 import { palette } from "../../../styles/paletteStyles";
 
 export const GnbMenusStyled = styled.div`

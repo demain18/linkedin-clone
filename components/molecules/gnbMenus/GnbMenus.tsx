@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { GnbMenusStyled, MenuStyled } from "./GnbMenusStyles";
 import Span from "@/components/atoms/typography/span/Span";
 import { Home, People, Work, Chat, Notifications } from "@material-ui/icons";
