@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { MenuProps } from "./GnbMenus";
-import { palette } from "../../../styles/paletteStyles";
+import { palette } from "@/styles/paletteStyles";
 
 export const GnbMenusStyled = styled.div`
   display: flex;
@@ -25,19 +25,19 @@ export const MenuStyled = styled.div<MenuProps>`
   }
 
   :hover {
-    color: black;
+    color: ${palette.black};
     span {
-      color: black;
+      color: ${palette.black};
     }
   }
 
   ${(props) =>
     props.active
       ? css`
-          border-bottom: 2px solid black;
-          color: black;
+          border-bottom: 2px solid ${palette.black};
+          color: ${palette.black};
           span {
-            color: black;
+            color: ${palette.black};
           }
         `
       : undefined}

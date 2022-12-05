@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styled, { css } from "styled-components";
-import { palette } from "../../../styles/paletteStyles";
+import { palette } from "@/styles/paletteStyles";
 import { Props } from "./Avatar";
 
 const sizes = {
