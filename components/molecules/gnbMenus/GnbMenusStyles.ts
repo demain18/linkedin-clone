@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import { MenuProps } from "./GnbMenus";
 import { palette } from "@/styles/paletteStyles";
+import Image from "next/image";
 
 export const GnbMenusStyled = styled.div`
   display: flex;
@@ -41,4 +42,23 @@ export const MenuStyled = styled.div<MenuProps>`
           }
         `
       : undefined}
+`;
+
+export const ProfileImageWrap = styled.div`
+  position: relative;
+  width: 24px;
+  height: 24px;
+`;
+
+export const ProfileImage = styled(Image)`
+  border-radius: 100%;
+`;
+
+export const ProfileContentWrap = styled.div`
+  display: flex;
+  margin-top: -5px;
+`;
+
+export const ProfileContentSpanWrap = styled.div`
+  margin-top: 3px;
 `;

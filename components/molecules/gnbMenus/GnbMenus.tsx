@@ -1,10 +1,25 @@
 import React from "react";
-import { GnbMenusStyled, MenuStyled } from "./GnbMenusStyles";
+import {
+  GnbMenusStyled,
+  MenuStyled,
+  ProfileImageWrap,
+  ProfileImage,
+  ProfileContentWrap,
+  ProfileContentSpanWrap,
+} from "./GnbMenusStyles";
 import Span from "@/components/atoms/typography/span/Span";
-import { Home, People, Work, Chat, Notifications } from "@material-ui/icons";
+import {
+  Home,
+  People,
+  Work,
+  Chat,
+  Notifications,
+  ArrowDropDown,
+} from "@material-ui/icons";
+import avatarImg from "@/public/images/avatar.png";
 
 export interface MenuProps {
-  icon?: any;
+  icon?: JSX.Element;
   content?: string;
   active?: boolean;
 }
@@ -22,12 +37,30 @@ const Menu = ({ icon, content, active }: MenuProps) => {
   );
 };
 
+const Profile = () => {
+  return (
+    <MenuStyled>
+      <ProfileImageWrap>
+        <ProfileImage src={avatarImg} layout="fill" objectFit="cover" />
+      </ProfileImageWrap>
+      <ProfileContentWrap>
+        <ProfileContentSpanWrap>
+          <Span fontSize={12}>Me</Span>
+        </ProfileContentSpanWrap>
+
+        <ArrowDropDown />
+      </ProfileContentWrap>
+    </MenuStyled>
+  );
+};
+
 const GnbMenus = ({ menuList, ...rest }: Props) => {
   return (
     <GnbMenusStyled>
       {menuList.map((item) => (
         <Menu icon={item.icon} content={item.content} active={item.active} />
       ))}
+      <Profile />
     </GnbMenusStyled>
   );
 };
