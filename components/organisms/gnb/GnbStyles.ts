@@ -23,14 +23,15 @@ export const FlexWrap = styled.div`
 
 export const LogoImageWrap = styled.div`
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 34px;
+  height: 34px;
+  margin: 0px 7px;
 `;
 
 export const LogoImage = styled(Image)``;
 
 export const InputWrap = styled.div`
-  max-width: 280px;
+  min-width: 240px;
 `;
 
 export const GnbMenusWrap = styled.div`

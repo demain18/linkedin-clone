@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import Input from "./Input";
+import Input, { defaultProps } from "./Input";
 
 export default {
   title: "Atoms/Forms/Input",
@@ -10,4 +10,4 @@ export default {
 const Template: ComponentStory<typeof Input> = (args) => <Input {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = { placeholder: defaultProps.placeholder };

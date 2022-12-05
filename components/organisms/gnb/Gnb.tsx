@@ -24,7 +24,7 @@ const Gnb = ({ ...rest }: Props) => {
           </LogoImageWrap>
 
           <InputWrap>
-            <Input />
+            <Input placeholder="Search" />
           </InputWrap>
         </FlexWrap>
 
