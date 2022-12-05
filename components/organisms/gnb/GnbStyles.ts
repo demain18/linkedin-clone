@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { Props } from "./Gnb";
 import Image from "next/image";
 
-export const GnbC = styled.div`
+export const GnbStyled = styled.div`
   width: 100%;
   background-color: #fff;
 `;
