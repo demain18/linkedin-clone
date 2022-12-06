@@ -10,15 +10,8 @@ import {
 } from "./GnbStyles";
 import logoImg from "@/public/images/logo.png";
 import Input from "@/components/atoms/forms/field/Input";
-import GnbMenus from "@/components/molecules/gnbMenus/GnbMenus";
-import {
-  Home,
-  People,
-  Work,
-  Chat,
-  Notifications,
-  ArrowDropDown,
-} from "@material-ui/icons";
+
+import { Home, People, Work, Chat, Notifications } from "@material-ui/icons";
 import GnbMenu from "@/components/molecules/gnbMenu/GnbMenu";
 import GnbProfile from "@/components/molecules/gnbProfile/GnbProfile";
 

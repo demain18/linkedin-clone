@@ -1,4 +1,3 @@
-import { MenuStyled } from "@/components/molecules/gnbMenus/GnbMenusStyles";
 import styled, { css } from "styled-components";
 import { palette } from "../../../../styles/paletteStyles";
 import { Props } from "./Span";
@@ -23,8 +22,4 @@ export const SpanStyled = styled.span<Props>`
     css`
       color: ${palette[props.color as keyof typeof palette]};
     `}
-
-  ${MenuStyled}:hover {
-    color: rgba(0, 0, 0, 1);
-  }
 `;

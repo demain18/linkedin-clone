@@ -5,6 +5,7 @@ import Image from "next/image";
 export const GnbStyled = styled.div`
   width: 100%;
   background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08); ;
 `;
 
 export const GnbWrap = styled.div`
