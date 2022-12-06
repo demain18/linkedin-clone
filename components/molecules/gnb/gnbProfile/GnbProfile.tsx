@@ -5,7 +5,7 @@ import {
   ProfileImage,
   ProfileImageWrap,
 } from "./GnbProfileStyles";
-import GnbButton from "@/components/molecules/gnbButton/GnbButton";
+import GnbButton from "@/components/molecules/gnb/gnbButton/GnbButton";
 import Span from "@/components/atoms/typography/span/Span";
 import { ArrowDropDown } from "@material-ui/icons";
 import avatarImg from "@/public/images/avatar.png";

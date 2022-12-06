@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import GnbButton, { defaultProps } from "./GnbButton";
 
 export default {
-  title: "Molecules/GnbButton",
+  title: "Molecules/Gnb/GnbButton",
   component: GnbButton,
 } as unknown as ComponentMeta<typeof GnbButton>;
 

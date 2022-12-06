@@ -12,8 +12,8 @@ import logoImg from "@/public/images/logo.png";
 import Input from "@/components/atoms/forms/field/Input";
 
 import { Home, People, Work, Chat, Notifications } from "@material-ui/icons";
-import GnbMenu from "@/components/molecules/gnbMenu/GnbMenu";
-import GnbProfile from "@/components/molecules/gnbProfile/GnbProfile";
+import GnbMenu from "@/components/molecules/gnb/gnbMenu/GnbMenu";
+import GnbProfile from "@/components/molecules/gnb/gnbProfile/GnbProfile";
 
 export interface Props {}
 

@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import GnbMenu, { defaultProps } from "./GnbMenu";
 
 export default {
-  title: "Molecules/GnbMenu",
+  title: "Molecules/Gnb/GnbMenu",
   component: GnbMenu,
 } as unknown as ComponentMeta<typeof GnbMenu>;
 
