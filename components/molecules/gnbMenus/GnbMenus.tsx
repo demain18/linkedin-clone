@@ -8,14 +8,7 @@ import {
   ProfileContentSpanWrap,
 } from "./GnbMenusStyles";
 import Span from "@/components/atoms/typography/span/Span";
-import {
-  Home,
-  People,
-  Work,
-  Chat,
-  Notifications,
-  ArrowDropDown,
-} from "@material-ui/icons";
+import { AddCircle, ArrowDropDown } from "@material-ui/icons";
 import avatarImg from "@/public/images/avatar.png";
 
 export interface MenuProps {
@@ -68,11 +61,11 @@ export default GnbMenus;
 
 export const defaultProps: Props = {
   menuList: [
-    { icon: <Home />, content: "Home", active: true },
-    { icon: <People />, content: "My Network", active: false },
-    { icon: <Work />, content: "Jobs", active: false },
-    { icon: <Chat />, content: "Messaging", active: false },
-    { icon: <Notifications />, content: "Notifications", active: false },
+    { icon: <AddCircle />, content: "Test1", active: true },
+    { icon: <AddCircle />, content: "Test2", active: false },
+    { icon: <AddCircle />, content: "Test3", active: false },
+    { icon: <AddCircle />, content: "Test4", active: false },
+    { icon: <AddCircle />, content: "Test5", active: false },
   ],
 };
 GnbMenus.defaultProps = {

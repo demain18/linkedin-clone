@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   GnbStyled,
   GnbWrap,
@@ -11,10 +11,26 @@ import {
 import logoImg from "@/public/images/logo.png";
 import Input from "@/components/atoms/forms/field/Input";
 import GnbMenus from "@/components/molecules/gnbMenus/GnbMenus";
+import {
+  Home,
+  People,
+  Work,
+  Chat,
+  Notifications,
+  ArrowDropDown,
+} from "@material-ui/icons";
 
 export interface Props {}
 
 const Gnb = ({ ...rest }: Props) => {
+  const [menuList, setMenuList] = useState([
+    { icon: <Home />, content: "Home", active: true },
+    { icon: <People />, content: "My Network", active: false },
+    { icon: <Work />, content: "Jobs", active: false },
+    { icon: <Chat />, content: "Messaging", active: false },
+    { icon: <Notifications />, content: "Notifications", active: false },
+  ]);
+
   return (
     <GnbStyled>
       <GnbWrap>
@@ -28,7 +44,7 @@ const Gnb = ({ ...rest }: Props) => {
           </InputWrap>
         </FlexWrap>
 
-        <GnbMenus />
+        <GnbMenus menuList={menuList} />
       </GnbWrap>
     </GnbStyled>
   );
