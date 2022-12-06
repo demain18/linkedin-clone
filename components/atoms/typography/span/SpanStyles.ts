@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { palette } from "../../../../styles/paletteStyles";
+import { palette } from "@/styles/paletteStyles";
 import { Props } from "./Span";
 
 export const SpanStyled = styled.span<Props>`

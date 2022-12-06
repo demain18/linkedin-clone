@@ -2,7 +2,10 @@ import React from "react";
 import { PStyled } from "./PStyles";
 
 export interface Props {
-  children?: string | number;
+  children: string | number;
+  fontSize?: number;
+  bold?: boolean;
+  color?: string;
 }
 
 const P = ({ children, ...rest }: Props) => {
@@ -10,7 +13,10 @@ const P = ({ children, ...rest }: Props) => {
 };
 export default P;
 
-export const defaultProps: Props = { children: "this is pargraph." };
+export const defaultProps: Props = {
+  children: "this is pargraph.",
+  fontSize: 16,
+};
 
 P.defaultProps = {
   children: defaultProps.children,

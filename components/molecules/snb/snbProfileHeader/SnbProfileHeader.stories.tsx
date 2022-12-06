@@ -12,4 +12,7 @@ const Template: ComponentStory<typeof SnbProfileHeader> = (args) => (
 );
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = {
+  bannerImg: defaultProps.bannerImg,
+  avatarImg: defaultProps.avatarImg,
+};
