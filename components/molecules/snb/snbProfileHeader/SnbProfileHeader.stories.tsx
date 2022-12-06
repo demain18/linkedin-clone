@@ -15,4 +15,6 @@ export const Default = Template.bind({});
 Default.args = {
   bannerImg: defaultProps.bannerImg,
   avatarImg: defaultProps.avatarImg,
+  title: defaultProps.title,
+  desc: defaultProps.desc,
 };

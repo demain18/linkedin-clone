@@ -2,9 +2,10 @@ import styled, { css } from "styled-components";
 import { Props } from "./SnbProfileHeader";
 import Image from "next/image";
 
-export const SnbProfileHeaderStyled = styled.div<Props>`
+export const SnbProfileHeaderStyled = styled.div`
   max-width: 225px;
   background-color: #fff;
+  padding-bottom: 12px;
 `;
 
 export const BannerImageWrap = styled.div`
@@ -27,4 +28,8 @@ export const AvatarImageWrap = styled.div`
 
 export const AvatarImage = styled(Image)`
   border-radius: 100%;
+`;
+
+export const PWrap = styled.div`
+  text-align: center;
 `;
