@@ -19,6 +19,8 @@ import {
   Notifications,
   ArrowDropDown,
 } from "@material-ui/icons";
+import GnbMenu from "@/components/molecules/gnbMenu/GnbMenu";
+import GnbProfile from "@/components/molecules/gnbProfile/GnbProfile";
 
 export interface Props {}
 
@@ -44,7 +46,16 @@ const Gnb = ({ ...rest }: Props) => {
           </InputWrap>
         </FlexWrap>
 
-        <GnbMenus menuList={menuList} />
+        <GnbMenusWrap>
+          {menuList.map((item) => (
+            <GnbMenu
+              icon={item.icon}
+              content={item.content}
+              active={item.active}
+            />
+          ))}
+          <GnbProfile />
+        </GnbMenusWrap>
       </GnbWrap>
     </GnbStyled>
   );

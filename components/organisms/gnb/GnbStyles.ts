@@ -35,6 +35,5 @@ export const InputWrap = styled.div`
 `;
 
 export const GnbMenusWrap = styled.div`
-  position: absolute;
-  right: 0px;
+  display: flex;
 `;
