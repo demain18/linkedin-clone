@@ -6,6 +6,7 @@ import {
   AvatarImageWrap,
   AvatarImage,
   PWrap,
+  PLinkWrak,
 } from "./SnbProfileHeaderStyles";
 import bannerImg from "@/public/images/banner.png";
 import avatarImg from "@/public/images/avatar.png";
@@ -36,9 +37,9 @@ const SnbProfileHeader = ({
         <AvatarImage src={avatarImg} layout="fill" objectFit="cover" />
       </AvatarImageWrap>
 
-      <PWrap>
+      <PLinkWrak>
         <P>{title}</P>
-      </PWrap>
+      </PLinkWrak>
       <PWrap>
         <P fontSize={12} color="grayPoint6">
           {desc}
