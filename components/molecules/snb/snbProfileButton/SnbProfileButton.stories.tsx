@@ -12,4 +12,4 @@ const Template: ComponentStory<typeof SnbProfileButton> = (args) => (
 );
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = { children: defaultProps.children };
