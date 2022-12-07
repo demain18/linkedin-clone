@@ -4,16 +4,19 @@ import SnbProfileButton from "@/components/molecules/snb/snbProfileButton/SnbPro
 import SnbProfileHeader from "@/components/molecules/snb/snbProfileHeader/SnbProfileHeader";
 import React from "react";
 import {
+  BookmarkWrap,
   ButtonContentFlexWrap,
   Divider,
   DividerBottomGap,
   DividerTopGap,
+  MyitemContentWrap,
   PremiumBadgeImage,
   PremiumBadgeImageWrap,
   PremiumWrap,
   SnbProfileStyled,
 } from "./SnbProfileStyles";
 import premiumBadgeImg from "@/public/images/premium-badge.png";
+import { Bookmark } from "@material-ui/icons";
 
 export interface Props {}
 
@@ -30,7 +33,7 @@ const SnbProfile = ({ ...rest }: Props) => {
             <P fontSize={12} color="grayPoint6" bold>
               Connections
             </P>
-            <P fontSize={12} color="black">
+            <P fontSize={12} color="black" bold>
               Grow your network
             </P>
           </div>
@@ -54,7 +57,7 @@ const SnbProfile = ({ ...rest }: Props) => {
 
       <DividerTopGap />
 
-      <SnbProfileButton>
+      <SnbProfileButton jumbo>
         <P fontSize={12} color="grayPoint6">
           Access exclusive tools & insights
         </P>
@@ -75,7 +78,16 @@ const SnbProfile = ({ ...rest }: Props) => {
 
       <Divider />
 
-      <SnbProfileButton>My items</SnbProfileButton>
+      <SnbProfileButton>
+        <MyitemContentWrap>
+          <BookmarkWrap>
+            <Bookmark style={{ fontSize: "16px" }} />
+          </BookmarkWrap>
+          <P fontSize={12} color="black" bold>
+            My items
+          </P>
+        </MyitemContentWrap>
+      </SnbProfileButton>
     </SnbProfileStyled>
   );
 };

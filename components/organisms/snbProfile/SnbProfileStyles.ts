@@ -22,6 +22,7 @@ export const DividerBottomGap = styled.div`
   height: 12px;
   background-color: #fff;
   border-top: 1px solid rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
 `;
 
 export const DividerTopGap = styled.div`
@@ -57,3 +58,16 @@ export const PremiumBadgeImageWrap = styled.div`
 `;
 
 export const PremiumBadgeImage = styled(Image)``;
+
+export const MyitemContentWrap = styled.div`
+  display: flex;
+  gap: 7px;
+  padding: 6px 0px;
+  align-items: center;
+`;
+
+export const BookmarkWrap = styled.div`
+  position: relative;
+  top: 2px;
+  color: ${palette.grayPoint6};
+`;

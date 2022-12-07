@@ -21,4 +21,10 @@ export const SnbProfileButtonStyled = styled.div<Props>`
   :hover {
     background-color: ${palette.grayPoint1};
   }
+
+  ${(props) =>
+    props.jumbo &&
+    css`
+      padding: 12px;
+    `}
 `;

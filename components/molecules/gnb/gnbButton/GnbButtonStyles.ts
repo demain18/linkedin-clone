@@ -1,3 +1,4 @@
+import { nonSelect } from "@/styles/moduleStyles";
 import { palette } from "@/styles/paletteStyles";
 import { transitionHover } from "@/styles/transitionStyles";
 import styled, { css } from "styled-components";
@@ -10,9 +11,7 @@ export const GnbButtonStyled = styled.div<Props>`
   flex-direction: column;
   align-items: center;
   cursor: pointer;
-  -moz-user-select: -moz-none;
-  -webkit-user-select: none;
-  user-select: none;
+  ${nonSelect}
   ${transitionHover}
 
   color: ${palette.grayPoint6};
