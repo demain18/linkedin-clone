@@ -15,6 +15,7 @@ export const parameters = {
       },
     ],
   },
+  // layout: "fullscreen",
 };
 import * as NextImage from "next/image";
 

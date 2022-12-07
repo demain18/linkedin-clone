@@ -2,11 +2,13 @@ import styled, { css } from "styled-components";
 import { Props } from "./SnbProfileHeader";
 import Image from "next/image";
 import { transitionHover } from "@/styles/transitionStyles";
+import { layoutWidth, nonSelect } from "@/styles/moduleStyles";
 
 export const SnbProfileHeaderStyled = styled.div`
-  max-width: 225px;
+  max-width: ${layoutWidth.snbProflie}px;
   background-color: #fff;
   padding-bottom: 16px;
+  box-sizing: border-box;
 `;
 
 export const BannerImageWrap = styled.div`
@@ -15,7 +17,9 @@ export const BannerImageWrap = styled.div`
   height: 56px;
 `;
 
-export const BannerImage = styled(Image)``;
+export const BannerImage = styled(Image)`
+  ${nonSelect}
+`;
 
 export const AvatarImageWrap = styled.div`
   position: relative;
@@ -29,12 +33,14 @@ export const AvatarImageWrap = styled.div`
 `;
 
 export const AvatarImage = styled(Image)`
+  ${nonSelect}
   border-radius: 100%;
 `;
 
 export const PLinkWrak = styled.div`
   text-align: center;
   cursor: pointer;
+  ${nonSelect}
   ${transitionHover}
 
   p:hover {
