@@ -8,6 +8,7 @@ import styled, { css } from "styled-components";
 import { Props } from "./SnbProfileButton";
 
 export const SnbProfileButtonStyled = styled.div<Props>`
+  position: relative;
   max-width: ${layoutWidth.snbProflie}px;
   background-color: #fff;
   padding: 4px 12px;
