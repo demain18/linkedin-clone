@@ -7,7 +7,7 @@
     "build": "next build",
     "test": "jest --watchAll",
     "start": "next start",
-    "sb": "start-storybook -p 6006",
+    "sb": "start-storybook -p 6006 -s ./public",
     "build-storybook": "build-storybook"
   },
   "dependencies": {

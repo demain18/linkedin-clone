@@ -2,7 +2,7 @@ import P from "@/components/atoms/typography/p/P";
 import Span from "@/components/atoms/typography/span/Span";
 import SnbProfileButton from "@/components/molecules/snb/snbProfileButton/SnbProfileButton";
 import SnbProfileHeader from "@/components/molecules/snb/snbProfileHeader/SnbProfileHeader";
-import React from "react";
+import React, { useEffect } from "react";
 import {
   BookmarkWrap,
   ButtonContentFlexWrap,
@@ -18,16 +18,19 @@ import {
 import premiumBadgeImg from "@/public/images/premium-badge.png";
 import { Bookmark } from "@material-ui/icons";
 
-export interface Props {
-  // bannerImg: StaticImageData | undefined;
-  // avatarImg: StaticImageData | undefined;
-  // userNickname: string;
-  // userDescription: string;
-  // connections: number;
-  // viewed: number;
-}
+export interface Props {}
 
 const SnbProfile = ({ ...rest }: Props) => {
+  const getUserData = () => {
+    fetch("/login", {
+      method: "POST",
+    }).then((res) => console.log(res.json()));
+  };
+
+  useEffect(() => {
+    getUserData();
+  });
+
   return (
     <SnbProfileStyled {...rest}>
       <SnbProfileHeader />
@@ -100,5 +103,4 @@ const SnbProfile = ({ ...rest }: Props) => {
 };
 export default SnbProfile;
 
-// export const defaultProps: Props = {};
 SnbProfile.defaultProps = {};
