@@ -18,7 +18,14 @@ import {
 import premiumBadgeImg from "@/public/images/premium-badge.png";
 import { Bookmark } from "@material-ui/icons";
 
-export interface Props {}
+export interface Props {
+  // bannerImg: StaticImageData | undefined;
+  // avatarImg: StaticImageData | undefined;
+  // userNickname: string;
+  // userDescription: string;
+  // connections: number;
+  // viewed: number;
+}
 
 const SnbProfile = ({ ...rest }: Props) => {
   return (
@@ -93,5 +100,5 @@ const SnbProfile = ({ ...rest }: Props) => {
 };
 export default SnbProfile;
 
-export const defaultProps: Props = {};
+// export const defaultProps: Props = {};
 SnbProfile.defaultProps = {};

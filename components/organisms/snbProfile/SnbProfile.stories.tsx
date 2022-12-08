@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import SnbProfile, { defaultProps } from "./SnbProfile";
+import SnbProfile from "./SnbProfile";
 
 export default {
   title: "Organisms/SnbProfile",
