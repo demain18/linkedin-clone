@@ -1,11 +1,10 @@
 import type { NextPage } from "next";
-import Card from "@/components/organisms/card/Card";
+import SnbProfile from "@/components/organisms/snbProfile/SnbProfile";
 
 const App: NextPage = () => {
   return (
     <>
-      <div role="heading">ttv-admin-client</div>
-      <Card />
+      <SnbProfile />
     </>
   );
 };

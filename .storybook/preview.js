@@ -1,3 +1,5 @@
+import * as NextImage from "next/image";
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -15,13 +17,18 @@ export const parameters = {
       },
     ],
   },
-  // layout: "fullscreen",
 };
-import * as NextImage from "next/image";
 
+// next image 적용
 const OriginalNextImage = NextImage.default;
 
 Object.defineProperty(NextImage, "default", {
   configurable: true,
   value: (props) => <OriginalNextImage {...props} unoptimized />,
 });
+
+// msw 적용
+if (typeof global.process === "undefined") {
+  const { worker } = require("../mocks/browser");
+  worker.start();
+}
