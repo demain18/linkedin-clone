@@ -21,10 +21,14 @@ import { Bookmark } from "@material-ui/icons";
 export interface Props {}
 
 const SnbProfile = ({ ...rest }: Props) => {
-  const getUserData = () => {
-    fetch("/login", {
-      method: "POST",
-    }).then((res) => console.log(res.json()));
+  const getUserData = async () => {
+    await fetch("/data/user", {
+      method: "GET",
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      });
   };
 
   useEffect(() => {

@@ -15,4 +15,7 @@ export const handlers = [
       return res(ctx.status(200), ctx.json({ usename: "admin" }));
     }
   }),
+  rest.get("/data/user", (req, res, ctx) => {
+    return res(ctx.status(200), ctx.json({ username: "Brian" }));
+  }),
 ];
