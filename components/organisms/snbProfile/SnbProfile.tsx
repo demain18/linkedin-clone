@@ -2,7 +2,7 @@ import P from "@/components/atoms/typography/p/P";
 import Span from "@/components/atoms/typography/span/Span";
 import SnbProfileButton from "@/components/molecules/snb/snbProfileButton/SnbProfileButton";
 import SnbProfileHeader from "@/components/molecules/snb/snbProfileHeader/SnbProfileHeader";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   BookmarkWrap,
   ButtonContentFlexWrap,
@@ -20,24 +20,37 @@ import { Bookmark } from "@material-ui/icons";
 
 export interface Props {}
 
+export interface userDataProps {
+  username: string;
+  bio: string;
+  connections: number;
+  viewed: number;
+}
+
 const SnbProfile = ({ ...rest }: Props) => {
-  const getUserData = async () => {
-    await fetch("/data/user", {
-      method: "GET",
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-      });
-  };
+  const [userData, setUserData] = useState<userDataProps>();
 
   useEffect(() => {
+    const getUserData = async () => {
+      await fetch("/data/profile", {
+        method: "GET",
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          setUserData(data);
+        });
+    };
+
     getUserData();
-  });
+  }, []);
+
+  useEffect(() => {
+    console.log(userData);
+  }, [userData]);
 
   return (
     <SnbProfileStyled {...rest}>
-      <SnbProfileHeader />
+      <SnbProfileHeader title={userData?.username} desc={userData?.bio} />
 
       <DividerBottomGap />
 
@@ -52,7 +65,7 @@ const SnbProfile = ({ ...rest }: Props) => {
             </P>
           </div>
           <Span fontSize={12} color="primary" bold>
-            37
+            {userData?.connections}
           </Span>
         </ButtonContentFlexWrap>
       </SnbProfileButton>
@@ -64,7 +77,7 @@ const SnbProfile = ({ ...rest }: Props) => {
           </P>
 
           <Span fontSize={12} color="primary" bold>
-            26
+            {userData?.viewed}
           </Span>
         </ButtonContentFlexWrap>
       </SnbProfileButton>

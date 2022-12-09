@@ -1,21 +1,15 @@
 import { rest } from "msw";
 
 export const handlers = [
-  rest.post("/login", (req, res, ctx) => {
-    sessionStorage.setItem("is-authenticated", "true");
-
-    return res(ctx.status(200));
-  }),
-  rest.get("/user", (req, res, ctx) => {
-    const isAuthenticated = sessionStorage.getItem("is-authenticated");
-
-    if (!isAuthenticated) {
-      return res(ctx.status(403), ctx.json({ errorMessage: "Not authorized" }));
-    } else {
-      return res(ctx.status(200), ctx.json({ usename: "admin" }));
-    }
-  }),
-  rest.get("/data/user", (req, res, ctx) => {
-    return res(ctx.status(200), ctx.json({ username: "Brian" }));
+  rest.get("/data/profile", (req, res, ctx) => {
+    return res(
+      ctx.status(200),
+      ctx.json({
+        username: "Brian",
+        bio: "My name is brian",
+        connections: 32,
+        viewed: 28,
+      })
+    );
   }),
 ];
