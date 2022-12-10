@@ -21,6 +21,7 @@ module.exports = {
       path.resolve(__dirname, "../"),
     ];
 
+    // alias 적용
     config.resolve.alias = {
       ...config.resolve.alias,
       "@/components": path.resolve(__dirname, "../components"),

@@ -1,4 +1,5 @@
 import * as NextImage from "next/image";
+import { QueryClient, QueryClientProvider } from "react-query";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -32,3 +33,13 @@ if (typeof global.process === "undefined") {
   const { worker } = require("../mocks/browser");
   worker.start();
 }
+
+// react-quary 적용
+const queryClient = new QueryClient();
+export const decorators = [
+  (Story) => (
+    <QueryClientProvider client={queryClient}>
+      <Story />
+    </QueryClientProvider>
+  ),
+];

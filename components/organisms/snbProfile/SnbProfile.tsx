@@ -17,9 +17,7 @@ import {
 } from "./SnbProfileStyles";
 import premiumBadgeImg from "@/public/images/premium-badge.png";
 import { Bookmark } from "@material-ui/icons";
-import { QueryClient, QueryClientProvider, useQuery } from "react-query";
-
-const queryClient = new QueryClient();
+import { useQuery } from "react-query";
 
 export interface Props {}
 
@@ -30,22 +28,13 @@ export interface userInfoProps {
   viewed: number;
 }
 
-const SnbProfile = ({ ...rest }: Props) => {
-  return (
-    <QueryClientProvider client={queryClient}>
-      <Context />
-    </QueryClientProvider>
-  );
-};
-export default SnbProfile;
-
 const getUserInfo = () => {
   return fetch("/data/profile").then((res) => res.json());
 };
 
-const Context = ({ ...rest }: Props) => {
+const SnbProfile = ({ ...rest }: Props) => {
   const { isLoading, error, data } = useQuery<userInfoProps>(
-    "repoData",
+    "userInfo",
     getUserInfo
   );
 
@@ -123,5 +112,6 @@ const Context = ({ ...rest }: Props) => {
     </SnbProfileStyled>
   );
 };
+export default SnbProfile;
 
 SnbProfile.defaultProps = {};
