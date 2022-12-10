@@ -17,10 +17,13 @@ import {
 } from "./SnbProfileStyles";
 import premiumBadgeImg from "@/public/images/premium-badge.png";
 import { Bookmark } from "@material-ui/icons";
+import { QueryClient, QueryClientProvider, useQuery } from "react-query";
+
+const queryClient = new QueryClient();
 
 export interface Props {}
 
-export interface userDataProps {
+export interface userInfoProps {
   username: string;
   bio: string;
   connections: number;
@@ -28,29 +31,31 @@ export interface userDataProps {
 }
 
 const SnbProfile = ({ ...rest }: Props) => {
-  const [userData, setUserData] = useState<userDataProps>();
+  return (
+    <QueryClientProvider client={queryClient}>
+      <Context />
+    </QueryClientProvider>
+  );
+};
+export default SnbProfile;
+
+const getUserInfo = () => {
+  return fetch("/data/profile").then((res) => res.json());
+};
+
+const Context = ({ ...rest }: Props) => {
+  const { isLoading, error, data } = useQuery<userInfoProps>(
+    "repoData",
+    getUserInfo
+  );
 
   useEffect(() => {
-    const getUserData = async () => {
-      await fetch("/data/profile", {
-        method: "GET",
-      })
-        .then((res) => res.json())
-        .then((data) => {
-          setUserData(data);
-        });
-    };
-
-    getUserData();
-  }, []);
-
-  useEffect(() => {
-    console.log(userData);
-  }, [userData]);
+    console.log(data);
+  }, [data]);
 
   return (
     <SnbProfileStyled {...rest}>
-      <SnbProfileHeader title={userData?.username} desc={userData?.bio} />
+      <SnbProfileHeader title={data?.username} desc={data?.bio} />
 
       <DividerBottomGap />
 
@@ -65,7 +70,7 @@ const SnbProfile = ({ ...rest }: Props) => {
             </P>
           </div>
           <Span fontSize={12} color="primary" bold>
-            {userData?.connections}
+            {data?.connections}
           </Span>
         </ButtonContentFlexWrap>
       </SnbProfileButton>
@@ -77,7 +82,7 @@ const SnbProfile = ({ ...rest }: Props) => {
           </P>
 
           <Span fontSize={12} color="primary" bold>
-            {userData?.viewed}
+            {data?.viewed}
           </Span>
         </ButtonContentFlexWrap>
       </SnbProfileButton>
@@ -118,6 +123,5 @@ const SnbProfile = ({ ...rest }: Props) => {
     </SnbProfileStyled>
   );
 };
-export default SnbProfile;
 
 SnbProfile.defaultProps = {};
