@@ -1,5 +1,6 @@
 import * as NextImage from "next/image";
 import { QueryClient, QueryClientProvider } from "react-query";
+import { ReactQueryDevtools } from "react-query/devtools";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -40,6 +41,7 @@ export const decorators = [
   (Story) => (
     <QueryClientProvider client={queryClient}>
       <Story />
+      <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   ),
 ];
