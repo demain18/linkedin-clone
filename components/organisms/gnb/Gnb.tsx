@@ -30,7 +30,7 @@ const Gnb = ({ ...rest }: Props) => {
       <GnbWrap>
         <FlexWrap>
           <LogoImageWrap>
-            <LogoImage src={logoImg} layout="fill" objectFit="cover" />
+            <LogoImage src={logoImg} layout="fill" objectFit="cover" priority />
           </LogoImageWrap>
 
           <InputWrap>
@@ -41,6 +41,7 @@ const Gnb = ({ ...rest }: Props) => {
         <GnbMenusWrap>
           {menuList.map((item) => (
             <GnbMenu
+              key={item.content}
               icon={item.icon}
               content={item.content}
               active={item.active}
