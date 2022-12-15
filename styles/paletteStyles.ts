@@ -6,5 +6,6 @@ export const palette = {
   grayPoint2: "rgba(0, 0, 0, 0.2)",
   grayPoint4: "rgba(0, 0, 0, 0.4)",
   grayPoint6: "rgba(0, 0, 0, 0.6)",
+  grayPoint8: "rgba(0, 0, 0, 0.8)",
   lightGray: "#ececec",
 };
