@@ -7,7 +7,7 @@ export const RoundButtonStyled = styled.button<Props>`
   position: relative;
   border: 1px solid ${palette.grayPoint6};
   background-color: rgba(0, 0, 0, 0);
-  padding: 6px 16px;
+  padding: 5px 16px;
   border-radius: 1.6rem;
   color: ${palette.grayPoint6};
   font-weight: 600;

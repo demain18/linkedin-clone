@@ -3,7 +3,7 @@ import P from "../typography/p/P";
 import { RoundButtonStyled } from "./RoundButtonStyles";
 
 export interface Props {
-  children?: JSX.Element | string | number;
+  children?: JSX.Element | JSX.Element[] | string | number;
 }
 
 const RoundButton = ({ children, ...rest }: Props) => {
