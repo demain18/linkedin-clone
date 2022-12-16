@@ -41,4 +41,5 @@ export const Button = styled.div`
   flex-direction: row;
   gap: 12px;
   align-items: center;
+  ${nonSelect}
 `;

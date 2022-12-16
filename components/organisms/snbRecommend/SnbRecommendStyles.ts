@@ -1,3 +1,4 @@
+import { nonSelect } from "@/styles/moduleStyles";
 import { palette } from "@/styles/paletteStyles";
 import styled, { css } from "styled-components";
 import { Props } from "./SnbRecommend";
@@ -28,6 +29,6 @@ export const RecommendsLink = styled.div`
 export const RecommendsLinkWrap = styled.div`
   position: relative;
   margin-bottom: -5px;
-
   display: inline-block;
+  ${nonSelect}
 `;
