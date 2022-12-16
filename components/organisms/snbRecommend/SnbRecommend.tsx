@@ -3,11 +3,13 @@ import SnbUser from "@/components/molecules/snb/snbFollowRecommend/SnbUser";
 import React, { useState } from "react";
 import {
   RecommendsLink,
+  RecommendsLinkWrap,
   SnbRecommendStyled,
   UserWrap,
 } from "./SnbRecommendStyles";
 import ArrowForward from "@material-ui/icons/ArrowForward";
 import { palette } from "@/styles/paletteStyles";
+import HoverButton from "@/components/atoms/hoverButton/HoverButton";
 
 export interface Props {}
 
@@ -27,12 +29,16 @@ const SnbRecommend = ({ ...rest }: Props) => {
           <SnbUser name={user.name} info={user.info} />
         ))}
       </UserWrap>
-      <RecommendsLink>
-        <P color="grayPoint6" fontSize={14} bold>
-          View all recommendations
-        </P>
-        <ArrowForward style={{ fontSize: 16, color: palette.grayPoint6 }} />
-      </RecommendsLink>
+      <RecommendsLinkWrap>
+        <HoverButton>
+          <RecommendsLink>
+            <P color="grayPoint6" fontSize={14} bold>
+              View all recommendations
+            </P>
+            <ArrowForward style={{ fontSize: 16, color: palette.grayPoint6 }} />
+          </RecommendsLink>
+        </HoverButton>
+      </RecommendsLinkWrap>
     </SnbRecommendStyled>
   );
 };

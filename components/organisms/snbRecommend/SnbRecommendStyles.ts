@@ -22,5 +22,12 @@ export const RecommendsLink = styled.div`
   padding: 2px 8px;
   display: flex;
   align-items: center;
-  cursor: pointer;
+`;
+
+export const RecommendsLinkWrap = styled.div`
+  position: relative;
+  margin-bottom: -5px;
+  overflow: hidden;
+  border-radius: 4px;
+  display: inline-block;
 `;
