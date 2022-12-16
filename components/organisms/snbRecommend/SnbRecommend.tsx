@@ -10,18 +10,24 @@ import {
 import ArrowForward from "@material-ui/icons/ArrowForward";
 import { palette } from "@/styles/paletteStyles";
 import HoverButton from "@/components/atoms/hoverButton/HoverButton";
+import { useQuery } from "react-query";
 
 export interface Props {}
 
+export interface UserListProps {
+  name: string;
+  info: string;
+}
+
+const getUserList = () => {
+  return fetch("/data/recommends").then((res) => res.json());
+};
+
 const SnbRecommend = ({ ...rest }: Props) => {
-  const [userList, setUserList] = useState([
-    { name: "Brian", info: "this is info" },
-    { name: "Dawnleaf", info: "this is dawnleaf" },
-    {
-      name: "Imzozo",
-      info: "this is imzozo. born form Hhan country at 1033 year. i was not educated...",
-    },
-  ]);
+  const { isLoading, error, data } = useQuery<UserListProps[] | undefined>(
+    "userList",
+    getUserList
+  );
 
   return (
     <SnbRecommendStyled {...rest}>
@@ -29,7 +35,7 @@ const SnbRecommend = ({ ...rest }: Props) => {
         Add to your feed
       </P>
       <UserWrap>
-        {userList.map((user) => (
+        {data?.map((user) => (
           <SnbUser name={user.name} info={user.info} />
         ))}
       </UserWrap>
