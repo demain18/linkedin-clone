@@ -21,7 +21,7 @@ export interface UserListProps {
 }
 
 const SnbRecommend = ({ ...rest }: Props) => {
-  const { isLoading, error, data } = useQuery<UserListProps[] | undefined>(
+  const { isLoading, error, data } = useQuery<UserListProps[]>(
     "userList",
     getUserList
   );
