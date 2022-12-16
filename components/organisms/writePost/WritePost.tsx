@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   AvatarImage,
   AvatarImageWrap,
@@ -16,9 +16,35 @@ import Youtube from "@material-ui/icons/YouTube";
 import Event from "@material-ui/icons/Event";
 import Description from "@material-ui/icons/Description";
 
+export interface ButtonProps {
+  icon: JSX.Element;
+  name: string;
+}
+
 export interface Props {}
 
 const WritePost = ({ ...rest }: Props) => {
+  const [buttonList, setButtonList] = useState<ButtonProps[]>([
+    {
+      icon: (
+        <PhotoSizeSelectActual style={{ fontSize: 20, color: "#378fe9" }} />
+      ),
+      name: "Photo",
+    },
+    {
+      icon: <Youtube style={{ fontSize: 22, color: "#5f9b41" }} />,
+      name: "Youtube",
+    },
+    {
+      icon: <Event style={{ fontSize: 20, color: "#c37d16" }} />,
+      name: "Event",
+    },
+    {
+      icon: <Description style={{ fontSize: 20, color: "#e16745" }} />,
+      name: "Write Article",
+    },
+  ]);
+
   return (
     <WritePostStyled {...rest}>
       <WriteWrap>
@@ -32,38 +58,16 @@ const WritePost = ({ ...rest }: Props) => {
         </RoundButton>
       </WriteWrap>
       <ButtonWrap>
-        <HoverButton>
-          <Button>
-            <PhotoSizeSelectActual style={{ fontSize: 20, color: "#378fe9" }} />
-            <P color="grayPoint6" fontSize={14} bold>
-              Photo
-            </P>
-          </Button>
-        </HoverButton>
-        <HoverButton>
-          <Button>
-            <Youtube style={{ fontSize: 22, color: "#5f9b41" }} />
-            <P color="grayPoint6" fontSize={14} bold>
-              Video
-            </P>
-          </Button>
-        </HoverButton>
-        <HoverButton>
-          <Button>
-            <Event style={{ fontSize: 20, color: "#c37d16" }} />
-            <P color="grayPoint6" fontSize={14} bold>
-              Event
-            </P>
-          </Button>
-        </HoverButton>
-        <HoverButton>
-          <Button>
-            <Description style={{ fontSize: 20, color: "#e16745" }} />
-            <P color="grayPoint6" fontSize={14} bold>
-              Write Article
-            </P>
-          </Button>
-        </HoverButton>
+        {buttonList.map((button) => (
+          <HoverButton>
+            <Button>
+              {button.icon}
+              <P color="grayPoint6" fontSize={14} bold>
+                {button.name}
+              </P>
+            </Button>
+          </HoverButton>
+        ))}
       </ButtonWrap>
     </WritePostStyled>
   );
