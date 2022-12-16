@@ -18,6 +18,7 @@ import {
 import premiumBadgeImg from "@/public/images/premium-badge.png";
 import { Bookmark } from "@material-ui/icons";
 import { useQuery } from "react-query";
+import { getUserInfo } from "lib/apiRequest";
 
 export interface Props {}
 
@@ -27,10 +28,6 @@ export interface userInfoProps {
   connections: number;
   viewed: number;
 }
-
-const getUserInfo = () => {
-  return fetch("/data/profile").then((res) => res.json());
-};
 
 const SnbProfile = ({ ...rest }: Props) => {
   const { isLoading, error, data } = useQuery<userInfoProps>(

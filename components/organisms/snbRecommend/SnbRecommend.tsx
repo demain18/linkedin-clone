@@ -11,6 +11,7 @@ import ArrowForward from "@material-ui/icons/ArrowForward";
 import { palette } from "@/styles/paletteStyles";
 import HoverButton from "@/components/atoms/hoverButton/HoverButton";
 import { useQuery } from "react-query";
+import { getUserList } from "lib/apiRequest";
 
 export interface Props {}
 
@@ -18,10 +19,6 @@ export interface UserListProps {
   name: string;
   info: string;
 }
-
-const getUserList = () => {
-  return fetch("/data/recommends").then((res) => res.json());
-};
 
 const SnbRecommend = ({ ...rest }: Props) => {
   const { isLoading, error, data } = useQuery<UserListProps[] | undefined>(
