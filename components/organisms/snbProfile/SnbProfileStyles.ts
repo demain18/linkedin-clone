@@ -9,19 +9,19 @@ export const SnbProfileStyled = styled.div<Props>`
   border-radius: 0.8rem;
   overflow: hidden;
   position: relative;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 1px solid ${palette.grayPoint1};
 `;
 
 export const Divider = styled.div`
   width: 100%;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid ${palette.grayPoint1};
 `;
 
 export const DividerBottomGap = styled.div`
   width: 100%;
   height: 12px;
   background-color: #fff;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-top: 1px solid ${palette.grayPoint1};
   box-sizing: border-box;
 `;
 
@@ -29,7 +29,7 @@ export const DividerTopGap = styled.div`
   width: 100%;
   height: 12px;
   background-color: #fff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid ${palette.grayPoint1};
 `;
 
 export const ButtonContentFlexWrap = styled.div`
