@@ -17,6 +17,10 @@ const SnbRecommend = ({ ...rest }: Props) => {
   const [userList, setUserList] = useState([
     { name: "Brian", info: "this is info" },
     { name: "Dawnleaf", info: "this is dawnleaf" },
+    {
+      name: "Imzozo",
+      info: "this is imzozo. born form Hhan country at 1033 year. i was not educated...",
+    },
   ]);
 
   return (

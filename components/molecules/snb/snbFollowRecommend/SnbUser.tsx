@@ -6,6 +6,7 @@ import {
   AvatarImageWrap,
   ButtonContentWrap,
   ContentWrap,
+  Gap,
   SnbUserStyled,
 } from "./SnbUserStyles";
 import Add from "@material-ui/icons/Add";
@@ -30,6 +31,7 @@ const SnbUser = ({ name, info, ...rest }: Props) => {
           <P color="grayPoint6" fontSize={12}>
             {info}
           </P>
+          <Gap />
           <RoundButton>
             <ButtonContentWrap>
               <Add style={{ fontSize: 20 }} />

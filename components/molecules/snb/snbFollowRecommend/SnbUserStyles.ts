@@ -16,13 +16,18 @@ export const ContentWrap = styled.div`
 
 export const AvatarImageWrap = styled.div`
   position: relative;
-  width: 48px;
+  min-width: 48px;
   height: 48px;
 `;
 
 export const AvatarImage = styled(Image)`
   ${nonSelect}
   border-radius: 100%;
+`;
+
+export const Gap = styled.div`
+  width: 100%;
+  height: 3px;
 `;
 
 export const ButtonContentWrap = styled.div`
