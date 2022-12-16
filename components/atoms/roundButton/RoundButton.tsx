@@ -4,10 +4,16 @@ import { RoundButtonStyled } from "./RoundButtonStyles";
 
 export interface Props {
   children?: JSX.Element | JSX.Element[] | string | number;
+  full?: boolean;
+  alignLeft?: boolean;
 }
 
-const RoundButton = ({ children, ...rest }: Props) => {
-  return <RoundButtonStyled {...rest}>{children}</RoundButtonStyled>;
+const RoundButton = ({ children, full, alignLeft, ...rest }: Props) => {
+  return (
+    <RoundButtonStyled full={full} alignLeft={alignLeft} {...rest}>
+      {children}
+    </RoundButtonStyled>
+  );
 };
 export default RoundButton;
 

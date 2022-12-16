@@ -18,4 +18,16 @@ export const RoundButtonStyled = styled.button<Props>`
     background-color: rgba(0, 0, 0, 0.1);
     box-shadow: inset 0 0 0 1px ${palette.grayPoint6};
   }
+
+  ${(props) =>
+    props.full &&
+    css`
+      width: 100%;
+    `}
+
+  ${(props) =>
+    props.alignLeft &&
+    css`
+      text-align: left;
+    `}
 `;

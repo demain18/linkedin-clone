@@ -5,6 +5,7 @@ import { Props } from "./HoverButton";
 
 export const HoverButtonStyled = styled.div<Props>`
   cursor: pointer;
+  border-radius: 4px;
 
   :hover {
     ${transitionHover}

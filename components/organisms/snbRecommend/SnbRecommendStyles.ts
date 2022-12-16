@@ -7,6 +7,7 @@ export const SnbRecommendStyled = styled.div<Props>`
   padding: 12px;
   border-radius: 0.8rem;
   background-color: #fff;
+  box-sizing: border-box;
   border: 1px solid ${palette.grayPoint1};
 `;
 
@@ -27,7 +28,6 @@ export const RecommendsLink = styled.div`
 export const RecommendsLinkWrap = styled.div`
   position: relative;
   margin-bottom: -5px;
-  overflow: hidden;
-  border-radius: 4px;
+
   display: inline-block;
 `;
