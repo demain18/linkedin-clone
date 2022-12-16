@@ -1,10 +1,31 @@
+import { nonSelect } from "@/styles/moduleStyles";
 import { palette } from "@/styles/paletteStyles";
 import styled, { css } from "styled-components";
 import { Props } from "./SnbUser";
+import Image from "next/image";
 
-export const SnbUserStyled = styled.div<Props>``;
+export const SnbUserStyled = styled.div`
+  width: 100%;
+  background-color: #fff;
+`;
 
 export const ContentWrap = styled.div`
+  display: flex;
+  gap: 12px;
+`;
+
+export const AvatarImageWrap = styled.div`
+  position: relative;
+  width: 48px;
+  height: 48px;
+`;
+
+export const AvatarImage = styled(Image)`
+  ${nonSelect}
+  border-radius: 100%;
+`;
+
+export const ButtonContentWrap = styled.div`
   display: flex;
   align-items: center;
   gap: 5px;
