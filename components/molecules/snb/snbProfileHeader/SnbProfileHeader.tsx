@@ -12,6 +12,7 @@ import bannerImg from "@/public/images/banner.png";
 import avatarImg from "@/public/images/avatar.png";
 import { StaticImageData } from "next/image";
 import P from "@/components/atoms/typography/p/P";
+import Avatar from "@/components/atoms/avatar/Avatar";
 
 export interface Props {
   bannerImg: StaticImageData;
@@ -34,7 +35,7 @@ const SnbProfileHeader = ({
       </BannerImageWrap>
 
       <AvatarImageWrap>
-        <AvatarImage src={avatarImg} layout="fill" objectFit="cover" />
+        <Avatar image={avatarImg} size={72} />
       </AvatarImageWrap>
 
       <PLinkWrak>

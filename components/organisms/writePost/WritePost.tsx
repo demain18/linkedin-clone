@@ -15,6 +15,7 @@ import PhotoSizeSelectActual from "@material-ui/icons/PhotoSizeSelectActual";
 import Youtube from "@material-ui/icons/YouTube";
 import Event from "@material-ui/icons/Event";
 import Description from "@material-ui/icons/Description";
+import Avatar from "@/components/atoms/avatar/Avatar";
 
 export interface ButtonProps {
   icon: JSX.Element;
@@ -49,7 +50,7 @@ const WritePost = ({ ...rest }: Props) => {
     <WritePostStyled {...rest}>
       <WriteWrap>
         <AvatarImageWrap>
-          <AvatarImage src={avatarImg} layout="fill" objectFit="cover" />
+          <Avatar image={avatarImg} size={48} />
         </AvatarImageWrap>
         <RoundButton full alignLeft>
           <P color="grayPoint6" fontSize={14} bold>

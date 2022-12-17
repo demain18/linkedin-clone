@@ -13,7 +13,7 @@ const Template: ComponentStory<typeof Avatar> = (args) => <Avatar {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  size: "small",
+  size: defaultProps.size,
 };
 
 export const StaticImage = Template.bind({});
@@ -24,6 +24,6 @@ StaticImage.args = {
 
 export const UrlImage = Template.bind({});
 UrlImage.args = {
-  size: "large",
+  size: 50,
   image: "https://i1.sndcdn.com/avatars-EavWtcIVfiIYyIML-q1Eppg-t500x500.jpg",
 };

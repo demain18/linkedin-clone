@@ -11,6 +11,7 @@ import {
 } from "./SnbUserStyles";
 import Add from "@material-ui/icons/Add";
 import avatarImg from "@/public/images/avatar.png";
+import Avatar from "@/components/atoms/avatar/Avatar";
 
 export interface Props {
   name?: string;
@@ -22,7 +23,7 @@ const SnbUser = ({ name, info, ...rest }: Props) => {
     <SnbUserStyled {...rest}>
       <ContentWrap>
         <AvatarImageWrap>
-          <AvatarImage src={avatarImg} layout="fill" objectFit="cover" />
+          <Avatar image={avatarImg} size={48} />
         </AvatarImageWrap>
         <div>
           <P color="grayPoint9" fontSize={14} bold>

@@ -3,21 +3,21 @@ import { StaticImageData } from "next/image";
 import { AvatarStyled, ImageStyled } from "./Avatar.style";
 
 export interface Props {
-  size?: string;
-  image?: string | StaticImageData;
+  size?: number;
+  image?: StaticImageData | string;
 }
 
 const Avatar = ({ size, image, ...rest }: Props) => {
   return (
     <AvatarStyled size={size} {...rest}>
-      {image && <ImageStyled src={image} width={100} height={100} />}
+      {image && <ImageStyled src={image} layout="fill" objectFit="cover" />}
     </AvatarStyled>
   );
 };
 export default Avatar;
 
 export const defaultProps: Props = {
-  size: "medium",
+  size: 40,
 };
 
 Avatar.defaultProps = {
