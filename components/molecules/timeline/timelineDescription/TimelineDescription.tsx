@@ -1,6 +1,10 @@
 import P from "@/components/atoms/typography/p/P";
 import React, { Children, useEffect, useState } from "react";
-import { TimelineDescriptionStyled } from "./TimelineDescriptionStyles";
+import {
+  DescWrap,
+  SeeMore,
+  TimelineDescriptionStyled,
+} from "./TimelineDescriptionStyles";
 import * as ReactDOMServer from "react-dom/server";
 
 export interface Props {
@@ -14,6 +18,7 @@ const TimelineDescription = ({
   ...rest
 }: Props) => {
   const [descFiltered, setDescFiltered] = useState<string>();
+  const [seeMoreLength, setSeeMoreLength] = useState<number | undefined>(0);
   const [seeMore, setSeeMore] = useState<boolean>(false);
 
   useEffect(() => {
@@ -26,10 +31,12 @@ const TimelineDescription = ({
   useEffect(() => {
     if (seeMore) {
       setDescFiltered(descFiltered?.slice(0, descIncisionCharacters));
+      setSeeMoreLength(
+        descFiltered?.slice(0, descIncisionCharacters).split("\n").length
+      );
     } else {
       setDescFiltered(desc);
     }
-    console.log(seeMore, descFiltered);
   }, [seeMore]);
 
   const seeMoreClick = () => {
@@ -38,15 +45,16 @@ const TimelineDescription = ({
 
   return (
     <TimelineDescriptionStyled {...rest}>
-      {descFiltered?.split("\n").map((i, x) => {
-        if (seeMore) {
-          return <P key={i + x}>{i + "..."}</P>;
-        } else {
-          return <P key={i + x}>{i}</P>;
-        }
-      })}
-      {/* {descFiltered} */}
-      <button onClick={seeMoreClick}>see more</button>
+      <DescWrap>
+        {descFiltered?.split("\n").map((i, x) => {
+          if (seeMore && x + 1 === seeMoreLength) {
+            return <P key={i + x}>{i + "..."}</P>;
+          } else {
+            return <P key={i + x}>{i}</P>;
+          }
+        })}
+      </DescWrap>
+      <SeeMore onClick={seeMoreClick}>see more</SeeMore>
     </TimelineDescriptionStyled>
   );
 };
