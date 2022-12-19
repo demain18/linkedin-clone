@@ -6,9 +6,16 @@ import { Props } from "./HoverButton";
 export const HoverButtonStyled = styled.div<Props>`
   cursor: pointer;
   border-radius: 4px;
+  box-sizing: border-box;
 
   :hover {
     ${transitionHover}
     background-color: ${palette.grayPoint1};
   }
+
+  ${(props) =>
+    props.full &&
+    css`
+      width: 100%;
+    `}
 `;

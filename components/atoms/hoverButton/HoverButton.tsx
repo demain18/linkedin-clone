@@ -4,6 +4,7 @@ import { HoverButtonStyled } from "./HoverButtonStyles";
 
 export interface Props {
   children?: JSX.Element | JSX.Element[];
+  full?: boolean;
 }
 
 const HoverButton = ({ children, ...rest }: Props) => {
