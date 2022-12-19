@@ -2,7 +2,9 @@ import { palette } from "@/styles/paletteStyles";
 import styled, { css } from "styled-components";
 import { Props } from "./TimelineDescription";
 
-export const TimelineDescriptionStyled = styled.div``;
+export const TimelineDescriptionStyled = styled.div`
+  position: relative;
+`;
 
 export const DescWrap = styled.div`
   display: flex;
@@ -11,6 +13,9 @@ export const DescWrap = styled.div`
 `;
 
 export const SeeMore = styled.div`
+  position: absolute;
+  right: 0px;
+  bottom: -17px;
   font-size: 14px;
   color: ${palette.grayPoint6};
   cursor: pointer;
