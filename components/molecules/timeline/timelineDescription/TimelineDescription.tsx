@@ -2,6 +2,7 @@ import P from "@/components/atoms/typography/p/P";
 import React, { Children, useEffect, useState } from "react";
 import {
   DescWrap,
+  Padding,
   SeeMore,
   TimelineDescriptionStyled,
 } from "./TimelineDescriptionStyles";
@@ -56,7 +57,12 @@ const TimelineDescription = ({
           }
         })}
       </DescWrap>
-      {seeMore && <SeeMore onClick={seeMoreClick}>see more</SeeMore>}
+      {seeMore && (
+        <>
+          <Padding />
+          <SeeMore onClick={seeMoreClick}>see more</SeeMore>
+        </>
+      )}
     </TimelineDescriptionStyled>
   );
 };

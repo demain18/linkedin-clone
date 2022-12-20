@@ -13,5 +13,8 @@ const Template: ComponentStory<typeof TimelineProfile> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  // avatarImg: defaultProps.avatarImg,
+  avatarImg: defaultProps.avatarImg,
+  userName: defaultProps.userName,
+  followers: defaultProps.followers,
+  datetime: defaultProps.datetime,
 };

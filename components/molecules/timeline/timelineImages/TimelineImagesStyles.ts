@@ -40,12 +40,14 @@ export const ImageWrap = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
+  cursor: pointer;
 `;
 
 export const ImageOverPentaWrap = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
+  cursor: pointer;
 
   img {
     filter: brightness(50%);

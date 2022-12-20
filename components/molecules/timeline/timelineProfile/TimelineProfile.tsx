@@ -31,14 +31,14 @@ const TimelineProfile = ({
         <Avatar image={avatarImg} size={48} />
         <div>
           <P color="grayPoint9" fontSize={14} bold>
-            Toss Payment
+            {userName}
           </P>
           <P color="grayPoint6" fontSize={12}>
-            6,350 followers
+            {followers + " followers"}
           </P>
           <BadgeWrap>
             <Span color="grayPoint6" fontSize={12}>
-              20h
+              {datetime}
             </Span>
             <Dot />
             <Span color="grayPoint6" fontSize={12}>
@@ -52,5 +52,10 @@ const TimelineProfile = ({
 };
 export default TimelineProfile;
 
-export const defaultProps: Props = { avatarImg: avatarImg };
+export const defaultProps: Props = {
+  avatarImg: avatarImg,
+  userName: "Toss",
+  followers: 3500,
+  datetime: "8h",
+};
 TimelineProfile.defaultProps = {};

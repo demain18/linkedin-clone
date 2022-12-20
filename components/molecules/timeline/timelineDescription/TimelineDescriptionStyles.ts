@@ -12,10 +12,15 @@ export const DescWrap = styled.div`
   gap: 15px;
 `;
 
+export const Padding = styled.div`
+  width: 100%;
+  height: 17px;
+`;
+
 export const SeeMore = styled.div`
   position: absolute;
   right: 0px;
-  bottom: -17px;
+  bottom: 0px;
   font-size: 14px;
   color: ${palette.grayPoint6};
   cursor: pointer;
