@@ -13,7 +13,7 @@ export const TimelineStyled = styled.div<Props>`
   /* gap: 5px; */
 `;
 
-export const TimelinePaddingWrap = styled.div`
+export const PaddingWrap = styled.div`
   width: 100%;
   height: 100%;
   padding: 12px 16px 10px 16px;
@@ -23,6 +23,6 @@ export const TimelinePaddingWrap = styled.div`
   gap: 10px;
 `;
 
-export const TimelineEventsWrap = styled.div`
+export const EventsWrap = styled.div`
   padding: 4px 12px;
 `;

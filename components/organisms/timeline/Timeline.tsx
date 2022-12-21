@@ -4,11 +4,7 @@ import TimelineImages from "@/components/molecules/timeline/timelineImages/Timel
 import TimelineProfile from "@/components/molecules/timeline/timelineProfile/TimelineProfile";
 import { StaticImageData } from "next/image";
 import React, { useState } from "react";
-import {
-  TimelineEventsWrap,
-  TimelinePaddingWrap,
-  TimelineStyled,
-} from "./TimelineStyles";
+import { EventsWrap, PaddingWrap, TimelineStyled } from "./TimelineStyles";
 import img1 from "@/public/images/dummys/toss/1.png";
 import img2 from "@/public/images/dummys/toss/2.png";
 import img3 from "@/public/images/dummys/toss/3.png";
@@ -29,14 +25,14 @@ const Timeline = ({ ...rest }: Props) => {
 
   return (
     <TimelineStyled {...rest}>
-      <TimelinePaddingWrap>
+      <PaddingWrap>
         <TimelineProfile />
         <TimelineDescription />
-      </TimelinePaddingWrap>
+      </PaddingWrap>
       <TimelineImages images={imageList} overPenta />
-      <TimelineEventsWrap>
+      <EventsWrap>
         <TimelineEvents />
-      </TimelineEventsWrap>
+      </EventsWrap>
     </TimelineStyled>
   );
 };
