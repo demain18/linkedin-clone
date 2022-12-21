@@ -13,5 +13,5 @@ const Template: ComponentStory<typeof TimelineDescription> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  description: defaultProps.description,
+  desc: defaultProps.desc,
 };
