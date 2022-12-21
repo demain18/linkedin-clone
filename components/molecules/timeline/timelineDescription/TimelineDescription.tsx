@@ -9,7 +9,7 @@ import {
 import * as ReactDOMServer from "react-dom/server";
 
 export interface Props {
-  desc: string;
+  desc?: string;
   descMaxCharacters: number;
 }
 
@@ -19,11 +19,13 @@ const TimelineDescription = ({ desc, descMaxCharacters, ...rest }: Props) => {
   const [descToggle, setDescToggle] = useState<boolean>(false);
 
   useEffect(() => {
-    if (desc.length > descMaxCharacters) {
-      setDescToggle(true);
+    if (desc) {
+      if (desc!.length > descMaxCharacters) {
+        setDescToggle(true);
+      }
     }
     setDescData(desc);
-  }, []);
+  }, [desc]);
 
   useEffect(() => {
     if (descToggle) {

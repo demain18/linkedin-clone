@@ -46,8 +46,8 @@ const TimelineEvents = ({ ...rest }: Props) => {
   return (
     <TimelineEventsStyled {...rest}>
       <ButtonWrap>
-        {buttonList.map((i) => (
-          <HoverButton full>
+        {buttonList.map((i, x) => (
+          <HoverButton key={i.name + x} full>
             <ButtonContent>
               {i.icon}
               <P color="grayPoint6" fontSize={14} bold>

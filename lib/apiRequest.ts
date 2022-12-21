@@ -5,3 +5,7 @@ export const getUserInfo = () => {
 export const getUserList = () => {
   return fetch("/data/recommends").then((res) => res.json());
 };
+
+export const getTimelinePost = () => {
+  return fetch("/data/timeline/1").then((res) => res.json());
+};
