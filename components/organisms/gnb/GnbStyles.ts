@@ -1,6 +1,8 @@
 import styled, { css } from "styled-components";
 import { Props } from "./Gnb";
 import Image from "next/image";
+import { palette } from "@/styles/paletteStyles";
+import { layoutWidth } from "@/styles/moduleStyles";
 
 export const GnbStyled = styled.div`
   width: 100%;
@@ -10,7 +12,7 @@ export const GnbStyled = styled.div`
 
 export const GnbWrap = styled.div`
   position: relative;
-  max-width: 1128px;
+  max-width: ${layoutWidth.main};
   display: flex;
   justify-content: space-between;
   margin: 0 auto;

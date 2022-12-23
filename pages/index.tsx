@@ -1,12 +1,17 @@
 import type { NextPage } from "next";
 import SnbProfile from "@/components/organisms/snbProfile/SnbProfile";
 import Gnb from "@/components/organisms/gnb/Gnb";
+import { Frame, FrameWrap } from "./indexStyles";
+
+export interface Props {}
 
 const App: NextPage = () => {
   return (
     <>
       <Gnb />
-      <SnbProfile />
+      <Frame>
+        <FrameWrap>asdf</FrameWrap>
+      </Frame>
     </>
   );
 };

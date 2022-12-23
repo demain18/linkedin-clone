@@ -1,3 +1,4 @@
+import { linkHover } from "@/styles/moduleStyles";
 import { palette } from "@/styles/paletteStyles";
 import styled, { css } from "styled-components";
 import { Props } from "./TimelineDescription";
@@ -26,7 +27,6 @@ export const SeeMore = styled.div`
   cursor: pointer;
 
   :hover {
-    color: ${palette.primary};
-    text-decoration: underline;
+    ${linkHover}
   }
 `;

@@ -41,6 +41,8 @@ const Timeline = ({ ...rest }: Props) => {
     img4,
     img5,
     img1,
+    img1,
+    img1,
   ]);
 
   return (

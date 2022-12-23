@@ -46,9 +46,13 @@ const TimelineDescription = ({ desc, descMaxCharacters, ...rest }: Props) => {
       <DescWrap>
         {descData?.split("\n").map((i, x) => {
           return descToggle && x + 1 === descTempMax ? (
-            <P key={i + x}>{i + "..."}</P>
+            <P fontSize={14} key={i + x}>
+              {i + "..."}
+            </P>
           ) : (
-            <P key={i + x}>{i}</P>
+            <P fontSize={14} key={i + x}>
+              {i}
+            </P>
           );
         })}
       </DescWrap>

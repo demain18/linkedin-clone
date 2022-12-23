@@ -1,4 +1,6 @@
+import { linkHover } from "@/styles/moduleStyles";
 import { palette } from "@/styles/paletteStyles";
+import { transitionHover } from "@/styles/transitionStyles";
 import styled, { css } from "styled-components";
 import { Props } from "./TimelineProfile";
 
@@ -17,6 +19,15 @@ export const BadgeWrap = styled.div`
   display: flex;
   align-content: center;
 `;
+
+export const TitleHover = styled.div`
+  p:hover {
+    cursor: pointer;
+    ${transitionHover}
+    ${linkHover}
+  }
+`;
+
 export const Dot = styled.div`
   position: relative;
   width: 2px;

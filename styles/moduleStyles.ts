@@ -1,4 +1,5 @@
 import { css } from "styled-components";
+import { palette } from "./paletteStyles";
 
 export const nonSelect = css`
   user-drag: none;
@@ -11,4 +12,10 @@ export const nonSelect = css`
 
 export const layoutWidth = {
   snbProflie: 225,
+  main: 1128,
 };
+
+export const linkHover = css`
+  color: ${palette.primary};
+  text-decoration: underline;
+`;

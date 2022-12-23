@@ -4,6 +4,7 @@ import {
   ContentWrap,
   Dot,
   TimelineProfileStyled,
+  TitleHover,
 } from "./TimelineProfileStyles";
 import avatarImg from "@/public/images/avatar.png";
 import Avatar from "@/components/atoms/avatar/Avatar";
@@ -30,9 +31,11 @@ const TimelineProfile = ({
       <ContentWrap>
         <Avatar image={avatarImg} size={48} />
         <div>
-          <P color="grayPoint9" fontSize={14} bold>
-            {userName}
-          </P>
+          <TitleHover>
+            <P color="grayPoint9" fontSize={14} bold>
+              {userName}
+            </P>
+          </TitleHover>
           <P color="grayPoint6" fontSize={12}>
             {followers + " followers"}
           </P>
