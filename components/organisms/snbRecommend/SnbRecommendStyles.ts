@@ -4,6 +4,7 @@ import styled, { css } from "styled-components";
 import { Props } from "./SnbRecommend";
 
 export const SnbRecommendStyled = styled.div<Props>`
+  position: relative;
   max-width: 312px;
   padding: 12px;
   border-radius: 0.8rem;

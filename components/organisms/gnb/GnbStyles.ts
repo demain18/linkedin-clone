@@ -12,7 +12,7 @@ export const GnbStyled = styled.div`
 
 export const GnbWrap = styled.div`
   position: relative;
-  max-width: ${layoutWidth.main};
+  max-width: ${layoutWidth.main}px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;

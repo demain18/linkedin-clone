@@ -5,11 +5,11 @@ import TimelineProfile from "@/components/molecules/timeline/timelineProfile/Tim
 import { StaticImageData } from "next/image";
 import React, { useState } from "react";
 import { EventsWrap, PaddingWrap, TimelineStyled } from "./TimelineStyles";
-import img1 from "@/public/images/dummys/toss/1.png";
-import img2 from "@/public/images/dummys/toss/2.png";
-import img3 from "@/public/images/dummys/toss/3.png";
-import img4 from "@/public/images/dummys/toss/4.png";
-import img5 from "@/public/images/dummys/toss/5.png";
+import img1 from "@/public/images/dummys/toss/one.png";
+import img2 from "@/public/images/dummys/toss/two.png";
+import img3 from "@/public/images/dummys/toss/three.png";
+import img4 from "@/public/images/dummys/toss/four.png";
+import img5 from "@/public/images/dummys/toss/five.png";
 import { useQuery } from "react-query";
 import { getTimelinePost } from "lib/apiRequest";
 

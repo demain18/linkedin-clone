@@ -5,7 +5,8 @@ import Image from "next/image";
 import { nonSelect } from "@/styles/moduleStyles";
 
 export const WritePostStyled = styled.div<Props>`
-  max-width: 540px;
+  /* max-width: 540px; */
+  width: 100%;
   padding: 12px 16px 4px 16px;
   border-radius: 0.8rem;
   background-color: #fff;

@@ -10,6 +10,7 @@ export const SnbProfileStyled = styled.div<Props>`
   overflow: hidden;
   position: relative;
   border: 1px solid ${palette.grayPoint1};
+  flex-basis: ${layoutWidth.snbProflie}px;
 `;
 
 export const Divider = styled.div`

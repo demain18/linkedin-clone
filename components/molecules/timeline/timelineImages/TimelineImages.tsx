@@ -11,11 +11,11 @@ import {
   ImageOverPentaWrap,
   ImageOverPentaCountWrap,
 } from "./TimelineImagesStyles";
-import img1 from "@/public/images/dummys/1.png";
-import img2 from "@/public/images/dummys/2.png";
-import img3 from "@/public/images/dummys/3.png";
-import img4 from "@/public/images/dummys/4.png";
-import img5 from "@/public/images/dummys/5.png";
+import img1 from "@/public/images/dummys/toss/one.png";
+import img2 from "@/public/images/dummys/toss/two.png";
+import img3 from "@/public/images/dummys/toss/three.png";
+import img4 from "@/public/images/dummys/toss/four.png";
+import img5 from "@/public/images/dummys/toss/five.png";
 import Span from "@/components/atoms/typography/span/Span";
 
 export interface Props {
