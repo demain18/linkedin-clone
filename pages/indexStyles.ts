@@ -12,4 +12,8 @@ export const FrameWrap = styled.div`
   max-width: ${layoutWidth.main}px;
   margin: 0 auto;
   border: 1px solid gray;
+  display: flex;
+  flex-direction: row;
 `;
+
+export const TimelineWrap = styled.div``;

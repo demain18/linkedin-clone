@@ -3,7 +3,8 @@ import styled, { css } from "styled-components";
 import { Props } from "./Timeline";
 
 export const TimelineStyled = styled.div<Props>`
-  max-width: 550px;
+  /* max-width: 550px; */
+  width: 100%;
   height: 100%;
   background-color: ${palette.white};
   border-radius: 0.8rem;
