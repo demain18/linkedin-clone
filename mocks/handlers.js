@@ -1,15 +1,19 @@
 import { rest } from "msw";
 import tossLogoImg from "@/public/images/dummys/toss/logo.png";
+import bannerImg from "@/public/images/dummys/banner.png";
+import avatarImg from "@/public/images/dummys/avatar.png";
 
 export const handlers = [
   rest.get("/data/profile", (req, res, ctx) => {
     return res(
       ctx.status(200),
       ctx.json({
+        bannerImg: bannerImg,
+        avatarImg: avatarImg,
         username: "Brian",
-        bio: "My name is brian",
-        connections: 32,
-        viewed: 28,
+        bio: "React, Typescript, TDD",
+        connections: 1531,
+        viewed: 29933,
       })
     );
   }),

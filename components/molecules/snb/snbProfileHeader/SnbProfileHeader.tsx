@@ -15,8 +15,8 @@ import P from "@/components/atoms/typography/p/P";
 import Avatar from "@/components/atoms/avatar/Avatar";
 
 export interface Props {
-  bannerImg: StaticImageData;
-  avatarImg: StaticImageData;
+  bannerImg?: StaticImageData;
+  avatarImg?: StaticImageData;
   title: string;
   desc: string;
 }
@@ -31,7 +31,9 @@ const SnbProfileHeader = ({
   return (
     <SnbProfileHeaderStyled {...rest}>
       <BannerImageWrap>
-        <BannerImage src={bannerImg} layout="fill" objectFit="cover" />
+        {bannerImg && (
+          <BannerImage src={bannerImg} layout="fill" objectFit="cover" />
+        )}
       </BannerImageWrap>
 
       <AvatarImageWrap>
@@ -58,8 +60,8 @@ export const defaultProps: Props = {
   desc: "Test Description",
 };
 SnbProfileHeader.defaultProps = {
-  bannerImg: defaultProps.bannerImg,
-  avatarImg: defaultProps.avatarImg,
+  // bannerImg: defaultProps.bannerImg,
+  // avatarImg: defaultProps.avatarImg,
   title: defaultProps.title,
   desc: defaultProps.desc,
 };

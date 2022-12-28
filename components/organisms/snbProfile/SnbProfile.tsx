@@ -19,6 +19,7 @@ import premiumBadgeImg from "@/public/images/premium-badge.png";
 import { Bookmark } from "@material-ui/icons";
 import { useQuery } from "react-query";
 import { getUserInfo } from "lib/apiRequest";
+import { StaticImageData } from "next/image";
 
 export interface Props {}
 
@@ -27,6 +28,8 @@ export interface userInfoProps {
   bio: string;
   connections: number;
   viewed: number;
+  bannerImg: StaticImageData;
+  avatarImg: StaticImageData;
 }
 
 const SnbProfile = ({ ...rest }: Props) => {
@@ -35,13 +38,14 @@ const SnbProfile = ({ ...rest }: Props) => {
     getUserInfo
   );
 
-  useEffect(() => {
-    console.log(data);
-  }, [data]);
-
   return (
     <SnbProfileStyled {...rest}>
-      <SnbProfileHeader title={data?.username} desc={data?.bio} />
+      <SnbProfileHeader
+        title={data?.username}
+        desc={data?.bio}
+        bannerImg={data?.bannerImg}
+        avatarImg={data?.avatarImg}
+      />
 
       <DividerBottomGap />
 
@@ -56,7 +60,7 @@ const SnbProfile = ({ ...rest }: Props) => {
             </P>
           </div>
           <Span fontSize={12} color="primary" bold>
-            {data?.connections}
+            {data?.connections.toLocaleString()}
           </Span>
         </ButtonContentFlexWrap>
       </SnbProfileButton>
@@ -68,7 +72,7 @@ const SnbProfile = ({ ...rest }: Props) => {
           </P>
 
           <Span fontSize={12} color="primary" bold>
-            {data?.viewed}
+            {data?.viewed.toLocaleString()}
           </Span>
         </ButtonContentFlexWrap>
       </SnbProfileButton>

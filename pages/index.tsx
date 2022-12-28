@@ -23,10 +23,12 @@ const App: NextPage = () => {
           <SnbProfileWrap>
             <SnbProfile />
           </SnbProfileWrap>
+
           <TimelineWrap>
             <WritePost />
             <Timeline />
           </TimelineWrap>
+
           <SnbRecommendWrap>
             <SnbRecommend />
           </SnbRecommendWrap>
