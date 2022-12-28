@@ -12,10 +12,12 @@ import { palette } from "@/styles/paletteStyles";
 import HoverButton from "@/components/atoms/hoverButton/HoverButton";
 import { useQuery } from "react-query";
 import { getUserList } from "lib/apiRequest";
+import { StaticImageData } from "next/image";
 
 export interface Props {}
 
 export interface UserListProps {
+  avatarImg: StaticImageData;
   name: string;
   info: string;
 }
@@ -33,7 +35,11 @@ const SnbRecommend = ({ ...rest }: Props) => {
       </P>
       <UserWrap>
         {data?.map((user) => (
-          <SnbUser name={user.name} info={user.info} />
+          <SnbUser
+            avatarImg={user.avatarImg}
+            name={user.name}
+            info={user.info}
+          />
         ))}
       </UserWrap>
       <RecommendsLinkWrap>

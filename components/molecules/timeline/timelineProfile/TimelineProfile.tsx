@@ -2,7 +2,6 @@ import React from "react";
 import {
   BadgeWrap,
   ContentWrap,
-  Dot,
   TimelineProfileStyled,
   TitleHover,
 } from "./TimelineProfileStyles";
@@ -41,11 +40,7 @@ const TimelineProfile = ({
           </P>
           <BadgeWrap>
             <Span color="grayPoint6" fontSize={12}>
-              {datetime}
-            </Span>
-            <Dot />
-            <Span color="grayPoint6" fontSize={12}>
-              Edited
+              {datetime + " · Edited"}
             </Span>
           </BadgeWrap>
         </div>

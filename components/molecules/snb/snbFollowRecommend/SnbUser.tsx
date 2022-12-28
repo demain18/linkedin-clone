@@ -12,13 +12,15 @@ import {
 import Add from "@material-ui/icons/Add";
 import avatarImg from "@/public/images/avatar.png";
 import Avatar from "@/components/atoms/avatar/Avatar";
+import { StaticImageData } from "next/image";
 
 export interface Props {
+  avatarImg?: StaticImageData;
   name?: string;
   info?: string;
 }
 
-const SnbUser = ({ name, info, ...rest }: Props) => {
+const SnbUser = ({ avatarImg, name, info, ...rest }: Props) => {
   return (
     <SnbUserStyled {...rest}>
       <ContentWrap>
@@ -47,6 +49,7 @@ const SnbUser = ({ name, info, ...rest }: Props) => {
 export default SnbUser;
 
 export const defaultProps: Props = {
+  avatarImg: avatarImg,
   name: "Test User",
   info: "Test Info",
 };

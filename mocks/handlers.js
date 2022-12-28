@@ -2,6 +2,9 @@ import { rest } from "msw";
 import tossLogoImg from "@/public/images/dummys/toss/logo.png";
 import bannerImg from "@/public/images/dummys/banner.png";
 import avatarImg from "@/public/images/dummys/avatar.png";
+import tossImg from "@/public/images/dummys/company/toss.png";
+import lineImg from "@/public/images/dummys/company/line.png";
+import kakaoImg from "@/public/images/dummys/company/kakao_pay.png";
 
 export const handlers = [
   rest.get("/data/profile", (req, res, ctx) => {
@@ -21,11 +24,20 @@ export const handlers = [
     return res(
       ctx.status(200),
       ctx.json([
-        { name: "Brian", info: "this is info" },
-        { name: "Dawnleaf", info: "this is dawnleaf" },
         {
-          name: "Imzozo",
-          info: "this is imzozo. born form Hhan country at 1033 year. i was not educated...",
+          avatarImg: tossImg,
+          name: "Viva Republica (Toss)",
+          info: "Conpany · Financial Services",
+        },
+        {
+          avatarImg: lineImg,
+          name: "LINE Plus Corp",
+          info: "Company · Computer Software",
+        },
+        {
+          avatarImg: kakaoImg,
+          name: "카카오페이 (kakaopay)",
+          info: "Company · Information Technology & Services",
         },
       ])
     );

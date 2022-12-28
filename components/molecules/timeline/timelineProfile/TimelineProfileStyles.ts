@@ -27,12 +27,3 @@ export const TitleHover = styled.div`
     ${linkHover}
   }
 `;
-
-export const Dot = styled.div`
-  position: relative;
-  width: 2px;
-  height: 2px;
-  border-radius: 100%;
-  background-color: ${palette.grayPoint6};
-  margin: 6px 5px 0px 5px;
-`;

@@ -11,4 +11,8 @@ const Template: ComponentStory<typeof SnbUser> = (args) => (
   <SnbUser {...args}></SnbUser>
 );
 export const Default = Template.bind({});
-Default.args = { name: defaultProps.name, info: defaultProps.info };
+Default.args = {
+  avatarImg: defaultProps.avatarImg,
+  name: defaultProps.name,
+  info: defaultProps.info,
+};
