@@ -7,7 +7,7 @@ import { palette } from "@/styles/paletteStyles";
 
 export const SnbProfileHeaderStyled = styled.div`
   max-width: ${layoutWidth.snbProflie}px;
-  background-color: #fff;
+  background-color: ${palette.white};
   padding-bottom: 16px;
   box-sizing: border-box;
 `;
@@ -31,7 +31,7 @@ export const AvatarImageWrap = styled.div`
   margin-top: -35px;
   margin-bottom: 20px;
   border-radius: 100%;
-  border: 3px solid #fff;
+  border: 3px solid ${palette.white};
   box-sizing: content-box;
 `;
 

@@ -21,7 +21,7 @@ export const Divider = styled.div`
 export const DividerBottomGap = styled.div`
   width: 100%;
   height: 12px;
-  background-color: #fff;
+  background-color: ${palette.white};
   border-top: 1px solid ${palette.grayPoint1};
   box-sizing: border-box;
 `;
@@ -29,7 +29,7 @@ export const DividerBottomGap = styled.div`
 export const DividerTopGap = styled.div`
   width: 100%;
   height: 12px;
-  background-color: #fff;
+  background-color: ${palette.white};
   border-bottom: 1px solid ${palette.grayPoint1};
 `;
 

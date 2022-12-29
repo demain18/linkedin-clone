@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export const SnbUserStyled = styled.div`
   width: 100%;
-  background-color: #fff;
+  background-color: ${palette.white};
   ${nonSelect}
 `;
 

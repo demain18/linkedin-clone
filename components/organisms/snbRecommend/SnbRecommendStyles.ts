@@ -8,7 +8,7 @@ export const SnbRecommendStyled = styled.div<Props>`
   max-width: 312px;
   padding: 12px;
   border-radius: 0.8rem;
-  background-color: #fff;
+  background-color: ${palette.white};
   box-sizing: border-box;
   border: 1px solid ${palette.grayPoint1};
 `;

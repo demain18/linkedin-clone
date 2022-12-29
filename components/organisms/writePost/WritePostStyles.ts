@@ -9,7 +9,7 @@ export const WritePostStyled = styled.div<Props>`
   width: 100%;
   padding: 12px 16px 4px 16px;
   border-radius: 0.8rem;
-  background-color: #fff;
+  background-color: ${palette.white};
   box-sizing: border-box;
   border: 1px solid ${palette.grayPoint1};
 `;
