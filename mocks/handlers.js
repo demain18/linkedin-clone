@@ -42,7 +42,7 @@ export const handlers = [
       ])
     );
   }),
-  rest.get("/data/timeline/1", (req, res, ctx) => {
+  rest.get("/data/timeline?feed=1", (req, res, ctx) => {
     return res(
       ctx.status(200),
       ctx.json({

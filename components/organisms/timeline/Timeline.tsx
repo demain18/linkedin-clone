@@ -30,10 +30,9 @@ export interface GetTimelinePostProps {
 
 const Timeline = ({ ...rest }: Props) => {
   const { isLoading, error, data } = useQuery<getTimelinePostDto>(
-    "timelinePost",
-    getTimelinePost
+    ["timelinePost", 1],
+    () => getTimelinePost(1)
   );
-  console.log(data);
 
   const [imageList, setImageList] = useState<StaticImageData[]>([
     img1,

@@ -12,8 +12,8 @@ export const getUserList = () => {
   return fetch("/data/recommends").then<getUserListDto[]>((res) => res.json());
 };
 
-export const getTimelinePost = () => {
-  return fetch("/data/timeline/1").then<getTimelinePostDto>((res) =>
+export const getTimelinePost = (param: number) => {
+  return fetch(`/data/timeline?feed=${param}`).then<getTimelinePostDto>((res) =>
     res.json()
   );
 };
