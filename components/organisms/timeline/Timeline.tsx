@@ -12,6 +12,7 @@ import img4 from "@/public/images/dummys/toss/four.png";
 import img5 from "@/public/images/dummys/toss/five.png";
 import { useQuery } from "react-query";
 import { getTimelinePost } from "lib/apiRequest";
+import { getTimelinePostDto } from "lib/apiRequest.dto";
 
 export interface Props {}
 
@@ -28,7 +29,7 @@ export interface GetTimelinePostProps {
 }
 
 const Timeline = ({ ...rest }: Props) => {
-  const { isLoading, error, data } = useQuery<TimelinePostProps>(
+  const { isLoading, error, data } = useQuery<getTimelinePostDto>(
     "timelinePost",
     getTimelinePost
   );

@@ -19,21 +19,12 @@ import premiumBadgeImg from "@/public/images/premium-badge.png";
 import { Bookmark } from "@material-ui/icons";
 import { useQuery } from "react-query";
 import { getUserInfo } from "lib/apiRequest";
-import { StaticImageData } from "next/image";
+import { getUserInfoDto } from "lib/apiRequest.dto";
 
 export interface Props {}
 
-export interface userInfoProps {
-  username: string;
-  bio: string;
-  connections: number;
-  viewed: number;
-  bannerImg: StaticImageData;
-  avatarImg: StaticImageData;
-}
-
 const SnbProfile = ({ ...rest }: Props) => {
-  const { isLoading, error, data } = useQuery<userInfoProps>(
+  const { isLoading, error, data } = useQuery<getUserInfoDto>(
     "userInfo",
     getUserInfo
   );

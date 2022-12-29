@@ -12,18 +12,12 @@ import { palette } from "@/styles/paletteStyles";
 import HoverButton from "@/components/atoms/hoverButton/HoverButton";
 import { useQuery } from "react-query";
 import { getUserList } from "lib/apiRequest";
-import { StaticImageData } from "next/image";
+import { getUserListDto } from "lib/apiRequest.dto";
 
 export interface Props {}
 
-export interface UserListProps {
-  avatarImg: StaticImageData;
-  name: string;
-  info: string;
-}
-
 const SnbRecommend = ({ ...rest }: Props) => {
-  const { isLoading, error, data } = useQuery<UserListProps[]>(
+  const { isLoading, error, data } = useQuery<getUserListDto[]>(
     "userList",
     getUserList
   );
