@@ -1,3 +1,4 @@
+import { palette } from "@/styles/paletteStyles";
 import styled, { css } from "styled-components";
 import { Props } from "./Button";
 
@@ -5,7 +6,7 @@ export const ButtonStyled = styled.button<Props>`
   padding: 0.56rem 1.56rem;
   border: none;
   border-radius: 4px;
-  background-color: "#e0e1e2";
+  background-color: ${palette.lightGray};
   font-weight: bold;
   font-size: 0.87rem;
   color: rgba(0, 0, 0, 0.6);
