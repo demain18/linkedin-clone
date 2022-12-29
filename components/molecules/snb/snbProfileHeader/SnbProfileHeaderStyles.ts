@@ -16,7 +16,7 @@ export const BannerImageWrap = styled.div`
   position: relative;
   width: 100%;
   height: 56px;
-  background-color: ${palette.grayPoint1};
+  background-color: ${palette.grayPoint2};
 `;
 
 export const BannerImage = styled(Image)`
@@ -32,6 +32,7 @@ export const AvatarImageWrap = styled.div`
   margin-bottom: 20px;
   border-radius: 100%;
   border: 3px solid #fff;
+  box-sizing: content-box;
 `;
 
 export const AvatarImage = styled(Image)`
