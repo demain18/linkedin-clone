@@ -17,7 +17,7 @@ export const TimelineStyled = styled.div<Props>`
 export const PaddingWrap = styled.div`
   width: 100%;
   height: 100%;
-  padding: 12px 16px 10px 16px;
+  padding: 12px 16px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
