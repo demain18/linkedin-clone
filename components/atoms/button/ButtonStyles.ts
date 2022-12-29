@@ -9,7 +9,7 @@ export const ButtonStyled = styled.button<Props>`
   background-color: ${palette.lightGray};
   font-weight: bold;
   font-size: 0.87rem;
-  color: rgba(0, 0, 0, 0.6);
+  color: ${palette.grayPoint6};
   cursor: pointer;
   transition: 0.12s;
   transition-timing-function: ease;

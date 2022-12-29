@@ -15,7 +15,7 @@ export const RoundButtonStyled = styled.button<Props>`
   ${transitionHover}
 
   :hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: ${palette.grayPoint1};
     box-shadow: inset 0 0 0 1px ${palette.grayPoint6};
   }
 

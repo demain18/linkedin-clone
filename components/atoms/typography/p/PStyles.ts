@@ -5,7 +5,7 @@ import { Props } from "./P";
 export const PStyled = styled.p<Props>`
   font-weight: normal;
   line-height: 1.5;
-  color: rgba(0, 0, 0, 0.8);
+  color: ${palette.grayPoint8};
   margin: 0;
 
   ${(props) =>

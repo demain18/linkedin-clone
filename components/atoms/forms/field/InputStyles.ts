@@ -7,12 +7,13 @@ export const InputStyled = styled.input`
   line-height: 1.75;
   font-weight: 400;
   padding: 8px 16px;
-  background-color: ${palette.lightGray};
+  /* background-color: ${palette.lightGray}; */
+  background-color: ${palette.grayPoint1};
   border-radius: 0.4rem;
-  color: rgba(0, 0, 0, 0.9);
+  color: ${palette.grayPoint8};
   border: none;
 
   ::placeholder {
-    color: rgba(0, 0, 0, 0.5);
+    color: ${palette.grayPoint4};
   }
 `;

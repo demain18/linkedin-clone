@@ -5,7 +5,7 @@ import { Props } from "./Span";
 export const SpanStyled = styled.span<Props>`
   font-weight: normal;
   line-height: 1.5;
-  color: rgba(0, 0, 0, 0.8);
+  color: ${palette.grayPoint8};
 
   ${(props) =>
     css`

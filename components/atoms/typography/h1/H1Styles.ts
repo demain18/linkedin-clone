@@ -1,3 +1,4 @@
+import { palette } from "@/styles/paletteStyles";
 import styled, { css } from "styled-components";
 import { Props } from "./H1";
 
@@ -7,7 +8,7 @@ export const HStyled = styled.h1<Props>`
   font-size: 1.75rem;
   font-weight: bold;
   line-height: 1.29;
-  color: rgba(0, 0, 0, 0.87);
+  color: ${palette.grayPoint8};
   ${(props) =>
     css`
       font-size: ${props.fontSize !== undefined

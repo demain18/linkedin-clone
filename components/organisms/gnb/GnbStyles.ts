@@ -7,7 +7,7 @@ import { layoutWidth } from "@/styles/moduleStyles";
 export const GnbStyled = styled.div`
   width: 100%;
   background-color: ${palette.white};
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08); ;
+  border-bottom: 1px solid ${palette.grayPoint1};
 `;
 
 export const GnbWrap = styled.div`
