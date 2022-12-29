@@ -24,14 +24,12 @@ export interface TimelinePostProps {
   desc: string;
 }
 
-export interface GetTimelinePostProps {
-  param: number;
-}
-
 const Timeline = ({ ...rest }: Props) => {
+  let feedParam: number = 1;
+
   const { isLoading, error, data } = useQuery<getTimelinePostDto>(
-    ["timelinePost", 1],
-    () => getTimelinePost(1)
+    ["timelinePost", feedParam],
+    () => getTimelinePost(feedParam)
   );
 
   const [imageList, setImageList] = useState<StaticImageData[]>([
