@@ -11,8 +11,8 @@ import ArrowForward from "@material-ui/icons/ArrowForward";
 import { palette } from "@/styles/paletteStyles";
 import HoverButton from "@/components/atoms/hoverButton/HoverButton";
 import { useQuery } from "react-query";
-import { getUserList } from "lib/api/apiRequest";
-import { getUserListDto } from "lib/api/apiRequest.dto";
+import { getUserList } from "modules/api/apiRequest";
+import { getUserListDto } from "modules/api/apiRequest.dto";
 
 export interface Props {}
 

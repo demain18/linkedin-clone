@@ -18,8 +18,8 @@ import {
 import premiumBadgeImg from "@/public/images/premium-badge.png";
 import { Bookmark } from "@material-ui/icons";
 import { useQuery } from "react-query";
-import { getUserInfo } from "lib/api/apiRequest";
-import { getUserInfoDto } from "lib/api/apiRequest.dto";
+import { getUserInfo } from "modules/api/apiRequest";
+import { getUserInfoDto } from "modules/api/apiRequest.dto";
 
 export interface Props {}
 

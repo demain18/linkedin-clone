@@ -11,8 +11,8 @@ import img3 from "@/public/images/dummys/toss/three.png";
 import img4 from "@/public/images/dummys/toss/four.png";
 import img5 from "@/public/images/dummys/toss/five.png";
 import { useQuery } from "react-query";
-import { getTimelinePost } from "lib/api/apiRequest";
-import { getTimelinePostDto } from "lib/api/apiRequest.dto";
+import { getTimelinePost } from "modules/api/apiRequest";
+import { getTimelinePostDto } from "modules/api/apiRequest.dto";
 
 export interface Props {}
 
