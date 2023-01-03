@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { QueryClient, QueryClientProvider } from "react-query";
@@ -48,13 +48,28 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <Provider store={store}>
-      <QueryClientProvider client={queryClient}>
-        <ThemeProvider theme={paletteLight}>
-          <Component {...pageProps} />
-          <ReactQueryDevtools />
-        </ThemeProvider>
-      </QueryClientProvider>
+      <AppWrap
+        queryClient={queryClient}
+        Component={Component}
+        pageProps={pageProps}
+      />
     </Provider>
+  );
+}
+
+function AppWrap({ queryClient, Component, pageProps }) {
+  const themeNow = useSelector((state: RootState) => state.global.themeIsLight);
+  console.log(themeNow);
+
+  const theme = themeNow ? paletteLight : paletteDark;
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps}></Component>
+        <ReactQueryDevtools />
+      </ThemeProvider>
+    </QueryClientProvider>
   );
 }
 
