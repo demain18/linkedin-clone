@@ -28,8 +28,9 @@ const SnbRecommend = ({ ...rest }: Props) => {
         Add to your feed
       </P>
       <UserWrap>
-        {data?.map((user) => (
+        {data?.map((user, i) => (
           <SnbUser
+            key={user.name + i}
             avatarImg={user.avatarImg}
             name={user.name}
             info={user.info}

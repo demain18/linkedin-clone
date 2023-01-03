@@ -59,8 +59,8 @@ const WritePost = ({ ...rest }: Props) => {
         </RoundButton>
       </WriteWrap>
       <ButtonWrap>
-        {buttonList.map((button) => (
-          <HoverButton>
+        {buttonList.map((button, i) => (
+          <HoverButton key={button.name + i}>
             <Button>
               {button.icon}
               <P color="grayPoint6" fontSize={14} bold>
