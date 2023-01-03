@@ -1,8 +1,9 @@
+import { useState } from "react";
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
-import { useState } from "react";
+import { wrapper } from "../modules/store/index";
 
 // msw 적용
 if (typeof global.process === "undefined") {
@@ -21,4 +22,4 @@ function MyApp({ Component, pageProps }: AppProps) {
   );
 }
 
-export default MyApp;
+export default wrapper.withRedux(MyApp);
