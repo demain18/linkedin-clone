@@ -9,28 +9,28 @@ export const SnbProfileStyled = styled.div<Props>`
   border-radius: 0.8rem;
   overflow: hidden;
   position: relative;
-  border: 1px solid ${palette.grayPoint1};
+  border: 1px solid ${(props) => props.theme.grayPoint1};
   flex-basis: ${layoutWidth.snbProflie}px;
 `;
 
 export const Divider = styled.div`
   width: 100%;
-  border-bottom: 1px solid ${palette.grayPoint1};
+  border-bottom: 1px solid ${(props) => props.theme.grayPoint1};
 `;
 
 export const DividerBottomGap = styled.div`
   width: 100%;
   height: 12px;
-  background-color: ${palette.white};
-  border-top: 1px solid ${palette.grayPoint1};
+  background-color: ${(props) => props.theme.white};
+  border-top: 1px solid ${(props) => props.theme.grayPoint1};
   box-sizing: border-box;
 `;
 
 export const DividerTopGap = styled.div`
   width: 100%;
   height: 12px;
-  background-color: ${palette.white};
-  border-bottom: 1px solid ${palette.grayPoint1};
+  background-color: ${(props) => props.theme.white};
+  border-bottom: 1px solid ${(props) => props.theme.grayPoint1};
 `;
 
 export const ButtonContentFlexWrap = styled.div`
@@ -48,7 +48,7 @@ export const PremiumWrap = styled.div`
   }
 
   p:hover {
-    color: ${palette.primary};
+    color: ${(props) => props.theme.primary};
   }
 `;
 
@@ -70,5 +70,5 @@ export const MyitemContentWrap = styled.div`
 export const BookmarkWrap = styled.div`
   position: relative;
   top: 2px;
-  color: ${palette.grayPoint6};
+  color: ${(props) => props.theme.grayPoint6};
 `;

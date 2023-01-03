@@ -8,9 +8,9 @@ export const SnbRecommendStyled = styled.div<Props>`
   max-width: 312px;
   padding: 12px;
   border-radius: 0.8rem;
-  background-color: ${palette.white};
+  background-color: ${(props) => props.theme.white};
   box-sizing: border-box;
-  border: 1px solid ${palette.grayPoint1};
+  border: 1px solid ${(props) => props.theme.grayPoint1};
 `;
 
 export const UserWrap = styled.div`

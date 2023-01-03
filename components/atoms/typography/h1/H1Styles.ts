@@ -8,7 +8,7 @@ export const HStyled = styled.h1<Props>`
   font-size: 1.75rem;
   font-weight: bold;
   line-height: 1.29;
-  color: ${palette.grayPoint8};
+  color: ${(props) => props.theme.grayPoint8};
   ${(props) =>
     css`
       font-size: ${props.fontSize !== undefined

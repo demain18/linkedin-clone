@@ -4,7 +4,7 @@ import styled, { css } from "styled-components";
 import { Props } from "./index";
 
 export const Frame = styled.div<Props>`
-  background-color: ${palette.background};
+  background-color: ${(props) => props.theme.background};
   height: calc(100vh - 55px);
 `;
 

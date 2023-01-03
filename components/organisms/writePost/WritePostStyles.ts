@@ -9,9 +9,9 @@ export const WritePostStyled = styled.div<Props>`
   width: 100%;
   padding: 12px 16px 4px 16px;
   border-radius: 0.8rem;
-  background-color: ${palette.white};
+  background-color: ${(props) => props.theme.white};
   box-sizing: border-box;
-  border: 1px solid ${palette.grayPoint1};
+  border: 1px solid ${(props) => props.theme.grayPoint1};
 `;
 
 export const WriteWrap = styled.div`

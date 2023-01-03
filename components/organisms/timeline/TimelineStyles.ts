@@ -6,9 +6,9 @@ export const TimelineStyled = styled.div<Props>`
   /* max-width: 550px; */
   width: 100%;
   height: 100%;
-  background-color: ${palette.white};
+  background-color: ${(props) => props.theme.white};
   border-radius: 0.8rem;
-  border: 1px solid ${palette.grayPoint1};
+  border: 1px solid ${(props) => props.theme.grayPoint1};
   display: flex;
   flex-direction: column;
   /* gap: 5px; */

@@ -14,25 +14,25 @@ export const GnbButtonStyled = styled.div<Props>`
   ${nonSelect}
   ${transitionHover}
 
-  color: ${palette.grayPoint6};
+  color: ${(props) => props.theme.grayPoint6};
   span {
-    color: ${palette.grayPoint6};
+    color: ${(props) => props.theme.grayPoint6};
   }
 
   :hover {
-    color: ${palette.black};
+    color: ${(props) => props.theme.black};
     span {
-      color: ${palette.black};
+      color: ${(props) => props.theme.black};
     }
   }
 
   ${(props) =>
     props.active
       ? css`
-          border-bottom: 2px solid ${palette.black};
-          color: ${palette.black};
+          border-bottom: 2px solid ${(props) => props.theme.black};
+          color: ${(props) => props.theme.black};
           span {
-            color: ${palette.black};
+            color: ${(props) => props.theme.black};
           }
         `
       : undefined}

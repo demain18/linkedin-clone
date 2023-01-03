@@ -10,7 +10,7 @@ import { Props } from "./SnbProfileButton";
 export const SnbProfileButtonStyled = styled.div<Props>`
   position: relative;
   max-width: ${layoutWidth.snbProflie}px;
-  background-color: ${palette.white};
+  background-color: ${(props) => props.theme.white};
   padding: 4px 12px;
   cursor: pointer;
   ${nonSelect}
@@ -19,7 +19,7 @@ export const SnbProfileButtonStyled = styled.div<Props>`
   box-sizing: border-box;
 
   :hover {
-    background-color: ${palette.grayPoint1};
+    background-color: ${(props) => props.theme.grayPoint1};
   }
 
   ${(props) =>

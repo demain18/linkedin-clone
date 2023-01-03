@@ -6,8 +6,8 @@ import { layoutWidth } from "@/styles/moduleStyles";
 
 export const GnbStyled = styled.div`
   width: 100%;
-  background-color: ${palette.white};
-  border-bottom: 1px solid ${palette.grayPoint1};
+  background-color: ${(props) => props.theme.white};
+  border-bottom: 1px solid ${(props) => props.theme.grayPoint1};
 `;
 
 export const GnbWrap = styled.div`

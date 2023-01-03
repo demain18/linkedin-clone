@@ -7,7 +7,7 @@ import { palette } from "@/styles/paletteStyles";
 
 export const SnbProfileHeaderStyled = styled.div`
   max-width: ${layoutWidth.snbProflie}px;
-  background-color: ${palette.white};
+  background-color: ${(props) => props.theme.white};
   padding-bottom: 16px;
   box-sizing: border-box;
 `;
@@ -16,7 +16,7 @@ export const BannerImageWrap = styled.div`
   position: relative;
   width: 100%;
   height: 56px;
-  background-color: ${palette.grayPoint2};
+  background-color: ${(props) => props.theme.grayPoint2};
 `;
 
 export const BannerImage = styled(Image)`
@@ -31,7 +31,7 @@ export const AvatarImageWrap = styled.div`
   margin-top: -35px;
   margin-bottom: 20px;
   border-radius: 100%;
-  border: 3px solid ${palette.white};
+  border: 3px solid ${(props) => props.theme.white};
   box-sizing: content-box;
 `;
 

@@ -16,6 +16,6 @@ export const layoutWidth = {
 };
 
 export const linkHover = css`
-  color: ${palette.primary};
+  color: ${(props) => props.theme.primary};
   text-decoration: underline;
 `;

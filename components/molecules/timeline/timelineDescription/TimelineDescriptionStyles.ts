@@ -23,7 +23,7 @@ export const SeeMore = styled.div`
   right: 0px;
   bottom: 0px;
   font-size: 14px;
-  color: ${palette.grayPoint6};
+  color: ${(props) => props.theme.grayPoint6};
   cursor: pointer;
 
   :hover {

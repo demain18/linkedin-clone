@@ -19,15 +19,15 @@ import { useEffect } from "react";
 export interface Props {}
 
 const App: NextPage = () => {
-  const themeIsLight = useSelector(
-    (state: RootState) => state.global.themeIsLight
-  );
+  // const themeIsLight = useSelector(
+  //   (state: RootState) => state.global.themeIsLight
+  // );
   const dispatch = useDispatch();
   const toggleThemeButton = () => dispatch(toggleTheme());
 
-  useEffect(() => {
-    console.log(themeIsLight);
-  }, [themeIsLight]);
+  // useEffect(() => {
+  //   console.log(themeIsLight);
+  // }, [themeIsLight]);
 
   return (
     <>

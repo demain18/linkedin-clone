@@ -10,7 +10,7 @@ export const HoverButtonStyled = styled.div<Props>`
 
   :hover {
     ${transitionHover}
-    background-color: ${palette.grayPoint1};
+    background-color: ${(props) => props.theme.grayPoint1};
   }
 
   ${(props) =>

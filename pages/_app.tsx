@@ -3,8 +3,8 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
-import { Provider } from "react-redux";
-import store from "../modules/store";
+import { Provider, useSelector } from "react-redux";
+import store, { RootState } from "../modules/store";
 import styled, { ThemeProvider } from "styled-components";
 
 // msw 적용
@@ -27,8 +27,24 @@ const paletteLight = {
   background: "#f3f2ef",
 };
 
+const paletteDark = {
+  white: "#1b1c1d",
+  black: "#fff",
+  primary: "#2185d0",
+  gray: "#767676",
+  grayPoint1: "rgba(255, 255, 255, 0.1)",
+  grayPoint2: "rgba(255, 255, 255, 0.2)",
+  grayPoint4: "rgba(255, 255, 255,0.4)",
+  grayPoint6: "rgba(255, 255, 255, 0.6)",
+  grayPoint8: "rgba(255, 255, 255, 0.771)",
+  lightGray: "#ececec",
+  background: "#323232",
+};
+
 function MyApp({ Component, pageProps }: AppProps) {
   const [queryClient] = useState(() => new QueryClient());
+  // const themeNow = useSelector((state: RootState) => state.global.themeIsLight);
+  // console.log(themeNow);
 
   return (
     <Provider store={store}>
