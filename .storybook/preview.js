@@ -1,6 +1,10 @@
 import * as NextImage from "next/image";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
+import { Provider, useSelector } from "react-redux";
+import store, { RootState } from "../modules/store";
+import styled, { ThemeProvider } from "styled-components";
+import { paletteLight, paletteDark } from "@/styles/paletteStyles";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -37,11 +41,18 @@ if (typeof global.process === "undefined") {
 
 // react-quary 적용
 const queryClient = new QueryClient();
+
+// theme 적용
+let themeIsLight = true;
+const theme = themeIsLight ? paletteLight : paletteDark;
+
 export const decorators = [
   (Story) => (
     <QueryClientProvider client={queryClient}>
-      <Story />
-      <ReactQueryDevtools initialIsOpen={false} />
+      <ThemeProvider theme={theme}>
+        <Story />
+        <ReactQueryDevtools initialIsOpen={false} />
+      </ThemeProvider>
     </QueryClientProvider>
   ),
 ];

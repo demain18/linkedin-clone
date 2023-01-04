@@ -33,7 +33,6 @@ const App: NextPage = () => {
     <>
       <Gnb />
       <Frame>
-        <button onClick={toggleThemeButton}>Toggle Theme</button>
         <FrameWrap>
           <SnbProfileWrap>
             <SnbProfile />
@@ -42,6 +41,7 @@ const App: NextPage = () => {
           <TimelineWrap>
             <WritePost />
             <Timeline />
+            <button onClick={toggleThemeButton}>Toggle Theme</button>
           </TimelineWrap>
 
           <SnbRecommendWrap>
