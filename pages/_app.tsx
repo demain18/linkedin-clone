@@ -4,7 +4,7 @@ import type { AppProps } from "next/app";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 import { Provider, useSelector } from "react-redux";
-import store, { RootState } from "../modules/store";
+import store, { RootState } from "modules/store";
 import styled, { ThemeProvider } from "styled-components";
 import { paletteLight, paletteDark } from "@/styles/paletteStyles";
 

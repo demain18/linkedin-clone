@@ -7,12 +7,17 @@ import {
   LogoImage,
   InputWrap,
   GnbMenusWrap,
+  ButtonToggleTheme,
+  ButtonToggleThemeWrap,
 } from "./GnbStyles";
 import logoImg from "@/public/images/logo.png";
 import Input from "@/components/atoms/forms/field/Input";
 import { Home, People, Work, Chat, Notifications } from "@material-ui/icons";
 import GnbMenu from "@/components/molecules/gnb/gnbMenu/GnbMenu";
 import GnbProfile from "@/components/molecules/gnb/gnbProfile/GnbProfile";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleTheme } from "modules/store/globalSlice";
+import { RootState } from "modules/store";
 
 export interface Props {}
 
@@ -25,6 +30,13 @@ const Gnb = ({ ...rest }: Props) => {
     { icon: <Notifications />, content: "Notifications", active: false },
   ]);
 
+  const themeIsLight = useSelector(
+    (state: RootState) => state.global.themeIsLight
+  );
+
+  const dispatch = useDispatch();
+  const toggleThemeButton = () => dispatch(toggleTheme());
+
   return (
     <GnbStyled>
       <GnbWrap>
@@ -36,6 +48,12 @@ const Gnb = ({ ...rest }: Props) => {
           <InputWrap>
             <Input placeholder="Search" />
           </InputWrap>
+
+          <ButtonToggleThemeWrap>
+            <ButtonToggleTheme onClick={toggleThemeButton}>
+              {themeIsLight ? "🌝" : "🌚"}
+            </ButtonToggleTheme>
+          </ButtonToggleThemeWrap>
         </FlexWrap>
 
         <GnbMenusWrap>
