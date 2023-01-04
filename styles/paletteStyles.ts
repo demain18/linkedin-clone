@@ -1,4 +1,4 @@
-export const palette = {
+export const paletteLight = {
   white: "#fff",
   black: "#1b1c1d",
   primary: "#2185d0",
@@ -21,7 +21,7 @@ export const paletteDark = {
   grayPoint2: "rgba(255, 255, 255, 0.2)",
   grayPoint4: "rgba(255, 255, 255,0.4)",
   grayPoint6: "rgba(255, 255, 255, 0.6)",
-  grayPoint8: "rgba(255, 255, 255, 0.771)",
+  grayPoint8: "rgba(255, 255, 255, 0.8)",
   lightGray: "#ececec",
   background: "#323232",
 };

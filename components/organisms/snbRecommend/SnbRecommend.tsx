@@ -8,7 +8,7 @@ import {
   UserWrap,
 } from "./SnbRecommendStyles";
 import ArrowForward from "@material-ui/icons/ArrowForward";
-import { palette } from "@/styles/paletteStyles";
+
 import HoverButton from "@/components/atoms/hoverButton/HoverButton";
 import { useQuery } from "react-query";
 import { getUserList } from "modules/api/apiRequest";
@@ -43,7 +43,7 @@ const SnbRecommend = ({ ...rest }: Props) => {
             <P color="grayPoint6" fontSize={14} bold>
               View all recommendations
             </P>
-            <ArrowForward style={{ fontSize: 16, color: palette.grayPoint6 }} />
+            <ArrowForward style={{ fontSize: 16 }} />
           </RecommendsLink>
         </HoverButton>
       </RecommendsLinkWrap>

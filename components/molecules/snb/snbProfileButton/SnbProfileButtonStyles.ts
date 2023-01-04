@@ -1,5 +1,5 @@
 import { layoutWidth, nonSelect } from "@/styles/moduleStyles";
-import { palette } from "@/styles/paletteStyles";
+
 import {
   transitionHover,
   // transitionPoint05Hover,

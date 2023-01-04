@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styled, { css } from "styled-components";
-import { palette } from "@/styles/paletteStyles";
+
 import { Props } from "./Avatar";
 
 export const AvatarStyled = styled.div<Props>`
@@ -9,7 +9,7 @@ export const AvatarStyled = styled.div<Props>`
   width: ${(prop) => prop.size}px;
   height: ${(prop) => prop.size}px;
   border-radius: 100%;
-  background-color: ${palette.lightGray};
+  background-color: ${(props) => props.theme.lightGray};
   overflow: hidden;
 `;
 

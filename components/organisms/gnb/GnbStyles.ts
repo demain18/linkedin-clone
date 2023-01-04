@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import { Props } from "./Gnb";
 import Image from "next/image";
-import { palette } from "@/styles/paletteStyles";
+
 import { layoutWidth } from "@/styles/moduleStyles";
 
 export const GnbStyled = styled.div`

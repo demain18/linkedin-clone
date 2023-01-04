@@ -1,4 +1,3 @@
-import { palette } from "@/styles/paletteStyles";
 import styled, { css } from "styled-components";
 import { Props } from "./WritePost";
 import Image from "next/image";

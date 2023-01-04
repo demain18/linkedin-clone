@@ -11,34 +11,25 @@ import ThumbUpAltOutlined from "@material-ui/icons/ThumbUpAltOutlined";
 import CommentOutlined from "@material-ui/icons/CommentOutlined";
 import Cached from "@material-ui/icons/Cached";
 import SendOutlined from "@material-ui/icons/SendOutlined";
-import { palette } from "@/styles/paletteStyles";
 
 export interface Props {}
 
 const TimelineEvents = ({ ...rest }: Props) => {
   const [buttonList, setButtonList] = useState([
     {
-      icon: (
-        <ThumbUpAltOutlined
-          style={{ fontSize: 24, color: palette.grayPoint6 }}
-        />
-      ),
+      icon: <ThumbUpAltOutlined style={{ fontSize: 24 }} />,
       name: "Like",
     },
     {
-      icon: (
-        <CommentOutlined style={{ fontSize: 24, color: palette.grayPoint6 }} />
-      ),
+      icon: <CommentOutlined style={{ fontSize: 24 }} />,
       name: "Comment",
     },
     {
-      icon: <Cached style={{ fontSize: 24, color: palette.grayPoint6 }} />,
+      icon: <Cached style={{ fontSize: 24 }} />,
       name: "Repost",
     },
     {
-      icon: (
-        <SendOutlined style={{ fontSize: 24, color: palette.grayPoint6 }} />
-      ),
+      icon: <SendOutlined style={{ fontSize: 24 }} />,
       name: "Send",
     },
   ]);

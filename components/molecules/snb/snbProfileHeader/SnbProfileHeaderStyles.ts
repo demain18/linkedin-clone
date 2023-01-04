@@ -3,7 +3,6 @@ import { Props } from "./SnbProfileHeader";
 import Image from "next/image";
 import { transitionHover } from "@/styles/transitionStyles";
 import { layoutWidth, nonSelect } from "@/styles/moduleStyles";
-import { palette } from "@/styles/paletteStyles";
 
 export const SnbProfileHeaderStyled = styled.div`
   max-width: ${layoutWidth.snbProflie}px;

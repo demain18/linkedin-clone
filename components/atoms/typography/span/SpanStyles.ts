@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { palette } from "@/styles/paletteStyles";
+
 import { Props } from "./Span";
 
 export const SpanStyled = styled.span<Props>`
@@ -18,8 +18,8 @@ export const SpanStyled = styled.span<Props>`
       font-weight: bold;
     `}
 
-  ${(props) =>
+    ${(props) =>
     css`
-      color: ${palette[props.color as keyof typeof palette]};
+      color: ${props.theme[props.color!]};
     `}
 `;

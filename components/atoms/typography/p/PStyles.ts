@@ -1,4 +1,3 @@
-import { palette } from "@/styles/paletteStyles";
 import styled, { css } from "styled-components";
 import { Props } from "./P";
 
@@ -19,8 +18,8 @@ export const PStyled = styled.p<Props>`
       font-weight: bold;
     `}
 
-  ${(props) =>
+    ${(props) =>
     css`
-      color: ${palette[props.color as keyof typeof palette]};
+      color: ${props.theme[props.color!]};
     `}
 `;
