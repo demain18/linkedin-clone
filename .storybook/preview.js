@@ -48,11 +48,13 @@ const theme = themeIsLight ? paletteLight : paletteDark;
 
 export const decorators = [
   (Story) => (
-    <QueryClientProvider client={queryClient}>
-      <ThemeProvider theme={theme}>
-        <Story />
-        <ReactQueryDevtools initialIsOpen={false} />
-      </ThemeProvider>
-    </QueryClientProvider>
+    <Provider store={store}>
+      <QueryClientProvider client={queryClient}>
+        <ThemeProvider theme={theme}>
+          <Story />
+          <ReactQueryDevtools initialIsOpen={false} />
+        </ThemeProvider>
+      </QueryClientProvider>
+    </Provider>
   ),
 ];
