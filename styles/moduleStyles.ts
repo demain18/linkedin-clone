@@ -1,5 +1,4 @@
 import { css } from "styled-components";
-import { palette } from "./paletteStyles";
 
 export const nonSelect = css`
   user-drag: none;
