@@ -124,9 +124,7 @@ const TimelineImages = ({ images, overPenta, ...rest }: Props) => {
             <ImageOverPentaWrap>
               <ImageStyled src={images[4]} layout="fill" objectFit="cover" />
               <ImageOverPentaCountWrap>
-                <Span color="white" fontSize={32}>
-                  {"+" + overPentaCount}
-                </Span>
+                <Span fontSize={32}>{"+" + overPentaCount}</Span>
               </ImageOverPentaCountWrap>
             </ImageOverPentaWrap>
           </ImageTripleDownWrap>

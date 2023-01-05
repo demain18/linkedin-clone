@@ -59,6 +59,10 @@ export const ImageOverPentaCountWrap = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  span {
+    color: #fff !important;
+  }
 `;
 
 export const ImageStyled = styled(Image)``;
