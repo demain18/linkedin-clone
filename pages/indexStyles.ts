@@ -21,18 +21,19 @@ export const FrameWrap = styled.div`
 `;
 
 export const SnbProfileWrap = styled.div`
-  /* min-width: ${layoutWidth.snbProflie}px; */
-  flex-shrink: 0;
+  min-width: ${layoutWidth.snbProflie}px;
+  /* flex-shrink: 0; */
 `;
 
 export const TimelineWrap = styled.div`
-  /* width: 100%; */
-  flex-shrink: 5;
+  width: 100%;
+  /* flex-shrink: 5; */
   display: flex;
   flex-direction: column;
   gap: 10px;
 `;
 
 export const SnbRecommendWrap = styled.div`
-  flex-shrink: 1;
+  min-width: 315px;
+  /* flex-shrink: 1; */
 `;
