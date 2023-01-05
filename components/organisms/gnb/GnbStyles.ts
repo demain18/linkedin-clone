@@ -40,6 +40,8 @@ export const InputWrap = styled.div`
 
 export const GnbMenusWrap = styled.div`
   display: flex;
+  position: relative;
+  right: -13px;
 `;
 
 export const ButtonToggleThemeWrap = styled.div`
