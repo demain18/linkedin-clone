@@ -17,4 +17,8 @@ export const ButtonContent = styled.div`
   box-sizing: border-box;
   justify-content: center;
   ${nonSelect}
+
+  svg {
+    color: ${(props) => props.theme.grayPoint6};
+  }
 `;

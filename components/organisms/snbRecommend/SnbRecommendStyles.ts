@@ -25,6 +25,10 @@ export const RecommendsLink = styled.div`
   padding: 2px 8px;
   display: flex;
   align-items: center;
+
+  svg {
+    color: ${(props) => props.theme.grayPoint8};
+  }
 `;
 
 export const RecommendsLinkWrap = styled.div`
