@@ -2,8 +2,8 @@ import * as NextImage from "next/image";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 import { Provider, useSelector } from "react-redux";
-import store, { RootState } from "modules/store";
-import styled, { ThemeProvider } from "styled-components";
+import store from "modules/store";
+import { ThemeProvider } from "styled-components";
 import { paletteLight, paletteDark } from "@/styles/paletteStyles";
 
 export const parameters = {
@@ -42,19 +42,25 @@ if (typeof global.process === "undefined") {
 // react-quary 적용
 const queryClient = new QueryClient();
 
-// theme 적용
-let themeIsLight = true;
-const theme = themeIsLight ? paletteLight : paletteDark;
-
 export const decorators = [
   (Story) => (
     <Provider store={store}>
-      <QueryClientProvider client={queryClient}>
-        <ThemeProvider theme={theme}>
-          <Story />
-          <ReactQueryDevtools initialIsOpen={false} />
-        </ThemeProvider>
-      </QueryClientProvider>
+      <App queryClient={queryClient} Story={Story} />
     </Provider>
   ),
 ];
+
+function App({ queryClient, Story }) {
+  const themeIsLight = useSelector((state) => state.global.themeIsLight);
+
+  const theme = themeIsLight ? paletteLight : paletteDark;
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider theme={theme}>
+        <Story />
+        <ReactQueryDevtools initialIsOpen={false} />
+      </ThemeProvider>
+    </QueryClientProvider>
+  );
+}
