@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   GnbStyled,
   GnbWrap,
@@ -18,16 +18,23 @@ import GnbProfile from "@/components/molecules/gnb/gnbProfile/GnbProfile";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleTheme } from "modules/store/globalSlice";
 import { RootState } from "modules/store";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 export interface Props {}
 
 const Gnb = ({ ...rest }: Props) => {
   const [menuList, setMenuList] = useState([
-    { icon: <Home />, content: "Home", active: true },
-    { icon: <People />, content: "My Network", active: false },
-    { icon: <Work />, content: "Jobs", active: false },
-    { icon: <Chat />, content: "Messaging", active: false },
-    { icon: <Notifications />, content: "Notifications", active: false },
+    { icon: <Home />, content: "Home", href: "home", active: true },
+    { icon: <People />, content: "My Network", href: "", active: false },
+    { icon: <Work />, content: "Jobs", href: "jobs", active: false },
+    { icon: <Chat />, content: "Messaging", href: "", active: false },
+    {
+      icon: <Notifications />,
+      content: "Notifications",
+      href: "",
+      active: false,
+    },
   ]);
 
   const themeIsLight = useSelector(
@@ -37,13 +44,28 @@ const Gnb = ({ ...rest }: Props) => {
   const dispatch = useDispatch();
   const toggleThemeButton = () => dispatch(toggleTheme());
 
+  useEffect(() => {
+    // const router = useRouter();
+
+    // console.log(router.pathname);
+
+    console.log(menuList);
+  }, []);
+
   return (
     <GnbStyled>
       <GnbWrap>
         <FlexWrap>
-          <LogoImageWrap>
-            <LogoImage src={logoImg} layout="fill" objectFit="cover" priority />
-          </LogoImageWrap>
+          <Link href="/">
+            <LogoImageWrap>
+              <LogoImage
+                src={logoImg}
+                layout="fill"
+                objectFit="cover"
+                priority
+              />
+            </LogoImageWrap>
+          </Link>
 
           <InputWrap>
             <Input placeholder="Search" />
@@ -58,12 +80,15 @@ const Gnb = ({ ...rest }: Props) => {
 
         <GnbMenusWrap>
           {menuList.map((item) => (
-            <GnbMenu
-              key={item.content}
-              icon={item.icon}
-              content={item.content}
-              active={item.active}
-            />
+            <Link key={item.content} href="/jobs">
+              <a>
+                <GnbMenu
+                  icon={item.icon}
+                  content={item.content}
+                  active={item.active}
+                />
+              </a>
+            </Link>
           ))}
           <GnbProfile />
         </GnbMenusWrap>

@@ -30,6 +30,7 @@ export const LogoImageWrap = styled.div`
   width: 34px;
   height: 34px;
   margin: 0px 7px;
+  cursor: pointer;
 `;
 
 export const LogoImage = styled(Image)``;
