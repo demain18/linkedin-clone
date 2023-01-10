@@ -25,9 +25,9 @@ export interface Props {}
 
 const Gnb = ({ ...rest }: Props) => {
   const [menuList, setMenuList] = useState([
-    { icon: <Home />, content: "Home", href: "home", active: true },
+    { icon: <Home />, content: "Home", href: "/", active: false },
     { icon: <People />, content: "My Network", href: "", active: false },
-    { icon: <Work />, content: "Jobs", href: "jobs", active: false },
+    { icon: <Work />, content: "Jobs", href: "/jobs", active: false },
     { icon: <Chat />, content: "Messaging", href: "", active: false },
     {
       icon: <Notifications />,
@@ -37,18 +37,22 @@ const Gnb = ({ ...rest }: Props) => {
     },
   ]);
 
-  const themeIsLight = useSelector(
-    (state: RootState) => state.global.themeIsLight
-  );
-
   const dispatch = useDispatch();
   const toggleThemeButton = () => dispatch(toggleTheme());
 
+  const themeIsLight = useSelector(
+    (state: RootState) => state.global.themeIsLight
+  );
+  const router = useRouter();
+
   useEffect(() => {
-    // const router = useRouter();
-
-    // console.log(router.pathname);
-
+    const path = router.pathname;
+    setMenuList(
+      menuList.map((menu) =>
+        menu.href === path ? { ...menu, active: true } : menu
+      )
+    );
+    console.log(path);
     console.log(menuList);
   }, []);
 
@@ -80,7 +84,7 @@ const Gnb = ({ ...rest }: Props) => {
 
         <GnbMenusWrap>
           {menuList.map((item) => (
-            <Link key={item.content} href="/jobs">
+            <Link key={item.content} href={item.href}>
               <a>
                 <GnbMenu
                   icon={item.icon}
