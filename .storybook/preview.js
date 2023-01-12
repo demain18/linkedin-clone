@@ -5,6 +5,7 @@ import { Provider, useSelector } from "react-redux";
 import store from "modules/store";
 import { ThemeProvider } from "styled-components";
 import { paletteLight, paletteDark } from "@/styles/paletteStyles";
+import { RouterContext } from "next/dist/shared/lib/router-context";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -22,6 +23,9 @@ export const parameters = {
         value: "rgba(0, 0, 0, 0.02)",
       },
     ],
+  },
+  nextRouter: {
+    Provider: RouterContext.Provider,
   },
 };
 
