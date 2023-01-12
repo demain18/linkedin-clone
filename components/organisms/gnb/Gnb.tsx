@@ -53,7 +53,6 @@ const Gnb = ({ ...rest }: Props) => {
       )
     );
     console.log(path);
-    console.log(menuList);
   }, []);
 
   return (

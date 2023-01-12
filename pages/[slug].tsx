@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import Gnb from "@/components/organisms/gnb/Gnb";
-import {} from "./indexStyles";
 import { Frame, FrameWrap } from "@/styles/moduleStyles";
 
 export interface Props {}
@@ -10,7 +9,7 @@ const App: NextPage = () => {
     <>
       <Gnb />
       <Frame>
-        <FrameWrap>Jobs</FrameWrap>
+        <FrameWrap></FrameWrap>
       </Frame>
     </>
   );
