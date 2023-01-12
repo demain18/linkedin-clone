@@ -26,13 +26,13 @@ export interface Props {}
 const Gnb = ({ ...rest }: Props) => {
   const [menuList, setMenuList] = useState([
     { icon: <Home />, content: "Home", href: "/", active: false },
-    { icon: <People />, content: "My Network", href: "", active: false },
+    { icon: <People />, content: "My Network", href: "/people", active: false },
     { icon: <Work />, content: "Jobs", href: "/jobs", active: false },
-    { icon: <Chat />, content: "Messaging", href: "", active: false },
+    { icon: <Chat />, content: "Messaging", href: "/chat", active: false },
     {
       icon: <Notifications />,
       content: "Notifications",
-      href: "",
+      href: "/noti",
       active: false,
     },
   ]);

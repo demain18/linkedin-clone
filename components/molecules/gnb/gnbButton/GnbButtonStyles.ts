@@ -10,6 +10,7 @@ export const GnbButtonStyled = styled.div<Props>`
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
   cursor: pointer;
   ${nonSelect}
   ${transitionHover}
@@ -29,7 +30,8 @@ export const GnbButtonStyled = styled.div<Props>`
   ${(props) =>
     props.active
       ? css`
-          border-bottom: 2px solid ${(props) => props.theme.black};
+          /* border-bottom: 2px solid ${(props) => props.theme.black}; */
+          box-shadow: inset 0 -2px 0 ${(props) => props.theme.black};
           color: ${(props) => props.theme.black};
           span {
             color: ${(props) => props.theme.black};
