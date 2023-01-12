@@ -52,7 +52,7 @@ const Gnb = ({ ...rest }: Props) => {
         menu.href === path ? { ...menu, active: true } : menu
       )
     );
-    console.log(path);
+    // console.log(path);
   }, []);
 
   return (
