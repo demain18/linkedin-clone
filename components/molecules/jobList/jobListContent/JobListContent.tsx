@@ -4,47 +4,73 @@ import {
   ContentWrap,
   InfoWrap,
   JobListContentStyled,
-  LogoImgStyled,
+  LogoImage,
   LogoImgWrap,
 } from "./JobListContentStyles";
 import logo from "@/public/images/dummys/company/toss.png";
 import P from "@/components/atoms/typography/p/P";
 import Span from "@/components/atoms/typography/span/Span";
-import { Info, RssFeed } from "@material-ui/icons";
+import { RssFeed } from "@material-ui/icons";
+import { StaticImageData } from "next/image";
 
-export interface Props {}
+export interface Props {
+  employerLogo?: StaticImageData;
+  employerCompany?: string;
+  title?: string;
+  country?: string;
+  jobForm?: string;
+  actively?: boolean;
+  datetime?: string;
+  applicants?: number;
+}
 
-const JobListContent = ({ ...rest }: Props) => {
+const JobListContent = ({
+  employerLogo,
+  employerCompany,
+  title,
+  country,
+  jobForm,
+  actively,
+  datetime,
+  applicants,
+  ...rest
+}: Props) => {
   return (
     <JobListContentStyled {...rest}>
       <LogoImgWrap>
-        <LogoImgStyled src={logo} layout="fill" objectFit="cover" />
+        <LogoImage src={employerLogo!} layout="fill" objectFit="cover" />
       </LogoImgWrap>
       <ContentWrap>
         <P color="primary" bold>
-          Frontend Developer
+          {title}
         </P>
-        <P fontSize={14}>Viva Republica (Toss)</P>
+        <P fontSize={14}>{employerCompany}</P>
         <P fontSize={14} color="grayPoint6">
-          Seoul, Seoul, South Korea (On-site)
+          {`${country} (${jobForm})`}
         </P>
-        <ActivelyWrap>
-          <RssFeed style={{ fontSize: 20 }} />
-          <Span fontSize={12} color="grayPoint6">
-            Actively recruiting
-          </Span>
-        </ActivelyWrap>
+        {actively && (
+          <ActivelyWrap>
+            <RssFeed style={{ fontSize: 20 }} />
+            <Span fontSize={12} color="grayPoint6">
+              Actively recruiting
+            </Span>
+          </ActivelyWrap>
+        )}
         <InfoWrap>
           <Span fontSize={12} color="grayPoint6">
-            2 weeks ago
-          </Span>
-          <Span fontSize={12} color="grayPoint8">
-            ·
+            {datetime}
           </Span>
 
-          <Span fontSize={12} color="green" bold>
-            5 applicants
-          </Span>
+          {applicants! > 0 && (
+            <>
+              <Span fontSize={12} color="grayPoint8">
+                ·
+              </Span>
+              <Span fontSize={12} color="green" bold>
+                {`${applicants!.toLocaleString()} applicants`}
+              </Span>
+            </>
+          )}
         </InfoWrap>
       </ContentWrap>
     </JobListContentStyled>
@@ -52,5 +78,17 @@ const JobListContent = ({ ...rest }: Props) => {
 };
 export default JobListContent;
 
-export const defaultProps: Props = {};
-JobListContent.defaultProps = {};
+export const defaultProps: Props = {
+  employerLogo: logo,
+  employerCompany: "Viva Republica (Toss)",
+  title: "Frontend Developer",
+  country: "Seoul, Seoul, South Korea",
+  jobForm: "On-site",
+  actively: true,
+  datetime: "2 weeks ago",
+  applicants: 1,
+};
+
+JobListContent.defaultProps = {
+  employerLogo: defaultProps.employerLogo,
+};

@@ -3,7 +3,7 @@ import { Props } from "./JobListContent";
 import Image from "next/image";
 import { nonSelect } from "@/styles/moduleStyles";
 
-export const JobListContentStyled = styled.div<Props>`
+export const JobListContentStyled = styled.div`
   padding: 8px;
   background-color: ${(props) => props.theme.white};
   display: flex;
@@ -19,7 +19,7 @@ export const LogoImgWrap = styled.div`
   height: 56px;
 `;
 
-export const LogoImgStyled = styled(Image)`
+export const LogoImage = styled(Image)`
   ${nonSelect}
 `;
 
@@ -41,6 +41,7 @@ export const ContentWrap = styled.div`
 `;
 
 export const ActivelyWrap = styled.div`
+  margin-top: 5px;
   display: flex;
 
   color: ${(props) => props.theme.green};

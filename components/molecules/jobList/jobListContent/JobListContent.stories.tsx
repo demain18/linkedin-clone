@@ -12,4 +12,13 @@ const Template: ComponentStory<typeof JobListContent> = (args) => (
 );
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = {
+  employerLogo: defaultProps.employerLogo,
+  employerCompany: defaultProps.employerCompany,
+  title: defaultProps.title,
+  country: defaultProps.country,
+  jobForm: defaultProps.jobForm,
+  actively: defaultProps.actively,
+  datetime: defaultProps.datetime,
+  applicants: defaultProps.applicants,
+};
