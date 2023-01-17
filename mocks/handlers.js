@@ -81,7 +81,7 @@ export const handlers = [
         {
           employerLogo: kakaoImg,
           employerCompany: "카카오 페이 (kakaopay)",
-          title: "Gyeonggi, South Korea",
+          title: "인프라/클라우드 보안 담당자",
           country: "Seoul, Seoul, South Korea",
           jobForm: "On-site",
           actively: false,
