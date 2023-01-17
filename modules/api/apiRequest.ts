@@ -1,4 +1,5 @@
 import {
+  getJobsRecommendsDto,
   getTimelinePostDto,
   getUserInfoDto,
   getUserListDto,
@@ -14,6 +15,12 @@ export const getUserList = () => {
 
 export const getTimelinePost = (param: number) => {
   return fetch(`/data/timeline?feed=${param}`).then<getTimelinePostDto>((res) =>
+    res.json()
+  );
+};
+
+export const getJobRecommends = () => {
+  return fetch("/jobs/recommends").then<getJobsRecommendsDto[]>((res) =>
     res.json()
   );
 };

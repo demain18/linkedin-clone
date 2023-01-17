@@ -8,6 +8,7 @@ import {
   LogoImgWrap,
 } from "./JobListContentStyles";
 import logo from "@/public/images/dummys/company/toss.png";
+import dummyLogo from "@/public/images/avatar.png";
 import P from "@/components/atoms/typography/p/P";
 import Span from "@/components/atoms/typography/span/Span";
 import { RssFeed } from "@material-ui/icons";
@@ -90,5 +91,5 @@ export const defaultProps: Props = {
 };
 
 JobListContent.defaultProps = {
-  employerLogo: defaultProps.employerLogo,
+  employerLogo: dummyLogo,
 };

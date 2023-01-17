@@ -54,4 +54,41 @@ export const handlers = [
       })
     );
   }),
+  rest.get("/jobs/recommends", (req, res, ctx) => {
+    return res(
+      ctx.status(200),
+      ctx.json([
+        {
+          employerLogo: tossLogoImg,
+          employerCompany: "Viva Republica (Toss)",
+          title: "Frontend Developer",
+          country: "Seoul, Seoul, South Korea",
+          jobForm: "On-site",
+          actively: true,
+          datetime: "2 weeks ago",
+          applicants: 1,
+        },
+        {
+          employerLogo: lineImg,
+          employerCompany: "Line Plus Corp",
+          title: "Data Platform Engineer",
+          country: "Seongnam, Gyeonggi, South Korea",
+          jobForm: "Hybrid",
+          actively: false,
+          datetime: "2 days ago",
+          applicants: 0,
+        },
+        {
+          employerLogo: kakaoImg,
+          employerCompany: "카카오 페이 (kakaopay)",
+          title: "Gyeonggi, South Korea",
+          country: "Seoul, Seoul, South Korea",
+          jobForm: "On-site",
+          actively: false,
+          datetime: "3 weeks ago",
+          applicants: 6,
+        },
+      ])
+    );
+  }),
 ];
