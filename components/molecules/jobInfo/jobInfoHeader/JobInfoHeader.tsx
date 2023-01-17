@@ -30,10 +30,14 @@ const JobInfoHeader = ({
         <Span fontSize={14}>{`${country} (${jobForm})`}</Span>
         <Span fontSize={14}>·</Span>
         <Span fontSize={14}>{datetime}</Span>
-        <Span fontSize={14}>·</Span>
-        <Span fontSize={14} color="green" bold>
-          {`${applicants!.toLocaleString()} applicants`}
-        </Span>
+        {applicants && (
+          <>
+            <Span fontSize={14}>·</Span>
+            <Span fontSize={14} color="green" bold>
+              {`${applicants!.toLocaleString()} applicants`}
+            </Span>
+          </>
+        )}
       </TagsWrap>
     </JobInfoHeaderStyled>
   );
