@@ -2,13 +2,15 @@ import React from "react";
 import { HStyled } from "./H1Styles";
 
 export interface Props {
+  children: string | number;
   fontSize?: number;
-  children?: string | number;
+  bold?: boolean;
+  color?: string;
 }
 
-const H1 = ({ fontSize, children, ...rest }: Props) => {
+const H1 = ({ children, fontSize, bold, color, ...rest }: Props) => {
   return (
-    <HStyled fontSize={fontSize} {...rest}>
+    <HStyled fontSize={fontSize} bold={bold} color={color} {...rest}>
       {children}
     </HStyled>
   );
