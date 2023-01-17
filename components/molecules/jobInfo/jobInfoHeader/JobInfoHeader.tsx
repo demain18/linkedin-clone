@@ -33,7 +33,7 @@ const JobInfoHeader = ({
         {applicants && (
           <>
             <Span fontSize={14}>·</Span>
-            <Span fontSize={14} color="green" bold>
+            <Span fontSize={14} color="green">
               {`${applicants!.toLocaleString()} applicants`}
             </Span>
           </>
