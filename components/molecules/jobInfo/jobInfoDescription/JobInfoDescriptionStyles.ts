@@ -3,5 +3,7 @@ import { Props } from "./JobInfoDescription";
 
 export const JobInfoDescriptionStyled = styled.div<Props>`
   white-space: pre-wrap;
-  line-height: 27px;
+  font-size: 14px;
+  line-height: 25px;
+  color: ${(props) => props.theme.grayPoint8};
 `;
