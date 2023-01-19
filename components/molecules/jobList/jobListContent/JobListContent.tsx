@@ -15,6 +15,7 @@ import { RssFeed } from "@material-ui/icons";
 import { StaticImageData } from "next/image";
 
 export interface Props {
+  active?: boolean;
   employerLogo?: StaticImageData;
   employerCompany?: string;
   title?: string;
@@ -26,6 +27,7 @@ export interface Props {
 }
 
 const JobListContent = ({
+  active,
   employerLogo,
   employerCompany,
   title,
@@ -37,7 +39,7 @@ const JobListContent = ({
   ...rest
 }: Props) => {
   return (
-    <JobListContentStyled {...rest}>
+    <JobListContentStyled {...rest} active={active}>
       <LogoImgWrap>
         <LogoImage src={employerLogo!} layout="fill" objectFit="cover" />
       </LogoImgWrap>
@@ -80,6 +82,7 @@ const JobListContent = ({
 export default JobListContent;
 
 export const defaultProps: Props = {
+  active: false,
   employerLogo: logo,
   employerCompany: "Viva Republica (Toss)",
   title: "Frontend Developer",

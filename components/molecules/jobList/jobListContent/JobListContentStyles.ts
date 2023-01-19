@@ -3,12 +3,18 @@ import { Props } from "./JobListContent";
 import Image from "next/image";
 import { nonSelect } from "@/styles/moduleStyles";
 
-export const JobListContentStyled = styled.div`
+export const JobListContentStyled = styled.div<Props>`
   padding: 8px;
   background-color: ${(props) => props.theme.white};
   display: flex;
   gap: 10px;
   cursor: pointer;
+
+  ${(props) =>
+    props.active &&
+    css`
+      background-color: ${(props) => props.theme.primaryLight};
+    `}
 `;
 
 export const HeaderWrap = styled.div``;
