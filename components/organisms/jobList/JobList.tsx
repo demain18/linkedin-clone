@@ -20,6 +20,7 @@ const JobList = ({ ...rest }: Props) => {
       {data?.map((i, x) => (
         <JobListContent
           key={i.title! + x}
+          active={i.active}
           employerLogo={i.employerLogo}
           employerCompany={i.employerCompany}
           title={i.title}

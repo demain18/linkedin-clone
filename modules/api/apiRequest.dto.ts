@@ -24,6 +24,7 @@ export interface getTimelinePostDto {
 }
 
 export interface getJobsRecommendsDto {
+  active?: boolean;
   employerLogo?: StaticImageData;
   employerCompany?: string;
   title?: string;

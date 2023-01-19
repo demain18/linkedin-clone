@@ -59,6 +59,7 @@ export const handlers = [
       ctx.status(200),
       ctx.json([
         {
+          active: true,
           employerLogo: tossLogoImg,
           employerCompany: "Viva Republica (Toss)",
           title: "Frontend Developer",
@@ -87,24 +88,6 @@ export const handlers = [
           actively: false,
           datetime: "3 weeks ago",
           applicants: 6,
-        },
-      ])
-    );
-  }),
-  rest.get("/job/list", (req, res, ctx) => {
-    return res(
-      ctx.status(200),
-      ctx.json([
-        {
-          active: false,
-          employerLogo: tossImg,
-          employerCompany: "Viva Republica (Toss)",
-          title: "Frontend Developer",
-          country: "Seoul, Seoul, South Korea",
-          jobForm: "On-site",
-          actively: true,
-          datetime: "2 weeks ago",
-          applicants: 1,
         },
       ])
     );
