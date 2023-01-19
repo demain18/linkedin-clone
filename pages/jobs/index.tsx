@@ -18,16 +18,8 @@ const App: NextPage = () => {
       <Frame>
         <FrameWrap>
           <GlobalWrap>
-            <JobListWrap>
-              <JobListHeader />
-              <JobListContent />
-            </JobListWrap>
-            <JobInfoWrap>
-              <JobInfoHeader />
-              <JobInfoTags />
-              <JobInfoDescription desc="this is description" />
-              <JobInfoAbout />
-            </JobInfoWrap>
+            <JobListWrap>Job List</JobListWrap>
+            <JobInfoWrap>JobInfo</JobInfoWrap>
           </GlobalWrap>
         </FrameWrap>
       </Frame>

@@ -91,4 +91,22 @@ export const handlers = [
       ])
     );
   }),
+  rest.get("/job/list", (req, res, ctx) => {
+    return res(
+      ctx.status(200),
+      ctx.json([
+        {
+          active: false,
+          employerLogo: tossImg,
+          employerCompany: "Viva Republica (Toss)",
+          title: "Frontend Developer",
+          country: "Seoul, Seoul, South Korea",
+          jobForm: "On-site",
+          actively: true,
+          datetime: "2 weeks ago",
+          applicants: 1,
+        },
+      ])
+    );
+  }),
 ];
