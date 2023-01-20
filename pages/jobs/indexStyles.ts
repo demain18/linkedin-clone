@@ -13,7 +13,7 @@ export const JobListWrap = styled.div`
   min-width: 450px;
   height: 100%;
   background-color: ${(props) => props.theme.white};
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 `;
 
 export const JobInfoWrap = styled.div`
