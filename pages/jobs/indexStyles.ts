@@ -3,19 +3,26 @@ import { Props } from "./index";
 
 export const GlobalWrap = styled.div`
   width: 100%;
-  border: 1px solid blue;
+  height: calc(100vh - 78px);
+  /* border: 1px solid blue; */
   display: flex;
+  overflow: hidden;
 `;
 
 export const JobListWrap = styled.div`
-  width: 450px;
+  min-width: 450px;
+  height: 100%;
+  background-color: ${(props) => props.theme.white};
+  overflow-y: scroll;
 `;
 
 export const JobInfoWrap = styled.div`
   width: 100%;
-  padding: 20px;
+  height: 100%;
+  overflow-y: scroll;
+  /* padding: 20px;
   background-color: ${(props) => props.theme.white};
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 20px; */
 `;

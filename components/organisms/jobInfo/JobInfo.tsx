@@ -55,7 +55,7 @@ const JobInfo = ({ ...rest }: Props) => {
       </ButtonsWrap>
       <JobInfoDescription desc={data?.description} />
       <JobInfoAbout
-        companyLogoImg={data?.companyLogo}
+        // companyLogoImg={data?.companyLogo}
         companyName={data?.employerCompany}
         companyDesc={data?.companyDescription}
         followers={data?.followers}

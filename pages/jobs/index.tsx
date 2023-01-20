@@ -8,6 +8,8 @@ import JobInfoHeader from "@/components/molecules/jobInfo/jobInfoHeader/JobInfoH
 import JobInfoTags from "@/components/molecules/jobInfo/jobInfoTags/JobInfoTags";
 import JobInfoDescription from "@/components/molecules/jobInfo/jobInfoDescription/JobInfoDescription";
 import JobInfoAbout from "@/components/molecules/jobInfo/jobInfoAbout/JobInfoAbout";
+import JobList from "@/components/organisms/jobList/JobList";
+import JobInfo from "@/components/organisms/jobInfo/JobInfo";
 
 export interface Props {}
 
@@ -18,8 +20,12 @@ const App: NextPage = () => {
       <Frame>
         <FrameWrap>
           <GlobalWrap>
-            <JobListWrap>Job List</JobListWrap>
-            <JobInfoWrap>JobInfo</JobInfoWrap>
+            <JobListWrap>
+              <JobList />
+            </JobListWrap>
+            <JobInfoWrap>
+              <JobInfo />
+            </JobInfoWrap>
           </GlobalWrap>
         </FrameWrap>
       </Frame>
