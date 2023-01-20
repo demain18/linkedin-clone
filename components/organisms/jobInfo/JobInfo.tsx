@@ -1,12 +1,15 @@
+import RoundButton from "@/components/atoms/roundButton/RoundButton";
+import P from "@/components/atoms/typography/p/P";
 import JobInfoAbout from "@/components/molecules/jobInfo/jobInfoAbout/JobInfoAbout";
 import JobInfoDescription from "@/components/molecules/jobInfo/jobInfoDescription/JobInfoDescription";
 import JobInfoHeader from "@/components/molecules/jobInfo/jobInfoHeader/JobInfoHeader";
 import JobInfoTags from "@/components/molecules/jobInfo/jobInfoTags/JobInfoTags";
+import { ExitToApp } from "@material-ui/icons";
 import { getJobsInfo } from "modules/api/apiRequest";
 import { getJobsInfoDto } from "modules/api/apiRequest.dto";
 import React from "react";
 import { useQuery } from "react-query";
-import { JobInfoStyled } from "./JobInfoStyles";
+import { ButtonContentWrap, ButtonsWrap, JobInfoStyled } from "./JobInfoStyles";
 
 export interface Props {}
 
@@ -37,6 +40,19 @@ const JobInfo = ({ ...rest }: Props) => {
         applicants={data?.applicants}
         skills={data?.skills}
       />
+      <ButtonsWrap>
+        <RoundButton>
+          <ButtonContentWrap>
+            <P color="grayPoint6">Apply</P>
+            <ExitToApp style={{ fontSize: 15 }} />
+          </ButtonContentWrap>
+        </RoundButton>
+        <RoundButton>
+          <ButtonContentWrap>
+            <P color="grayPoint6">Save</P>
+          </ButtonContentWrap>
+        </RoundButton>
+      </ButtonsWrap>
       <JobInfoDescription desc={data?.description} />
       <JobInfoAbout
         companyLogoImg={data?.companyLogo}

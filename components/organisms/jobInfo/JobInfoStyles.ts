@@ -9,3 +9,14 @@ export const JobInfoStyled = styled.div`
   flex-direction: column;
   gap: 17px;
 `;
+
+export const ButtonsWrap = styled.div`
+  display: flex;
+  gap: 10px;
+`;
+
+export const ButtonContentWrap = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 5px;
+`;
