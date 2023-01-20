@@ -35,4 +35,11 @@ export interface getJobsRecommendsDto {
   applicants?: number;
 }
 
-export interface getJobsInfoDto {}
+export interface getJobsInfoDto {
+  title?: string;
+  employerCompany?: string;
+  country?: string;
+  jobForm?: string;
+  datetime?: string;
+  applicants?: number;
+}

@@ -5,6 +5,7 @@ import avatarImg from "@/public/images/dummys/avatar.png";
 import tossImg from "@/public/images/dummys/company/toss.png";
 import lineImg from "@/public/images/dummys/company/line.png";
 import kakaoImg from "@/public/images/dummys/company/kakao_pay.png";
+import dummyData from "mocks/dummyData.json";
 
 export const handlers = [
   rest.get("/data/profile", (req, res, ctx) => {
@@ -95,6 +96,6 @@ export const handlers = [
   rest.get("/jobs", (req, res, ctx) => {
     const uid = req.url.searchParams.get("uid");
 
-    return res(ctx.status(200), ctx.json({ uid }));
+    return res(ctx.status(200), ctx.json(dummyData[uid]));
   }),
 ];

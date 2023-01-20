@@ -22,7 +22,14 @@ const JobInfo = ({ ...rest }: Props) => {
 
   return (
     <JobInfoStyled {...rest}>
-      <JobInfoHeader />
+      <JobInfoHeader
+        title={data?.title}
+        employerCompany={data?.employerCompany}
+        country={data?.country}
+        jobForm={data?.jobForm}
+        datetime={data?.datetime}
+        applicants={data?.applicants}
+      />
       <JobInfoTags />
       <JobInfoDescription desc="this is description" />
       <JobInfoAbout />
