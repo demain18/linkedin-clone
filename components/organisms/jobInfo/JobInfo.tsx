@@ -30,7 +30,13 @@ const JobInfo = ({ ...rest }: Props) => {
         datetime={data?.datetime}
         applicants={data?.applicants}
       />
-      <JobInfoTags />
+      <JobInfoTags
+        jobForm={data?.jobForm}
+        employerCompany={data?.company}
+        connects={data?.connects}
+        applicants={data?.applicants}
+        skills={data?.skills}
+      />
       <JobInfoDescription desc="this is description" />
       <JobInfoAbout />
     </JobInfoStyled>

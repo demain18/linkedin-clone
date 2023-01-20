@@ -5,7 +5,22 @@
     "country": "Seoul, Seoul, South Korea",
     "jobForm": "On-site",
     "datetime": "5 days ago",
-    "applicants": 11
+    "applicants": 11,
+    "company": {
+      "employeeCounts": "501 - 1,000",
+      "companyKinds": "IT Services and IT Consulting"
+    },
+    "connects": {
+      "connection": 1,
+      "alumni": 5
+    },
+    "skills": [
+      "Continuous Integration and Continuous Delivery (CI/CD)",
+      "DevOps",
+      "Software Development",
+      "Cloud Computing",
+      "Test Automation"
+    ]
   },
   {
     "employerCompany": "Line Plus Corp",

@@ -41,5 +41,14 @@ export interface getJobsInfoDto {
   country?: string;
   jobForm?: string;
   datetime?: string;
+  company?: {
+    employeeCounts?: string;
+    companyKinds?: string;
+  };
+  connects?: {
+    connection?: number;
+    alummi?: number;
+  };
   applicants?: number;
+  skills?: string[];
 }
