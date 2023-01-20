@@ -34,3 +34,5 @@ export interface getJobsRecommendsDto {
   datetime?: string;
   applicants?: number;
 }
+
+export interface getJobsInfoDto {}

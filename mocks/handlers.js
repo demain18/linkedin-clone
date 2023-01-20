@@ -92,4 +92,9 @@ export const handlers = [
       ])
     );
   }),
+  rest.get("/jobs", (req, res, ctx) => {
+    const uid = req.url.searchParams.get("uid");
+
+    return res(ctx.status(200), ctx.json({ uid }));
+  }),
 ];

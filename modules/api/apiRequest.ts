@@ -1,4 +1,5 @@
 import {
+  getJobsInfoDto,
   getJobsRecommendsDto,
   getTimelinePostDto,
   getUserInfoDto,
@@ -23,4 +24,8 @@ export const getJobRecommends = () => {
   return fetch("/jobs/recommends").then<getJobsRecommendsDto[]>((res) =>
     res.json()
   );
+};
+
+export const getJobsInfo = (param: number) => {
+  return fetch(`/jobs?uid=${param}`).then<getJobsInfoDto>((res) => res.json());
 };
