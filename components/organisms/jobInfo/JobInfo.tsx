@@ -37,7 +37,7 @@ const JobInfo = ({ ...rest }: Props) => {
         applicants={data?.applicants}
         skills={data?.skills}
       />
-      <JobInfoDescription desc="this is description" />
+      <JobInfoDescription desc={data?.description} />
       <JobInfoAbout />
     </JobInfoStyled>
   );

@@ -61,6 +61,16 @@ export const handlers = [
       ctx.json([
         {
           active: true,
+          employerLogo: kakaoImg,
+          employerCompany: "카카오 페이 (kakaopay)",
+          title: "인프라/클라우드 보안 담당자",
+          country: "Seoul, Seoul, South Korea",
+          jobForm: "On-site",
+          actively: false,
+          datetime: "3 weeks ago",
+          applicants: 6,
+        },
+        {
           employerLogo: tossLogoImg,
           employerCompany: "Viva Republica (Toss)",
           title: "Frontend Developer",
@@ -79,16 +89,6 @@ export const handlers = [
           actively: false,
           datetime: "2 days ago",
           applicants: 0,
-        },
-        {
-          employerLogo: kakaoImg,
-          employerCompany: "카카오 페이 (kakaopay)",
-          title: "인프라/클라우드 보안 담당자",
-          country: "Seoul, Seoul, South Korea",
-          jobForm: "On-site",
-          actively: false,
-          datetime: "3 weeks ago",
-          applicants: 6,
         },
       ])
     );

@@ -21,7 +21,7 @@ export interface Props {
   };
   connects?: {
     connection?: number;
-    alummi?: number;
+    alumni?: number;
   };
   applicants?: number;
   skills?: string[];
@@ -59,7 +59,7 @@ const JobInfoTags = ({
         </TagIconStyled>
         <Span fontSize={14}>{`${connects?.connection} connections`}</Span>
         <Span fontSize={14}>·</Span>{" "}
-        <Span fontSize={14}>{`${connects?.alummi} school alumni`}</Span>
+        <Span fontSize={14}>{`${connects?.alumni} school alumni`}</Span>
       </TagStyled>
       <TagStyled>
         <TagIconStyled>
@@ -94,7 +94,7 @@ export const defaultProps: Props = {
   },
   connects: {
     connection: 1,
-    alummi: 5,
+    alumni: 5,
   },
   applicants: 6,
   skills: [

@@ -20,7 +20,7 @@ Default.args = {
   },
   connects: {
     connection: defaultProps.connects?.connection,
-    alummi: defaultProps.connects?.alummi,
+    alumni: defaultProps.connects?.alumni,
   },
   applicants: defaultProps.applicants,
   skills: defaultProps.skills,

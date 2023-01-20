@@ -51,4 +51,5 @@ export interface getJobsInfoDto {
   };
   applicants?: number;
   skills?: string[];
+  description?: string;
 }
