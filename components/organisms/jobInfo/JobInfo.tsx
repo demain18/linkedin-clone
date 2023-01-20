@@ -38,7 +38,12 @@ const JobInfo = ({ ...rest }: Props) => {
         skills={data?.skills}
       />
       <JobInfoDescription desc={data?.description} />
-      <JobInfoAbout />
+      <JobInfoAbout
+        companyLogoImg={data?.companyLogo}
+        companyName={data?.employerCompany}
+        companyDesc={data?.companyDescription}
+        followers={data?.followers}
+      />
     </JobInfoStyled>
   );
 };

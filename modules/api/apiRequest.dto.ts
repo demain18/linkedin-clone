@@ -52,4 +52,7 @@ export interface getJobsInfoDto {
   applicants?: number;
   skills?: string[];
   description?: string;
+  companyLogo?: StaticImageData;
+  companyDescription?: string;
+  followers?: number;
 }

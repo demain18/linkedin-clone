@@ -44,7 +44,7 @@ const JobInfoAbout = ({
           <P fontSize={16} bold>
             {companyName}
           </P>
-          <P fontSize={14}>{followers}</P>
+          <P fontSize={14}>{`${followers?.toLocaleString()} followers`}</P>
         </CompanyInfoWrap>
         <RoundButton>
           <CompanyButtonContentWrap>
