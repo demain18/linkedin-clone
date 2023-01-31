@@ -16,7 +16,7 @@ export const InvestorWrap = styled.div`
   display: flex;
   gap: 8px;
   align-items: center;
-  margin-top: 7px;
+  margin-top: 8px;
 `;
 
 export const InvestorImgPlacehoder = styled.div`

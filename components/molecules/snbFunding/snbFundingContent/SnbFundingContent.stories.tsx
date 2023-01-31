@@ -12,4 +12,11 @@ const Template: ComponentStory<typeof SnbFundingContent> = (args) => (
 );
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = {
+  series: defaultProps.series,
+  lastSeriesDatetime: defaultProps.lastSeriesDatetime,
+  seriesAmount: defaultProps.seriesAmount,
+  investorCompanyImg: defaultProps.investorCompanyImg,
+  investorCompanyName: defaultProps.investorCompanyName,
+  investorCount: defaultProps.investorCount,
+};
