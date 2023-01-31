@@ -1,7 +1,7 @@
 import P from "@/components/atoms/typography/p/P";
 import Span from "@/components/atoms/typography/span/Span";
-import SnbProfileButton from "@/components/molecules/snb/snbProfileButton/SnbProfileButton";
-import SnbProfileHeader from "@/components/molecules/snb/snbProfileHeader/SnbProfileHeader";
+import SnbProfileButton from "@/components/molecules/snbProfile/snbProfileButton/SnbProfileButton";
+import SnbProfileHeader from "@/components/molecules/snbProfile/snbProfileHeader/SnbProfileHeader";
 import React, { useEffect, useState } from "react";
 import {
   BookmarkWrap,

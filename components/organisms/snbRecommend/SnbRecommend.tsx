@@ -1,5 +1,5 @@
 import P from "@/components/atoms/typography/p/P";
-import SnbUser from "@/components/molecules/snb/snbFollowRecommend/SnbUser";
+import SnbUser from "@/components/molecules/snbRecommend/snbFollowRecommend/SnbUser";
 import React, { useState } from "react";
 import {
   RecommendsLink,
