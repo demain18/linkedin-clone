@@ -21,7 +21,7 @@ export const PStyled = styled.p<Props>`
   ${(props) =>
     props.light &&
     css`
-      font-weight: 250;
+      font-weight: 200;
     `}
 
   ${(props) =>

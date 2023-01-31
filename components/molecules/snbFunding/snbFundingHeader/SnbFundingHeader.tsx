@@ -14,9 +14,7 @@ const SnbFundingHeader = ({ companyName, totalRounds, ...rest }: Props) => {
       <P fontSize={20} bold>
         Funding via Crunchbase
       </P>
-      <P fontSize={14} light>
-        {`${companyName} · ${totalRounds} total rounds`}
-      </P>
+      <P fontSize={14}>{`${companyName} · ${totalRounds} total rounds`}</P>
       <IconWrap>
         <MoreHorizIcon style={{ fontSize: 24 }} />
       </IconWrap>
