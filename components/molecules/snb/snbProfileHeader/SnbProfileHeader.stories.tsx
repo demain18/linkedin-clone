@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import SnbProfileHeader, { defaultProps } from "./SnbProfileHeader";
 
 export default {
-  title: "Molecules/Snb/SnbProfileHeader",
+  title: "Molecules/SnbProfile/SnbProfileHeader",
   component: SnbProfileHeader,
 } as unknown as ComponentMeta<typeof SnbProfileHeader>;
 

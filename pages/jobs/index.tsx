@@ -17,6 +17,7 @@ const App: NextPage = () => {
             <JobListWrap>
               <JobList />
             </JobListWrap>
+
             <JobInfoWrap>
               <JobInfo />
             </JobInfoWrap>
