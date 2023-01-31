@@ -3,7 +3,7 @@ import { Props } from "./SnbFundingFooter";
 
 export const SnbFundingFooterStyled = styled.div`
   padding: 12px 0px;
-  border-top: 1px solid ${(props) => props.theme.grayPoint2};
+  border-top: 1px solid ${(props) => props.theme.grayPoint1};
   display: flex;
   justify-content: center;
   align-items: center;
