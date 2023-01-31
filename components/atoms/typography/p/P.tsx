@@ -5,12 +5,19 @@ export interface Props {
   children: string | number;
   fontSize?: number;
   bold?: boolean;
+  light?: boolean;
   color?: string;
 }
 
-const P = ({ children, fontSize, bold, color, ...rest }: Props) => {
+const P = ({ children, fontSize, bold, light, color, ...rest }: Props) => {
   return (
-    <PStyled fontSize={fontSize} bold={bold} color={color} {...rest}>
+    <PStyled
+      fontSize={fontSize}
+      bold={bold}
+      light={light}
+      color={color}
+      {...rest}
+    >
       {children}
     </PStyled>
   );

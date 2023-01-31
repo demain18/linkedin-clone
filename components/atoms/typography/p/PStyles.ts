@@ -18,7 +18,13 @@ export const PStyled = styled.p<Props>`
       font-weight: bold;
     `}
 
-    ${(props) =>
+  ${(props) =>
+    props.light &&
+    css`
+      font-weight: 250;
+    `}
+
+  ${(props) =>
     css`
       color: ${props.theme[props.color!]};
     `}
