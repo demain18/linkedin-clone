@@ -10,6 +10,7 @@ import {
   SnbFundingContentStyled,
 } from "./SnbFundingContentStyles";
 import logo from "@/public/images/dummys/company/kakao_pay.png";
+import img from "@/public/images/avatar.png";
 import { StaticImageData } from "next/image";
 
 export interface Props {
@@ -92,4 +93,6 @@ export const defaultProps: Props = {
   investorCompanyName: "카카오페이(Kakaopay)",
   investorCount: 5,
 };
-SnbFundingContent.defaultProps = {};
+SnbFundingContent.defaultProps = {
+  investorCompanyImg: img,
+};

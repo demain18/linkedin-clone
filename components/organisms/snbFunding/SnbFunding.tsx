@@ -11,7 +11,7 @@ const SnbFunding = ({ ...rest }: Props) => {
   return (
     <SnbFundingStyled {...rest}>
       <SnbFundingHeader />
-      <SnbFundingContent investorCompanyImg={img} />
+      <SnbFundingContent />
       <SnbFundingFooter />
     </SnbFundingStyled>
   );
