@@ -1,10 +1,10 @@
 import { nonSelect } from "@/styles/moduleStyles";
 
 import styled, { css } from "styled-components";
-import { Props } from "./SnbUser";
+import { Props } from "./SnbFeedRecommendUser";
 import Image from "next/image";
 
-export const SnbUserStyled = styled.div`
+export const SnbFeedRecommendUserStyled = styled.div`
   width: 100%;
   background-color: ${(props) => props.theme.white};
   ${nonSelect}

@@ -7,8 +7,8 @@ import {
   ButtonContentWrap,
   ContentWrap,
   Gap,
-  SnbUserStyled,
-} from "./SnbUserStyles";
+  SnbFeedRecommendUserStyled,
+} from "./SnbFeedRecommendUserStyles";
 import Add from "@material-ui/icons/Add";
 import avatarImg from "@/public/images/avatar.png";
 import Avatar from "@/components/atoms/avatar/Avatar";
@@ -20,9 +20,9 @@ export interface Props {
   info?: string;
 }
 
-const SnbUser = ({ avatarImg, name, info, ...rest }: Props) => {
+const SnbFeedRecommendUser = ({ avatarImg, name, info, ...rest }: Props) => {
   return (
-    <SnbUserStyled {...rest}>
+    <SnbFeedRecommendUserStyled {...rest}>
       <ContentWrap>
         <AvatarImageWrap>
           <Avatar image={avatarImg} size={48} />
@@ -43,14 +43,14 @@ const SnbUser = ({ avatarImg, name, info, ...rest }: Props) => {
           </RoundButton>
         </div>
       </ContentWrap>
-    </SnbUserStyled>
+    </SnbFeedRecommendUserStyled>
   );
 };
-export default SnbUser;
+export default SnbFeedRecommendUser;
 
 export const defaultProps: Props = {
   avatarImg: avatarImg,
   name: "Test User",
   info: "Test Info",
 };
-SnbUser.defaultProps = {};
+SnbFeedRecommendUser.defaultProps = {};

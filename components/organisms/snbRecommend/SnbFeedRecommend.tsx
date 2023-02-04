@@ -1,5 +1,5 @@
 import P from "@/components/atoms/typography/p/P";
-import SnbUser from "@/components/molecules/snbRecommend/snbFollowRecommend/SnbUser";
+import SnbFeedRecommendUser from "@/components/molecules/snbFeedRecommend/snbFeedRecommendUser/SnbFeedRecommendUser";
 import React, { useState } from "react";
 import {
   RecommendsLink,
@@ -29,7 +29,7 @@ const SnbFeedRecommend = ({ ...rest }: Props) => {
       </P>
       <UserWrap>
         {data?.map((user, i) => (
-          <SnbUser
+          <SnbFeedRecommendUser
             key={user.name + i}
             avatarImg={user.avatarImg}
             name={user.name}
