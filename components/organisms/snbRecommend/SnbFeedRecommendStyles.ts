@@ -1,7 +1,7 @@
 import { nonSelect } from "@/styles/moduleStyles";
 
 import styled, { css } from "styled-components";
-import { Props } from "./SnbRecommend";
+import { Props } from "./SnbFeedRecommend";
 
 export const SnbRecommendStyled = styled.div<Props>`
   position: relative;

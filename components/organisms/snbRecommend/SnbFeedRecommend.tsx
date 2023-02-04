@@ -6,7 +6,7 @@ import {
   RecommendsLinkWrap,
   SnbRecommendStyled,
   UserWrap,
-} from "./SnbRecommendStyles";
+} from "./SnbFeedRecommendStyles";
 import ArrowForward from "@material-ui/icons/ArrowForward";
 
 import HoverButton from "@/components/atoms/hoverButton/HoverButton";
@@ -16,7 +16,7 @@ import { getUserListDto } from "modules/api/apiRequest.dto";
 
 export interface Props {}
 
-const SnbRecommend = ({ ...rest }: Props) => {
+const SnbFeedRecommend = ({ ...rest }: Props) => {
   const { isLoading, error, data } = useQuery<getUserListDto[]>(
     "userList",
     getUserList
@@ -50,7 +50,7 @@ const SnbRecommend = ({ ...rest }: Props) => {
     </SnbRecommendStyled>
   );
 };
-export default SnbRecommend;
+export default SnbFeedRecommend;
 
 export const defaultProps: Props = {};
-SnbRecommend.defaultProps = {};
+SnbFeedRecommend.defaultProps = {};
