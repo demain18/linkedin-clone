@@ -9,6 +9,7 @@ export const SnbPageRecommendContentStyled = styled.div<Props>`
   display: flex;
   gap: 12px;
   align-items: flex-start;
+  border-bottom: 1px solid ${(props) => props.theme.grayPoint2};
 `;
 
 export const PageImgWrap = styled.div`

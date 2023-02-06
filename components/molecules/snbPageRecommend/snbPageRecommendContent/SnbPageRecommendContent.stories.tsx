@@ -14,4 +14,9 @@ const Template: ComponentStory<typeof SnbPageRecommendContent> = (args) => (
 );
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = {
+  pageImg: defaultProps.pageImg,
+  pageName: defaultProps.pageName,
+  pageCategory: defaultProps.pageCategory,
+  pageFollowers: defaultProps.pageFollowers,
+};

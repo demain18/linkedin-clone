@@ -11,23 +11,37 @@ import img from "@/public/images/avatar.png";
 import P from "@/components/atoms/typography/p/P";
 import RoundButton from "@/components/atoms/roundButton/RoundButton";
 import Add from "@material-ui/icons/Add";
+import { StaticImageData } from "next/image";
 
-export interface Props {}
+export interface Props {
+  pageImg?: StaticImageData;
+  pageName?: string;
+  pageCategory?: string;
+  pageFollowers?: number;
+}
 
-const SnbPageRecommendContent = ({ ...rest }: Props) => {
+const SnbPageRecommendContent = ({
+  pageImg,
+  pageName,
+  pageCategory,
+  pageFollowers,
+  ...rest
+}: Props) => {
   return (
     <SnbPageRecommendContentStyled {...rest}>
       <PageImgWrap>
-        <PageImg src={img} layout="fill" objectFit="cover" />
+        <PageImg src={pageImg!} layout="fill" objectFit="cover" />
       </PageImgWrap>
       <ContentWrap>
         <P fontSize={16} bold>
-          카카오페이 (kakaopay)
+          {pageName}
         </P>
-        <P fontSize={12}>IT Services and IT Consulting</P>
-        <P fontSize={12} color="grayPoint6">
-          29,466 followers
-        </P>
+        <P fontSize={12}>{pageCategory}</P>
+        {pageFollowers && (
+          <P fontSize={12} color="grayPoint6">
+            {`${pageFollowers.toLocaleString()} followers`}
+          </P>
+        )}
         <RoundButtonWrap>
           <RoundButton>
             <ButtonContentWrap>
@@ -42,5 +56,12 @@ const SnbPageRecommendContent = ({ ...rest }: Props) => {
 };
 export default SnbPageRecommendContent;
 
-export const defaultProps: Props = {};
-SnbPageRecommendContent.defaultProps = {};
+export const defaultProps: Props = {
+  pageImg: img,
+  pageName: "카카오페이 (kakaopay)",
+  pageCategory: "IT Services and IT Consulting",
+  pageFollowers: 29466,
+};
+SnbPageRecommendContent.defaultProps = {
+  pageImg: img,
+};
