@@ -56,3 +56,14 @@ export interface getJobsInfoDto {
   companyDescription?: string;
   followers?: number;
 }
+
+export interface getCompanyFundingDto {
+  companyName?: string;
+  totalRounds?: number;
+  series?: string;
+  lastSeriesDatetime?: string;
+  seriesAmount?: string;
+  investorCompanyImg?: StaticImageData;
+  investorCompanyName?: string;
+  investorCount?: number;
+}

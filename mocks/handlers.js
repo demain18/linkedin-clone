@@ -98,4 +98,21 @@ export const handlers = [
 
     return res(ctx.status(200), ctx.json(dummyData[uid]));
   }),
+  rest.get("/company/funding", (req, res, ctx) => {
+    const company = req.url.searchParams.get("company");
+
+    return res(
+      ctx.status(200),
+      ctx.json({
+        companyName: "Viva Republica (Toss)",
+        totalRounds: 13,
+        series: "G",
+        lastSeriesDatetime: "Dec 18, 2022",
+        seriesAmount: "405M",
+        investorCompanyImg: kakaoImg,
+        investorCompanyName: "카카오페이(Kakaopay)",
+        investorCount: 5,
+      })
+    );
+  }),
 ];
