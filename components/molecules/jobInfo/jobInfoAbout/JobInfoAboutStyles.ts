@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const JobInfoAboutStyled = styled.div`
   padding: 16px;
-  border: 1px solid ${(props) => props.theme.grayPoint2};
+  border: 1px solid ${(props) => props.theme.grayPoint1};
   border-radius: 0.8rem;
 `;
 
