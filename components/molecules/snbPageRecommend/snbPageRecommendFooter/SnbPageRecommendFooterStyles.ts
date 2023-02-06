@@ -7,7 +7,7 @@ export const SnbPageRecommendFooterStyled = styled.div<Props>`
   padding: 10px 8px;
   text-align: center;
   cursor: pointer;
-  border-top: 1px solid ${(props) => props.theme.grayPoint2};
+  border-top: 1px solid ${(props) => props.theme.grayPoint1};
   ${transitionHover}
   ${nonSelect}
 
