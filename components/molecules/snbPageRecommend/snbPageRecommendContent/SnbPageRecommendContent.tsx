@@ -18,6 +18,7 @@ export interface Props {
   pageName?: string;
   pageCategory?: string;
   pageFollowers?: number;
+  dividerNone?: boolean;
 }
 
 const SnbPageRecommendContent = ({
@@ -25,10 +26,11 @@ const SnbPageRecommendContent = ({
   pageName,
   pageCategory,
   pageFollowers,
+  dividerNone,
   ...rest
 }: Props) => {
   return (
-    <SnbPageRecommendContentStyled {...rest}>
+    <SnbPageRecommendContentStyled dividerNone={dividerNone} {...rest}>
       <PageImgWrap>
         <PageImg src={pageImg!} layout="fill" objectFit="cover" />
       </PageImgWrap>
@@ -61,7 +63,9 @@ export const defaultProps: Props = {
   pageName: "카카오페이 (kakaopay)",
   pageCategory: "IT Services and IT Consulting",
   pageFollowers: 29466,
+  dividerNone: false,
 };
 SnbPageRecommendContent.defaultProps = {
   pageImg: img,
+  dividerNone: false,
 };

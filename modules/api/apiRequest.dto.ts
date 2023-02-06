@@ -67,3 +67,10 @@ export interface getCompanyFundingDto {
   investorCompanyName?: string;
   investorCount?: number;
 }
+
+export interface getCompanyRecommendPage {
+  pageImg?: StaticImageData;
+  pageName?: string;
+  pageCategory?: string;
+  pageFollowers?: number;
+}

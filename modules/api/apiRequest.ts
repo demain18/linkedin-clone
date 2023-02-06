@@ -1,5 +1,6 @@
 import {
   getCompanyFundingDto,
+  getCompanyRecommendPage,
   getJobsInfoDto,
   getJobsRecommendsDto,
   getTimelinePostDto,
@@ -35,4 +36,10 @@ export const getCompanyFunding = () => {
   return fetch(`/company/funding?company=tossbank`).then<getCompanyFundingDto>(
     (res) => res.json()
   );
+};
+
+export const getCompanyRecommendPages = () => {
+  return fetch(`/company/recommend/page?company=tossbank`).then<
+    getCompanyRecommendPage[]
+  >((res) => res.json());
 };

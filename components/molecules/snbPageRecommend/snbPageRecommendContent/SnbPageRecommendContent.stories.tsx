@@ -19,4 +19,5 @@ Default.args = {
   pageName: defaultProps.pageName,
   pageCategory: defaultProps.pageCategory,
   pageFollowers: defaultProps.pageFollowers,
+  dividerNone: defaultProps.dividerNone,
 };

@@ -5,6 +5,7 @@ export const SnbPageRecommendStyled = styled.div<Props>`
   background-color: ${(props) => props.theme.white};
   border: 1px solid ${(props) => props.theme.grayPoint1};
   border-radius: 0.8rem;
+  overflow: hidden;
 `;
 
 export const HeaderWrap = styled.div`
