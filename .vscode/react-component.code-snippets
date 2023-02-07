@@ -53,5 +53,10 @@
     "prefix": "stcConst",
     "body": ["export const $1 = styled.div<Props>``;"],
     "description": "styled-component const 문법을 생성합니다."
+  },
+  "styled-component import next image": {
+    "prefix": "impNextImg",
+    "body": ["import Image from \"next/image\";"],
+    "description": "next/image를 import합니다."
   }
 }
