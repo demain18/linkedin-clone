@@ -12,4 +12,13 @@ const Template: ComponentStory<typeof CompanyBannerInfo> = (args) => (
 );
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = {
+  bannerImg: defaultProps.bannerImg,
+  logoImg: defaultProps.logoImg,
+  category: defaultProps.category,
+  name: defaultProps.name,
+  region: defaultProps.region,
+  followers: defaultProps.followers,
+  coworkerName: defaultProps.coworkerName,
+  emplyeesNum: defaultProps.emplyeesNum,
+};
