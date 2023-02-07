@@ -18,7 +18,7 @@ export const SpanStyled = styled.span<Props>`
       font-weight: bold;
     `}
 
-    ${(props) =>
+  ${(props) =>
     css`
       color: ${props.theme[props.color!]};
     `}

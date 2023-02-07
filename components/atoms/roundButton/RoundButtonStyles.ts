@@ -12,7 +12,6 @@ export const RoundButtonStyled = styled.button<Props>`
   font-weight: 600;
   cursor: pointer;
   ${transitionHover}
-
   :hover {
     background-color: ${(props) => props.theme.grayPoint1};
     box-shadow: inset 0 0 0 1px ${(props) => props.theme.grayPoint6};
@@ -28,5 +27,21 @@ export const RoundButtonStyled = styled.button<Props>`
     props.alignLeft &&
     css`
       text-align: left;
+    `}
+
+  ${(props) =>
+    css`
+      border: 1px solid ${props.theme[props.color!]};
+      p,
+      span,
+      h1,
+      svg {
+        color: ${props.theme[props.color!]}!important;
+      }
+
+      :hover {
+        background-color: ${props.theme[props.color!]}20;
+        box-shadow: inset 0 0 0 1px ${props.theme[props.color!]};
+      }
     `}
 `;

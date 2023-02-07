@@ -6,6 +6,7 @@ export interface Props {
   children?: JSX.Element | JSX.Element[] | string | number;
   full?: boolean;
   alignLeft?: boolean;
+  color?: string;
 }
 
 const RoundButton = ({ children, full, alignLeft, ...rest }: Props) => {
@@ -23,7 +24,9 @@ export const defaultProps: Props = {
       Round Button
     </P>
   ),
+  color: "grayPoint9",
 };
 RoundButton.defaultProps = {
   children: defaultProps.children,
+  color: defaultProps.color,
 };
