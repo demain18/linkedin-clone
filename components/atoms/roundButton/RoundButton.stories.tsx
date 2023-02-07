@@ -13,3 +13,9 @@ const Template: ComponentStory<typeof RoundButton> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {};
+
+export const Color = Template.bind({});
+Color.args = { color: "primary" };
+
+export const Fill = Template.bind({});
+Fill.args = { color: "primary", fill: true };

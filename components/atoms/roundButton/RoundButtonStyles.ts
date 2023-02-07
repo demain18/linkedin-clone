@@ -32,6 +32,7 @@ export const RoundButtonStyled = styled.button<Props>`
   ${(props) =>
     css`
       border: 1px solid ${props.theme[props.color!]};
+
       p,
       span,
       h1,
@@ -42,6 +43,23 @@ export const RoundButtonStyled = styled.button<Props>`
       :hover {
         background-color: ${props.theme[props.color!]}20;
         box-shadow: inset 0 0 0 1px ${props.theme[props.color!]};
+      }
+    `}
+
+  ${(props) =>
+    props.fill &&
+    css`
+      background-color: ${props.theme[props.color!]}!important;
+
+      p,
+      span,
+      h1,
+      svg {
+        color: #fff !important;
+      }
+
+      :hover {
+        filter: brightness(80%);
       }
     `}
 `;
