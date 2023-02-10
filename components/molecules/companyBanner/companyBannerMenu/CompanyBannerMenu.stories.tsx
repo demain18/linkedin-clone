@@ -13,11 +13,11 @@ const Template: ComponentStory<typeof CompanyBannerMenu> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  content: defaultProps.content,
+  children: defaultProps.children,
 };
 
 export const Active = Template.bind({});
 Active.args = {
-  content: defaultProps.content,
+  children: defaultProps.children,
   active: true,
 };

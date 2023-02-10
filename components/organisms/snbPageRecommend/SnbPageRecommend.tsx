@@ -3,7 +3,7 @@ import SnbPageRecommendContent from "@/components/molecules/snbPageRecommend/snb
 import SnbPageRecommendFooter from "@/components/molecules/snbPageRecommend/snbPageRecommendFooter/SnbPageRecommendFooter";
 import { log } from "console";
 import { getCompanyRecommendPages } from "modules/api/apiRequest";
-import { getCompanyRecommendPage } from "modules/api/apiRequest.dto";
+import { getCompanyRecommendPageDto } from "modules/api/apiRequest.dto";
 
 import React from "react";
 import { useQuery } from "react-query";
@@ -16,7 +16,7 @@ import {
 export interface Props {}
 
 const SnbPageRecommend = ({ ...rest }: Props) => {
-  const { isLoading, error, data } = useQuery<getCompanyRecommendPage[]>(
+  const { isLoading, error, data } = useQuery<getCompanyRecommendPageDto[]>(
     "companyRecommendPages",
     getCompanyRecommendPages
   );

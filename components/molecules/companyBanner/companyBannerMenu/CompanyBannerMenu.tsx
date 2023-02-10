@@ -3,20 +3,20 @@ import React from "react";
 import { CompanyBannerMenuStyled } from "./CompanyBannerMenuStyles";
 
 export interface Props {
-  content?: string;
+  children?: JSX.Element | string | number;
   active?: boolean;
 }
 
-const CompanyBannerMenu = ({ active, ...rest }: Props) => {
+const CompanyBannerMenu = ({ children, active, ...rest }: Props) => {
   return (
     <CompanyBannerMenuStyled active={active} {...rest}>
-      <P>Menu</P>
+      <P>{children}</P>
     </CompanyBannerMenuStyled>
   );
 };
 export default CompanyBannerMenu;
 
 export const defaultProps: Props = {
-  content: "Menu",
+  children: "Menu",
 };
 CompanyBannerMenu.defaultProps = {};

@@ -68,9 +68,26 @@ export interface getCompanyFundingDto {
   investorCount?: number;
 }
 
-export interface getCompanyRecommendPage {
+export interface getCompanyRecommendPageDto {
   pageImg?: StaticImageData;
   pageName?: string;
   pageCategory?: string;
   pageFollowers?: number;
+}
+
+export interface getCompanyBannerDto {
+  bannerImg?: StaticImageData;
+  logoImg?: StaticImageData;
+  name?: string;
+  category?: string;
+  region?: string;
+  followers?: number;
+  coworkerName?: string;
+  emplyeesNum?: number;
+  menuList?: [
+    {
+      name: string;
+      active: boolean;
+    }
+  ];
 }

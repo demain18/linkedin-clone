@@ -1,5 +1,7 @@
 import { rest } from "msw";
-import tossLogoImg from "@/public/images/dummys/toss/logo.png";
+
+import tossLogoimg from "public/images/dummys/company/toss.png";
+import tossBannerimg from "public/images/dummys/company/toss_banner.png";
 import bannerImg from "@/public/images/dummys/banner.png";
 import avatarImg from "@/public/images/dummys/avatar.png";
 import tossImg from "@/public/images/dummys/company/toss.png";
@@ -140,6 +142,28 @@ export const handlers = [
           pageFollowers: 29466,
         },
       ])
+    );
+  }),
+  rest.get("/company/banner", (req, res, ctx) => {
+    const company = req.url.searchParams.get("company");
+
+    return res(
+      ctx.status(200),
+      ctx.json({
+        bannerImg: tossBannerimg,
+        logoImg: tossLogoimg,
+        name: "Viva Republica (Toss)",
+        category: "Financial Services",
+        region: "Seoul, Seoul",
+        followers: 43332,
+        coworkerName: "Brain",
+        emplyeesNum: 1182,
+        menuList: [
+          { name: "About", active: true },
+          { name: "Posts", active: false },
+          { name: "Jobs", active: false },
+        ],
+      })
     );
   }),
 ];
