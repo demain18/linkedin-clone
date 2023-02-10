@@ -2,7 +2,7 @@ import React from "react";
 import { PStyled } from "./PStyles";
 
 export interface Props {
-  children: JSX.Element | string | number;
+  children: JSX.Element | JSX.Element[] | string | number;
   fontSize?: number;
   bold?: boolean;
   light?: boolean;

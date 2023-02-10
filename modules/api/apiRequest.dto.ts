@@ -91,3 +91,12 @@ export interface getCompanyBannerDto {
     }
   ];
 }
+
+export interface getCompanyOverviewDto {
+  overview?: string;
+  website?: string;
+  industry?: string;
+  companyEmployees?: string;
+  companyEmployeesLinkedin?: number;
+  headquarter?: string;
+}
