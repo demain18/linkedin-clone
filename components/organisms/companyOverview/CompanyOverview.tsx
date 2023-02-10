@@ -18,9 +18,11 @@ const CompanyOverview = ({ ...rest }: Props) => {
       <P fontSize={20} bold>
         Overview
       </P>
-      <P fontSize={14} color="grayPoint6">
-        {data?.overview}
-      </P>
+      {data?.overview?.split("\n").map((i) => (
+        <P fontSize={14} color="grayPoint6">
+          {i}
+        </P>
+      ))}
       <ContentWrap>
         <P fontSize={14} bold>
           Website
