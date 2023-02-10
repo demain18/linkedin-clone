@@ -18,4 +18,4 @@ export const Color = Template.bind({});
 Color.args = { color: "primary" };
 
 export const Fill = Template.bind({});
-Fill.args = { color: "primary", fill: true };
+Fill.args = { color: "primary", fillBtn: true };

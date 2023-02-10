@@ -7,12 +7,25 @@ export interface Props {
   full?: boolean;
   alignLeft?: boolean;
   color?: string;
-  fill?: boolean;
+  fillBtn?: boolean;
 }
 
-const RoundButton = ({ children, full, alignLeft, fill, ...rest }: Props) => {
+const RoundButton = ({
+  children,
+  full,
+  alignLeft,
+  color,
+  fillBtn,
+  ...rest
+}: Props) => {
   return (
-    <RoundButtonStyled full={full} alignLeft={alignLeft} fill={fill} {...rest}>
+    <RoundButtonStyled
+      full={full}
+      alignLeft={alignLeft}
+      color={color}
+      fillBtn={fillBtn}
+      {...rest}
+    >
       {children}
     </RoundButtonStyled>
   );

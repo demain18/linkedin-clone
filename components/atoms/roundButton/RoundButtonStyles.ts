@@ -47,7 +47,7 @@ export const RoundButtonStyled = styled.button<Props>`
     `}
 
   ${(props) =>
-    props.fill &&
+    props.fillBtn &&
     css`
       background-color: ${props.theme[props.color!]}!important;
 
