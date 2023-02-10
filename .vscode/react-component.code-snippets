@@ -58,5 +58,10 @@
     "prefix": "impNextImg",
     "body": ["import Image from \"next/image\";"],
     "description": "next/image를 import합니다."
+  },
+  "import mui icon": {
+    "prefix": "impMuiIon",
+    "body": ["import {$1} from \"@material-ui/icons\";"],
+    "description": "next/image를 import합니다."
   }
 }
