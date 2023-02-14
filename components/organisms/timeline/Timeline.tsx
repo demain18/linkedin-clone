@@ -49,6 +49,7 @@ const Timeline = ({ ...rest }: Props) => {
         <TimelineProfile
           avatarImg={data?.avatarImg}
           userName={data?.userName}
+          companyUid={data?.companyUid}
           followers={data?.followers}
           datetime={data?.datetime}
         />

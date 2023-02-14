@@ -18,6 +18,7 @@ export interface getUserListDto {
 export interface getTimelinePostDto {
   avatarImg: StaticImageData;
   userName: string;
+  companyUid: string;
   followers: number;
   datetime: string;
   desc: string;

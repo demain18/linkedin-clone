@@ -10,10 +10,12 @@ import Avatar from "@/components/atoms/avatar/Avatar";
 import P from "@/components/atoms/typography/p/P";
 import Span from "@/components/atoms/typography/span/Span";
 import { StaticImageData } from "next/image";
+import Link from "next/link";
 
 export interface Props {
   avatarImg?: StaticImageData;
   userName?: string;
+  companyUid?: string;
   followers?: number;
   datetime?: string;
 }
@@ -21,6 +23,7 @@ export interface Props {
 const TimelineProfile = ({
   avatarImg,
   userName,
+  companyUid,
   followers,
   datetime,
   ...rest
@@ -30,11 +33,13 @@ const TimelineProfile = ({
       <ContentWrap>
         <Avatar image={avatarImg} size={48} />
         <div>
-          <TitleHover>
-            <P color="grayPoint9" fontSize={14} bold>
-              {userName}
-            </P>
-          </TitleHover>
+          <Link href={`/company/${companyUid}`}>
+            <TitleHover>
+              <P color="grayPoint9" fontSize={14} bold>
+                {userName}
+              </P>
+            </TitleHover>
+          </Link>
           <P color="grayPoint6" fontSize={12}>
             {followers + " followers"}
           </P>
