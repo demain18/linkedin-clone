@@ -43,7 +43,7 @@ const CompanyBanner = ({ ...rest }: Props) => {
         </RoundButton>
         <RoundButton color="primary" fillBtn>
           <ButtonContentWrap>
-            <P bold>Following</P>
+            <P bold>Visit Website</P>
             <Launch style={{ fontSize: 17 }} />
           </ButtonContentWrap>
         </RoundButton>
