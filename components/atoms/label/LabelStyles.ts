@@ -3,7 +3,8 @@ import { Props } from "./Label";
 
 export const LabelStyled = styled.div<Props>`
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
+  width: fit-content;
   border-radius: 4px;
   padding: 2px 8px;
   font-size: 14px;
