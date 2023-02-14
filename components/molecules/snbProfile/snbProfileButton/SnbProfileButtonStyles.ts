@@ -14,7 +14,7 @@ export const SnbProfileButtonStyled = styled.div<Props>`
   padding: 4px 12px;
   cursor: pointer;
   ${nonSelect}
-  /* ${transitionHover} */
+  ${transitionHover}
 
   box-sizing: border-box;
 

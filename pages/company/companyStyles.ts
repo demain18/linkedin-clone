@@ -15,6 +15,7 @@ export const MainWrap = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
+  padding-bottom: 24px;
 `;
 
 export const SnbWrap = styled.div`

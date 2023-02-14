@@ -35,5 +35,5 @@ export const FrameWrap = styled.div`
   gap: 24px;
   position: relative;
   /* top: 24px; */
-  padding: 24px 0px;
+  padding: 24px 0px 0px 0px;
 `;
