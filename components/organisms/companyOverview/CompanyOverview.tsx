@@ -18,8 +18,8 @@ const CompanyOverview = ({ ...rest }: Props) => {
       <P fontSize={20} bold>
         Overview
       </P>
-      {data?.overview?.split("\n").map((i) => (
-        <P fontSize={14} color="grayPoint6">
+      {data?.overview?.split("\n").map((i, x) => (
+        <P fontSize={14} color="grayPoint6" key={x + "key"}>
           {i}
         </P>
       ))}

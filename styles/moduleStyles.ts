@@ -22,6 +22,7 @@ export const linkHover = css`
 export const Frame = styled.div`
   background-color: ${(props) => props.theme.background};
   height: calc(100vh - 55px);
+  /* height: 100%; */
 `;
 
 export const FrameWrap = styled.div`
