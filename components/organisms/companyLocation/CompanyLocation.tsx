@@ -1,8 +1,12 @@
 import Label from "@/components/atoms/label/Label";
 import P from "@/components/atoms/typography/p/P";
 import { Launch } from "@material-ui/icons";
+import { log } from "console";
+import { getCompanyLocation } from "modules/api/apiRequest";
+import { getCompanyLocationDto } from "modules/api/apiRequest.dto";
 
 import React from "react";
+import { useQuery } from "react-query";
 import {
   CompanyLocationStyled,
   InfoWrap,
@@ -12,22 +16,32 @@ import {
 export interface Props {}
 
 const CompanyLocation = ({ ...rest }: Props) => {
+  const { isLoading, error, data } = useQuery<getCompanyLocationDto[]>(
+    "companyLocation",
+    getCompanyLocation
+  );
+
+  console.log(data);
+
   return (
     <CompanyLocationStyled {...rest}>
       <P fontSize={20} bold>
-        Locations (1)
+        {`Locations (${data?.length})`}
       </P>
-      <InfoWrap>
-        <Label>Primary</Label>
-        <P fontSize={14} color="grayPoint6">
-          Arc Place 10~13F, Teheran-ro 142, Gangnam-Gu, Seoul , Seoul , Seoul
-          Korea, KR
-        </P>
-        <LinkStyled>
-          Get directions
-          <Launch style={{ fontSize: 14 }} />
-        </LinkStyled>
-      </InfoWrap>
+      {data?.map((i, x) => {
+        return (
+          <InfoWrap key={x + "key"}>
+            <Label>Primary</Label>
+            <P fontSize={14} color="grayPoint6">
+              {i.location}
+            </P>
+            <LinkStyled>
+              Get directions
+              <Launch style={{ fontSize: 14 }} />
+            </LinkStyled>
+          </InfoWrap>
+        );
+      })}
     </CompanyLocationStyled>
   );
 };

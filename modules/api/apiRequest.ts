@@ -1,6 +1,7 @@
 import {
   getCompanyBannerDto,
   getCompanyFundingDto,
+  getCompanyLocationDto,
   getCompanyOverviewDto,
   getCompanyRecommendPageDto,
   getJobsInfoDto,
@@ -56,4 +57,10 @@ export const getCompanyOverview = () => {
   return fetch(
     `/company/overview?company=tossbank`
   ).then<getCompanyOverviewDto>((res) => res.json());
+};
+
+export const getCompanyLocation = () => {
+  return fetch(`/company/location?company=tossbank`).then<
+    getCompanyLocationDto[]
+  >((res) => res.json());
 };

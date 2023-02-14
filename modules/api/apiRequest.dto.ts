@@ -100,3 +100,7 @@ export interface getCompanyOverviewDto {
   companyEmployeesLinkedin?: number;
   headquarter?: string;
 }
+
+export interface getCompanyLocationDto {
+  location?: string;
+}
