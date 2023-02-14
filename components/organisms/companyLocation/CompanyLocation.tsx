@@ -21,8 +21,6 @@ const CompanyLocation = ({ ...rest }: Props) => {
     getCompanyLocation
   );
 
-  console.log(data);
-
   return (
     <CompanyLocationStyled {...rest}>
       <P fontSize={20} bold>
