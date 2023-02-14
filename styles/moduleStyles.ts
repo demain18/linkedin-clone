@@ -21,7 +21,8 @@ export const linkHover = css`
 
 export const Frame = styled.div`
   background-color: ${(props) => props.theme.background};
-  height: calc(100vh - 55px);
+  min-height: calc(100vh - 54px);
+  width: 100%;
   /* height: 100%; */
 `;
 
@@ -33,5 +34,6 @@ export const FrameWrap = styled.div`
   align-items: flex-start;
   gap: 24px;
   position: relative;
-  top: 24px;
+  /* top: 24px; */
+  padding: 24px 0px;
 `;
