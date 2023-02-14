@@ -1,7 +1,7 @@
 import { rest } from "msw";
 
-import tossLogoimg from "public/images/dummys/company/toss.png";
-import tossBannerimg from "public/images/dummys/company/toss_banner.png";
+import tossLogoimg from "@/public/images/dummys/company/toss.png";
+import tossBannerimg from "@/public/images/dummys/company/toss_banner.png";
 import bannerImg from "@/public/images/dummys/banner.png";
 import avatarImg from "@/public/images/dummys/avatar.png";
 import tossImg from "@/public/images/dummys/company/toss.png";
@@ -49,7 +49,7 @@ export const handlers = [
     return res(
       ctx.status(200),
       ctx.json({
-        avatarImg: tossLogoImg,
+        avatarImg: tossImg,
         userName: "Viva Republica (Toss)",
         followers: 3500,
         datetime: "9h",
@@ -73,7 +73,7 @@ export const handlers = [
           applicants: 6,
         },
         {
-          employerLogo: tossLogoImg,
+          employerLogo: tossImg,
           employerCompany: "Viva Republica (Toss)",
           title: "Frontend Developer",
           country: "Seoul, Seoul, South Korea",

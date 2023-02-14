@@ -21,8 +21,6 @@ const JobInfo = ({ ...rest }: Props) => {
     () => getJobsInfo(uid)
   );
 
-  console.log(data);
-
   return (
     <JobInfoStyled {...rest}>
       <JobInfoHeader
