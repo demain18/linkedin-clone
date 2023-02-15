@@ -160,9 +160,9 @@ export const handlers = [
         coworkerName: "Brain",
         emplyeesNum: 1182,
         menuList: [
-          { name: "About", active: true },
-          { name: "Posts", active: false },
-          { name: "Jobs", active: false },
+          { name: "About", link: "", active: false },
+          { name: "Posts", link: "posts", active: false },
+          { name: "Jobs", link: "jobs", active: false },
         ],
       })
     );

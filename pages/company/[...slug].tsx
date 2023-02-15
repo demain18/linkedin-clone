@@ -8,19 +8,21 @@ import SnbFunding from "@/components/organisms/snbFunding/SnbFunding";
 import CompanyBanner from "@/components/organisms/companyBanner/CompanyBanner";
 import CompanyOverview from "@/components/organisms/companyOverview/CompanyOverview";
 import CompanyLocation from "@/components/organisms/companyLocation/CompanyLocation";
+import { log } from "console";
 
 export interface Props {}
 
 const App: NextPage = () => {
-  const router = useRouter();
-  const { slug } = router.query;
+  // const router = useRouter();
+  // const { slug } = router.query;
+
+  // console.log(slug);
 
   return (
     <>
       <Gnb />
       <Frame>
         <FrameWrap>
-          {/* Company/{slug} */}
           <GlobalWrap>
             <MainWrap>
               <CompanyBanner />

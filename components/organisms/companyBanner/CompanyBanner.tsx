@@ -1,7 +1,7 @@
 import RoundButton from "@/components/atoms/roundButton/RoundButton";
 import P from "@/components/atoms/typography/p/P";
 import CompanyBannerInfo from "@/components/molecules/companyBanner/companyBannerInfo/CompanyBannerInfo";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   ButtonContentWrap,
   ButtonWrap,
@@ -13,6 +13,7 @@ import CompanyBannerMenu from "@/components/molecules/companyBanner/companyBanne
 import { useQuery } from "react-query";
 import { getCompanyBannerDto } from "modules/api/apiRequest.dto";
 import { getCompanyBanner } from "modules/api/apiRequest";
+import { useRouter } from "next/router";
 
 export interface Props {}
 
@@ -21,6 +22,29 @@ const CompanyBanner = ({ ...rest }: Props) => {
     "companyBanner",
     getCompanyBanner
   );
+
+  const [menuList, setMenuList] = useState<any>();
+  const [slugList, setSlugList] = useState<any>();
+
+  const router = useRouter();
+
+  useEffect(() => {
+    const { slug } = router.query;
+
+    if ((slug?.length || 0) > 1) {
+      const newMenuList = data?.menuList?.map((menu) =>
+        menu?.name.toLowerCase() === slug![1] ? { ...menu, active: true } : menu
+      );
+
+      setMenuList(newMenuList);
+    } else {
+      const newMenuList = data?.menuList?.map((menu, x) =>
+        x === 0 ? { ...menu, active: true } : menu
+      );
+
+      setMenuList(newMenuList);
+    }
+  }, [router.isReady]);
 
   return (
     <CompanyBannerStyled {...rest}>
@@ -56,7 +80,7 @@ const CompanyBanner = ({ ...rest }: Props) => {
         </RoundButton>
       </ButtonWrap>
       <MenuWrap>
-        {data?.menuList?.map((i, x) => {
+        {menuList?.map((i, x) => {
           return (
             <CompanyBannerMenu key={x + "key"} active={i.active}>
               {i.name}
@@ -69,5 +93,4 @@ const CompanyBanner = ({ ...rest }: Props) => {
 };
 export default CompanyBanner;
 
-export const defaultProps: Props = {};
 CompanyBanner.defaultProps = {};
