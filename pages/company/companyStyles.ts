@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import { Props } from "./[...slug]";
 
 export const GlobalWrap = styled.div`
+  width: 100%;
   display: flex;
   /* background-color: ${(props) => props.theme.white}; */
   gap: 24px;
@@ -10,11 +11,11 @@ export const GlobalWrap = styled.div`
 
 export const MainWrap = styled.div`
   width: 100%;
+  /* flex: 80; */
   height: 100%;
 `;
 
 export const ContentWrap = styled.div`
-  max-width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -24,8 +25,8 @@ export const ContentWrap = styled.div`
 
 export const SnbWrap = styled.div`
   min-width: 320px;
+  flex: 20;
   height: 100%;
-  /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
   gap: 24px;
