@@ -14,6 +14,7 @@ import { useQuery } from "react-query";
 import { getCompanyBannerDto } from "modules/api/apiRequest.dto";
 import { getCompanyBanner } from "modules/api/apiRequest";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 export interface Props {}
 
@@ -24,7 +25,6 @@ const CompanyBanner = ({ ...rest }: Props) => {
   );
 
   const [menuList, setMenuList] = useState<any>();
-  const [slugList, setSlugList] = useState<any>();
 
   const router = useRouter();
 
@@ -44,7 +44,7 @@ const CompanyBanner = ({ ...rest }: Props) => {
 
       setMenuList(newMenuList);
     }
-  }, [router.isReady]);
+  }, [router.asPath]);
 
   return (
     <CompanyBannerStyled {...rest}>
@@ -82,9 +82,16 @@ const CompanyBanner = ({ ...rest }: Props) => {
       <MenuWrap>
         {menuList?.map((i, x) => {
           return (
-            <CompanyBannerMenu key={x + "key"} active={i.active}>
-              {i.name}
-            </CompanyBannerMenu>
+            <Link
+              href={`/company/${data?.companyUid}/` + i.link}
+              key={x + "key"}
+            >
+              <a>
+                <CompanyBannerMenu active={i.active}>
+                  {i.name}
+                </CompanyBannerMenu>
+              </a>
+            </Link>
           );
         })}
       </MenuWrap>

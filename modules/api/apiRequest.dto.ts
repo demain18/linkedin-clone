@@ -79,6 +79,7 @@ export interface getCompanyRecommendPageDto {
 export interface getCompanyBannerDto {
   bannerImg?: StaticImageData;
   logoImg?: StaticImageData;
+  companyUid?: string;
   name?: string;
   category?: string;
   region?: string;

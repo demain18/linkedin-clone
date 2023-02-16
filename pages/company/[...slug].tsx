@@ -2,21 +2,31 @@ import type { NextPage } from "next";
 import Gnb from "@/components/organisms/gnb/Gnb";
 import { Frame, FrameWrap } from "@/styles/moduleStyles";
 import { useRouter } from "next/router";
-import { GlobalWrap, MainWrap, SnbWrap } from "./companyStyles";
+import { ContentWrap, GlobalWrap, MainWrap, SnbWrap } from "./companyStyles";
 import SnbPageRecommend from "@/components/organisms/snbPageRecommend/SnbPageRecommend";
 import SnbFunding from "@/components/organisms/snbFunding/SnbFunding";
 import CompanyBanner from "@/components/organisms/companyBanner/CompanyBanner";
 import CompanyOverview from "@/components/organisms/companyOverview/CompanyOverview";
 import CompanyLocation from "@/components/organisms/companyLocation/CompanyLocation";
-import { log } from "console";
+import { useEffect, useState } from "react";
 
 export interface Props {}
 
 const App: NextPage = () => {
-  // const router = useRouter();
-  // const { slug } = router.query;
+  const [slugNow, setSlugNow] = useState<any>();
 
-  // console.log(slug);
+  const router = useRouter();
+  const { slug } = router.query;
+
+  useEffect(() => {
+    if ((slug?.length || 0) > 1) {
+      setSlugNow(slug![1]);
+    } else {
+      setSlugNow("about");
+    }
+
+    // console.log(slugNow);
+  }, [slug]);
 
   return (
     <>
@@ -26,8 +36,13 @@ const App: NextPage = () => {
           <GlobalWrap>
             <MainWrap>
               <CompanyBanner />
-              <CompanyOverview />
-              <CompanyLocation />
+              {slugNow === "about" && (
+                <ContentWrap>
+                  <CompanyOverview />
+                  <CompanyLocation />
+                </ContentWrap>
+              )}
+              {slugNow === "posts" && <ContentWrap>posts</ContentWrap>}
             </MainWrap>
             <SnbWrap>
               <SnbFunding />

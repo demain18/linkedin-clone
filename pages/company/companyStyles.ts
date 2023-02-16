@@ -11,7 +11,11 @@ export const GlobalWrap = styled.div`
 export const MainWrap = styled.div`
   width: 100%;
   height: 100%;
-  /* border: 1px solid blue; */
+`;
+
+export const ContentWrap = styled.div`
+  max-width: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 24px;

@@ -153,6 +153,7 @@ export const handlers = [
       ctx.json({
         bannerImg: tossBannerimg,
         logoImg: tossLogoimg,
+        companyUid: "tossbank",
         name: "Viva Republica (Toss)",
         category: "Financial Services",
         region: "Seoul, Seoul",

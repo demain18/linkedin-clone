@@ -6,6 +6,7 @@ export const CompanyBannerStyled = styled.div<Props>`
   border-radius: 0.8rem;
   overflow: hidden;
   border: 1px solid ${(props) => props.theme.grayPoint1};
+  margin-bottom: 24px;
 `;
 
 export const ButtonWrap = styled.div`
