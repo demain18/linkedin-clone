@@ -16,6 +16,10 @@ export const InfoWrap = styled.div`
   flex-direction: column;
 `;
 
+export const LabelWrap = styled.div`
+  margin-bottom: 3px;
+`;
+
 export const LinkStyled = styled.div`
   color: ${(props) => props.theme.primary};
   font-size: 14px;

@@ -9,6 +9,6 @@ export const LabelStyled = styled.div<Props>`
   padding: 2px 8px;
   font-size: 14px;
   font-weight: 500;
-  color: ${(props) => props.theme.grayPoint9};
+  /* color: ${(props) => props.theme.grayPoint9}; */
   background-color: ${(props) => props.theme.grayPoint1};
 `;

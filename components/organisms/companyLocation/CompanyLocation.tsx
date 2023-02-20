@@ -10,6 +10,7 @@ import { useQuery } from "react-query";
 import {
   CompanyLocationStyled,
   InfoWrap,
+  LabelWrap,
   LinkStyled,
 } from "./CompanyLocationStyles";
 
@@ -29,7 +30,13 @@ const CompanyLocation = ({ ...rest }: Props) => {
       {data?.map((i, x) => {
         return (
           <InfoWrap key={x + "key"}>
-            <Label>Primary</Label>
+            <LabelWrap>
+              <Label>
+                <P fontSize={13} color="grayPoint9" bold>
+                  Primary
+                </P>
+              </Label>
+            </LabelWrap>
             <P fontSize={14} color="grayPoint6">
               {i.location}
             </P>
