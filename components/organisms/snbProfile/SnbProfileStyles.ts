@@ -1,4 +1,4 @@
-import { layoutWidth } from "@/styles/moduleStyles";
+import { boxRadius, layoutWidth } from "@/styles/moduleStyles";
 
 import styled, { css } from "styled-components";
 import { Props } from "./SnbProfile";
@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export const SnbProfileStyled = styled.div<Props>`
   max-width: ${layoutWidth.snbProflie}px;
-  border-radius: 0.8rem;
+  ${boxRadius}
   overflow: hidden;
   position: relative;
   border: 1px solid ${(props) => props.theme.grayPoint1};

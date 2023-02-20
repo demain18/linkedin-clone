@@ -1,13 +1,13 @@
 import styled, { css } from "styled-components";
 import { Props } from "./WritePost";
 import Image from "next/image";
-import { nonSelect } from "@/styles/moduleStyles";
+import { boxRadius, nonSelect } from "@/styles/moduleStyles";
 
 export const WritePostStyled = styled.div<Props>`
   /* max-width: 540px; */
   width: 100%;
   padding: 12px 16px 4px 16px;
-  border-radius: 0.8rem;
+  ${boxRadius}
   background-color: ${(props) => props.theme.white};
   box-sizing: border-box;
   border: 1px solid ${(props) => props.theme.grayPoint1};

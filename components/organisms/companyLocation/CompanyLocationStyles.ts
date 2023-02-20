@@ -1,3 +1,4 @@
+import { boxRadius } from "@/styles/moduleStyles";
 import styled, { css } from "styled-components";
 import { Props } from "./CompanyLocation";
 
@@ -6,7 +7,7 @@ export const CompanyLocationStyled = styled.div<Props>`
   background-color: ${(props) => props.theme.white};
   padding: 24px;
   border: 1px solid ${(props) => props.theme.grayPoint1};
-  border-radius: 0.8rem;
+  ${boxRadius}
   overflow: hidden;
 `;
 

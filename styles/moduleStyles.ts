@@ -5,20 +5,6 @@ export const layoutWidth = {
   main: 1128,
 };
 
-export const nonSelect = css`
-  user-drag: none;
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-`;
-
-export const linkHover = css`
-  color: ${(props) => props.theme.primary};
-  text-decoration: underline;
-`;
-
 export const Frame = styled.div`
   background-color: ${(props) => props.theme.background};
   min-height: calc(100vh - 54px);
@@ -36,4 +22,22 @@ export const FrameWrap = styled.div`
   position: relative;
   /* top: 24px; */
   padding: 24px 0px 0px 0px;
+`;
+
+export const nonSelect = css`
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+`;
+
+export const linkHover = css`
+  color: ${(props) => props.theme.primary};
+  text-decoration: underline;
+`;
+
+export const boxRadius = css`
+  border-radius: 0.8rem;
 `;

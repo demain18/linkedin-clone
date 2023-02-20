@@ -1,11 +1,12 @@
 import styled, { css } from "styled-components";
 import { Props } from "./JobInfoAbout";
 import Image from "next/image";
+import { boxRadius } from "@/styles/moduleStyles";
 
 export const JobInfoAboutStyled = styled.div`
   padding: 16px;
   border: 1px solid ${(props) => props.theme.grayPoint1};
-  border-radius: 0.8rem;
+  ${boxRadius}
 `;
 
 export const CompanyWrap = styled.div`

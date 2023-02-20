@@ -1,3 +1,4 @@
+import { boxRadius } from "@/styles/moduleStyles";
 import styled, { css } from "styled-components";
 import { Props } from "./Timeline";
 
@@ -6,7 +7,7 @@ export const TimelineStyled = styled.div<Props>`
   width: 100%;
   height: 100%;
   background-color: ${(props) => props.theme.white};
-  border-radius: 0.8rem;
+  ${boxRadius}
   border: 1px solid ${(props) => props.theme.grayPoint1};
   display: flex;
   flex-direction: column;

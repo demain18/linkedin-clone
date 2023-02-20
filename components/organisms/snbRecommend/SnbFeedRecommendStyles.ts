@@ -1,4 +1,4 @@
-import { nonSelect } from "@/styles/moduleStyles";
+import { boxRadius, nonSelect } from "@/styles/moduleStyles";
 
 import styled, { css } from "styled-components";
 import { Props } from "./SnbFeedRecommend";
@@ -7,7 +7,7 @@ export const SnbRecommendStyled = styled.div<Props>`
   position: relative;
   max-width: 312px;
   padding: 12px;
-  border-radius: 0.8rem;
+  ${boxRadius}
   background-color: ${(props) => props.theme.white};
   box-sizing: border-box;
   border: 1px solid ${(props) => props.theme.grayPoint1};

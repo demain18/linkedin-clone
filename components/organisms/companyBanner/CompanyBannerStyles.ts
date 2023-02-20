@@ -1,9 +1,10 @@
+import { boxRadius } from "@/styles/moduleStyles";
 import styled, { css } from "styled-components";
 import { Props } from "./CompanyBanner";
 
 export const CompanyBannerStyled = styled.div<Props>`
   background-color: ${(props) => props.theme.white};
-  border-radius: 0.8rem;
+  ${boxRadius}
   overflow: hidden;
   border: 1px solid ${(props) => props.theme.grayPoint1};
   margin-bottom: 24px;
