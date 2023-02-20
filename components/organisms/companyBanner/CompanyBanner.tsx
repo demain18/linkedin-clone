@@ -72,11 +72,9 @@ const CompanyBanner = ({ ...rest }: Props) => {
           </ButtonContentWrap>
         </RoundButton>
         <RoundButton>
-          <ButtonContentWrap>
-            <P color="grayPoint6" bold>
-              More
-            </P>
-          </ButtonContentWrap>
+          <P color="grayPoint6" bold>
+            More
+          </P>
         </RoundButton>
       </ButtonWrap>
       <MenuWrap>

@@ -8,6 +8,7 @@ export const CompanyPostSnbStyled = styled.div<Props>`
   padding: 16px;
   height: 160px;
   background-color: ${(props) => props.theme.white};
+  border: 1px solid ${(props) => props.theme.grayPoint1};
   ${boxRadius}
   display: flex;
   align-items: center;
