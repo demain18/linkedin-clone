@@ -39,13 +39,13 @@ const JobInfo = ({ ...rest }: Props) => {
         skills={data?.skills}
       />
       <ButtonsWrap>
-        <RoundButton>
+        <RoundButton color="primary" fillBtn>
           <ButtonContentWrap>
             <P color="grayPoint6">Apply</P>
             <ExitToApp style={{ fontSize: 15 }} />
           </ButtonContentWrap>
         </RoundButton>
-        <RoundButton>
+        <RoundButton color="primary">
           <ButtonContentWrap>
             <P color="grayPoint6">Save</P>
           </ButtonContentWrap>

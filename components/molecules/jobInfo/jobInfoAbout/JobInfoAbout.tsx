@@ -46,7 +46,7 @@ const JobInfoAbout = ({
           </P>
           <P fontSize={14}>{`${followers?.toLocaleString()} followers`}</P>
         </CompanyInfoWrap>
-        <RoundButton>
+        <RoundButton color="primary">
           <CompanyButtonContentWrap>
             <Add style={{ fontSize: 20 }} />
             <P color="grayPoint6">Follow</P>

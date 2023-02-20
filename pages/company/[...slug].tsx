@@ -42,7 +42,8 @@ const App: NextPage = () => {
                   <CompanyLocation />
                 </ContentWrap>
               )}
-              {slugNow === "posts" && <ContentWrap>posts</ContentWrap>}
+              {slugNow === "posts" && <ContentWrap>Posts</ContentWrap>}
+              {slugNow === "jobs" && <ContentWrap>Jobs</ContentWrap>}
             </MainWrap>
             <SnbWrap>
               <SnbFunding />
