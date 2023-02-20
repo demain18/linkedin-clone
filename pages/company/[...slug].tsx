@@ -2,13 +2,23 @@ import type { NextPage } from "next";
 import Gnb from "@/components/organisms/gnb/Gnb";
 import { Frame, FrameWrap } from "@/styles/moduleStyles";
 import { useRouter } from "next/router";
-import { ContentWrap, GlobalWrap, MainWrap, SnbWrap } from "./companyStyles";
+import {
+  CompanyWrap,
+  GlobalWrap,
+  MainWrap,
+  PostContentWrap,
+  PostSnbWrap,
+  PostsWrap,
+  SnbWrap,
+} from "./companyStyles";
 import SnbPageRecommend from "@/components/organisms/snbPageRecommend/SnbPageRecommend";
 import SnbFunding from "@/components/organisms/snbFunding/SnbFunding";
 import CompanyBanner from "@/components/organisms/companyBanner/CompanyBanner";
 import CompanyOverview from "@/components/organisms/companyOverview/CompanyOverview";
 import CompanyLocation from "@/components/organisms/companyLocation/CompanyLocation";
 import { useEffect, useState } from "react";
+import CompanyPostSnb from "@/components/organisms/companyPostSnb/CompanyPostSnb";
+import Timeline from "@/components/organisms/timeline/Timeline";
 
 export interface Props {}
 
@@ -37,13 +47,22 @@ const App: NextPage = () => {
             <MainWrap>
               <CompanyBanner />
               {slugNow === "about" && (
-                <ContentWrap>
+                <CompanyWrap>
                   <CompanyOverview />
                   <CompanyLocation />
-                </ContentWrap>
+                </CompanyWrap>
               )}
-              {slugNow === "posts" && <ContentWrap>Posts</ContentWrap>}
-              {slugNow === "jobs" && <ContentWrap>Jobs</ContentWrap>}
+              {slugNow === "posts" && (
+                <PostsWrap>
+                  <PostSnbWrap>
+                    <CompanyPostSnb />
+                  </PostSnbWrap>
+                  <PostContentWrap>
+                    <Timeline />
+                  </PostContentWrap>
+                </PostsWrap>
+              )}
+              {slugNow === "jobs" && <CompanyWrap>Jobs</CompanyWrap>}
             </MainWrap>
             <SnbWrap>
               <SnbFunding />

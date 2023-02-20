@@ -12,7 +12,4 @@ const Template: ComponentStory<typeof CompanyPostSnb> = (args) => (
 );
 
 export const Default = Template.bind({});
-Default.args = {
-  companyName: defaultProps.companyName,
-  followers: defaultProps.followers,
-};
+Default.args = {};
