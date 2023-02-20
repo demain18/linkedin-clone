@@ -5,7 +5,7 @@ import CompanyJobsRecentFooter, {
 } from "./CompanyJobsRecentFooter";
 
 export default {
-  title: "Molecules/CompanyJobsReecent/CompanyJobsRecentFooter",
+  title: "Molecules/CompanyJobsRecent/CompanyJobsRecentFooter",
   component: CompanyJobsRecentFooter,
 } as unknown as ComponentMeta<typeof CompanyJobsRecentFooter>;
 
