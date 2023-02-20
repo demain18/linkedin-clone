@@ -13,8 +13,7 @@ export const MainWrap = styled.div`
 `;
 
 export const SnbWrap = styled.div`
-  min-width: 320px;
-  /* flex: 20; */
+  flex-basis: 450px;
   height: 100%;
   display: flex;
   flex-direction: column;
