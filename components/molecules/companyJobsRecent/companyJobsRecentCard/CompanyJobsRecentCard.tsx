@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  BookmarkWrap,
   CompanyJobsRecentCardStyled,
   ContentWrap,
   LogoImg,
@@ -10,6 +11,7 @@ import tossLogoImg from "@/public/images/dummys/company/toss.png";
 import P from "@/components/atoms/typography/p/P";
 import { RssFeed } from "@material-ui/icons";
 import Span from "@/components/atoms/typography/span/Span";
+import { BookmarkBorder } from "@material-ui/icons";
 
 export interface Props {}
 
@@ -39,6 +41,9 @@ const CompanyJobsRecentCard = ({ ...rest }: Props) => {
           1 weeks ago
         </Span>
       </ContentWrap>
+      <BookmarkWrap>
+        <BookmarkBorder style={{ fontSize: 25 }} />
+      </BookmarkWrap>
     </CompanyJobsRecentCardStyled>
   );
 };

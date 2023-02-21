@@ -5,6 +5,7 @@ import Image from "next/image";
 import { transitionHover } from "@/styles/transitionStyles";
 
 export const CompanyJobsRecentCardStyled = styled.div<Props>`
+  position: relative;
   padding: 12px;
   background-color: ${(props) => props.theme.white};
   border: 1px solid ${(props) => props.theme.grayPoint1};
@@ -38,5 +39,26 @@ export const RecruitWrap = styled.div`
 
   svg {
     color: ${(props) => props.theme.green};
+  }
+`;
+
+export const BookmarkWrap = styled.div`
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 22px;
+  right: 18px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  ${transitionHover}
+
+  :hover {
+    background-color: ${(props) => props.theme.grayPoint1};
+  }
+
+  svg {
+    color: ${(props) => props.theme.grayPoint6};
   }
 `;
