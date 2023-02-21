@@ -1,5 +1,9 @@
 import React from "react";
-import { CompanyJobAlertStyled, ContentWrap } from "./CompanyJobAlertStyles";
+import {
+  CompanyJobAlertStyled,
+  ContentWrap,
+  IconStyled,
+} from "./CompanyJobAlertStyles";
 import { NotificationsNone } from "@material-ui/icons";
 import P from "@/components/atoms/typography/p/P";
 import RoundButton from "@/components/atoms/roundButton/RoundButton";
@@ -10,7 +14,9 @@ const CompanyJobAlert = ({ ...rest }: Props) => {
   return (
     <CompanyJobAlertStyled {...rest}>
       <ContentWrap>
-        <NotificationsNone style={{ fontSize: 24 }} />
+        <IconStyled>
+          <NotificationsNone style={{ fontSize: 24 }} />
+        </IconStyled>
         <div>
           <P color="grayPoint9" bold>
             Create job alert for Toss Bank

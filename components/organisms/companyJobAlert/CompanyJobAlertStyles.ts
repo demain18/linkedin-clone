@@ -15,6 +15,11 @@ export const CompanyJobAlertStyled = styled.div<Props>`
 
 export const ContentWrap = styled.div`
   display: flex;
-  color: ${(props) => props.theme.grayPoint9};
   gap: 8px;
+`;
+
+export const IconStyled = styled.div`
+  svg {
+    color: ${(props) => props.theme.grayPoint8};
+  }
 `;
