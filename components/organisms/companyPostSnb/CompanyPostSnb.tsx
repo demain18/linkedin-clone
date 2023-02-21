@@ -12,7 +12,7 @@ export interface Props {}
 
 const CompanyPostSnb = ({ ...rest }: Props) => {
   const { isLoading, error, data } = useQuery<getCompanyBannerDto>(
-    "companyBanner",
+    "companyPostSnb",
     getCompanyBanner
   );
 
