@@ -20,7 +20,7 @@ const CompanyJobRecent = ({ ...rest }: Props) => {
           Recently posted jobs
         </P>
         <CarouselMenuWrap>
-          <CompanyJobsRecentButton prev />
+          <CompanyJobsRecentButton prev disabled />
           <CompanyJobsRecentButton next />
         </CarouselMenuWrap>
       </HeaderWrap>

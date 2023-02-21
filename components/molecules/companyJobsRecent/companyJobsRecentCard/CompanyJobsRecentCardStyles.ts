@@ -47,7 +47,7 @@ export const BookmarkWrap = styled.div`
   width: 40px;
   height: 40px;
   position: absolute;
-  top: 22px;
+  top: 18px;
   right: 18px;
   border-radius: 100%;
   display: flex;
