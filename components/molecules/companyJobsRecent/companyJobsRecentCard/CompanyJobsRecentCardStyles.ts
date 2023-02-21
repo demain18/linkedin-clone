@@ -1,4 +1,4 @@
-import { boxRadius } from "@/styles/moduleStyles";
+import { boxRadius, nonSelect } from "@/styles/moduleStyles";
 import styled, { css } from "styled-components";
 import { Props } from "./CompanyJobsRecentCard";
 import Image from "next/image";
@@ -11,6 +11,7 @@ export const CompanyJobsRecentCardStyled = styled.div<Props>`
   border: 1px solid ${(props) => props.theme.grayPoint1};
   ${boxRadius}
   ${transitionHover}
+  ${nonSelect}
   cursor: pointer;
 
   :hover {
@@ -56,6 +57,10 @@ export const BookmarkWrap = styled.div`
 
   :hover {
     background-color: ${(props) => props.theme.grayPoint1};
+  }
+
+  :active {
+    background-color: ${(props) => props.theme.grayPoint2};
   }
 
   svg {

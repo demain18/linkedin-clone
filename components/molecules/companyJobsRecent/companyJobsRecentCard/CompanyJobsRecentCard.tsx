@@ -32,7 +32,7 @@ const CompanyJobsRecentCard = ({ ...rest }: Props) => {
           Seoul, Seoul, South Korea
         </P>
         <RecruitWrap>
-          <RssFeed style={{ fontSize: 22 }} />
+          <RssFeed style={{ fontSize: 21 }} />
           <Span fontSize={12} color="grayPoint6" bold>
             Actively recruiting
           </Span>
