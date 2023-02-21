@@ -1,6 +1,14 @@
 import P from "@/components/atoms/typography/p/P";
+import CompanyJobsRecentButton from "@/components/molecules/companyJobsRecent/companyJobsRecentButton/CompanyJobsRecentButton";
+import CompanyJobsRecentCard from "@/components/molecules/companyJobsRecent/companyJobsRecentCard/CompanyJobsRecentCard";
+import CompanyJobsRecentFooter from "@/components/molecules/companyJobsRecent/companyJobsRecentFooter/CompanyJobsRecentFooter";
 import React from "react";
-import { CompanyJobRecentStyled, HeaderWrap } from "./CompanyJobRecentStyles";
+import {
+  CarouselMenuWrap,
+  CarouselWrap,
+  CompanyJobRecentStyled,
+  HeaderWrap,
+} from "./CompanyJobRecentStyles";
 
 export interface Props {}
 
@@ -11,7 +19,15 @@ const CompanyJobRecent = ({ ...rest }: Props) => {
         <P fontSize={18} color="grayPoint9">
           Recently posted jobs
         </P>
+        <CarouselMenuWrap>
+          <CompanyJobsRecentButton prev />
+          <CompanyJobsRecentButton next />
+        </CarouselMenuWrap>
       </HeaderWrap>
+      <CarouselWrap>
+        <CompanyJobsRecentCard />
+      </CarouselWrap>
+      <CompanyJobsRecentFooter />
     </CompanyJobRecentStyled>
   );
 };
