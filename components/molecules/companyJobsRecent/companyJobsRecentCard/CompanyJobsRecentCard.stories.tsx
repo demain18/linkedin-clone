@@ -12,4 +12,10 @@ const Template: ComponentStory<typeof CompanyJobsRecentCard> = (args) => (
 );
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = {
+  jobTitle: defaultProps.jobTitle,
+  companyName: defaultProps.companyName,
+  companyRegion: defaultProps.companyRegion,
+  recruting: defaultProps.recruting,
+  timeAgo: defaultProps.timeAgo,
+};

@@ -13,9 +13,22 @@ import { RssFeed } from "@material-ui/icons";
 import Span from "@/components/atoms/typography/span/Span";
 import { BookmarkBorder } from "@material-ui/icons";
 
-export interface Props {}
+export interface Props {
+  jobTitle?: string;
+  companyName?: string;
+  companyRegion?: string;
+  recruting?: boolean;
+  timeAgo?: string;
+}
 
-const CompanyJobsRecentCard = ({ ...rest }: Props) => {
+const CompanyJobsRecentCard = ({
+  jobTitle,
+  companyName,
+  companyRegion,
+  recruting,
+  timeAgo,
+  ...rest
+}: Props) => {
   return (
     <CompanyJobsRecentCardStyled {...rest}>
       <LogoImgWrap>
@@ -23,22 +36,24 @@ const CompanyJobsRecentCard = ({ ...rest }: Props) => {
       </LogoImgWrap>
       <ContentWrap>
         <P color="grayPoint9" bold>
-          Frontend Developer (Internal Product)
+          {jobTitle}
         </P>
         <P fontSize={14} color="grayPoint9">
-          Toss Bank
+          {companyName}
         </P>
         <P fontSize={14} color="grayPoint6">
-          Seoul, Seoul, South Korea
+          {companyRegion}
         </P>
-        <RecruitWrap>
-          <RssFeed style={{ fontSize: 21 }} />
-          <Span fontSize={12} color="grayPoint6" bold>
-            Actively recruiting
-          </Span>
-        </RecruitWrap>
+        {recruting && (
+          <RecruitWrap>
+            <RssFeed style={{ fontSize: 21 }} />
+            <Span fontSize={12} color="grayPoint6" bold>
+              Actively recruiting
+            </Span>
+          </RecruitWrap>
+        )}
         <Span fontSize={12} color="grayPoint6">
-          1 weeks ago
+          {timeAgo}
         </Span>
       </ContentWrap>
       <BookmarkWrap>
@@ -49,5 +64,11 @@ const CompanyJobsRecentCard = ({ ...rest }: Props) => {
 };
 export default CompanyJobsRecentCard;
 
-export const defaultProps: Props = {};
+export const defaultProps: Props = {
+  jobTitle: "Frontend Developer (Internal Product)",
+  companyName: "Viva Republica (Toss)",
+  companyRegion: "Seoul, Seoul, South Korea",
+  recruting: true,
+  timeAgo: "1 weeks ago",
+};
 CompanyJobsRecentCard.defaultProps = {};
