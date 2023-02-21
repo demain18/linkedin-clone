@@ -4,7 +4,7 @@ import { Props } from "./[...slug]";
 export const GlobalWrap = styled.div`
   width: 100%;
   display: flex;
-  gap: 16px;
+  gap: 24px;
 `;
 
 export const MainWrap = styled.div`
