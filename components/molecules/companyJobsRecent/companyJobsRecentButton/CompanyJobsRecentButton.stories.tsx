@@ -22,3 +22,9 @@ export const Next = Template.bind({});
 Next.args = {
   next: defaultProps.next,
 };
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+  prev: defaultProps.prev,
+  disabled: true,
+};

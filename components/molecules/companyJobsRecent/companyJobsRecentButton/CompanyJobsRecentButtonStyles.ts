@@ -3,9 +3,9 @@ import { transitionHover } from "@/styles/transitionStyles";
 import styled, { css } from "styled-components";
 import { Props } from "./CompanyJobsRecentButton";
 
-export const CompanyJobsRecentButtonStyled = styled.div<Props>``;
+export const CompanyJobsRecentButtonStyled = styled.div``;
 
-export const ButtonWrap = styled.div`
+export const ButtonWrap = styled.div<Props>`
   display: inline-block;
   padding: 2px 8px;
   cursor: pointer;
@@ -17,6 +17,22 @@ export const ButtonWrap = styled.div`
   :hover {
     background-color: ${(props) => props.theme.grayPoint1};
   }
+
+  ${(props) =>
+    props.disabled &&
+    css`
+      p {
+        color: ${(props) => props.theme.grayPoint4};
+      }
+      svg {
+        color: ${(props) => props.theme.grayPoint4};
+      }
+
+      :hover {
+        background-color: rgba(0, 0, 0, 0);
+        cursor: not-allowed !important;
+      }
+    `}
 `;
 
 export const ButtonContentWrap = styled.div`

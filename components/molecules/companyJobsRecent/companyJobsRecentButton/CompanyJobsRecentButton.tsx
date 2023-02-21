@@ -11,13 +11,14 @@ import { ArrowForwardIos } from "@material-ui/icons";
 export interface Props {
   prev?: boolean;
   next?: boolean;
+  disabled?: boolean;
 }
 
-const CompanyJobsRecentButton = ({ prev, next, ...rest }: Props) => {
+const CompanyJobsRecentButton = ({ disabled, prev, next, ...rest }: Props) => {
   return (
     <CompanyJobsRecentButtonStyled {...rest}>
       {prev && (
-        <ButtonWrap>
+        <ButtonWrap disabled={disabled}>
           <ButtonContentWrap>
             <ArrowFlip>
               <ArrowForwardIos style={{ fontSize: 16 }} />
@@ -46,5 +47,8 @@ export default CompanyJobsRecentButton;
 export const defaultProps: Props = {
   prev: true,
   next: true,
+  disabled: false,
 };
-CompanyJobsRecentButton.defaultProps = {};
+CompanyJobsRecentButton.defaultProps = {
+  disabled: false,
+};
