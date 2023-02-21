@@ -19,6 +19,9 @@ import CompanyLocation from "@/components/organisms/companyLocation/CompanyLocat
 import { useEffect, useState } from "react";
 import CompanyPostSnb from "@/components/organisms/companyPostSnb/CompanyPostSnb";
 import Timeline from "@/components/organisms/timeline/Timeline";
+import CompanyJobAlert from "@/components/organisms/companyJobAlert/CompanyJobAlert";
+import CompanyJobSearch from "@/components/organisms/companyJobSearch/CompanyJobSearch";
+import CompanyJobRecent from "@/components/organisms/companyJobRecent/CompanyJobRecent";
 
 export interface Props {}
 
@@ -62,7 +65,13 @@ const App: NextPage = () => {
                   </PostContentWrap>
                 </PostsWrap>
               )}
-              {slugNow === "jobs" && <CompanyWrap>Jobs</CompanyWrap>}
+              {slugNow === "jobs" && (
+                <CompanyWrap>
+                  <CompanyJobAlert />
+                  <CompanyJobSearch />
+                  <CompanyJobRecent />
+                </CompanyWrap>
+              )}
             </MainWrap>
             <SnbWrap>
               <SnbFunding />

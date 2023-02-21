@@ -4,7 +4,7 @@ import { Props } from "./[...slug]";
 export const GlobalWrap = styled.div`
   width: 100%;
   display: flex;
-  gap: 24px;
+  gap: 16px;
 `;
 
 export const MainWrap = styled.div`
@@ -17,14 +17,14 @@ export const SnbWrap = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
 `;
 
 export const CompanyWrap = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
   padding-bottom: 24px;
 `;
 
