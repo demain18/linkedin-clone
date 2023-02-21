@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  ButtonWrap,
   CompanyJobAlertStyled,
   ContentWrap,
   IconStyled,
@@ -19,16 +20,19 @@ const CompanyJobAlert = ({ ...rest }: Props) => {
         </IconStyled>
         <div>
           <P color="grayPoint9" bold>
-            Create job alert for Toss Bank
+            Create job alert for Viva Republica (Toss)
           </P>
           <P color="grayPoint9" fontSize={14}>
-            Get notified when Toss Bank posts new jobs that match your interest.
+            Get notified when Viva Republica (Toss) posts new jobs that match
+            your interest.
           </P>
         </div>
       </ContentWrap>
-      <RoundButton>
-        <P color="grayPoint6">Create job alert</P>
-      </RoundButton>
+      <ButtonWrap>
+        <RoundButton>
+          <P color="grayPoint6">Create job alert</P>
+        </RoundButton>
+      </ButtonWrap>
     </CompanyJobAlertStyled>
   );
 };

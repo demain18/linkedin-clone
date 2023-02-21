@@ -10,7 +10,7 @@ const CompanyJobSearch = ({ ...rest }: Props) => {
   return (
     <CompanyJobSearchStyled {...rest}>
       <P color="grayPoint9" fontSize={20}>
-        Toss Bank has 74 job openings - find the one for you.
+        Viva Republica (Toss) has 223 job openings - find the one for you.
       </P>
       <SearchWrap>
         <Input placeholder="Job title or keyword" />
