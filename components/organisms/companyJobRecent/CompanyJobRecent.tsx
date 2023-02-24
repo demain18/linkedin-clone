@@ -2,7 +2,10 @@ import P from "@/components/atoms/typography/p/P";
 import CompanyJobsRecentButton from "@/components/molecules/companyJobsRecent/companyJobsRecentButton/CompanyJobsRecentButton";
 import CompanyJobsRecentCard from "@/components/molecules/companyJobsRecent/companyJobsRecentCard/CompanyJobsRecentCard";
 import CompanyJobsRecentFooter from "@/components/molecules/companyJobsRecent/companyJobsRecentFooter/CompanyJobsRecentFooter";
+import { getCompanyJobsRecent } from "modules/api/apiRequest";
+import { getCompanyJobsRecentDto } from "modules/api/apiRequest.dto";
 import React from "react";
+import { useQuery } from "react-query";
 import {
   CarouselMenuWrap,
   CarouselWrap,
@@ -13,6 +16,11 @@ import {
 export interface Props {}
 
 const CompanyJobRecent = ({ ...rest }: Props) => {
+  const { isLoading, error, data } = useQuery<getCompanyJobsRecentDto[]>(
+    "companyJobsRecent",
+    getCompanyJobsRecent
+  );
+
   return (
     <CompanyJobRecentStyled {...rest}>
       <HeaderWrap>
@@ -25,7 +33,16 @@ const CompanyJobRecent = ({ ...rest }: Props) => {
         </CarouselMenuWrap>
       </HeaderWrap>
       <CarouselWrap>
-        <CompanyJobsRecentCard />
+        {data?.map((i, x) => (
+          <CompanyJobsRecentCard
+            key={x + "key"}
+            logoImg={i.logoImg}
+            jobTitle={i.jobTitle}
+            companyName={i.companyName}
+            companyRegion={i.companyRegion}
+            timeAgo={i.timeAgo}
+          />
+        ))}
       </CarouselWrap>
       <CompanyJobsRecentFooter />
     </CompanyJobRecentStyled>

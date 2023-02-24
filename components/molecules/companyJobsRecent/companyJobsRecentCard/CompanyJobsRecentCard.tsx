@@ -6,6 +6,7 @@ import {
   LogoImg,
   LogoImgWrap,
   RecruitWrap,
+  TimeAgoWrap,
 } from "./CompanyJobsRecentCardStyles";
 import tossLogoImg from "@/public/images/dummys/company/toss.png";
 import placeholerImg from "@/public/images/avatar.png";
@@ -56,9 +57,11 @@ const CompanyJobsRecentCard = ({
             </Span>
           </RecruitWrap>
         )}
-        <Span fontSize={12} color="grayPoint6">
-          {timeAgo}
-        </Span>
+        <TimeAgoWrap>
+          <Span fontSize={12} color="grayPoint6">
+            {timeAgo}
+          </Span>
+        </TimeAgoWrap>
       </ContentWrap>
       <BookmarkWrap>
         <BookmarkBorder style={{ fontSize: 25 }} />

@@ -5,6 +5,8 @@ import Image from "next/image";
 import { transitionHover } from "@/styles/transitionStyles";
 
 export const CompanyJobsRecentCardStyled = styled.div<Props>`
+  width: 100%;
+  height: 260px;
   position: relative;
   padding: 12px;
   background-color: ${(props) => props.theme.white};
@@ -41,6 +43,12 @@ export const RecruitWrap = styled.div`
   svg {
     color: ${(props) => props.theme.green};
   }
+`;
+
+export const TimeAgoWrap = styled.div`
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
 `;
 
 export const BookmarkWrap = styled.div`

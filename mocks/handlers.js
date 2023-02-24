@@ -197,4 +197,37 @@ export const handlers = [
       ])
     );
   }),
+  rest.get("/company/jobs/recent", (req, res, ctx) => {
+    const company = req.url.searchParams.get("company");
+
+    return res(
+      ctx.status(200),
+      ctx.json([
+        {
+          logoImg: tossImg,
+          jobTitle: "Frontend Developer (Internal Product)",
+          companyName: "Viva Republica (Toss)",
+          companyRegion: "Seoul, Seoul, South Korea",
+          recruting: true,
+          timeAgo: "1 weeks ago",
+        },
+        {
+          logoImg: tossImg,
+          jobTitle: "Overseas Operations Manager (해외주식 야간데스크)",
+          companyName: "Viva Republica (Toss)",
+          companyRegion: "Seoul, Seoul, South Korea",
+          recruting: true,
+          timeAgo: "2 weeks ago",
+        },
+        {
+          logoImg: tossImg,
+          jobTitle: "Data Engineer (실험/분석 플랫폼)",
+          companyName: "Viva Republica (Toss)",
+          companyRegion: "Seoul, Seoul, South Korea",
+          recruting: true,
+          timeAgo: "1 months ago",
+        },
+      ])
+    );
+  }),
 ];

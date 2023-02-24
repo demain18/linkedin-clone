@@ -106,3 +106,12 @@ export interface getCompanyOverviewDto {
 export interface getCompanyLocationDto {
   location?: string;
 }
+
+export interface getCompanyJobsRecentDto {
+  logoImg?: StaticImageData;
+  jobTitle?: string;
+  companyName?: string;
+  companyRegion?: string;
+  recruting?: boolean;
+  timeAgo?: string;
+}
