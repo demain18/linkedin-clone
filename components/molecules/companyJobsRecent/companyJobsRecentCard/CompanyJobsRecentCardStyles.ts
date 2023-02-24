@@ -17,7 +17,7 @@ export const CompanyJobsRecentCardStyled = styled.div<Props>`
   cursor: pointer;
 
   :hover {
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    box-shadow: ${(props) => props.theme.grayPoint1} 0px 3px 3px 0px;
   }
 `;
 

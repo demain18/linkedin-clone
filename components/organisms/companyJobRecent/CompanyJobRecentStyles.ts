@@ -25,4 +25,6 @@ export const CarouselMenuWrap = styled.div`
 
 export const CarouselWrap = styled.div`
   padding: 12px 24px;
+  display: flex;
+  gap: 14px;
 `;
