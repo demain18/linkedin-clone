@@ -7,15 +7,20 @@
     "build": "next build",
     "test": "jest --watchAll",
     "start": "next start",
-    "sb": "start-storybook -p 6006",
+    "sb": "start-storybook -p 6006 -s ./public",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
+    "@reduxjs/toolkit": "^1.9.1",
     "next": "^12.1.4",
+    "next-redux-wrapper": "^8.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-query": "^3.39.2",
+    "react-redux": "^8.0.5",
+    "redux": "^4.2.0",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
@@ -37,6 +42,7 @@
     "@types/react-dom": "18.0.6",
     "@types/styled-components": "^5.1.26",
     "babel-loader": "^8.2.5",
+    "babel-plugin-styled-components": "^2.0.7",
     "css-loader": "^6.7.1",
     "eslint": "8.22.0",
     "eslint-config-next": "12.2.5",
@@ -44,10 +50,17 @@
     "jest": "^28.1.3",
     "jest-environment-jsdom": "^28.1.3",
     "jest-styled-components": "^7.1.1",
+    "msw": "^0.49.1",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-logger": "^3.0.6",
     "sass-loader": "^13.0.2",
+    "storybook-addon-next-router": "^4.0.2",
     "storybook-addon-sass-postcss": "^0.1.3",
     "style-loader": "^3.3.1",
     "ts-jest": "^29.0.1",
     "typescript": "4.7.4"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }

@@ -1,12 +1,16 @@
 import styled, { css } from "styled-components";
-import { palette } from "../../../../styles/paletteStyles";
+
 import { Props } from "./Span";
 
 export const SpanStyled = styled.span<Props>`
-  font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
-  color: rgba(0, 0, 0, 0.8);
+  color: ${(props) => props.theme.grayPoint8};
+
+  ${(props) =>
+    css`
+      font-size: ${props.fontSize}px;
+    `}
 
   ${(props) =>
     props.bold &&
@@ -16,6 +20,6 @@ export const SpanStyled = styled.span<Props>`
 
   ${(props) =>
     css`
-      color: ${palette[props.color as keyof typeof palette]};
+      color: ${props.theme[props.color!]};
     `}
 `;

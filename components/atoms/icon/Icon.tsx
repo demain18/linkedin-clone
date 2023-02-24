@@ -1,16 +1,17 @@
 import React from "react";
-import styled from "styled-components";
 import { IconStyled } from "./IconStyles";
 import Home from "@material-ui/icons/Home";
 
-interface Props {}
+export interface Props {}
 
-export default function Icon({ ...rest }: Props): JSX.Element {
+const Icon = ({ ...rest }: Props) => {
   return (
-    <IconStyled>
+    <IconStyled {...rest}>
       <Home />
     </IconStyled>
   );
-}
+};
+export default Icon;
 
+export const defaultProps: Props = {};
 Icon.defaultProps = {};

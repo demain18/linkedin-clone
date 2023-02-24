@@ -41,6 +41,9 @@ const nextConfig = {
     "/node_modules/",
     "^.+\\.module\\.(css|sass|scss)$",
   ],
+  images: {
+    domains: ["github.com", "localhost"],
+  },
 };
 
 module.exports = nextConfig;
