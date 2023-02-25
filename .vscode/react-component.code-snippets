@@ -62,6 +62,6 @@
   "import mui icon": {
     "prefix": "impMuiIon",
     "body": ["import {$1} from \"@material-ui/icons\";"],
-    "description": "next/image를 import합니다."
+    "description": "material ui icon을 import합니다."
   }
 }
