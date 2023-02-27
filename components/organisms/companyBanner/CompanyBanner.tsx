@@ -44,8 +44,8 @@ const CompanyBanner = ({ ...rest }: Props) => {
 
     setMenuList(linkedMenuList);
 
-    console.log("router event");
-  }, [router.isReady]);
+    console.log(router.asPath);
+  }, [router.asPath, data]);
 
   return (
     <CompanyBannerStyled {...rest}>
