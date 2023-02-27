@@ -43,8 +43,6 @@ const CompanyBanner = ({ ...rest }: Props) => {
     }
 
     setMenuList(linkedMenuList);
-
-    console.log(router.asPath);
   }, [router.asPath, data]);
 
   return (

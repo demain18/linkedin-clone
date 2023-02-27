@@ -7,7 +7,7 @@ import {
   Button,
   ButtonWrap,
 } from "./WritePostStyles";
-import avatarImg from "@/public/images/dummys/avatar.png";
+import avatarImg from "@/public/images/avatar.png";
 import RoundButton from "@/components/atoms/roundButton/RoundButton";
 import HoverButton from "@/components/atoms/hoverButton/HoverButton";
 import P from "@/components/atoms/typography/p/P";

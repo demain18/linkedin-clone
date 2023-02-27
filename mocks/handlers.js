@@ -2,8 +2,8 @@ import { rest } from "msw";
 
 import tossLogoimg from "@/public/images/dummys/company/toss.png";
 import tossBannerimg from "@/public/images/dummys/company/toss_banner.png";
-import bannerImg from "@/public/images/dummys/banner.png";
-import avatarImg from "@/public/images/dummys/avatar.png";
+import bannerImg from "@/public/images/banner.png";
+import avatarImg from "@/public/images/avatar.png";
 import tossImg from "@/public/images/dummys/company/toss.png";
 import lineImg from "@/public/images/dummys/company/line.png";
 import kakaoImg from "@/public/images/dummys/company/kakao_pay.png";
