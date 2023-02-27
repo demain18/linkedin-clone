@@ -18,7 +18,7 @@ const CompanyJobSearch = ({ ...rest }: Props) => {
   return (
     <CompanyJobSearchStyled {...rest}>
       <P color="grayPoint9" fontSize={20}>
-        {`${data?.name} has 999 job openings - find the one for you.`}
+        {`${data?.name} has 21 job openings - find the one for you.`}
       </P>
       <SearchWrap>
         <Input placeholder="Job title or keyword" />
