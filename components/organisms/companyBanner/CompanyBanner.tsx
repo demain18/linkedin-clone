@@ -30,21 +30,22 @@ const CompanyBanner = ({ ...rest }: Props) => {
 
   useEffect(() => {
     const { slug } = router.query;
+    let linkedMenuList: any;
 
     if ((slug?.length || 0) > 1) {
-      const newMenuList = data?.menuList?.map((menu) =>
+      linkedMenuList = data?.menuList?.map((menu) =>
         menu?.name.toLowerCase() === slug![1] ? { ...menu, active: true } : menu
       );
-
-      setMenuList(newMenuList);
     } else {
-      const newMenuList = data?.menuList?.map((menu, x) =>
+      linkedMenuList = data?.menuList?.map((menu, x) =>
         x === 0 ? { ...menu, active: true } : menu
       );
-
-      setMenuList(newMenuList);
     }
-  }, [router.asPath]);
+
+    setMenuList(linkedMenuList);
+
+    console.log("router event");
+  }, [router.isReady]);
 
   return (
     <CompanyBannerStyled {...rest}>

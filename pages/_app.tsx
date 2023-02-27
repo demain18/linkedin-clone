@@ -11,7 +11,7 @@ import { paletteLight, paletteDark } from "@/styles/paletteStyles";
 // msw 적용
 if (typeof global.process === "undefined") {
   const { worker } = require("../mocks/browser");
-  worker.start();
+  worker.start({ quiet: true });
 }
 
 function MyApp({ Component, pageProps }: AppProps) {

@@ -40,7 +40,7 @@ Object.defineProperty(NextImage, "default", {
 // msw 적용
 if (typeof global.process === "undefined") {
   const { worker } = require("../mocks/browser");
-  worker.start();
+  worker.start({ quiet: true });
 }
 
 // react-quary 적용
