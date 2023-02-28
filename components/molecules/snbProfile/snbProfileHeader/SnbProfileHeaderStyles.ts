@@ -7,7 +7,7 @@ import { layoutWidth, nonSelect } from "@/styles/moduleStyles";
 export const SnbProfileHeaderStyled = styled.div`
   /* max-width: ${layoutWidth.snbProflie}px; */
   width: 100%;
-  background-color: ${(props) => props.theme.white};
+  /* background-color: ${(props) => props.theme.white}; */
   padding-bottom: 16px;
   box-sizing: border-box;
 `;

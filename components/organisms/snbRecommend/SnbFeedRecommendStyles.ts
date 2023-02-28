@@ -5,7 +5,8 @@ import { Props } from "./SnbFeedRecommend";
 
 export const SnbRecommendStyled = styled.div<Props>`
   position: relative;
-  max-width: 312px;
+  /* max-width: 312px; */
+  width: 100%;
   padding: 12px;
   ${boxRadius}
   background-color: ${(props) => props.theme.white};
