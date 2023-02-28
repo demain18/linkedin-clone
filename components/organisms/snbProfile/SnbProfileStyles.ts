@@ -9,7 +9,7 @@ export const SnbProfileStyled = styled.div<Props>`
   ${boxRadius}
   overflow: hidden;
   position: relative;
-  border: 1px solid ${(props) => props.theme.grayPoint1};
+  border: 1px solid ${(props) => props.theme.grayPoint1LighterHex};
   flex-basis: ${layoutWidth.snbProflie}px;
 `;
 
