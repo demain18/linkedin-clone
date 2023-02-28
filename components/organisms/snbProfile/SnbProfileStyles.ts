@@ -11,6 +11,7 @@ export const SnbProfileStyled = styled.div<Props>`
   position: relative;
   border: 1px solid ${(props) => props.theme.grayPoint1LighterHex};
   flex-basis: ${layoutWidth.snbProflie}px;
+  background-color: ${(props) => props.theme.white};
 `;
 
 export const Divider = styled.div`
