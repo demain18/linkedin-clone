@@ -9,7 +9,8 @@ import { Props } from "./SnbProfileButton";
 
 export const SnbProfileButtonStyled = styled.div<Props>`
   position: relative;
-  max-width: ${layoutWidth.snbProflie}px;
+  /* max-width: ${layoutWidth.snbProflie}px; */
+  width: 100%;
   /* background-color: ${(props) => props.theme.white}; */
   padding: 4px 12px;
   cursor: pointer;

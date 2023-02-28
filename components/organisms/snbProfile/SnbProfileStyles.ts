@@ -5,7 +5,8 @@ import { Props } from "./SnbProfile";
 import Image from "next/image";
 
 export const SnbProfileStyled = styled.div<Props>`
-  max-width: ${layoutWidth.snbProflie}px;
+  /* max-width: ${layoutWidth.snbProflie}px; */
+  width: 100%;
   ${boxRadius}
   overflow: hidden;
   position: relative;
