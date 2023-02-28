@@ -37,7 +37,7 @@ export const RoundButtonStyled = styled.button<Props>`
       span,
       h1,
       svg {
-        color: ${props.theme[props.color!]}!important;
+        color: ${props.theme[props.color!]};
       }
 
       :hover {
@@ -59,7 +59,12 @@ export const RoundButtonStyled = styled.button<Props>`
       }
 
       :hover {
-        filter: brightness(80%);
+        /* filter: brightness(80%); */
+        background-color: ${props.theme[props.color + "Darken"!]}!important;
+        border-color: ${props.theme[props.color + "Darken"!]}!important;
+        box-shadow: inset 0 0 0 1px
+          ${props.theme[props.color + "Darken"!]}!important;
+        /* border: none; */
       }
     `}
 `;

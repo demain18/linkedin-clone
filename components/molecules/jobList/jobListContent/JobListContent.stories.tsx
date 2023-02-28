@@ -23,3 +23,16 @@ Default.args = {
   datetime: defaultProps.datetime,
   applicants: defaultProps.applicants,
 };
+
+export const Active = Template.bind({});
+Active.args = {
+  active: true,
+  employerLogo: defaultProps.employerLogo,
+  employerCompany: defaultProps.employerCompany,
+  title: defaultProps.title,
+  country: defaultProps.country,
+  jobForm: defaultProps.jobForm,
+  actively: defaultProps.actively,
+  datetime: defaultProps.datetime,
+  applicants: defaultProps.applicants,
+};
