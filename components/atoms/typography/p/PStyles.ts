@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import { Props } from "./P";
 
 export const PStyled = styled.p<Props>`
+  position: relative;
   font-weight: normal;
   line-height: 1.5;
   color: ${(props) => props.theme.grayPoint8};
