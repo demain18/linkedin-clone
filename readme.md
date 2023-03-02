@@ -32,3 +32,8 @@
 - yarn build : 빌드 수행하기
 - yarn start : 프로덕트 환경에서 서버 실행하기
 - yarn export : 빌드 파일 index.html로 변환하기
+
+## 프로젝트에 관한 글
+
+- [아토믹 컴포넌트를 적용하고 느낀 것들](https://demain18-blog.tistory.com/70)
+- [Atomic Pattern을 적용한 컴포넌트 작성하기](https://demain18-blog.tistory.com/75)
