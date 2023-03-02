@@ -1,21 +1,28 @@
-# Linkedin Clone
-
 ## 소개
 
-구인구직 서비스인 링크드인을 React를 사용해 클론코딩한 프로젝트 입니다.
+커뮤니티 웹 서비스인 링크드인을 React를 사용해 클론코딩한 프로젝트 입니다.
 
 ## 개발 기간
 
 2022년 11월 26일 ~ 2023년 3월 15일
 
+## 참여 인원
+
+- 김명준(Brian)
+
 ## 기술 스택
 
+- Typescript
 - React
 - Next.js
-- Styled-component
+- Styled Component
+- React Query
+- Mock Service Worker
+- redux
 - Storybook
 - Jest
-- React-testing-library
+- React Testing Library
+- Material UI
 - Firebase
 
 ## Yarn 명령어
