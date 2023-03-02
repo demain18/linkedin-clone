@@ -42,6 +42,8 @@ const nextConfig = {
     "^.+\\.module\\.(css|sass|scss)$",
   ],
   images: {
+    unoptimized: true,
+    loader: "custom",
     domains: ["github.com", "localhost"],
   },
 };

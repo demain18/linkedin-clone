@@ -36,3 +36,6 @@ yarn-error.log*
 
 ## react
 dist
+
+## firebase
+firebase-debug.log

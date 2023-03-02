@@ -5,11 +5,11 @@
   "homepage": "https://demain18.github.io/linkedin-clone/",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "test": "jest --watchAll",
-    "start": "next start",
     "sb": "start-storybook -p 6006 -s ./public",
-    "build-storybook": "build-storybook",
+    "test": "jest --watchAll",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start",
     "deploy": "next build && next export && touch out/.nojekyll && git add -f out/ && git commit -m 'deploy to gh-pages' && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
