@@ -27,8 +27,8 @@ const TimelineImages = ({ images, overPenta, ...rest }: Props) => {
   const [overPentaCount, setOverPentaCount] = useState<number>();
 
   useEffect(() => {
-    let count = images!.length;
-    setOverPentaCount(count - 5);
+    let count = images?.length;
+    setOverPentaCount(count! - 5);
   }, []);
 
   return (

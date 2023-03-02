@@ -22,6 +22,7 @@ export interface getTimelinePostDto {
   followers: number;
   datetime: string;
   desc: string;
+  images: StaticImageData[];
 }
 
 export interface getJobsRecommendsDto {

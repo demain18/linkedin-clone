@@ -16,13 +16,7 @@ import { getTimelinePostDto } from "modules/api/apiRequest.dto";
 
 export interface Props {}
 
-export interface TimelinePostProps {
-  avatarImg: StaticImageData;
-  userName: string;
-  followers: number;
-  datetime: string;
-  desc: string;
-}
+export interface TimelinePostProps {}
 
 const Timeline = ({ ...rest }: Props) => {
   let feedParam: number = 1;
@@ -31,17 +25,6 @@ const Timeline = ({ ...rest }: Props) => {
     ["timelinePost", feedParam],
     () => getTimelinePost(feedParam)
   );
-
-  const [imageList, setImageList] = useState<StaticImageData[]>([
-    img1,
-    img2,
-    img3,
-    img4,
-    img5,
-    img1,
-    img1,
-    img1,
-  ]);
 
   return (
     <TimelineStyled {...rest}>
@@ -55,7 +38,7 @@ const Timeline = ({ ...rest }: Props) => {
         />
         <TimelineDescription desc={data?.desc} />
       </PaddingWrap>
-      <TimelineImages images={imageList} overPenta />
+      <TimelineImages images={data?.images} />
       <EventsWrap>
         <TimelineEvents />
       </EventsWrap>

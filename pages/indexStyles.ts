@@ -31,6 +31,8 @@ export const TimelineWrap = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  padding-bottom: 24px;
 `;
 
 export const SnbRecommendWrap = styled.div`

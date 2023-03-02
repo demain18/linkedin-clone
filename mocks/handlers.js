@@ -9,6 +9,10 @@ import lineImg from "@/public/images/dummys/company/line.png";
 import kakaoImg from "@/public/images/dummys/company/kakao_pay.png";
 import dummyData from "mocks/dummyData.json";
 
+import timeline1_1 from "@/public/images/dummys/timline/toss/1_1.jpeg";
+import timeline1_2 from "@/public/images/dummys/timline/toss/1_2.jpeg";
+import timeline1_3 from "@/public/images/dummys/timline/toss/1_3.jpeg";
+
 export const handlers = [
   rest.get("/data/profile", (req, res, ctx) => {
     return res(
@@ -53,8 +57,9 @@ export const handlers = [
         userName: "Viva Republica (Toss)",
         companyUid: "tossbank",
         followers: 3500,
-        datetime: "9h",
-        desc: '"토스, 6개월간 사기 송금 피해 15만건 막았다"\n토스는 의심스러운 금융 거래를 미리 탐지하고 차단하는 FDS팀(이상거래탐지시스템팀)의 노력으로 최근 6개월 동안 토스 사용자 5만 1500여명, 약 15만건의 송금 피해 막을 수 있었어요.\n토스 FDS팀(이상거래탐지시스템팀)은 아래 두 가지 노력을 통해 토스 사용자들이 더욱 안심하고 토스를 이용할 수 있도록 만들고 있어요.\n☝🏻사용자의 기기 정보, 접속 위치, 환경, 평상시 거래 패턴 등을 머신러닝 기술을 통해 분석하여 의심스러운 송금을 차단하고 있어요!\n✌🏻 안심결제 페이지를 악용한 신종 사기 수법을 확인하고, 이에 대응하는 프로그램을 개발해 사용자들의 피해를 막고 있어요!\n토스팀이 어떻게 사기 피해 송금을 막을 수 있었는지 궁금하신 분들은 아래 피드를 확인해주세요!',
+        datetime: "2w",
+        desc: "Word-토스 시리즈, 여섯 번째 이야기 | '커싸’\n아마 많은 토스팀원 분들의 출근 루틴에 ‘커싸’가 빠질 수 없을 것 같은데요, 커싸(Coffee Silo)는 바로 토스에만 있는 실용적이고 매력적인 사내 카페의 호칭이에요.\n음료 제조뿐만이 아니라 토스팀의 연결고리가 되어주는 친절한 바리스타 분들이 계시는 커싸에는 언제나 커피 향과 북적거림이 가득해요. 토스의 지인을 통해 커싸에 방문하신 후에 커피 맛을 잊지 못해 토스에 입사하신 분도 있다는 우스갯소리가 있을 만큼, 커싸는 출근의 이유로도 충분한 최고의 복지중 하나랍니다.\n커싸에 직접 방문하지 않아도 사내 협업 툴인 슬랙에 있는 커싸봇을 이용해 언제 어디서나 메뉴를 주문할 수 있는데요. 원하는 메뉴와 취향에 맞는 옵션을 선택하고 주문 완료를 누르면, 바리스타 분들이 빠르게 음료를 제조해 주세요. 픽업 알림이 뜨면 바로 커싸에서 맛있는 음료를 받아볼 수 있답니다.\n커싸의 메뉴가 궁금하실 것 같아 여러분들께만 살짝 소개해 드릴게요. 커싸에는 15가지 이상의 달달하고 씁쓸한 커피 메뉴와, 5가지 이상의 감성카페에서 볼법한 논커피 메뉴, 그리고 7가지 이상의 향긋한 티 메뉴도 준비되어 있어요. 최근 신메뉴로 팀원들의 사랑을 받고 있는 음료를 사진으로 한번 확인해 보세요!️\n☕️토스팀의 일상에 즐거움을 선사하는 커피사일로의 이야기가 궁금하다면?",
+        images: [timeline1_1, timeline1_2, timeline1_3],
       })
     );
   }),
