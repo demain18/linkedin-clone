@@ -55,5 +55,6 @@ const SnbPageRecommend = ({ ...rest }: Props) => {
   );
 };
 export default SnbPageRecommend;
+export const defaultProps: Props = {};
 
 SnbPageRecommend.defaultProps = {};

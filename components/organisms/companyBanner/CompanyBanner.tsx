@@ -97,4 +97,5 @@ const CompanyBanner = ({ ...rest }: Props) => {
 };
 export default CompanyBanner;
 
+export const defaultProps: Props = {};
 CompanyBanner.defaultProps = {};
