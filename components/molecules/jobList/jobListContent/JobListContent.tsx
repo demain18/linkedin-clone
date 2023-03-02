@@ -4,6 +4,7 @@ import {
   ContentWrap,
   InfoWrap,
   JobListContentStyled,
+  LinkWrap,
   LogoImage,
   LogoImgWrap,
 } from "./JobListContentStyles";
@@ -52,7 +53,9 @@ const JobListContent = ({
         </P>
         <Link href={`/company/${employerCompanyUid}`} passHref>
           <a>
-            <P fontSize={14}>{employerCompany}</P>
+            <LinkWrap>
+              <P fontSize={14}>{employerCompany}</P>
+            </LinkWrap>
           </a>
         </Link>
         <P fontSize={14} color="grayPoint6">

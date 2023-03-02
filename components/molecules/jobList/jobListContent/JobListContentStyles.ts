@@ -37,12 +37,12 @@ export const ContentWrap = styled.div`
       text-decoration: underline;
     }
   }
+`;
 
-  p:nth-child(2) {
-    :hover {
-      color: ${(props) => props.theme.primary};
-      text-decoration: underline;
-    }
+export const LinkWrap = styled.div`
+  p:hover {
+    color: ${(props) => props.theme.primary};
+    text-decoration: underline;
   }
 `;
 
