@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { Props } from "./index";
+import { Props } from "../../pages/jobs/index";
 
 export const GlobalWrap = styled.div`
   width: 100%;

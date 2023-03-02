@@ -10,7 +10,7 @@ import {
   PostSnbWrap,
   PostsWrap,
   SnbWrap,
-} from "./companyStyles";
+} from "@/styles/pages/companyStyles";
 import SnbPageRecommend from "@/components/organisms/snbPageRecommend/SnbPageRecommend";
 import SnbFunding from "@/components/organisms/snbFunding/SnbFunding";
 import CompanyBanner from "@/components/organisms/companyBanner/CompanyBanner";

@@ -1,9 +1,7 @@
 import { layoutWidth } from "@/styles/moduleStyles";
+import styled from "styled-components";
 
-import styled, { css } from "styled-components";
-import { Props } from "./index";
-
-export const Frame = styled.div<Props>`
+export const Frame = styled.div`
   background-color: ${(props) => props.theme.background};
   height: calc(100vh - 55px);
 `;
