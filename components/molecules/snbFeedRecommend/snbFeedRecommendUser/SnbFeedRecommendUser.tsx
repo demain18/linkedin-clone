@@ -8,19 +8,28 @@ import {
   ContentWrap,
   Gap,
   SnbFeedRecommendUserStyled,
+  TitleHover,
 } from "./SnbFeedRecommendUserStyles";
 import Add from "@material-ui/icons/Add";
 import avatarImg from "@/public/images/avatar.png";
 import Avatar from "@/components/atoms/avatar/Avatar";
 import { StaticImageData } from "next/image";
+import Link from "next/link";
 
 export interface Props {
   avatarImg?: StaticImageData;
   name?: string;
   info?: string;
+  companyUid?: string;
 }
 
-const SnbFeedRecommendUser = ({ avatarImg, name, info, ...rest }: Props) => {
+const SnbFeedRecommendUser = ({
+  avatarImg,
+  name,
+  info,
+  companyUid,
+  ...rest
+}: Props) => {
   return (
     <SnbFeedRecommendUserStyled {...rest}>
       <ContentWrap>
@@ -28,9 +37,13 @@ const SnbFeedRecommendUser = ({ avatarImg, name, info, ...rest }: Props) => {
           <Avatar image={avatarImg} size={48} />
         </AvatarImageWrap>
         <div>
-          <P color="grayPoint9" fontSize={14} bold>
-            {name}
-          </P>
+          <Link href={`/company/${companyUid}`}>
+            <TitleHover>
+              <P color="grayPoint9" fontSize={14} bold>
+                {name}
+              </P>
+            </TitleHover>
+          </Link>
           <P color="grayPoint6" fontSize={12}>
             {info}
           </P>

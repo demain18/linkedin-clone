@@ -35,16 +35,19 @@ export const handlers = [
           avatarImg: tossImg,
           name: "Viva Republica (Toss)",
           info: "Conpany · Financial Services",
+          companyUid: "tossbank",
         },
         {
           avatarImg: lineImg,
           name: "LINE Plus Corp",
           info: "Company · Computer Software",
+          companyUid: "lineplus",
         },
         {
           avatarImg: kakaoImg,
           name: "카카오페이 (kakaopay)",
           info: "Company · Information Technology & Services",
+          companyUid: "kakaopay",
         },
       ])
     );

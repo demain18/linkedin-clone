@@ -13,6 +13,7 @@ export interface getUserListDto {
   avatarImg: StaticImageData;
   name: string;
   info: string;
+  companyUid: string;
 }
 
 export interface getTimelinePostDto {

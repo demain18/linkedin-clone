@@ -1,8 +1,9 @@
-import { nonSelect } from "@/styles/moduleStyles";
+import { linkHover, nonSelect } from "@/styles/moduleStyles";
 
 import styled, { css } from "styled-components";
 import { Props } from "./SnbFeedRecommendUser";
 import Image from "next/image";
+import { transitionHover } from "@/styles/transitionStyles";
 
 export const SnbFeedRecommendUserStyled = styled.div`
   width: 100%;
@@ -24,6 +25,14 @@ export const AvatarImageWrap = styled.div`
 export const AvatarImage = styled(Image)`
   ${nonSelect}
   border-radius: 100%;
+`;
+
+export const TitleHover = styled.div`
+  p:hover {
+    cursor: pointer;
+    ${transitionHover}
+    ${linkHover}
+  }
 `;
 
 export const Gap = styled.div`

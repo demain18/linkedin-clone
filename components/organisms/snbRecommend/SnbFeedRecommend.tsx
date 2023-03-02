@@ -34,6 +34,7 @@ const SnbFeedRecommend = ({ ...rest }: Props) => {
             avatarImg={user.avatarImg}
             name={user.name}
             info={user.info}
+            companyUid={user.companyUid}
           />
         ))}
       </UserWrap>
