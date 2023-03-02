@@ -30,6 +30,7 @@ export interface getJobsRecommendsDto {
   active?: boolean;
   employerLogo?: StaticImageData;
   employerCompany?: string;
+  employerCompanyUid?: string;
   title?: string;
   country?: string;
   jobForm?: string;

@@ -74,6 +74,7 @@ export const handlers = [
           active: true,
           employerLogo: kakaoImg,
           employerCompany: "카카오 페이 (kakaopay)",
+          employerCompanyUid: "kakaopay",
           title: "인프라/클라우드 보안 담당자",
           country: "Seoul, Seoul, South Korea",
           jobForm: "On-site",
@@ -84,6 +85,7 @@ export const handlers = [
         {
           employerLogo: tossImg,
           employerCompany: "Viva Republica (Toss)",
+          employerCompanyUid: "tossbank",
           title: "Frontend Developer",
           country: "Seoul, Seoul, South Korea",
           jobForm: "On-site",
@@ -94,6 +96,7 @@ export const handlers = [
         {
           employerLogo: lineImg,
           employerCompany: "Line Plus Corp",
+          employerCompanyUid: "lineplus",
           title: "Data Platform Engineer",
           country: "Seongnam, Gyeonggi, South Korea",
           jobForm: "Hybrid",

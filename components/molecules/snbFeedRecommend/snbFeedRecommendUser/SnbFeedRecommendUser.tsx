@@ -37,7 +37,7 @@ const SnbFeedRecommendUser = ({
           <Avatar image={avatarImg} size={48} />
         </AvatarImageWrap>
         <div>
-          <Link href={`/company/${companyUid}`}>
+          <Link href={`/company/${companyUid}`} passHref>
             <TitleHover>
               <P color="grayPoint9" fontSize={14} bold>
                 {name}

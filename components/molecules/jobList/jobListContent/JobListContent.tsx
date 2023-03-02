@@ -13,11 +13,13 @@ import P from "@/components/atoms/typography/p/P";
 import Span from "@/components/atoms/typography/span/Span";
 import { RssFeed } from "@material-ui/icons";
 import { StaticImageData } from "next/image";
+import Link from "next/link";
 
 export interface Props {
   active?: boolean;
   employerLogo?: StaticImageData;
   employerCompany?: string;
+  employerCompanyUid?: string;
   title?: string;
   country?: string;
   jobForm?: string;
@@ -30,6 +32,7 @@ const JobListContent = ({
   active,
   employerLogo,
   employerCompany,
+  employerCompanyUid,
   title,
   country,
   jobForm,
@@ -47,7 +50,11 @@ const JobListContent = ({
         <P color="primary" bold>
           {title}
         </P>
-        <P fontSize={14}>{employerCompany}</P>
+        <Link href={`/company/${employerCompanyUid}`} passHref>
+          <a>
+            <P fontSize={14}>{employerCompany}</P>
+          </a>
+        </Link>
         <P fontSize={14} color="grayPoint6">
           {`${country} (${jobForm})`}
         </P>

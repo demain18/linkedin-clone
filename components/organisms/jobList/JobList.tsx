@@ -23,6 +23,7 @@ const JobList = ({ ...rest }: Props) => {
           active={i.active}
           employerLogo={i.employerLogo}
           employerCompany={i.employerCompany}
+          employerCompanyUid={i.employerCompanyUid}
           title={i.title}
           country={i.country}
           jobForm={i.jobForm}
