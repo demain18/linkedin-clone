@@ -18,11 +18,10 @@
 - Styled Component
 - React Query
 - Mock Service Worker
-- redux
+- Redux
 - Storybook
 - Jest
 - React Testing Library
-- Material UI
 - Firebase
 
 ## Yarn 명령어
