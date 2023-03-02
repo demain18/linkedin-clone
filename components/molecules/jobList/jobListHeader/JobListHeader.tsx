@@ -7,7 +7,7 @@ export interface Props {}
 const JobListHeader = ({ ...rest }: Props) => {
   return (
     <JobListHeaderStyled {...rest}>
-      <P color="white">Jobs based on your Profile</P>
+      <P>Jobs based on your Profile</P>
     </JobListHeaderStyled>
   );
 };

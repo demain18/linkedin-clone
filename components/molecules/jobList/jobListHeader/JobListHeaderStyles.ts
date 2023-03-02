@@ -8,4 +8,8 @@ export const JobListHeaderStyled = styled.div<Props>`
   position: sticky;
   top: 0px;
   z-index: 3;
+
+  p {
+    color: #fff;
+  }
 `;
