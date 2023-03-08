@@ -2,14 +2,13 @@ import TimelineDescription from "@/components/molecules/timeline/timelineDescrip
 import TimelineEvents from "@/components/molecules/timeline/timelineEvents/TimelineEvents";
 import TimelineImages from "@/components/molecules/timeline/timelineImages/TimelineImages";
 import TimelineProfile from "@/components/molecules/timeline/timelineProfile/TimelineProfile";
-import { StaticImageData } from "next/image";
 import React, { useState } from "react";
-import { EventsWrap, PaddingWrap, TimelineStyled } from "./TimelineStyles";
-import img1 from "@/public/images/dummys/toss/one.png";
-import img2 from "@/public/images/dummys/toss/two.png";
-import img3 from "@/public/images/dummys/toss/three.png";
-import img4 from "@/public/images/dummys/toss/four.png";
-import img5 from "@/public/images/dummys/toss/five.png";
+import {
+  EventsWrap,
+  PaddingWrap,
+  TimelineStyled,
+  TimelineWrap,
+} from "./TimelineStyles";
 import { useQuery } from "react-query";
 import { getTimelinePost } from "modules/api/apiRequest";
 import { getTimelinePostDto } from "modules/api/apiRequest.dto";
@@ -21,28 +20,36 @@ export interface TimelinePostProps {}
 const Timeline = ({ ...rest }: Props) => {
   let feedParam: number = 1;
 
-  const { isLoading, error, data } = useQuery<getTimelinePostDto>(
+  const { isLoading, error, data } = useQuery<getTimelinePostDto[]>(
     ["timelinePost", feedParam],
     () => getTimelinePost(feedParam)
   );
 
+  console.log(data);
+
   return (
-    <TimelineStyled {...rest}>
-      <PaddingWrap>
-        <TimelineProfile
-          avatarImg={data?.avatarImg}
-          userName={data?.userName}
-          companyUid={data?.companyUid}
-          followers={data?.followers}
-          datetime={data?.datetime}
-        />
-        <TimelineDescription desc={data?.desc} />
-      </PaddingWrap>
-      <TimelineImages images={data?.images} />
-      <EventsWrap>
-        <TimelineEvents />
-      </EventsWrap>
-    </TimelineStyled>
+    <TimelineWrap>
+      {data?.map((i, x) => {
+        return (
+          <TimelineStyled key={x + "key"} {...rest}>
+            <PaddingWrap>
+              <TimelineProfile
+                avatarImg={i?.avatarImg}
+                userName={i?.userName}
+                companyUid={i?.companyUid}
+                followers={i?.followers}
+                datetime={i?.datetime}
+              />
+              <TimelineDescription desc={i?.desc} />
+            </PaddingWrap>
+            <TimelineImages images={i?.images} />
+            <EventsWrap>
+              <TimelineEvents />
+            </EventsWrap>
+          </TimelineStyled>
+        );
+      })}
+    </TimelineWrap>
   );
 };
 export default Timeline;

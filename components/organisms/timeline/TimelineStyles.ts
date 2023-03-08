@@ -2,6 +2,15 @@ import { boxRadius } from "@/styles/moduleStyles";
 import styled, { css } from "styled-components";
 import { Props } from "./Timeline";
 
+export const TimelineWrap = styled.div`
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`;
+
 export const TimelineStyled = styled.div<Props>`
   /* max-width: 550px; */
   width: 100%;

@@ -21,7 +21,7 @@ export const getUserList = () => {
 };
 
 export const getTimelinePost = (param: number) => {
-  return fetch(`/data/timeline?feed=${param}`).then<getTimelinePostDto>((res) =>
+  return fetch(`/data/timeline`).then<getTimelinePostDto[]>((res) =>
     res.json()
   );
 };
