@@ -12,6 +12,30 @@
       "emplyeesNum": 1182
     }
   },
-  "linkplus": {},
-  "kakaopay": {}
+  "lineplus": {
+    "banner": {
+      "bannerImg": "https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/company/line_banner.png?raw=true",
+      "logoImg": "https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/company/line.png?raw=true",
+      "companyUid": "lineplus",
+      "name": "LINE Plus Corp",
+      "category": "Computer Software",
+      "region": "Bundang-gu, Seongnam-si, Gyeonggi-do",
+      "followers": 43234,
+      "coworkerName": "Brain",
+      "emplyeesNum": 1564
+    }
+  },
+  "kakaopay": {
+    "banner": {
+      "bannerImg": "https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/company/kakao_pay_banner.png?raw=true",
+      "logoImg": "https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/company/kakao_pay.png?raw=true",
+      "companyUid": "kakaopay",
+      "name": "카카오페이 (kakaopay)",
+      "category": "Information Technology & Services",
+      "region": "Seongnam-si, Gyeonggi-do",
+      "followers": 29812,
+      "coworkerName": "Brain",
+      "emplyeesNum": 748
+    }
+  }
 }
