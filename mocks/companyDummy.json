@@ -9,12 +9,7 @@
       "region": "Seoul, Seoul",
       "followers": 43332,
       "coworkerName": "Brain",
-      "emplyeesNum": 1182,
-      "menuList": [
-        { "name": "About", "link": "", "active": false },
-        { "name": "Posts", "link": "posts", "active": false },
-        { "name": "Jobs", "link": "jobs", "active": false }
-      ]
+      "emplyeesNum": 1182
     }
   },
   "linkplus": {},

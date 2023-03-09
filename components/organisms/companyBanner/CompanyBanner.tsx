@@ -32,20 +32,24 @@ const CompanyBanner = ({ ...rest }: Props) => {
   useEffect(() => {
     const { slug } = router.query;
 
-    let linkedMenuList;
-    let menuList = data?.menuList;
+    let menuList = [
+      { name: "About", link: "", active: false },
+      { name: "Posts", link: "posts", active: false },
+      { name: "Jobs", link: "jobs", active: false },
+    ];
 
     if ((slug?.length || 0) > 1) {
-      linkedMenuList = menuList?.map((menu) =>
-        menu.name.toLowerCase() === slug![1] ? { ...menu, active: true } : menu
+      const subMenu = slug![1];
+      setMenuList(
+        menuList.map((menu) =>
+          menu.name.toLowerCase() === subMenu ? { ...menu, active: true } : menu
+        )
       );
     } else {
-      linkedMenuList = menuList?.map((menu, x) =>
-        x === 0 ? { ...menu, active: true } : menu
+      setMenuList(
+        menuList.map((menu, x) => (x === 0 ? { ...menu, active: true } : menu))
       );
     }
-
-    setMenuList(linkedMenuList);
   }, [router.asPath, data]);
 
   return (

@@ -89,12 +89,6 @@ export interface getCompanyBannerDto {
   followers?: number;
   coworkerName?: string;
   emplyeesNum?: number;
-  menuList?: [
-    {
-      name: string;
-      active: boolean;
-    }
-  ];
 }
 
 export interface getCompanyOverviewDto {
