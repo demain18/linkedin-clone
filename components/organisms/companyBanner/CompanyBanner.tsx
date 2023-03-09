@@ -37,7 +37,7 @@ const CompanyBanner = ({ ...rest }: Props) => {
 
     if ((slug?.length || 0) > 1) {
       linkedMenuList = menuList?.map((menu) =>
-        menu?.name.toLowerCase() === slug![1] ? { ...menu, active: true } : menu
+        menu.name.toLowerCase() === slug![1] ? { ...menu, active: true } : menu
       );
     } else {
       linkedMenuList = menuList?.map((menu, x) =>

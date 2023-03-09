@@ -1,0 +1,22 @@
+{
+  "tossbank": {
+    "banner": {
+      "bannerImg": "https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/company/toss_banner.png?raw=true",
+      "logoImg": "https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/company/toss.png?raw=true",
+      "companyUid": "tossbank",
+      "name": "Viva Republica (Toss)",
+      "category": "Financial Services",
+      "region": "Seoul, Seoul",
+      "followers": 43332,
+      "coworkerName": "Brain",
+      "emplyeesNum": 1182,
+      "menuList": [
+        { "name": "About", "link": "", "active": false },
+        { "name": "Posts", "link": "posts", "active": false },
+        { "name": "Jobs", "link": "jobs", "active": false }
+      ]
+    }
+  },
+  "linkplus": {},
+  "kakaopay": {}
+}

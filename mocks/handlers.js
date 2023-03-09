@@ -7,7 +7,8 @@ import avatarImg from "@/public/images/avatar.png";
 import tossImg from "@/public/images/dummys/company/toss.png";
 import lineImg from "@/public/images/dummys/company/line.png";
 import kakaoImg from "@/public/images/dummys/company/kakao_pay.png";
-import dummyData from "mocks/dummyData.json";
+import jobDummy from "mocks/jobDummy.json";
+import companyDummy from "mocks/companyDummy.json";
 
 import toss1_1 from "@/public/images/dummys/timline/toss/1_1.png";
 import toss1_2 from "@/public/images/dummys/timline/toss/1_2.png";
@@ -193,7 +194,7 @@ export const handlers = [
   rest.get("/jobs", (req, res, ctx) => {
     const uid = req.url.searchParams.get("uid");
 
-    return res(ctx.status(200), ctx.json(dummyData[uid]));
+    return res(ctx.status(200), ctx.json(jobDummy[uid]));
   }),
   rest.get("/company/funding", (req, res, ctx) => {
     const company = req.url.searchParams.get("company");
@@ -242,25 +243,7 @@ export const handlers = [
   rest.get("/company/banner", (req, res, ctx) => {
     const company = req.url.searchParams.get("company");
 
-    return res(
-      ctx.status(200),
-      ctx.json({
-        bannerImg: tossBannerimg,
-        logoImg: tossLogoimg,
-        companyUid: "tossbank",
-        name: "Viva Republica (Toss)",
-        category: "Financial Services",
-        region: "Seoul, Seoul",
-        followers: 43332,
-        coworkerName: "Brain",
-        emplyeesNum: 1182,
-        menuList: [
-          { name: "About", link: "", active: false },
-          { name: "Posts", link: "posts", active: false },
-          { name: "Jobs", link: "jobs", active: false },
-        ],
-      })
-    );
+    return res(ctx.status(200), ctx.json(companyDummy[company]?.["banner"]));
   }),
   rest.get("/company/overview", (req, res, ctx) => {
     const company = req.url.searchParams.get("company");
