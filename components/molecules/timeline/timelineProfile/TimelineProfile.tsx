@@ -41,7 +41,7 @@ const TimelineProfile = ({
             </TitleHover>
           </Link>
           <P color="grayPoint6" fontSize={12}>
-            {followers + " followers"}
+            {followers?.toLocaleString() + " followers"}
           </P>
           <BadgeWrap>
             <Span color="grayPoint6" fontSize={12}>
