@@ -25,8 +25,6 @@ const Timeline = ({ ...rest }: Props) => {
     () => getTimelinePost(feedParam)
   );
 
-  console.log(data);
-
   return (
     <TimelineWrap>
       {data?.map((i, x) => {
@@ -34,15 +32,15 @@ const Timeline = ({ ...rest }: Props) => {
           <TimelineStyled key={x + "key"} {...rest}>
             <PaddingWrap>
               <TimelineProfile
-                avatarImg={i?.avatarImg}
-                userName={i?.userName}
-                companyUid={i?.companyUid}
-                followers={i?.followers}
-                datetime={i?.datetime}
+                avatarImg={i.avatarImg}
+                userName={i.userName}
+                companyUid={i.companyUid}
+                followers={i.followers}
+                datetime={i.datetime}
               />
-              <TimelineDescription desc={i?.desc} />
+              <TimelineDescription desc={i.desc} />
             </PaddingWrap>
-            <TimelineImages images={i?.images} />
+            {i.images.length > 0 && <TimelineImages images={i?.images} />}
             <EventsWrap>
               <TimelineEvents />
             </EventsWrap>
