@@ -17,7 +17,7 @@ const JobInfo = ({ ...rest }: Props) => {
   const uid: number = 0;
 
   const { isLoading, error, data } = useQuery<getJobsInfoDto>(
-    ["timelinePost", uid],
+    ["jobInfo", uid],
     () => getJobsInfo(uid)
   );
 

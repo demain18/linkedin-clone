@@ -48,8 +48,8 @@ export const getCompanyRecommendPages = () => {
   >((res) => res.json());
 };
 
-export const getCompanyBanner = () => {
-  return fetch(`/company/banner?company=tossbank`).then<getCompanyBannerDto>(
+export const getCompanyBanner = (param: string) => {
+  return fetch(`/company/banner?company=${param}`).then<getCompanyBannerDto>(
     (res) => res.json()
   );
 };

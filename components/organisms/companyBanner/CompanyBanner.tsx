@@ -19,25 +19,28 @@ import Link from "next/link";
 export interface Props {}
 
 const CompanyBanner = ({ ...rest }: Props) => {
-  const { isLoading, error, data } = useQuery<getCompanyBannerDto>(
-    "companyBanner",
-    getCompanyBanner
-  );
-
   const [menuList, setMenuList] = useState<any>();
-
   const router = useRouter();
+  const { slug } = router.query;
+  const company: string = slug?.[0]!;
+
+  const { isLoading, error, data } = useQuery<getCompanyBannerDto>(
+    ["companyBanner", company],
+    () => getCompanyBanner(company)
+  );
 
   useEffect(() => {
     const { slug } = router.query;
-    let linkedMenuList: any;
+
+    let linkedMenuList;
+    let menuList = data?.menuList;
 
     if ((slug?.length || 0) > 1) {
-      linkedMenuList = data?.menuList?.map((menu) =>
+      linkedMenuList = menuList?.map((menu) =>
         menu?.name.toLowerCase() === slug![1] ? { ...menu, active: true } : menu
       );
     } else {
-      linkedMenuList = data?.menuList?.map((menu, x) =>
+      linkedMenuList = menuList?.map((menu, x) =>
         x === 0 ? { ...menu, active: true } : menu
       );
     }
