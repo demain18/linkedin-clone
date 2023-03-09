@@ -12,6 +12,8 @@ export const ImageWrapStyles = css`
 
 export const ImageSingleWrap = styled.div`
   ${ImageWrapStyles}
+
+  height: 300px!important;
 `;
 
 export const ImageDoubleWrap = styled.div`
@@ -65,4 +67,6 @@ export const ImageOverPentaCountWrap = styled.div`
   }
 `;
 
-export const ImageStyled = styled(Image)``;
+export const ImageStyled = styled(Image)`
+  object-fit: cover;
+`;
