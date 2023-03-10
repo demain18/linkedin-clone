@@ -18,8 +18,14 @@ import Link from "next/link";
 
 export interface Props {}
 
+export interface MenuListProps {
+  name: string;
+  link: string;
+  active: boolean;
+}
+
 const CompanyBanner = ({ ...rest }: Props) => {
-  const [menuList, setMenuList] = useState<any>();
+  const [menus, setMenus] = useState<MenuListProps[]>();
   const router = useRouter();
   const { slug } = router.query;
   const company: string = slug?.[0]!;
@@ -31,8 +37,7 @@ const CompanyBanner = ({ ...rest }: Props) => {
 
   useEffect(() => {
     const { slug } = router.query;
-
-    let menuList = [
+    const list = [
       { name: "About", link: "", active: false },
       { name: "Posts", link: "posts", active: false },
       { name: "Jobs", link: "jobs", active: false },
@@ -40,14 +45,14 @@ const CompanyBanner = ({ ...rest }: Props) => {
 
     if ((slug?.length || 0) > 1) {
       const subMenu = slug![1];
-      setMenuList(
-        menuList.map((menu) =>
+      setMenus(
+        list.map((menu) =>
           menu.name.toLowerCase() === subMenu ? { ...menu, active: true } : menu
         )
       );
     } else {
-      setMenuList(
-        menuList.map((menu, x) => (x === 0 ? { ...menu, active: true } : menu))
+      setMenus(
+        list.map((menu, x) => (x === 0 ? { ...menu, active: true } : menu))
       );
     }
   }, [router.asPath, data]);
@@ -84,7 +89,7 @@ const CompanyBanner = ({ ...rest }: Props) => {
         </RoundButton>
       </ButtonWrap>
       <MenuWrap>
-        {menuList?.map((i, x) => {
+        {menus?.map((i, x) => {
           return (
             <Link
               href={`/company/${data?.companyUid}/` + i.link}
