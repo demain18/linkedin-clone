@@ -11,13 +11,16 @@ import RoundButton from "@/components/atoms/roundButton/RoundButton";
 import { useQuery } from "react-query";
 import { getCompanyBannerDto } from "modules/api/apiRequest.dto";
 import { getCompanyBanner } from "modules/api/apiRequest";
+import { getCompanyName } from "modules/hooks/getCompanyName";
 
 export interface Props {}
 
 const CompanyJobAlert = ({ ...rest }: Props) => {
-  const { isLoading, error, data } = useQuery<getCompanyBannerDto>(
-    "companyJobAlert",
-    getCompanyBanner
+  const company = getCompanyName();
+
+  const { data } = useQuery<getCompanyBannerDto>(
+    ["companyBanner", company],
+    () => getCompanyBanner(company)
   );
 
   return (
