@@ -15,6 +15,7 @@ import { getCompanyBannerDto } from "modules/api/apiRequest.dto";
 import { getCompanyBanner } from "modules/api/apiRequest";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { getCompanyName } from "modules/hooks/getCompanyName";
 
 export interface Props {}
 
@@ -25,20 +26,18 @@ export interface MenuListProps {
 }
 
 const CompanyBanner = ({ ...rest }: Props) => {
-  const [menus, setMenus] = useState<MenuListProps[]>();
-
   const router = useRouter();
-  const { slug } = router.query;
-  const company: string = process.env.STORYBOOK_ONLINE
-    ? "tossbank"
-    : slug?.[0]!;
+  const [menus, setMenus] = useState<MenuListProps[]>();
+  const company = getCompanyName();
 
-  const { isLoading, error, data } = useQuery<getCompanyBannerDto>(
+  const { data } = useQuery<getCompanyBannerDto>(
     ["companyBanner", company],
     () => getCompanyBanner(company)
   );
 
   useEffect(() => {
+    const { slug } = router.query;
+
     const list = [
       { name: "About", link: "", active: false },
       { name: "Posts", link: "posts", active: false },
