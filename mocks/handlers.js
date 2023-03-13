@@ -253,15 +253,7 @@ export const handlers = [
   rest.get("/company/location", (req, res, ctx) => {
     const company = req.url.searchParams.get("company");
 
-    return res(
-      ctx.status(200),
-      ctx.json([
-        {
-          location:
-            "Arc Place 10~13F, Teheran-ro 142, Gangnam-Gu, Seoul , Seoul , Seoul Korea, KR",
-        },
-      ])
-    );
+    return res(ctx.status(200), ctx.json(companyDummy[company]?.["location"]));
   }),
   rest.get("/company/jobs/recent", (req, res, ctx) => {
     const company = req.url.searchParams.get("company");

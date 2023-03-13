@@ -4,6 +4,7 @@ import { Launch } from "@material-ui/icons";
 import { log } from "console";
 import { getCompanyLocation } from "modules/api/apiRequest";
 import { getCompanyLocationDto } from "modules/api/apiRequest.dto";
+import { getCompanyName } from "modules/hooks/getCompanyName";
 
 import React from "react";
 import { useQuery } from "react-query";
@@ -17,36 +18,33 @@ import {
 export interface Props {}
 
 const CompanyLocation = ({ ...rest }: Props) => {
-  const { isLoading, error, data } = useQuery<getCompanyLocationDto[]>(
-    "companyLocation",
-    getCompanyLocation
+  const company = getCompanyName();
+
+  const { data } = useQuery<string>(["companyLocation", company], () =>
+    getCompanyLocation(company)
   );
 
   return (
     <CompanyLocationStyled {...rest}>
       <P fontSize={20} bold>
-        {`Locations (${data?.length})`}
+        Locations(1)
       </P>
-      {data?.map((i, x) => {
-        return (
-          <InfoWrap key={x + "key"}>
-            <LabelWrap>
-              <Label>
-                <P fontSize={13} color="grayPoint9" bold>
-                  Primary
-                </P>
-              </Label>
-            </LabelWrap>
-            <P fontSize={14} color="grayPoint6">
-              {i.location}
+      <InfoWrap>
+        <LabelWrap>
+          <Label>
+            <P fontSize={13} color="grayPoint9" bold>
+              Primary
             </P>
-            <LinkStyled>
-              Get directions
-              <Launch style={{ fontSize: 14 }} />
-            </LinkStyled>
-          </InfoWrap>
-        );
-      })}
+          </Label>
+        </LabelWrap>
+        <P fontSize={14} color="grayPoint6">
+          {data}
+        </P>
+        <LinkStyled>
+          Get directions
+          <Launch style={{ fontSize: 14 }} />
+        </LinkStyled>
+      </InfoWrap>
     </CompanyLocationStyled>
   );
 };

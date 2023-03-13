@@ -60,10 +60,10 @@ export const getCompanyOverview = (param: string) => {
   ).then<getCompanyOverviewDto>((res) => res.json());
 };
 
-export const getCompanyLocation = () => {
-  return fetch(`/company/location?company=tossbank`).then<
-    getCompanyLocationDto[]
-  >((res) => res.json());
+export const getCompanyLocation = (company: string) => {
+  return fetch(`/company/location?company=${company}`).then<string>((res) =>
+    res.json()
+  );
 };
 
 export const getCompanyJobsRecent = (company: string) => {
