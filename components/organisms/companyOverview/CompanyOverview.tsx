@@ -10,7 +10,7 @@ export interface Props {}
 
 const CompanyOverview = ({ ...rest }: Props) => {
   const company = getCompanyName();
-  const { isLoading, error, data } = useQuery<getCompanyOverviewDto>(
+  const { data } = useQuery<getCompanyOverviewDto>(
     ["companyOverview", company],
     () => getCompanyOverview(company)
   );
