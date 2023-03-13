@@ -13,3 +13,8 @@ const Template: ComponentStory<typeof Timeline> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {};
+
+export const CompanySelected = Template.bind({});
+CompanySelected.args = {
+  selectedCompany: defaultProps.selectedCompany,
+};
