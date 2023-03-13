@@ -66,8 +66,8 @@ export const getCompanyLocation = () => {
   >((res) => res.json());
 };
 
-export const getCompanyJobsRecent = () => {
-  return fetch(`/company/jobs/recent?company=tossbank`).then<
+export const getCompanyJobsRecent = (company: string) => {
+  return fetch(`/company/jobs/recent?company=${company}`).then<
     getCompanyJobsRecentDto[]
   >((res) => res.json());
 };

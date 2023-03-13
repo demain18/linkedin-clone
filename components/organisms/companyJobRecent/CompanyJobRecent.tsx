@@ -4,6 +4,7 @@ import CompanyJobsRecentCard from "@/components/molecules/companyJobsRecent/comp
 import CompanyJobsRecentFooter from "@/components/molecules/companyJobsRecent/companyJobsRecentFooter/CompanyJobsRecentFooter";
 import { getCompanyJobsRecent } from "modules/api/apiRequest";
 import { getCompanyJobsRecentDto } from "modules/api/apiRequest.dto";
+import { getCompanyName } from "modules/hooks/getCompanyName";
 import React from "react";
 import { useQuery } from "react-query";
 import {
@@ -16,9 +17,11 @@ import {
 export interface Props {}
 
 const CompanyJobRecent = ({ ...rest }: Props) => {
+  const company = getCompanyName();
+
   const { isLoading, error, data } = useQuery<getCompanyJobsRecentDto[]>(
-    "companyJobsRecent",
-    getCompanyJobsRecent
+    ["companyJobsRecent", company],
+    () => getCompanyJobsRecent(company)
   );
 
   return (

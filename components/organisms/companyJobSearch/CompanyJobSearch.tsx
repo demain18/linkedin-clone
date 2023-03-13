@@ -3,6 +3,7 @@ import RoundButton from "@/components/atoms/roundButton/RoundButton";
 import P from "@/components/atoms/typography/p/P";
 import { getCompanyBanner } from "modules/api/apiRequest";
 import { getCompanyBannerDto } from "modules/api/apiRequest.dto";
+import { getCompanyName } from "modules/hooks/getCompanyName";
 import React from "react";
 import { useQuery } from "react-query";
 import { CompanyJobSearchStyled, SearchWrap } from "./CompanyJobSearchStyles";
@@ -10,9 +11,11 @@ import { CompanyJobSearchStyled, SearchWrap } from "./CompanyJobSearchStyles";
 export interface Props {}
 
 const CompanyJobSearch = ({ ...rest }: Props) => {
-  const { isLoading, error, data } = useQuery<getCompanyBannerDto>(
-    "companyJobSearch",
-    getCompanyBanner
+  const company = getCompanyName();
+
+  const { data } = useQuery<getCompanyBannerDto>(
+    ["companyBanner", company],
+    () => getCompanyBanner(company)
   );
 
   return (

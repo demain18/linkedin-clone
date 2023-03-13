@@ -18,7 +18,33 @@
       "companyEmployees": "1,001-5,000",
       "companyEmployeesLinkedin": 1171,
       "headquarter": "Seoul, Seoul"
-    }
+    },
+    "jobs": [
+      {
+        "logoImg": "https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/company/toss.png?raw=true",
+        "jobTitle": "Frontend Developer (Internal Product)",
+        "companyName": "Viva Republica (Toss)",
+        "companyRegion": "Seoul, Seoul, South Korea",
+        "recruting": true,
+        "timeAgo": "1 weeks ago"
+      },
+      {
+        "logoImg": "https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/company/toss.png?raw=true",
+        "jobTitle": "Overseas Operations Manager (해외주식 야간데스크)",
+        "companyName": "Viva Republica (Toss)",
+        "companyRegion": "Seoul, Seoul, South Korea",
+        "recruting": true,
+        "timeAgo": "2 weeks ago"
+      },
+      {
+        "logoImg": "https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/company/toss.png?raw=true",
+        "jobTitle": "Data Engineer (실험/분석 플랫폼)",
+        "companyName": "Viva Republica (Toss)",
+        "companyRegion": "Seoul, Seoul, South Korea",
+        "recruting": true,
+        "timeAgo": "1 months ago"
+      }
+    ]
   },
   "lineplus": {
     "banner": {
@@ -41,7 +67,32 @@
       "headquarter": "Bundang-gu, Seongnam-si, Gyeonggi-do",
       "founded": 2013,
       "specialties": "Mobile Messenger, Mobile Games, Mobile Apps, Mobile Services, Connectivity, and Communication"
-    }
+    },
+    "jobs": [
+      {
+        "logoImg": "https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/company/line.png?raw=true",
+        "jobTitle": "Distributed Storage Backend Engineer",
+        "companyName": "LINE Plus Corp",
+        "companyRegion": "Seongnam, Gyeonggi, South Korea",
+        "timeAgo": "2 weeks ago"
+      },
+      {
+        "logoImg": "https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/company/line.png?raw=true",
+        "jobTitle": "Data Platform Engineer",
+        "companyName": "LINE Plus Corp",
+        "companyRegion": "Seongnam, Gyeonggi, South Korea",
+        "recruting": true,
+        "timeAgo": "2 weeks ago"
+      },
+      {
+        "logoImg": "https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/company/line.png?raw=true",
+        "jobTitle": "Data Platform Backend Server Engineer",
+        "companyName": "LINE Plus Corp",
+        "companyRegion": "Seongnam, Gyeonggi, South Korea",
+        "recruting": true,
+        "timeAgo": "2 weeks ago"
+      }
+    ]
   },
   "kakaopay": {
     "banner": {
@@ -64,6 +115,29 @@
       "headquarter": "성남시, 경기도",
       "founded": 2017,
       "specialties": "핀테크, 금융 서비스, Techfin, and Financial Services"
-    }
+    },
+    "jobs": [
+      {
+        "logoImg": "https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/company/kakao_pay.png?raw=true",
+        "jobTitle": "프론트엔드 개발자 (FE코어)",
+        "companyName": "카카오페이 (kakaopay)",
+        "companyRegion": "Seongnam, Gyeonggi, South Korea",
+        "timeAgo": "3 weeks ago"
+      },
+      {
+        "logoImg": "https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/company/kakao_pay.png?raw=true",
+        "jobTitle": "머니서비스 iOS 개발자",
+        "companyName": "카카오페이 (kakaopay)",
+        "companyRegion": "Seongnam, Gyeonggi, South Korea",
+        "timeAgo": "2 weeks ago"
+      },
+      {
+        "logoImg": "https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/company/kakao_pay.png?raw=true",
+        "jobTitle": "서비스플랫폼실 서버 개발자",
+        "companyName": "카카오페이 (kakaopay)",
+        "companyRegion": "Seongnam, Gyeonggi, South Korea",
+        "timeAgo": "3 weeks ago"
+      }
+    ]
   }
 }
