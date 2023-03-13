@@ -19,6 +19,7 @@ export const LogoImgWrap = styled.div`
   position: absolute;
   top: 80px;
   left: 25px;
+  border: 2px solid ${(props) => props.theme.white};
 `;
 
 export const LogoImg = styled(Image)``;
