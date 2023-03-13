@@ -22,13 +22,15 @@ import Timeline from "@/components/organisms/timeline/Timeline";
 import CompanyJobAlert from "@/components/organisms/companyJobAlert/CompanyJobAlert";
 import CompanyJobSearch from "@/components/organisms/companyJobSearch/CompanyJobSearch";
 import CompanyJobRecent from "@/components/organisms/companyJobRecent/CompanyJobRecent";
+import { getCompanyName } from "modules/hooks/getCompanyName";
 
 export interface Props {}
 
 const App: NextPage = () => {
   const [slugNow, setSlugNow] = useState<any>();
-
+  const company = getCompanyName();
   const router = useRouter();
+
   const { slug } = router.query;
 
   useEffect(() => {
@@ -61,7 +63,7 @@ const App: NextPage = () => {
                     <CompanyPostSnb />
                   </PostSnbWrap>
                   <PostContentWrap>
-                    <Timeline />
+                    <Timeline selectedCompany={company} />
                   </PostContentWrap>
                 </PostsWrap>
               )}

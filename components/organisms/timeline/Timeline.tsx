@@ -19,11 +19,9 @@ export interface Props {
 }
 
 const Timeline = ({ selectedCompany, ...rest }: Props) => {
-  let feedParam: number = 1;
-
-  const { isLoading, error, data } = useQuery<getTimelinePostDto[]>(
-    ["timelinePost", feedParam],
-    () => getTimelinePost(feedParam)
+  const { data } = useQuery<getTimelinePostDto[]>(
+    "timelinePost",
+    getTimelinePost
   );
 
   return (
