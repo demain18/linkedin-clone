@@ -98,6 +98,8 @@ export interface getCompanyOverviewDto {
   companyEmployees?: string;
   companyEmployeesLinkedin?: number;
   headquarter?: string;
+  founded?: string;
+  specialties?: string;
 }
 
 export interface getCompanyLocationDto {

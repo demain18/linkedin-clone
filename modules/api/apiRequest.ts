@@ -54,9 +54,9 @@ export const getCompanyBanner = (param: string) => {
   );
 };
 
-export const getCompanyOverview = () => {
+export const getCompanyOverview = (param: string) => {
   return fetch(
-    `/company/overview?company=tossbank`
+    `/company/overview?company=${param}`
   ).then<getCompanyOverviewDto>((res) => res.json());
 };
 

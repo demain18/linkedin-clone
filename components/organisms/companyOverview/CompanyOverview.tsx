@@ -1,6 +1,7 @@
 import P from "@/components/atoms/typography/p/P";
 import { getCompanyOverview } from "modules/api/apiRequest";
 import { getCompanyOverviewDto } from "modules/api/apiRequest.dto";
+import { getCompanyName } from "modules/hooks/getCompanyName";
 import React from "react";
 import { useQuery } from "react-query";
 import { CompanyOverviewStyled, ContentWrap } from "./CompanyOverviewStyles";
@@ -8,9 +9,10 @@ import { CompanyOverviewStyled, ContentWrap } from "./CompanyOverviewStyles";
 export interface Props {}
 
 const CompanyOverview = ({ ...rest }: Props) => {
+  const company = getCompanyName();
   const { isLoading, error, data } = useQuery<getCompanyOverviewDto>(
-    "companyOverview",
-    getCompanyOverview
+    ["companyOverview", company],
+    () => getCompanyOverview(company)
   );
 
   return (
@@ -58,6 +60,26 @@ const CompanyOverview = ({ ...rest }: Props) => {
           {data?.headquarter}
         </P>
       </ContentWrap>
+      {data?.founded && (
+        <ContentWrap>
+          <P fontSize={14} bold>
+            Founded
+          </P>
+          <P fontSize={14} color="grayPoint6">
+            {data?.founded}
+          </P>
+        </ContentWrap>
+      )}
+      {data?.specialties && (
+        <ContentWrap>
+          <P fontSize={14} bold>
+            Specialties
+          </P>
+          <P fontSize={14} color="grayPoint6">
+            {data?.specialties}
+          </P>
+        </ContentWrap>
+      )}
     </CompanyOverviewStyled>
   );
 };
