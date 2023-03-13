@@ -41,22 +41,22 @@ export const getCompanyFunding = () => {
     (res) => res.json()
   );
 };
-
+9;
 export const getCompanyRecommendPages = () => {
   return fetch(`/company/recommend/page?company=tossbank`).then<
     getCompanyRecommendPageDto[]
   >((res) => res.json());
 };
 
-export const getCompanyBanner = (param: string) => {
-  return fetch(`/company/banner?company=${param}`).then<getCompanyBannerDto>(
+export const getCompanyBanner = (company: string) => {
+  return fetch(`/company/banner?company=${company}`).then<getCompanyBannerDto>(
     (res) => res.json()
   );
 };
 
-export const getCompanyOverview = (param: string) => {
+export const getCompanyOverview = (company: string) => {
   return fetch(
-    `/company/overview?company=${param}`
+    `/company/overview?company=${company}`
   ).then<getCompanyOverviewDto>((res) => res.json());
 };
 
