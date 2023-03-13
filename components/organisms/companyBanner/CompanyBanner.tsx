@@ -26,9 +26,12 @@ export interface MenuListProps {
 
 const CompanyBanner = ({ ...rest }: Props) => {
   const [menus, setMenus] = useState<MenuListProps[]>();
+
   const router = useRouter();
   const { slug } = router.query;
-  const company: string = slug?.[0]!;
+  const company: string = process.env.STORYBOOK_ONLINE
+    ? "tossbank"
+    : slug?.[0]!;
 
   const { isLoading, error, data } = useQuery<getCompanyBannerDto>(
     ["companyBanner", company],
@@ -36,7 +39,6 @@ const CompanyBanner = ({ ...rest }: Props) => {
   );
 
   useEffect(() => {
-    const { slug } = router.query;
     const list = [
       { name: "About", link: "", active: false },
       { name: "Posts", link: "posts", active: false },

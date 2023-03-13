@@ -37,6 +37,10 @@ module.exports = {
     }  
   </style>
 `,
+  env: (config) => ({
+    ...config,
+    STORYBOOK_ONLINE: true,
+  }),
   webpackFinal: async (config) => {
     config.resolve.modules = [
       ...(config.resolve.modules || []),

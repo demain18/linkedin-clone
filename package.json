@@ -5,7 +5,7 @@
   "homepage": "https://demain18.github.io/linkedin-clone/",
   "scripts": {
     "dev": "next dev",
-    "sb": "start-storybook -p 6006 -s ./public",
+    "sb": "set STORYBOOK_ONLINE=true&&start-storybook -p 6006 -s ./public",
     "test": "jest --watchAll",
     "build": "next build",
     "export": "next export",
