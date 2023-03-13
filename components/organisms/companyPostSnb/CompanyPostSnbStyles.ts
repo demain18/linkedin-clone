@@ -26,6 +26,7 @@ export const LogoImgWrap = styled.div`
   position: relative;
   width: 64px;
   height: 64px;
+  margin-bottom: 16px;
 `;
 
 export const LogoImg = styled(Image)``;
