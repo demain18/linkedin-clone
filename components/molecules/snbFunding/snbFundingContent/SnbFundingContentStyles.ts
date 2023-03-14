@@ -6,10 +6,13 @@ export const SnbFundingContentStyled = styled.div`
   padding: 12px 16px;
 `;
 
+export const RoundWrap = styled.div`
+  margin-bottom: 12px;
+`;
+
 export const SeriesInfo = styled.div`
   display: flex;
   gap: 7px;
-  margin-top: 12px;
 `;
 
 export const InvestorWrap = styled.div`

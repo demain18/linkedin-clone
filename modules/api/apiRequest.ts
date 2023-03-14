@@ -36,10 +36,10 @@ export const getJobsInfo = (param: number) => {
   return fetch(`/jobs?uid=${param}`).then<getJobsInfoDto>((res) => res.json());
 };
 
-export const getCompanyFunding = () => {
-  return fetch(`/company/funding?company=tossbank`).then<getCompanyFundingDto>(
-    (res) => res.json()
-  );
+export const getCompanyFunding = (company: string) => {
+  return fetch(
+    `/company/funding?company=${company}`
+  ).then<getCompanyFundingDto>((res) => res.json());
 };
 9;
 export const getCompanyRecommendPages = () => {

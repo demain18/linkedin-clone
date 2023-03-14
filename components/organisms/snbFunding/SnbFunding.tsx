@@ -5,19 +5,17 @@ import React from "react";
 import { SnbFundingStyled } from "./SnbFundingStyles";
 import img from "@/public/images/avatar.png";
 import { useQuery } from "react-query";
-import {
-  getCompanyFundingDto,
-  getUserListDto,
-} from "modules/api/apiRequest.dto";
-import { getCompanyFunding, getUserList } from "modules/api/apiRequest";
-import { log } from "console";
+import { getCompanyFundingDto } from "modules/api/apiRequest.dto";
+import { getCompanyFunding } from "modules/api/apiRequest";
+import { getCompanyName } from "modules/hooks/getCompanyName";
 
 export interface Props {}
 
 const SnbFunding = ({ ...rest }: Props) => {
-  const { isLoading, error, data } = useQuery<getCompanyFundingDto>(
-    "companyFunding",
-    getCompanyFunding
+  const company = getCompanyName();
+  const { data } = useQuery<getCompanyFundingDto>(
+    ["companyFunding", company],
+    () => getCompanyFunding(company)
   );
 
   return (
@@ -27,6 +25,7 @@ const SnbFunding = ({ ...rest }: Props) => {
         totalRounds={data?.totalRounds}
       />
       <SnbFundingContent
+        round={data?.round}
         series={data?.series}
         lastSeriesDatetime={data?.lastSeriesDatetime}
         seriesAmount={data?.seriesAmount}

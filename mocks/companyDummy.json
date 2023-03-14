@@ -45,7 +45,18 @@
         "recruting": true,
         "timeAgo": "1 months ago"
       }
-    ]
+    ],
+    "funding": {
+      "companyName": "Viva Republica (Toss)",
+      "totalRounds": 13,
+      "round": "Last Round",
+      "series": "G",
+      "lastSeriesDatetime": "Dec 18, 2022",
+      "seriesAmount": "543M",
+      "investorCompanyImg": "https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/company/kakao_pay.png?raw=true",
+      "investorCompanyName": "카카오페이(Kakaopay)",
+      "investorCount": 5
+    }
   },
   "lineplus": {
     "banner": {
@@ -94,7 +105,16 @@
         "recruting": true,
         "timeAgo": "2 weeks ago"
       }
-    ]
+    ],
+    "funding": {
+      "companyName": "LINE Plus Corp",
+      "totalRounds": 8,
+      "lastSeriesDatetime": "March 20, 2019",
+      "seriesAmount": "44M",
+      "investorCompanyImg": "https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/company/kakao_pay.png?raw=true",
+      "investorCompanyName": "카카오페이(Kakaopay)",
+      "investorCount": 11
+    }
   },
   "kakaopay": {
     "banner": {
@@ -141,6 +161,16 @@
         "companyRegion": "Seongnam, Gyeonggi, South Korea",
         "timeAgo": "3 weeks ago"
       }
-    ]
+    ],
+    "funding": {
+      "companyName": "카카오페이 (kakaopay)",
+      "totalRounds": 6,
+      "round": "IPO",
+      "lastSeriesDatetime": "Sep 5, 2022",
+      "seriesAmount": "1300M",
+      "investorCompanyImg": "https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/company/kakao_pay.png?raw=true",
+      "investorCompanyName": "카카오페이(Kakaopay)",
+      "investorCount": 11
+    }
   }
 }

@@ -6,6 +6,7 @@ import {
   InvestorImgPlacehoder,
   InvestorImgWrap,
   InvestorWrap,
+  RoundWrap,
   SeriesInfo,
   SnbFundingContentStyled,
 } from "./SnbFundingContentStyles";
@@ -14,6 +15,7 @@ import img from "@/public/images/avatar.png";
 import { StaticImageData } from "next/image";
 
 export interface Props {
+  round?: string;
   series?: string;
   lastSeriesDatetime?: string;
   seriesAmount?: string;
@@ -23,6 +25,7 @@ export interface Props {
 }
 
 const SnbFundingContent = ({
+  round,
   series,
   lastSeriesDatetime,
   seriesAmount,
@@ -33,15 +36,24 @@ const SnbFundingContent = ({
 }: Props) => {
   return (
     <SnbFundingContentStyled {...rest}>
-      <P>Last Round</P>
+      {round && (
+        <RoundWrap>
+          <P>{round}</P>
+        </RoundWrap>
+      )}
 
       <SeriesInfo>
-        <Span fontSize={14} color="grayPoint6" bold>
-          {`Series ${series}`}
-        </Span>
-        <Span fontSize={14} color="grayPoint6" bold>
-          {" · "}
-        </Span>
+        {series && (
+          <>
+            <Span fontSize={14} color="grayPoint6" bold>
+              {`Series ${series}`}
+            </Span>
+            <Span fontSize={14} color="grayPoint6" bold>
+              {" · "}
+            </Span>
+          </>
+        )}
+
         <Span fontSize={14} color="grayPoint6">
           {lastSeriesDatetime}
         </Span>

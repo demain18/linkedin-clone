@@ -64,6 +64,7 @@ export interface getJobsInfoDto {
 export interface getCompanyFundingDto {
   companyName?: string;
   totalRounds?: number;
+  round?: string;
   series?: string;
   lastSeriesDatetime?: string;
   seriesAmount?: string;
