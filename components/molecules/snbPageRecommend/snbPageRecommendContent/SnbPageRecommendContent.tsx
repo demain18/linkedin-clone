@@ -12,10 +12,12 @@ import P from "@/components/atoms/typography/p/P";
 import RoundButton from "@/components/atoms/roundButton/RoundButton";
 import Add from "@material-ui/icons/Add";
 import { StaticImageData } from "next/image";
+import Redirect from "@/components/atoms/redirect/Redirect";
 
 export interface Props {
   pageImg?: StaticImageData;
   pageName?: string;
+  pageUid?: string;
   pageCategory?: string;
   pageFollowers?: number;
   dividerNone?: boolean;
@@ -24,20 +26,26 @@ export interface Props {
 const SnbPageRecommendContent = ({
   pageImg,
   pageName,
+  pageUid,
   pageCategory,
   pageFollowers,
   dividerNone,
   ...rest
 }: Props) => {
+  console.log(pageUid);
+
   return (
     <SnbPageRecommendContentStyled dividerNone={dividerNone} {...rest}>
       <PageImgWrap>
         <PageImg src={pageImg!} layout="fill" objectFit="cover" />
       </PageImgWrap>
       <ContentWrap>
-        <P fontSize={16} bold>
-          {pageName}
-        </P>
+        <Redirect
+          href={`/company/${pageUid}`}
+          content={pageName}
+          bold
+          fontSize={16}
+        />
         <P fontSize={12}>{pageCategory}</P>
         {pageFollowers && (
           <P fontSize={12} color="grayPoint6">

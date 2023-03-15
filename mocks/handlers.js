@@ -202,26 +202,27 @@ export const handlers = [
     return res(ctx.status(200), ctx.json(companyDummy[company]?.["funding"]));
   }),
   rest.get("/company/recommend/page", (req, res, ctx) => {
-    const company = req.url.searchParams.get("company");
-
     return res(
       ctx.status(200),
       ctx.json([
         {
           pageImg: tossImg,
           pageName: "Viva Republica (Toss)",
+          pageUid: "tossbank",
           pageCategory: "Conpany · Financial Services",
           pageFollowers: 14469,
         },
         {
           pageImg: lineImg,
           pageName: "LINE Plus Corp",
+          pageUid: "lineplus",
           pageCategory: "Company · Computer Software",
           pageFollowers: 33884,
         },
         {
           pageImg: kakaoImg,
           pageName: "카카오페이 (kakaopay)",
+          pageUid: "kakaopay",
           pageCategory: "IT Services and IT Consulting",
           pageFollowers: 29466,
         },

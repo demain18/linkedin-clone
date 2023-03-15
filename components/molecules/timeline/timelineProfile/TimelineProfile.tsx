@@ -11,6 +11,7 @@ import P from "@/components/atoms/typography/p/P";
 import Span from "@/components/atoms/typography/span/Span";
 import { StaticImageData } from "next/image";
 import Link from "next/link";
+import Redirect from "@/components/atoms/redirect/Redirect";
 
 export interface Props {
   avatarImg?: StaticImageData;
@@ -33,13 +34,7 @@ const TimelineProfile = ({
       <ContentWrap>
         <Avatar image={avatarImg} size={48} />
         <div>
-          <Link href={`/company/${companyUid}`}>
-            <TitleHover>
-              <P color="grayPoint9" fontSize={14} bold>
-                {userName}
-              </P>
-            </TitleHover>
-          </Link>
+          <Redirect href={`/company/${companyUid}`} content={userName} bold />
           <P color="grayPoint6" fontSize={12}>
             {followers?.toLocaleString() + " followers"}
           </P>

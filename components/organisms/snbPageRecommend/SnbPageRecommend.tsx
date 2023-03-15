@@ -35,6 +35,7 @@ const SnbPageRecommend = ({ ...rest }: Props) => {
               key={x + "key"}
               pageImg={content.pageImg}
               pageName={content.pageName}
+              pageUid={content.pageUid}
               pageCategory={content.pageCategory}
               pageFollowers={content.pageFollowers}
               dividerNone
@@ -44,6 +45,7 @@ const SnbPageRecommend = ({ ...rest }: Props) => {
               key={x + "key"}
               pageImg={content.pageImg}
               pageName={content.pageName}
+              pageUid={content.pageUid}
               pageCategory={content.pageCategory}
               pageFollowers={content.pageFollowers}
             />

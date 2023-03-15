@@ -5,20 +5,26 @@ import { ContentWrap, RedirectStyled } from "./RedirectStyles";
 
 export interface Props {
   href: string;
-  content: string;
+  content?: string;
   bold?: boolean;
   outpage?: boolean;
+  fontSize?: number;
 }
 
-const Redirect = ({ href, content, bold, outpage, ...rest }: Props) => {
-  console.log(outpage);
-
+const Redirect = ({
+  href,
+  content,
+  bold,
+  outpage,
+  fontSize,
+  ...rest
+}: Props) => {
   return (
     <RedirectStyled {...rest}>
       {!outpage ? (
         <Link href={href} passHref>
           <ContentWrap>
-            <P color="grayPoint9" fontSize={14} bold={bold}>
+            <P color="grayPoint9" fontSize={fontSize} bold={bold}>
               {content}
             </P>
           </ContentWrap>
@@ -26,7 +32,7 @@ const Redirect = ({ href, content, bold, outpage, ...rest }: Props) => {
       ) : (
         <a href={href} target="_blank">
           <ContentWrap>
-            <P color="grayPoint9" fontSize={14} bold={bold}>
+            <P color="grayPoint9" fontSize={fontSize} bold={bold}>
               {content}
             </P>
           </ContentWrap>
@@ -40,5 +46,8 @@ export default Redirect;
 export const defaultProps: Props = {
   href: "https://www.linkedin.com",
   content: "linkedin.com",
+  fontSize: 14,
 };
-Redirect.defaultProps = {};
+Redirect.defaultProps = {
+  fontSize: defaultProps.fontSize,
+};

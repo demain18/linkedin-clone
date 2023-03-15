@@ -76,6 +76,7 @@ export interface getCompanyFundingDto {
 export interface getCompanyRecommendPageDto {
   pageImg?: StaticImageData;
   pageName?: string;
+  pageUid?: string;
   pageCategory?: string;
   pageFollowers?: number;
 }

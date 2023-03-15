@@ -15,6 +15,7 @@ import avatarImg from "@/public/images/avatar.png";
 import Avatar from "@/components/atoms/avatar/Avatar";
 import { StaticImageData } from "next/image";
 import Link from "next/link";
+import Redirect from "@/components/atoms/redirect/Redirect";
 
 export interface Props {
   avatarImg?: StaticImageData;
@@ -37,13 +38,7 @@ const SnbFeedRecommendUser = ({
           <Avatar image={avatarImg} size={48} />
         </AvatarImageWrap>
         <div>
-          <Link href={`/company/${companyUid}`} passHref>
-            <TitleHover>
-              <P color="grayPoint9" fontSize={14} bold>
-                {name}
-              </P>
-            </TitleHover>
-          </Link>
+          <Redirect href={`/company/${companyUid}`} content={name} bold />
           <P color="grayPoint6" fontSize={12}>
             {info}
           </P>
