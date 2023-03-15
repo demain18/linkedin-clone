@@ -32,8 +32,6 @@ const SnbPageRecommendContent = ({
   dividerNone,
   ...rest
 }: Props) => {
-  console.log(pageUid);
-
   return (
     <SnbPageRecommendContentStyled dividerNone={dividerNone} {...rest}>
       <PageImgWrap>
