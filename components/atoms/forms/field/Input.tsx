@@ -1,5 +1,6 @@
 import React from "react";
-import { InputStyled } from "./InputStyles";
+import { IconWrap, InputStyled, InputTag } from "./InputStyles";
+import { SearchOutlined } from "@material-ui/icons";
 
 export interface Props {
   placeholder: string;
@@ -7,14 +8,17 @@ export interface Props {
 
 const Input = ({ placeholder, ...rest }: Props) => {
   return (
-    <>
-      <InputStyled placeholder={placeholder} />
-    </>
+    <InputStyled>
+      <InputTag placeholder={placeholder} />
+      <IconWrap>
+        <SearchOutlined />
+      </IconWrap>
+    </InputStyled>
   );
 };
 export default Input;
 
 export const defaultProps: Props = {
-  placeholder: "Testing Text",
+  placeholder: "Test",
 };
-Input.defaultProps = { placeholder: defaultProps.placeholder };
+Input.defaultProps = {};
