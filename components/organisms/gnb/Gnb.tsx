@@ -32,7 +32,7 @@ const Gnb = ({ ...rest }: Props) => {
       href: "/network",
       active: false,
     },
-    { icon: <Work />, content: "Jobs", href: "/jobs", active: false },
+    { icon: <Work />, content: "Jobs", href: "/jobs?uid=1", active: false },
     { icon: <Chat />, content: "Messaging", href: "/message", active: false },
     {
       icon: <Notifications />,
