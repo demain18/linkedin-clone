@@ -58,8 +58,12 @@ const JobInfoTags = ({
           <People style={{ fontSize: 20 }} />
         </TagIconStyled>
         <Span fontSize={14}>{`${connects?.connection} connections`}</Span>
-        <Span fontSize={14}>·</Span>{" "}
-        <Span fontSize={14}>{`${connects?.alumni} school alumni`}</Span>
+        {connects?.alumni && (
+          <>
+            <Span fontSize={14}>·</Span>{" "}
+            <Span fontSize={14}>{`${connects?.alumni} school alumni`}</Span>
+          </>
+        )}
       </TagStyled>
       <TagStyled>
         <TagIconStyled>
