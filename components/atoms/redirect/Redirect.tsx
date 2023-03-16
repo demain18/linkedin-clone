@@ -1,41 +1,24 @@
 import Link from "next/link";
 import React from "react";
 import P from "../typography/p/P";
-import { ContentWrap, RedirectStyled } from "./RedirectStyles";
+import { HoverStyled, RedirectStyled } from "./RedirectStyles";
 
 export interface Props {
   href: string;
-  content?: string;
-  bold?: boolean;
+  children?: JSX.Element | JSX.Element[] | string;
   outpage?: boolean;
-  fontSize?: number;
 }
 
-const Redirect = ({
-  href,
-  content,
-  bold,
-  outpage,
-  fontSize,
-  ...rest
-}: Props) => {
+const Redirect = ({ href, children, outpage, ...rest }: Props) => {
   return (
     <RedirectStyled {...rest}>
       {!outpage ? (
         <Link href={href} passHref>
-          <ContentWrap>
-            <P color="grayPoint9" fontSize={fontSize} bold={bold}>
-              {content}
-            </P>
-          </ContentWrap>
+          <HoverStyled>{children}</HoverStyled>
         </Link>
       ) : (
         <a href={href} target="_blank">
-          <ContentWrap>
-            <P color="grayPoint9" fontSize={fontSize} bold={bold}>
-              {content}
-            </P>
-          </ContentWrap>
+          <HoverStyled>{children}</HoverStyled>
         </a>
       )}
     </RedirectStyled>
@@ -45,9 +28,10 @@ export default Redirect;
 
 export const defaultProps: Props = {
   href: "https://www.linkedin.com",
-  content: "linkedin.com",
-  fontSize: 14,
+  children: (
+    <P color="grayPoint9" fontSize={14}>
+      Linked in
+    </P>
+  ),
 };
-Redirect.defaultProps = {
-  fontSize: defaultProps.fontSize,
-};
+Redirect.defaultProps = {};

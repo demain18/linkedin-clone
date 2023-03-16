@@ -5,7 +5,7 @@ import { Props } from "./Redirect";
 
 export const RedirectStyled = styled.div``;
 
-export const ContentWrap = styled.div`
+export const HoverStyled = styled.div`
   p:hover {
     cursor: pointer;
     ${transitionHover}

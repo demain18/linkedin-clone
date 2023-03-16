@@ -14,19 +14,18 @@ const Template: ComponentStory<typeof Redirect> = (args) => (
 export const Default = Template.bind({});
 Default.args = {
   href: defaultProps.href,
-  content: defaultProps.content,
+  children: defaultProps.children,
 };
 
 export const Bold = Template.bind({});
 Bold.args = {
   href: defaultProps.href,
-  content: defaultProps.content,
-  bold: true,
+  children: defaultProps.children,
 };
 
 export const OutPage = Template.bind({});
 OutPage.args = {
   href: defaultProps.href,
-  content: defaultProps.content,
+  children: defaultProps.children,
   outpage: true,
 };

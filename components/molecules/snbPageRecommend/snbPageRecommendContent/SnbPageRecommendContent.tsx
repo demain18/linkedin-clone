@@ -38,12 +38,11 @@ const SnbPageRecommendContent = ({
         <PageImg src={pageImg!} layout="fill" objectFit="cover" />
       </PageImgWrap>
       <ContentWrap>
-        <Redirect
-          href={`/company/${pageUid}`}
-          content={pageName}
-          bold
-          fontSize={16}
-        />
+        <Redirect href={`/company/${pageUid}`}>
+          <P fontSize={16} bold>
+            {pageName}
+          </P>
+        </Redirect>
         <P fontSize={12}>{pageCategory}</P>
         {pageFollowers && (
           <P fontSize={12} color="grayPoint6">

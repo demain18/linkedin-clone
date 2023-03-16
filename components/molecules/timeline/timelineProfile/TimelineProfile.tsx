@@ -34,7 +34,11 @@ const TimelineProfile = ({
       <ContentWrap>
         <Avatar image={avatarImg} size={48} />
         <div>
-          <Redirect href={`/company/${companyUid}`} content={userName} bold />
+          <Redirect href={`/company/${companyUid}`}>
+            <P fontSize={14} bold>
+              {userName}
+            </P>
+          </Redirect>
           <P color="grayPoint6" fontSize={12}>
             {followers?.toLocaleString() + " followers"}
           </P>
