@@ -20,7 +20,7 @@ export const paletteDark = {
   white: "#1b1c1d",
   black: "#fff",
   primary: "#2185d0",
-  primaryLight: "#eef3f8",
+  primaryLight: "#162636",
   primaryDarken: "#0153a6",
   green: "#057642",
   gray: "#767676",
