@@ -10,15 +10,15 @@ export const InputTag = styled.input`
   width: 100%;
   line-height: 1.75;
   font-weight: 400;
-  padding: 8px 16px;
-  /* background-color: ${(props) => props.theme.lightGray}; */
+  padding: 8px 16px 8px 40px;
   background-color: ${(props) => props.theme.primaryLight};
   border-radius: 0.4rem;
   border: none;
+  color: ${(props) => props.theme.black}!important;
 
   ::placeholder {
     color: ${(props) => props.theme.grayPoint9};
-    padding-left: 25px;
+    /* padding-left: 25px; */
   }
 `;
 
