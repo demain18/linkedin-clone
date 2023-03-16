@@ -32,8 +32,10 @@ export const getJobRecommends = () => {
   );
 };
 
-export const getJobsInfo = (param: number) => {
-  return fetch(`/jobs?uid=${param}`).then<getJobsInfoDto>((res) => res.json());
+export const getJobsInfo = (uid: number) => {
+  return fetch(`/jobs?uid=${uid - 1}`).then<getJobsInfoDto>((res) =>
+    res.json()
+  );
 };
 
 export const getCompanyFunding = (company: string) => {

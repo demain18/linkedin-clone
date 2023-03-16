@@ -7,18 +7,25 @@ import JobInfoTags from "@/components/molecules/jobInfo/jobInfoTags/JobInfoTags"
 import { ExitToApp } from "@material-ui/icons";
 import { getJobsInfo } from "modules/api/apiRequest";
 import { getJobsInfoDto } from "modules/api/apiRequest.dto";
-import React from "react";
+import { useRouter } from "next/router";
+import React, { useEffect, useState } from "react";
 import { useQuery } from "react-query";
 import { ButtonContentWrap, ButtonsWrap, JobInfoStyled } from "./JobInfoStyles";
 
 export interface Props {}
 
 const JobInfo = ({ ...rest }: Props) => {
-  const uid: number = 0;
+  const [uid, setUid] = useState<any>();
 
-  const { isLoading, error, data } = useQuery<getJobsInfoDto>(
-    ["jobInfo", uid],
-    () => getJobsInfo(uid)
+  const router = useRouter();
+  const query = router.query;
+
+  useEffect(() => {
+    if (Object.keys(query).length > 0) setUid(query["uid"]);
+  }, [query]);
+
+  const { data } = useQuery<getJobsInfoDto>(["jobInfo", uid], () =>
+    getJobsInfo(uid)
   );
 
   return (

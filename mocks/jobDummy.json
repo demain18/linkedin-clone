@@ -5,7 +5,7 @@
     "country": "Seoul, Seoul, South Korea",
     "jobForm": "On-site",
     "datetime": "3 weeks ago",
-    "applicants": 6,
+    "applicants": 26,
     "company": {
       "employeeCounts": "501 - 1,000",
       "companyKinds": "IT Services and IT Consulting"
@@ -27,13 +27,65 @@
     "followers": 22852
   },
   {
-    "employerCompany": "Line Plus Corp",
-    "title": "Data Platform Engineer",
-    "country": "Seongnam, Gyeonggi, South Korea"
-  },
-  {
     "employerCompany": "Viva Republica (Toss)",
     "title": "Frontend Developer",
-    "country": "Seoul, Seoul, South Korea"
+    "country": "Seoul, Seoul, South Korea",
+    "jobForm": "On-site",
+    "datetime": "1 weeks ago",
+    "applicants": 73,
+    "company": {
+      "employeeCounts": "1,001 - 5,000",
+      "companyKinds": "Financial Services"
+    },
+    "connects": {
+      "connection": 1
+    },
+    "skills": [
+      "TypeScript",
+      "Front-End Development",
+      "HTML",
+      "JSON",
+      "SASS",
+      "User Experience (UX)",
+      "Responsive Web Design",
+      "Software Development",
+      "Web Applications",
+      "Web Development"
+    ],
+    "description": "합류하게 될 팀에 대해 알려드려요\n\n- 토스의 Front-end Developer 포지션은 사일로와 프론트엔드 챕터에 매트릭스 구조로 속해있어요. 토스는 사일로 조직 단위로 서비스/제품이 만들어지는데요, Product Owner, Product Designer, Server Developer, Front-end Developer, Data Analyst 등 6~8명의 직군이 하나의 사일로를 이루어 작은 스타트업처럼 자율성을 갖고 일하고 있어요. 인터뷰를 거치면서 본인의 강점을 발휘할 수 있는 제품을 점점 구체화하고, 선택할 수 있어요.\n- 프론트엔드 챕터는 하나의 팀처럼 협업하고 있어요! 주기적으로 챕터 위클리를 진행하여, 'Tech Talk'로 새로운 기술 토픽 또는 개발 노하우를 공유하고, UI 컴포넌트, 비동기 처리와 같이 라이브러리 개발과 코드리뷰를 함께 진행해요.\n- 프론트엔드 챕터의 올해 목표는 전보다 더 많은 리소스를 요구하는 토스의 비즈니스가 매끄럽게 운영될 수 있도록 프론트엔드 챕터의 규모적 성장을 하려고 해요.\n- 토스신용데이터(가칭)은 다양한 금융/비금융 데이터를 통해 대한민국 신용평가 시장을 재정의 하는 것을 목표로 하고 있어요.\n\n\n합류하면 함께 할 업무예요\n\n- 토스의 신용평가 서비스와 관련된 다양한 웹 서비스를 개발해요.\n- 신용평가 서비스를 이용하는 전반적인 사용자의 경험 설계에 참여해요.\n- 완벽한 사용자 경험을 목표로 프론트엔드 개발 환경을 개선하고, TDS 등 토스 공통 라이브러리 제작에 참여해요.\n\n\n이런 분과 함께하고 싶어요\n\n- React, Vue, Angular 등 SPA 프레임워크 사용에 능숙하신 분이면 좋아요.\n- UI/UX에 대해 높은 가치를 두고 있는 분을 찾아요.\n- HTML, CSS, JavaScript에 대한 이해가 깊은 분이면 좋아요.\n- Git 등의 분산 버전 관리 시스템 이용에 능숙한 분을 찾아요.\n- 단순히 주어진 개발을 해내는 것보다, 주도적으로 문제를 발견하고 분석해 솔루션을 제안할 수 있는 분과 함께하고 싶어요.\n\n\n이력서는 이렇게 작성하시는 걸 추천해요\n\n- 다양한 형태의 폼을 개발해본 경험이 있다면 알려주세요.\n- 복잡한 애플리케이션과 컴포넌트의 상태를 다루고 개선한 경험이 있다면 알려주세요.\n- 런타임과 빌드타임 퍼포먼스를 개선한 경험이 있으신 분이면 좋아요.\n- 반복되는 컴포넌트의 재사용성과 확장성 사이의 트레이드오프에서 답을 찾은 경험이 있다면 알려주세요.\n- 일관적인 룩앤필을 만든 경험이 있는 분이면 좋아요.\n\n\n토스가 사용하는 기술\n\n- 코어: React, TypeScript, Next.js\n- 상태 관리: React-Query, Recoil\n- 스타일링: Emotion\n- 패키지 매니저: Yarn Berry, PNPM\n- 빌드: Webpack, ESBuild, SWC, Babel\n- CI/CD: GitHub Actions, CircleCI\n\n\n토스신용데이터(가칭)으로의 합류여정\n\n- 서류접수 > 직무 인터뷰 > 문화적합성 인터뷰 > 처우 협의 > 최종 합격 및 입사\n\n\n함께 할 동료를 위한 한마디\n\n- “최고의 동료들과 최고의 비즈니스를 만들어요”\n- 저는 토스 유저들과 가장 밀접하게 맞닿아 있는 최전선, 프론트엔드 개발을 하고 있어요.\n- 제가 토스에 합류하기로 결정했던 이유는 뛰어난 동료들과 금융혁신을 만들 수 있겠다는 확신이 들었기 때문이에요. 뛰어난 동료들과 매일 생산적인 토론과 코드리뷰를 통해 하루하루 성장하고, 개개인이 DRI를 가지고 자신이 맡은 서비스를 주도적으로 개발하고 개선해요. 프론트엔드 개발자로서 일하는 모든 순간 순간이 토스의 성장, 그리고 나의 성장에 기여하고 있다는 책임감과 사명감이 들어요.\n- 함께 훌륭한 비즈니스를 만들면서 성장하고자 하는 프론트엔드 개발자라면 토스로의 합류를 망설이지 마세요!",
+    "companyLogo": "https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/company/toss.png?raw=true",
+    "companyDescription": "대한민국 금융을 혁신해 나가는 토스와 함께할 동료를 찾습니다.\n토스의 목표는 명확합니다.\n불편하고 복잡한 금융의 문제를 토스가 끝내려고 합니다. 토스에는 이 꿈에 가슴이 뛰는 사람들이 모여있습니다. 누구에게나 상식적인 금융, 최고의 사용 경험, 쓸 때마다 행복감을 느끼는 금융 서비스를 만들고자 합니다.\n토스는 공인인증서 없이 쉽고 빠르게 송금할 수 있는 간편 송금 서비스를 선보인 이래 40여 개 이상의 다양한 서비스를 선보이며 가파르게 성장하고 있습니다.\n토스에서는 탁월한 인재들이 모여 완전히 새로운 방식으로 일하고 있습니다.\n각 분야 최고 수준의 역량을 갖춘 토스 팀원들은 보험, 결제, 은행, 증권 등 각 금융 분야에서의 혁신을 가장 중요한 목표로 두고, 자율과 책임의 원칙에 따라 상호 신뢰의 문화에서 일하고 있습니다.\n사람들의 금융 경험을 쉽고 편리하게 만들고, 사회에 긍정적인 영향을 미칠 수 있는 일을 할 수 있는 곳. 가슴 뛰는 결과를 함께 만들어나가며 최고의 동료들과 함께 성장할 수 있는 곳에서 일하고 싶지 않으신가요?\n토스에서 대한민국 금융 혁신을 위해 새로운 도전을 함께 할 멋진 동료를 찾고 있습니다.",
+    "followers": 50914
+  },
+  {
+    "employerCompany": "LINE Plus Corp",
+    "title": "Data Platform Engineer",
+    "country": "Seongnam, Gyeonggi, South Korea",
+    "jobForm": "Hybrid",
+    "datetime": "1 weeks ago",
+    "applicants": 46,
+    "company": {
+      "employeeCounts": "1,001 - 5,000",
+      "companyKinds": "Technology, Information and Internet"
+    },
+    "connects": {
+      "connection": 11
+    },
+    "skills": [
+      "Hadoop",
+      "Site Reliability Engineering",
+      "Data Science",
+      "Data Engineering",
+      "Machine Learning",
+      "Reliability Engineering",
+      "Elasticsearch",
+      "Artificial Intelligence (AI)",
+      "Java",
+      "Python (Programming Language)"
+    ],
+    "description": "데이터에 대한 가치와 중요도가 커짐에 따라 LINE도 체계적인 데이터 관리와 효율적인 활용을 위해서 노력을 하고 있고 이를 위해서 기술적인 리드를 담당하는 조직입니다.\n여러 나라의 다양한 서비스에서 발생하는 글로벌 규모의 대용량 데이터를 모으고 처리하고 있으며,\n개발자들이 쉽게 데이터를 여러 가지 목적으로 활용할 수 있도록 Data Platform을 개발하고 제공하고 있습니다.\n데이터 규모가 크고 시간적인 요구사항이 짧아지고 있어서 기술적인 도전 과제들이 많이 있고 머신 러닝과 같은 새로운 기술셋과 솔루션으로 확장되고 있습니다.\n컴퓨터 사이언스 기본기가 있으신 분이라면 관련 경험 자체는 중요하지 않으니 이러한 기술 문제를 해결하는 것을 즐겨 하고 함께 의미 있는 플랫폼을 만들어 가실 분을 모십니다.\n\n\n담당업무\n\nLINE Data Platform의 개발과 운영을 담당\nData Platform을 구성하는 다양한 Open Source 기반의 Solution을 구축하고 운영\nData Engineering Solution을 사용자들이 쉽게 사용할 수 있도록 플랫폼으로 개발하고 운영\nMachine Learning/Deep Learning의 기반이 되는 시스템을 개발하고 운영\n\n\n자격요건\n\n2년 이상의 Data Platform 또는 Data Engineering 관련 실제 업무 경험이 있으신 분\nHadoop Eco-system, Elasticsearch, Kubernetes 중 1개에 대한 사용 경험과 이해도가 있으신 분\nJava/Python/Go 프로그래밍 언어 중 최소 1개 이상 실무에 사용 가능하신 분\n새로운 환경에서 새로운 기술 문제 해결하는 것을 좋아하시는 분\n해외 출장 및 근무에 결격 사유 없으신 분\n\n\n우대사항\n\n오픈소스 솔루션을 실제 서비스/시스템에 직접 도입해서 적용해 본 경험이 있으신 분\n규모 있는 Web/App 기반 사용자 서비스를 개발 및 운영해 본 경험이 있으신 분\nSRE(Site Reliability Engineering) 관련 경험과 이해도가 있거나 백대 단위 이상의 서버를 직접 운영해 본 경험이 있으신 분\n외국어로 업무 진행이 가능한 분 (영어, 일본어)\n\n\n기타\n\n전형절차 등 상세 내용은 당사 채용 홈페이지(공고 상단 'Apply' 클릭)에서 확인 가능합니다.\n본 공고는 수시 모집으로 채용 완료 시 조기 마감될 수 있습니다.\n전형일정 및 결과는 당사 채용 홈페이지에 등록하신 지원서의 이메일로 개별 안내 드립니다.\n본 채용공고를 통해 입사하시는 경우, 3개월의 수습기간을 적용합니다.\n국가 유공자 및 장애인 등 취업보호 대상자는 관계 법령에 따라 우대합니다.\n입사 지원 과정에서 허위사실이 있는 경우, 채용이 취소될 수 있습니다",
+    "companyLogo": "https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/company/line.png?raw=true",
+    "companyDescription": "대한민국 금융을 혁신해 나가는 토스와 함께할 동료를 찾습니다.\n토스의 목표는 명확합니다.\n불편하고 복잡한 금융의 문제를 토스가 끝내려고 합니다. 토스에는 이 꿈에 가슴이 뛰는 사람들이 모여있습니다. 누구에게나 상식적인 금융, 최고의 사용 경험, 쓸 때마다 행복감을 느끼는 금융 서비스를 만들고자 합니다.\n토스는 공인인증서 없이 쉽고 빠르게 송금할 수 있는 간편 송금 서비스를 선보인 이래 40여 개 이상의 다양한 서비스를 선보이며 가파르게 성장하고 있습니다.\n토스에서는 탁월한 인재들이 모여 완전히 새로운 방식으로 일하고 있습니다.\n각 분야 최고 수준의 역량을 갖춘 토스 팀원들은 보험, 결제, 은행, 증권 등 각 금융 분야에서의 혁신을 가장 중요한 목표로 두고, 자율과 책임의 원칙에 따라 상호 신뢰의 문화에서 일하고 있습니다.\n사람들의 금융 경험을 쉽고 편리하게 만들고, 사회에 긍정적인 영향을 미칠 수 있는 일을 할 수 있는 곳. 가슴 뛰는 결과를 함께 만들어나가며 최고의 동료들과 함께 성장할 수 있는 곳에서 일하고 싶지 않으신가요?\n토스에서 대한민국 금융 혁신을 위해 새로운 도전을 함께 할 멋진 동료를 찾고 있습니다.",
+    "followers": 50914
   }
 ]
