@@ -38,7 +38,11 @@ const SnbFeedRecommendUser = ({
           <Avatar image={avatarImg} size={48} />
         </AvatarImageWrap>
         <div>
-          <Redirect href={`/company/${companyUid}`} content={name} bold />
+          <Redirect href={`/company/${companyUid}`}>
+            <P fontSize={14} bold>
+              {name}
+            </P>
+          </Redirect>
           <P color="grayPoint6" fontSize={12}>
             {info}
           </P>
