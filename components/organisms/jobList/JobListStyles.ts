@@ -15,7 +15,12 @@ export const JobListStyled = styled.div`
     !props.themeIsLight &&
     css`
       ::-webkit-scrollbar {
-        background-color: ${(props) => props.theme.grayPoint05}!important;
+        background-color: #262626;
+        opacity: 0.5;
       }
+
+      /* ::-webkit-scrollbar-thumb {
+        background-color: ${(props) => props.theme.grayPoint1}!important;
+      } */
     `}
 `;

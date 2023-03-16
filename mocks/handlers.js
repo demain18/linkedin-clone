@@ -163,7 +163,7 @@ export const handlers = [
           jobForm: "On-site",
           actively: false,
           datetime: "3 weeks ago",
-          applicants: 6,
+          applicants: 26,
         },
         {
           uid: 2,
@@ -175,7 +175,7 @@ export const handlers = [
           jobForm: "On-site",
           actively: true,
           datetime: "2 weeks ago",
-          applicants: 1,
+          applicants: 73,
         },
         {
           uid: 3,
@@ -187,7 +187,7 @@ export const handlers = [
           jobForm: "Hybrid",
           actively: false,
           datetime: "2 days ago",
-          applicants: 0,
+          applicants: 46,
         },
       ])
     );

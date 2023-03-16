@@ -29,11 +29,14 @@ export const JobInfoWrap = styled.div`
     !props.themeIsLight &&
     css`
       ::-webkit-scrollbar {
-        background-color: ${(props) => props.theme.grayPoint05}!important;
+        background-color: rgba(0, 0, 0, 0.1) !important;
       }
 
-      /* ::-webkit-scrollbar-thumb {
-        background-color: ${(props) => props.theme.grayPoint1}!important;
-      } */
+      ::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.25) !important;
+        border: 3px solid transparent;
+        border-radius: 9px;
+        background-clip: content-box;
+      }
     `}
 `;
