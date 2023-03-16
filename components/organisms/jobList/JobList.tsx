@@ -2,10 +2,12 @@ import JobListContent from "@/components/molecules/jobList/jobListContent/JobLis
 import JobListHeader from "@/components/molecules/jobList/jobListHeader/JobListHeader";
 import { getJobRecommends } from "modules/api/apiRequest";
 import { getJobsRecommendsDto } from "modules/api/apiRequest.dto";
+import { RootState } from "modules/store";
 import { useRouter } from "next/router";
 import qs from "qs";
 import React, { useEffect, useState } from "react";
 import { useQuery } from "react-query";
+import { useSelector } from "react-redux";
 import { JobListStyled } from "./JobListStyles";
 
 export interface Props {}
@@ -16,16 +18,18 @@ const JobList = ({ ...rest }: Props) => {
     getJobRecommends
   );
   const [uid, setUid] = useState<any>();
-
   const router = useRouter();
   const query = router.query;
+  const themeIsLight = useSelector(
+    (state: RootState) => state.global.themeIsLight
+  );
 
   useEffect(() => {
     if (Object.keys(query).length > 0) setUid(query["uid"]);
   }, [query]);
 
   return (
-    <JobListStyled {...rest}>
+    <JobListStyled themeIsLight={themeIsLight} {...rest}>
       <JobListHeader />
       {data?.map((i, x) => (
         <JobListContent
@@ -48,5 +52,4 @@ const JobList = ({ ...rest }: Props) => {
 };
 export default JobList;
 
-export const defaultProps: Props = {};
 JobList.defaultProps = {};

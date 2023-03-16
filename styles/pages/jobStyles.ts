@@ -1,6 +1,10 @@
 import styled, { css } from "styled-components";
 import { Props } from "../../pages/jobs/index";
 
+interface ElementProps {
+  themeIsLight: boolean;
+}
+
 export const GlobalWrap = styled.div`
   width: 100%;
   height: calc(100vh - 78px);
@@ -20,9 +24,16 @@ export const JobInfoWrap = styled.div`
   width: 100%;
   height: 100%;
   overflow-y: scroll;
-  /* padding: 20px;
-  background-color: ${(props) => props.theme.white};
-  display: flex;
-  flex-direction: column;
-  gap: 20px; */
+
+  ${(props: ElementProps) =>
+    !props.themeIsLight &&
+    css`
+      ::-webkit-scrollbar {
+        background-color: ${(props) => props.theme.grayPoint05}!important;
+      }
+
+      /* ::-webkit-scrollbar-thumb {
+        background-color: ${(props) => props.theme.grayPoint1}!important;
+      } */
+    `}
 `;

@@ -4,10 +4,16 @@ import { GlobalWrap, JobInfoWrap, JobListWrap } from "@/styles/pages/jobStyles";
 import { Frame, FrameWrap } from "@/styles/moduleStyles";
 import JobList from "@/components/organisms/jobList/JobList";
 import JobInfo from "@/components/organisms/jobInfo/JobInfo";
+import { useSelector } from "react-redux";
+import { RootState } from "modules/store";
 
 export interface Props {}
 
 const App: NextPage = () => {
+  const themeIsLight = useSelector(
+    (state: RootState) => state.global.themeIsLight
+  );
+
   return (
     <>
       <Gnb />
@@ -18,7 +24,7 @@ const App: NextPage = () => {
               <JobList />
             </JobListWrap>
 
-            <JobInfoWrap>
+            <JobInfoWrap themeIsLight={themeIsLight}>
               <JobInfo />
             </JobInfoWrap>
           </GlobalWrap>
