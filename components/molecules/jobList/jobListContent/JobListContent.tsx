@@ -15,6 +15,7 @@ import Span from "@/components/atoms/typography/span/Span";
 import { RssFeed } from "@material-ui/icons";
 import { StaticImageData } from "next/image";
 import Link from "next/link";
+import Redirect from "@/components/atoms/redirect/Redirect";
 
 export interface Props {
   active?: boolean;
@@ -51,13 +52,10 @@ const JobListContent = ({
         <P color="primary" bold>
           {title}
         </P>
-        <Link href={`/company/${employerCompanyUid}`} passHref>
-          <a>
-            <LinkWrap>
-              <P fontSize={14}>{employerCompany}</P>
-            </LinkWrap>
-          </a>
-        </Link>
+        <Redirect href={`/company/${employerCompanyUid}`}>
+          <P fontSize={14}>{employerCompany}</P>
+        </Redirect>
+
         <P fontSize={14} color="grayPoint6">
           {`${country} (${jobForm})`}
         </P>

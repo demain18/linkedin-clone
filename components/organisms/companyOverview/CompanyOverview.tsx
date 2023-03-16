@@ -1,3 +1,4 @@
+import Redirect from "@/components/atoms/redirect/Redirect";
 import P from "@/components/atoms/typography/p/P";
 import { getCompanyOverview } from "modules/api/apiRequest";
 import { getCompanyOverviewDto } from "modules/api/apiRequest.dto";
@@ -29,9 +30,11 @@ const CompanyOverview = ({ ...rest }: Props) => {
         <P fontSize={14} bold>
           Website
         </P>
-        <P fontSize={14} color="grayPoint6">
-          {data?.website}
-        </P>
+        <Redirect href={data?.website || ""} outpage>
+          <P fontSize={14} color="primary">
+            {data?.website}
+          </P>
+        </Redirect>
       </ContentWrap>{" "}
       <ContentWrap>
         <P fontSize={14} bold>
