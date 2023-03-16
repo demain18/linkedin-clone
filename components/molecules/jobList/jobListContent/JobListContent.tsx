@@ -48,8 +48,6 @@ const JobListContent = ({
 
   const mouseHover = (event) => {
     setHover(event);
-
-    console.log(hover);
   };
 
   return (

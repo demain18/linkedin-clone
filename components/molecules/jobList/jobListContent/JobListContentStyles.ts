@@ -7,7 +7,7 @@ interface ElementProps {
 }
 
 export const JobListContentStyled = styled.div<Props>`
-  padding: 8px;
+  padding: 8px 0px 0px 8px;
   background-color: ${(props) => props.theme.white};
   display: flex;
   gap: 10px;
@@ -41,7 +41,10 @@ export const TitleWrap = styled.div`
 `;
 
 export const ContentWrap = styled.div`
+  width: 100%;
   box-sizing: border-box;
+  border-bottom: 1px solid ${(props) => props.theme.grayPoint1};
+  padding-bottom: 8px;
 `;
 
 export const CompanyWrap = styled.div`

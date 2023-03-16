@@ -9,7 +9,7 @@ import { JobListStyled } from "./JobListStyles";
 export interface Props {}
 
 const JobList = ({ ...rest }: Props) => {
-  const { isLoading, error, data } = useQuery<getJobsRecommendsDto[]>(
+  const { data } = useQuery<getJobsRecommendsDto[]>(
     "jobsRecommends",
     getJobRecommends
   );

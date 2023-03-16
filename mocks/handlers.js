@@ -1,7 +1,5 @@
 import { rest } from "msw";
 
-import tossLogoimg from "@/public/images/dummys/company/toss.png";
-import tossBannerimg from "@/public/images/dummys/company/toss_banner.png";
 import bannerImg from "@/public/images/banner.png";
 import avatarImg from "@/public/images/avatar.png";
 import tossImg from "@/public/images/dummys/company/toss.png";
