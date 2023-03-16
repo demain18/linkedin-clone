@@ -2,6 +2,9 @@ import styled, { css } from "styled-components";
 import { Props } from "./JobListContent";
 import Image from "next/image";
 import { nonSelect } from "@/styles/moduleStyles";
+interface ElementProps {
+  hover: boolean;
+}
 
 export const JobListContentStyled = styled.div<Props>`
   padding: 8px;
@@ -17,8 +20,6 @@ export const JobListContentStyled = styled.div<Props>`
     `}
 `;
 
-export const HeaderWrap = styled.div``;
-
 export const LogoImgWrap = styled.div`
   position: relative;
   width: 56px;
@@ -29,21 +30,22 @@ export const LogoImage = styled(Image)`
   ${nonSelect}
 `;
 
-export const ContentWrap = styled.div`
-  box-sizing: border-box;
-
-  p:nth-child(1) {
-    :hover {
-      text-decoration: underline;
-    }
-  }
+export const TitleWrap = styled.div`
+  ${(props: ElementProps) =>
+    props.hover &&
+    css`
+      p {
+        text-decoration: underline;
+      }
+    `}
 `;
 
-export const LinkWrap = styled.div`
-  p:hover {
-    color: ${(props) => props.theme.primary};
-    text-decoration: underline;
-  }
+export const ContentWrap = styled.div`
+  box-sizing: border-box;
+`;
+
+export const CompanyWrap = styled.div`
+  display: inline-block;
 `;
 
 export const ActivelyWrap = styled.div`

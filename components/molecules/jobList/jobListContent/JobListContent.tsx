@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   ActivelyWrap,
+  CompanyWrap,
   ContentWrap,
   InfoWrap,
   JobListContentStyled,
-  LinkWrap,
   LogoImage,
   LogoImgWrap,
+  TitleWrap,
 } from "./JobListContentStyles";
 import logo from "@/public/images/dummys/company/toss.png";
 import dummyLogo from "@/public/images/avatar.png";
@@ -43,22 +44,41 @@ const JobListContent = ({
   applicants,
   ...rest
 }: Props) => {
+  const [hover, setHover] = useState(false);
+
+  const mouseHover = (event) => {
+    setHover(event);
+
+    console.log(hover);
+  };
+
   return (
-    <JobListContentStyled {...rest} active={active}>
+    <JobListContentStyled
+      {...rest}
+      active={active}
+      onMouseEnter={() => mouseHover(true)}
+      onMouseLeave={() => mouseHover(false)}
+    >
       <LogoImgWrap>
         <LogoImage src={employerLogo!} layout="fill" objectFit="cover" />
       </LogoImgWrap>
       <ContentWrap>
-        <P color="primary" bold>
-          {title}
-        </P>
-        <Redirect href={`/company/${employerCompanyUid}`}>
-          <P fontSize={14}>{employerCompany}</P>
-        </Redirect>
+        <TitleWrap hover={hover}>
+          <P color="primary" bold>
+            {title}
+          </P>
+        </TitleWrap>
+
+        <CompanyWrap>
+          <Redirect href={`/company/${employerCompanyUid}`}>
+            <P fontSize={14}>{employerCompany}</P>
+          </Redirect>
+        </CompanyWrap>
 
         <P fontSize={14} color="grayPoint6">
           {`${country} (${jobForm})`}
         </P>
+
         {actively && (
           <ActivelyWrap>
             <RssFeed style={{ fontSize: 20 }} />
