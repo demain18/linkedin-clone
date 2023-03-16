@@ -20,6 +20,7 @@ import Redirect from "@/components/atoms/redirect/Redirect";
 
 export interface Props {
   active?: boolean;
+  uid?: number;
   employerLogo?: StaticImageData;
   employerCompany?: string;
   employerCompanyUid?: string;
@@ -33,6 +34,7 @@ export interface Props {
 
 const JobListContent = ({
   active,
+  uid,
   employerLogo,
   employerCompany,
   employerCompanyUid,
@@ -57,6 +59,9 @@ const JobListContent = ({
       onMouseEnter={() => mouseHover(true)}
       onMouseLeave={() => mouseHover(false)}
     >
+      <Redirect href={`/jobs?uid=${uid}`}>
+        <P>Test</P>
+      </Redirect>
       <LogoImgWrap>
         <LogoImage src={employerLogo!} layout="fill" objectFit="cover" />
       </LogoImgWrap>

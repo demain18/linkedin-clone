@@ -154,6 +154,7 @@ export const handlers = [
       ctx.json([
         {
           active: true,
+          uid: 1,
           employerLogo: kakaoImg,
           employerCompany: "카카오페이 (kakaopay)",
           employerCompanyUid: "kakaopay",
@@ -165,6 +166,7 @@ export const handlers = [
           applicants: 6,
         },
         {
+          uid: 2,
           employerLogo: tossImg,
           employerCompany: "Viva Republica (Toss)",
           employerCompanyUid: "tossbank",
@@ -176,6 +178,7 @@ export const handlers = [
           applicants: 1,
         },
         {
+          uid: 3,
           employerLogo: lineImg,
           employerCompany: "Line Plus Corp",
           employerCompanyUid: "lineplus",

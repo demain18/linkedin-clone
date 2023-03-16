@@ -21,6 +21,7 @@ const JobList = ({ ...rest }: Props) => {
         <JobListContent
           key={i.title! + x}
           active={i.active}
+          uid={i.uid}
           employerLogo={i.employerLogo}
           employerCompany={i.employerCompany}
           employerCompanyUid={i.employerCompanyUid}
