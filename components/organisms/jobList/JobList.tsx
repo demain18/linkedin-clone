@@ -2,7 +2,9 @@ import JobListContent from "@/components/molecules/jobList/jobListContent/JobLis
 import JobListHeader from "@/components/molecules/jobList/jobListHeader/JobListHeader";
 import { getJobRecommends } from "modules/api/apiRequest";
 import { getJobsRecommendsDto } from "modules/api/apiRequest.dto";
-import React from "react";
+import { useRouter } from "next/router";
+import qs from "qs";
+import React, { useEffect, useState } from "react";
 import { useQuery } from "react-query";
 import { JobListStyled } from "./JobListStyles";
 
@@ -13,6 +15,14 @@ const JobList = ({ ...rest }: Props) => {
     "jobsRecommends",
     getJobRecommends
   );
+  const [uid, setUid] = useState<any>();
+
+  const router = useRouter();
+  const query = router.query;
+
+  useEffect(() => {
+    if (Object.keys(query).length > 0) setUid(query["uid"]);
+  }, [query]);
 
   return (
     <JobListStyled {...rest}>
@@ -20,7 +30,7 @@ const JobList = ({ ...rest }: Props) => {
       {data?.map((i, x) => (
         <JobListContent
           key={i.title! + x}
-          active={i.active}
+          active={i.uid === +uid}
           uid={i.uid}
           employerLogo={i.employerLogo}
           employerCompany={i.employerCompany}

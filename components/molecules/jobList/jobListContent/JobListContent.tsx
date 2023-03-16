@@ -53,61 +53,60 @@ const JobListContent = ({
   };
 
   return (
-    <JobListContentStyled
-      {...rest}
-      active={active}
-      onMouseEnter={() => mouseHover(true)}
-      onMouseLeave={() => mouseHover(false)}
-    >
-      <Redirect href={`/jobs?uid=${uid}`}>
-        <P>Test</P>
-      </Redirect>
-      <LogoImgWrap>
-        <LogoImage src={employerLogo!} layout="fill" objectFit="cover" />
-      </LogoImgWrap>
-      <ContentWrap>
-        <TitleWrap hover={hover}>
-          <P color="primary" bold>
-            {title}
+    <Link href={`/jobs?uid=${uid}`} passHref>
+      <JobListContentStyled
+        {...rest}
+        active={active}
+        onMouseEnter={() => mouseHover(true)}
+        onMouseLeave={() => mouseHover(false)}
+      >
+        <LogoImgWrap>
+          <LogoImage src={employerLogo!} layout="fill" objectFit="cover" />
+        </LogoImgWrap>
+        <ContentWrap>
+          <TitleWrap hover={hover}>
+            <P color="primary" bold>
+              {title}
+            </P>
+          </TitleWrap>
+
+          <CompanyWrap>
+            <Redirect href={`/company/${employerCompanyUid}`}>
+              <P fontSize={14}>{employerCompany}</P>
+            </Redirect>
+          </CompanyWrap>
+
+          <P fontSize={14} color="grayPoint6">
+            {`${country} (${jobForm})`}
           </P>
-        </TitleWrap>
 
-        <CompanyWrap>
-          <Redirect href={`/company/${employerCompanyUid}`}>
-            <P fontSize={14}>{employerCompany}</P>
-          </Redirect>
-        </CompanyWrap>
-
-        <P fontSize={14} color="grayPoint6">
-          {`${country} (${jobForm})`}
-        </P>
-
-        {actively && (
-          <ActivelyWrap>
-            <RssFeed style={{ fontSize: 20 }} />
-            <Span fontSize={12} color="grayPoint6">
-              Actively recruiting
-            </Span>
-          </ActivelyWrap>
-        )}
-        <InfoWrap>
-          <Span fontSize={12} color="grayPoint6">
-            {datetime}
-          </Span>
-
-          {applicants! > 0 && (
-            <>
-              <Span fontSize={12} color="grayPoint8">
-                ·
+          {actively && (
+            <ActivelyWrap>
+              <RssFeed style={{ fontSize: 20 }} />
+              <Span fontSize={12} color="grayPoint6">
+                Actively recruiting
               </Span>
-              <Span fontSize={12} color="green" bold>
-                {`${applicants!.toLocaleString()} applicants`}
-              </Span>
-            </>
+            </ActivelyWrap>
           )}
-        </InfoWrap>
-      </ContentWrap>
-    </JobListContentStyled>
+          <InfoWrap>
+            <Span fontSize={12} color="grayPoint6">
+              {datetime}
+            </Span>
+
+            {applicants! > 0 && (
+              <>
+                <Span fontSize={12} color="grayPoint8">
+                  ·
+                </Span>
+                <Span fontSize={12} color="green" bold>
+                  {`${applicants!.toLocaleString()} applicants`}
+                </Span>
+              </>
+            )}
+          </InfoWrap>
+        </ContentWrap>
+      </JobListContentStyled>
+    </Link>
   );
 };
 export default JobListContent;
