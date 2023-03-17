@@ -4,7 +4,7 @@
 
 ## 개발 기간
 
-2022년 11월 26일 ~ 2023년 3월 15일
+2022년 11월 26일 ~ 2023년 3월 17일
 
 ## 참여 인원
 
@@ -25,6 +25,8 @@
 - Firebase
 
 ## 웹사이트 사용법
+
+웹사이트 링크 : [linkedin-clone-5d4a9.web.app](linkedin-clone-5d4a9.web.app/)
 
 - Home(홈)
   ![alt text](https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/readme/1.png?raw=true)
