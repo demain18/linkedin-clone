@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import JobList, { defaultProps } from "./JobList";
+import JobList from "./JobList";
 
 export default {
   title: "Organisms/JobList",

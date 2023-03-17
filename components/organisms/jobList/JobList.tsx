@@ -4,7 +4,6 @@ import { getJobRecommends } from "modules/api/apiRequest";
 import { getJobsRecommendsDto } from "modules/api/apiRequest.dto";
 import { RootState } from "modules/store";
 import { useRouter } from "next/router";
-import qs from "qs";
 import React, { useEffect, useState } from "react";
 import { useQuery } from "react-query";
 import { useSelector } from "react-redux";

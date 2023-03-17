@@ -39,3 +39,7 @@ dist
 
 ## firebase
 firebase-debug.log
+
+## next export
+out/
+out
