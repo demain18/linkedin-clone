@@ -26,7 +26,7 @@
 
 ## 웹사이트 사용법
 
-웹사이트 링크 : [linkedin-clone-5d4a9.web.app](https://linkedin-clone-5d4a9.web.app/)
+웹사이트 링크 : [linkedin-clone-5d4a9.web.app](https://linkedin-clone-5d4a9.web.app/){:target="\_blank"}
 
 - Home(홈)
   ![alt text](https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/readme/1.png?raw=true)
