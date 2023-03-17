@@ -45,6 +45,7 @@
 - yarn build : 빌드 수행하기
 - yarn start : 프로덕트 환경에서 서버 실행하기
 - yarn export : 빌드 파일 index.html로 변환하기
+- yarn deploy : 빌드 수행 후 배포하기
 
 ## 프로젝트에 관한 글
 
