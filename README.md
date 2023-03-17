@@ -24,6 +24,15 @@
 - React Testing Library
 - Firebase
 
+## 웹사이트 사용법
+
+- Home(홈)
+  ![alt text](https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/readme/1.png?raw=true)
+- Company(기업 페이지)
+  ![alt text](https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/readme/2.png?raw=true)
+- Jobs(구직)
+  ![alt text](https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/readme/3.png?raw=true)
+
 ## Yarn 명령어
 
 - yarn dev : 개발 환경에서 서버 실행하기
