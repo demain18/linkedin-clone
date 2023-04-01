@@ -53,9 +53,9 @@
       "series": "G",
       "lastSeriesDatetime": "Dec 18, 2022",
       "seriesAmount": "543M",
-      "investorCompanyImg": "https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/company/kakao_pay.png?raw=true",
-      "investorCompanyName": "카카오페이(Kakaopay)",
-      "investorCount": 5
+      "investorCompanyImg": "https://raw.githubusercontent.com/demain18/linkedin-clone/41ac76925dde0b5f259a2693128ef0b68b19709e/public/images/company.png",
+      "investorCompanyName": "엘앤에스벤처캐피탈",
+      "investorCount": 6
     }
   },
   "lineplus": {
@@ -111,9 +111,9 @@
       "totalRounds": 8,
       "lastSeriesDatetime": "March 20, 2019",
       "seriesAmount": "44M",
-      "investorCompanyImg": "https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/company/kakao_pay.png?raw=true",
-      "investorCompanyName": "카카오페이(Kakaopay)",
-      "investorCount": 11
+      "investorCompanyImg": "https://raw.githubusercontent.com/demain18/linkedin-clone/41ac76925dde0b5f259a2693128ef0b68b19709e/public/images/company.png",
+      "investorCompanyName": "프리미어파트너스",
+      "investorCount": 6
     }
   },
   "kakaopay": {
@@ -168,9 +168,9 @@
       "round": "IPO",
       "lastSeriesDatetime": "Sep 5, 2022",
       "seriesAmount": "1300M",
-      "investorCompanyImg": "https://github.com/demain18/linkedin-clone/blob/develop/public/images/dummys/company/kakao_pay.png?raw=true",
-      "investorCompanyName": "카카오페이(Kakaopay)",
-      "investorCount": 11
+      "investorCompanyImg": "https://raw.githubusercontent.com/demain18/linkedin-clone/41ac76925dde0b5f259a2693128ef0b68b19709e/public/images/company.png",
+      "investorCompanyName": "비공개",
+      "investorCount": 5
     }
   }
 }
