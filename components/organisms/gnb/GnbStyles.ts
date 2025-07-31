@@ -31,7 +31,7 @@ export const LogoImageWrap = styled.div`
   margin: 0px 7px;
   cursor: pointer;
 `;
-
+//
 export const LogoImage = styled(Image)``;
 
 export const InputWrap = styled.div`
