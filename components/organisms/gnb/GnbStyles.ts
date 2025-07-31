@@ -17,7 +17,6 @@ export const GnbWrap = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  /* border: 1px solid blue; */
 `;
 
 export const FlexWrap = styled.div`

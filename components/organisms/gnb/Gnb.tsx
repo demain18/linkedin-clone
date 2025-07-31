@@ -20,6 +20,7 @@ import { toggleTheme } from "modules/store/globalSlice";
 import { RootState } from "modules/store";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import JobList from "../jobList/JobList";
 
 export interface Props {}
 
@@ -57,8 +58,8 @@ const Gnb = ({ ...rest }: Props) => {
         menu.href === path ? { ...menu, active: true } : menu
       )
     );
-    // console.log(path);
   }, []);
+
 
   return (
     <GnbStyled>
@@ -81,7 +82,7 @@ const Gnb = ({ ...rest }: Props) => {
 
           <ButtonToggleThemeWrap>
             <ButtonToggleTheme onClick={toggleThemeButton}>
-              {themeIsLight ? "🌝" : "🌚"}
+              {themeIsLight ? "☀️" : "⚫"}
             </ButtonToggleTheme>
           </ButtonToggleThemeWrap>
         </FlexWrap>

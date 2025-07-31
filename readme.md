@@ -23,7 +23,7 @@
 - Jest
 - React Testing Library
 - Firebase
-npm
+- npm
 ## 웹사이트 사용법
 
 <!-- 웹사이트 링크 : [linkedin-clone-5d4a9.web.app](https://linkedin-clone-5d4a9.web.app/) -->
