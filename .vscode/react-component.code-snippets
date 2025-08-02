@@ -55,12 +55,12 @@
     "description": "styled-component const 문법을 생성합니다."
   },
   "styled-component import next image": {
-    "prefix": "impNextImg",
+    "prefix": "importNextImg",
     "body": ["import Image from \"next/image\";"],
     "description": "next/image를 import합니다."
   },
   "import mui icon": {
-    "prefix": "impMuiIon",
+    "prefix": "importMuiIon",
     "body": ["import {$1} from \"@material-ui/icons\";"],
     "description": "material ui icon을 import합니다."
   }
