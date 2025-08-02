@@ -53,12 +53,18 @@ const Gnb = ({ ...rest }: Props) => {
   const router = useRouter();
 
   useEffect(() => {
-    const path = router.pathname;
+    let path = window.location.pathname;
+
+    if (path === "/jobs") {
+      path = "/jobs?uid=1";
+    }
+
     setMenuList(
-      menuList.map((menu) =>
-        menu.href === path ? { ...menu, active: true } : menu
-      )
+      menuList.map((menu) => {
+        return menu.href === path ? { ...menu, active: true } : menu;
+      })
     );
+    console.log(window.location.pathname);
   }, []);
 
   return (

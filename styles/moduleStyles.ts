@@ -24,6 +24,22 @@ export const FrameWrap = styled.div`
   padding: 24px 0px 0px 0px;
 `;
 
+export const EmptyPageAlertWrap = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const EmptyPageAlertMsg = styled.p`
+  padding-top: 50px;
+
+  p {
+    font-size: 23px;
+  }
+`;
+
 export const nonSelect = css`
   user-drag: none;
   -webkit-user-drag: none;
