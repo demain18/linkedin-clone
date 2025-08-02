@@ -13,6 +13,7 @@ const Template: ComponentStory<typeof TutorialBox> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
+  displayOrder: defaultProps.displayOrder,
   top: defaultProps.top,
   left: defaultProps.left,
   width: defaultProps.width,

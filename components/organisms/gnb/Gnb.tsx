@@ -70,7 +70,28 @@ const Gnb = ({ ...rest }: Props) => {
   return (
     <GnbStyled>
       <GnbWrap>
-        <TutorialBox top={2} left={655} width={410} />
+        <TutorialBox
+          displayOrder={0}
+          top={2}
+          left={655}
+          width={410}
+          desc="이곳에서는 메뉴로 이동할 수 있습니다."
+        />
+        <TutorialBox
+          displayOrder={1}
+          top={2}
+          left={288}
+          width={50}
+          desc="이 버튼을 클릭하면 화면 모드를 변경할 수 있습니다."
+        />
+        <TutorialBox
+          displayOrder={2}
+          top={215}
+          left={315}
+          width={150}
+          height={25}
+          desc="이곳에서는 회사 홈페이지로 이동할 수 있습니다."
+        />
         <FlexWrap>
           <Link href="/">
             <LogoImageWrap>

@@ -11,11 +11,11 @@ import {
 import P from "@/components/atoms/typography/p/P";
 import { Close, Height, Widgets } from "@material-ui/icons";
 import { useDispatch, useSelector } from "react-redux";
-import { closeTutorialBlock } from "modules/store/globalSlice";
+import { tutorialOrderUpdate } from "modules/store/globalSlice";
 import { RootState } from "modules/store";
-import Span from "@/components/atoms/typography/span/Span";
 
 export interface Props {
+  displayOrder?: number;
   top?: number;
   left?: number;
   width?: number;
@@ -23,24 +23,34 @@ export interface Props {
   desc?: string;
 }
 
-const TutorialBox = ({ top, left, width, height, desc, ...rest }: Props) => {
+const TutorialBox = ({
+  displayOrder,
+  top,
+  left,
+  width,
+  height,
+  desc,
+  ...rest
+}: Props) => {
   const dispatch = useDispatch();
-  const contentsRead = () => dispatch(closeTutorialBlock());
+  const orderUpdate = () => dispatch(tutorialOrderUpdate());
 
-  const contentsIsRead = useSelector(
-    (state: RootState) => state.global.tutorialhasRead
+  const tutorialOrder: number = useSelector(
+    (state: RootState) => state.global.tutorialOrder
   );
+
+  // console.log(tutorialOrder, typeof tutorialOrder);
 
   return (
     <TutorialBoxWap top={top} left={left} {...rest}>
-      {contentsIsRead || (
+      {tutorialOrder === displayOrder ? (
         <TutorialBoxStyled>
           <TextBoxUIRange width={width} height={height}></TextBoxUIRange>
           <TextBoxWrap>
             <TextBoxDesc>
               <P>{desc}</P>
             </TextBoxDesc>
-            <CloseWrap onClick={contentsRead}>
+            <CloseWrap onClick={orderUpdate}>
               <P>
                 <Close fontSize="small" />
               </P>
@@ -48,13 +58,14 @@ const TutorialBox = ({ top, left, width, height, desc, ...rest }: Props) => {
             <TextBoxDescArrow />
           </TextBoxWrap>
         </TutorialBoxStyled>
-      )}
+      ) : null}
     </TutorialBoxWap>
   );
 };
 export default TutorialBox;
 
 export const defaultProps: Props = {
+  displayOrder: 0,
   top: 0,
   left: 0,
   width: 200,
@@ -63,6 +74,7 @@ export const defaultProps: Props = {
 };
 
 TutorialBox.defaultProps = {
+  displayOrder: defaultProps.displayOrder,
   top: defaultProps.top,
   left: defaultProps.left,
   width: defaultProps.width,
