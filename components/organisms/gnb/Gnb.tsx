@@ -21,6 +21,7 @@ import { RootState } from "modules/store";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import JobList from "../jobList/JobList";
+import TutorialBox from "@/components/molecules/tutorialBox/TutorialBox";
 
 export interface Props {}
 
@@ -60,10 +61,10 @@ const Gnb = ({ ...rest }: Props) => {
     );
   }, []);
 
-
   return (
     <GnbStyled>
       <GnbWrap>
+        <TutorialBox top={2} left={655} width={410} />
         <FlexWrap>
           <Link href="/">
             <LogoImageWrap>

@@ -2,14 +2,15 @@ import styled, { css } from "styled-components";
 import { Props } from "./TutorialBox";
 import { transitionHover } from "@/styles/transitionStyles";
 
-export const TutorialBoxWap = styled.div<Props>``;
-
-export const TutorialBoxStyled = styled.div<Props>`
+export const TutorialBoxWap = styled.div<Props>`
+  /* float: left; */
   position: absolute;
   top: ${(props) => props.top + "px"};
   left: ${(props) => props.left + "px"};
-  // useeffect에서 prop 제대로 들어오는데 왜 여기선 undefined로 뜨지
+  z-index: 3;
 `;
+
+export const TutorialBoxStyled = styled.div<Props>``;
 
 export const TextBoxUIRange = styled.div<Props>`
   width: ${(props) => props.width + "px"};
@@ -26,6 +27,7 @@ export const TextBoxWrap = styled.div<Props>`
   justify-content: space-between;
   align-items: center;
   background-color: #80ff0042;
+  backdrop-filter: blur(2px);
   padding: 8px 10px;
   border-radius: 5px;
   max-width: fit-content;

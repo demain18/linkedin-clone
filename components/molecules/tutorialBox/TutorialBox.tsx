@@ -10,6 +10,9 @@ import {
 } from "./TutorialBoxStyles";
 import P from "@/components/atoms/typography/p/P";
 import { Close, Height, Widgets } from "@material-ui/icons";
+import { useDispatch, useSelector } from "react-redux";
+import { closeTutorialBlock } from "modules/store/globalSlice";
+import { RootState } from "modules/store";
 
 export interface Props {
   top?: number;
@@ -20,17 +23,17 @@ export interface Props {
 }
 
 const TutorialBox = ({ top, left, width, height, desc, ...rest }: Props) => {
-  const [contentsIsRead, setContentsIsRead] = useState<boolean>(false);
-  const contentsRead = () => setContentsIsRead(true);
+  const dispatch = useDispatch();
+  const contentsRead = () => dispatch(closeTutorialBlock());
 
-  useEffect(() => {
-    console.log(top, left, width, height, desc);
-  });
+  const contentsIsRead = useSelector(
+    (state: RootState) => state.global.tutorialhasRead
+  );
 
   return (
-    <TutorialBoxWap {...rest}>
+    <TutorialBoxWap top={top} left={left} {...rest}>
       {contentsIsRead || (
-        <TutorialBoxStyled top={top} left={left}>
+        <TutorialBoxStyled>
           <TextBoxUIRange width={width} height={height}></TextBoxUIRange>
           <TextBoxWrap>
             <TextBoxDesc>
