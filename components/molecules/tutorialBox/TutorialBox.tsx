@@ -13,6 +13,7 @@ import { Close, Height, Widgets } from "@material-ui/icons";
 import { useDispatch, useSelector } from "react-redux";
 import { closeTutorialBlock } from "modules/store/globalSlice";
 import { RootState } from "modules/store";
+import Span from "@/components/atoms/typography/span/Span";
 
 export interface Props {
   top?: number;
@@ -40,7 +41,9 @@ const TutorialBox = ({ top, left, width, height, desc, ...rest }: Props) => {
               <P>{desc}</P>
             </TextBoxDesc>
             <CloseWrap onClick={contentsRead}>
-              <Close fontSize="small" />
+              <P>
+                <Close fontSize="small" />
+              </P>
             </CloseWrap>
             <TextBoxDescArrow />
           </TextBoxWrap>
