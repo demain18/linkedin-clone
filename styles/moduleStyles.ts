@@ -36,7 +36,9 @@ export const EmptyPageAlertMsg = styled.p`
   padding-top: 50px;
 
   p {
-    font-size: 23px;
+    font-size: 20px;
+    color: #adadadff;
+    font-weight: bold;
   }
 `;
 
