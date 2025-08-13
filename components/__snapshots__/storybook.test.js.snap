@@ -2,8 +2,9 @@
 
 exports[`Storyshots Atoms/Avatar Default 1`] = `
 .c0 {
-  width: 1.87rem;
-  height: 1.87rem;
+  position: relative;
+  width: 40px;
+  height: 40px;
   border-radius: 100%;
   background-color: #ececec;
   overflow: hidden;
@@ -11,14 +12,15 @@ exports[`Storyshots Atoms/Avatar Default 1`] = `
 
 <div
   className="c0"
-  size="small"
+  size={40}
 />
 `;
 
 exports[`Storyshots Atoms/Avatar Static Image 1`] = `
 .c0 {
-  width: 2.75rem;
-  height: 2.75rem;
+  position: relative;
+  width: 40px;
+  height: 40px;
   border-radius: 100%;
   background-color: #ececec;
   overflow: hidden;
@@ -32,65 +34,35 @@ exports[`Storyshots Atoms/Avatar Static Image 1`] = `
 
 <div
   className="c0"
-  size="medium"
+  size={40}
 >
   <span
     style={
       Object {
         "background": "none",
         "border": 0,
+        "bottom": 0,
         "boxSizing": "border-box",
-        "display": "inline-block",
+        "display": "block",
         "height": "initial",
+        "left": 0,
         "margin": 0,
-        "maxWidth": "100%",
         "opacity": 1,
         "overflow": "hidden",
         "padding": 0,
-        "position": "relative",
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
         "width": "initial",
       }
     }
   >
-    <span
-      style={
-        Object {
-          "background": "none",
-          "border": 0,
-          "boxSizing": "border-box",
-          "display": "block",
-          "height": "initial",
-          "margin": 0,
-          "maxWidth": "100%",
-          "opacity": 1,
-          "padding": 0,
-          "width": "initial",
-        }
-      }
-    >
-      <img
-        alt=""
-        aria-hidden={true}
-        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
-        style={
-          Object {
-            "background": "none",
-            "border": 0,
-            "display": "block",
-            "height": "initial",
-            "margin": 0,
-            "maxWidth": "100%",
-            "opacity": 1,
-            "padding": 0,
-            "width": "initial",
-          }
-        }
-      />
-    </span>
     <img
       className="c1"
-      data-nimg="intrinsic"
+      data-nimg="fill"
       decoding="async"
+      onError={[Function]}
+      onLoad={[Function]}
       src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
       style={
         Object {
@@ -105,7 +77,7 @@ exports[`Storyshots Atoms/Avatar Static Image 1`] = `
           "maxWidth": "100%",
           "minHeight": "100%",
           "minWidth": "100%",
-          "objectFit": undefined,
+          "objectFit": "cover",
           "objectPosition": undefined,
           "padding": 0,
           "position": "absolute",
@@ -118,7 +90,7 @@ exports[`Storyshots Atoms/Avatar Static Image 1`] = `
     <noscript>
       <img
         className="c1"
-        data-nimg="intrinsic"
+        data-nimg="fill"
         decoding="async"
         loading="lazy"
         src="/img.jpg"
@@ -135,7 +107,7 @@ exports[`Storyshots Atoms/Avatar Static Image 1`] = `
             "maxWidth": "100%",
             "minHeight": "100%",
             "minWidth": "100%",
-            "objectFit": undefined,
+            "objectFit": "cover",
             "objectPosition": undefined,
             "padding": 0,
             "position": "absolute",
@@ -152,8 +124,9 @@ exports[`Storyshots Atoms/Avatar Static Image 1`] = `
 
 exports[`Storyshots Atoms/Avatar Url Image 1`] = `
 .c0 {
-  width: 4rem;
-  height: 4rem;
+  position: relative;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
   background-color: #ececec;
   overflow: hidden;
@@ -167,65 +140,35 @@ exports[`Storyshots Atoms/Avatar Url Image 1`] = `
 
 <div
   className="c0"
-  size="large"
+  size={50}
 >
   <span
     style={
       Object {
         "background": "none",
         "border": 0,
+        "bottom": 0,
         "boxSizing": "border-box",
-        "display": "inline-block",
+        "display": "block",
         "height": "initial",
+        "left": 0,
         "margin": 0,
-        "maxWidth": "100%",
         "opacity": 1,
         "overflow": "hidden",
         "padding": 0,
-        "position": "relative",
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
         "width": "initial",
       }
     }
   >
-    <span
-      style={
-        Object {
-          "background": "none",
-          "border": 0,
-          "boxSizing": "border-box",
-          "display": "block",
-          "height": "initial",
-          "margin": 0,
-          "maxWidth": "100%",
-          "opacity": 1,
-          "padding": 0,
-          "width": "initial",
-        }
-      }
-    >
-      <img
-        alt=""
-        aria-hidden={true}
-        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
-        style={
-          Object {
-            "background": "none",
-            "border": 0,
-            "display": "block",
-            "height": "initial",
-            "margin": 0,
-            "maxWidth": "100%",
-            "opacity": 1,
-            "padding": 0,
-            "width": "initial",
-          }
-        }
-      />
-    </span>
     <img
       className="c1"
-      data-nimg="intrinsic"
+      data-nimg="fill"
       decoding="async"
+      onError={[Function]}
+      onLoad={[Function]}
       src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
       style={
         Object {
@@ -240,7 +183,7 @@ exports[`Storyshots Atoms/Avatar Url Image 1`] = `
           "maxWidth": "100%",
           "minHeight": "100%",
           "minWidth": "100%",
-          "objectFit": undefined,
+          "objectFit": "cover",
           "objectPosition": undefined,
           "padding": 0,
           "position": "absolute",
@@ -253,7 +196,7 @@ exports[`Storyshots Atoms/Avatar Url Image 1`] = `
     <noscript>
       <img
         className="c1"
-        data-nimg="intrinsic"
+        data-nimg="fill"
         decoding="async"
         loading="lazy"
         src="https://i1.sndcdn.com/avatars-EavWtcIVfiIYyIML-q1Eppg-t500x500.jpg"
@@ -270,7 +213,7 @@ exports[`Storyshots Atoms/Avatar Url Image 1`] = `
             "maxWidth": "100%",
             "minHeight": "100%",
             "minWidth": "100%",
-            "objectFit": undefined,
+            "objectFit": "cover",
             "objectPosition": undefined,
             "padding": 0,
             "position": "absolute",
@@ -290,7 +233,7 @@ exports[`Storyshots Atoms/Button Default 1`] = `
   padding: 0.56rem 1.56rem;
   border: none;
   border-radius: 4px;
-  background-color: "#e0e1e2";
+  background-color: #ececec;
   font-weight: bold;
   font-size: 0.87rem;
   color: rgba(0,0,0,0.6);
@@ -318,82 +261,89 @@ exports[`Storyshots Atoms/Button Default 1`] = `
 </button>
 `;
 
-exports[`Storyshots Atoms/Forms/Field Default 1`] = `
-.c0 {
-  font-size: 0.813rem;
-  font-weight: bold;
-  color: rgba(51,51,51,0.87);
-  margin-bottom: 0.3rem;
-}
-
-.c1 {
-  padding: 0.62rem 1.06rem;
-  border-radius: 4px;
-  border: solid 1px #dededf;
-  background-color: #fff;
-}
-
-.c1::-webkit-input-placeholder {
-  color: #b5b5b5;
-}
-
-.c1::-moz-placeholder {
-  color: #b5b5b5;
-}
-
-.c1:-ms-input-placeholder {
-  color: #b5b5b5;
-}
-
-.c1::placeholder {
-  color: #b5b5b5;
-}
-
-<div>
-  <div
-    className="c0"
-  >
-    LabelStyled
-  </div>
-  <input
-    className="c1"
-    placeholder="Placeholder Text"
-  />
-</div>
-`;
-
 exports[`Storyshots Atoms/Forms/Input Default 1`] = `
 .c0 {
   width: 100%;
+  position: relative;
+}
+
+.c1 {
+  width: 100%;
   line-height: 1.75;
   font-weight: 400;
-  padding: 8px 16px;
+  padding: 8px 16px 8px 40px;
   background-color: #eef3f8;
   border-radius: 0.4rem;
-  color: rgba(0,0,0,0.9);
   border: none;
+  color: #1b1c1d!important;
 }
 
-.c0::-webkit-input-placeholder {
-  color: rgba(0,0,0,0.5);
+.c1 {
+  width: 100%;
+  line-height: 1.75;
+  font-weight: 400;
+  padding: 8px 16px 8px 40px;
+  background-color: #eef3f8;
+  border-radius: 0.4rem;
+  border: none;
+  color: #1b1c1d!important;
 }
 
-.c0::-moz-placeholder {
-  color: rgba(0,0,0,0.5);
+.c1 {
+  width: 100%;
+  line-height: 1.75;
+  font-weight: 400;
+  padding: 8px 16px 8px 40px;
+  background-color: #eef3f8;
+  border-radius: 0.4rem;
+  border: none;
+  color: #1b1c1d!important;
 }
 
-.c0:-ms-input-placeholder {
-  color: rgba(0,0,0,0.5);
+.c1 {
+  width: 100%;
+  line-height: 1.75;
+  font-weight: 400;
+  padding: 8px 16px 8px 40px;
+  background-color: #eef3f8;
+  border-radius: 0.4rem;
+  border: none;
+  color: #1b1c1d!important;
 }
 
-.c0::placeholder {
-  color: rgba(0,0,0,0.5);
+.c2 {
+  position: absolute;
+  top: 9px;
+  left: 15px;
 }
 
-<input
+.c2 svg {
+  font-size: 20px;
+  color: rgba(0,0,0,0.6);
+}
+
+<div
   className="c0"
-  placeholder="Testing Text"
-/>
+>
+  <input
+    className="c1"
+    placeholder="Test"
+  />
+  <div
+    className="c2"
+  >
+    <svg
+      aria-hidden={true}
+      className="MuiSvgIcon-root"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+      />
+    </svg>
+  </div>
+</div>
 `;
 
 exports[`Storyshots Atoms/HoverButton Default 1`] = `
@@ -433,23 +383,6 @@ exports[`Storyshots Atoms/HoverButton Default 1`] = `
 `;
 
 exports[`Storyshots Atoms/Icon Default 1`] = `
-<div
-  className=""
->
-  <svg
-    aria-hidden={true}
-    className="MuiSvgIcon-root"
-    focusable="false"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
-    />
-  </svg>
-</div>
-`;
-
-exports[`Storyshots Atoms/Icon Home 1`] = `
 <div
   className=""
 >
@@ -799,7 +732,8 @@ exports[`Storyshots Atoms/Typography/H1 Default 1`] = `
   font-size: 1.75rem;
   font-weight: bold;
   line-height: 1.29;
-  color: rgba(0,0,0,0.87);
+  color: rgba(0,0,0,0.8);
+  margin: 0;
   font-size: 1.5rem;
 }
 
@@ -813,41 +747,44 @@ exports[`Storyshots Atoms/Typography/H1 Default 1`] = `
 
 exports[`Storyshots Atoms/Typography/P Default 1`] = `
 .c0 {
-  font-size: 1rem;
+  position: relative;
   font-weight: normal;
   line-height: 1.5;
   color: rgba(0,0,0,0.8);
+  margin: 0;
+  font-size: 16px;
 }
 
 <p
   className="c0"
+  fontSize={16}
 >
-  this is pargraph.
+  Test
 </p>
 `;
 
 exports[`Storyshots Atoms/Typography/Span Bold 1`] = `
 .c0 {
-  font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
   color: rgba(0,0,0,0.8);
+  font-size: px;
   font-weight: bold;
 }
 
 <span
   className="c0"
 >
-  Span
+  Test
 </span>
 `;
 
 exports[`Storyshots Atoms/Typography/Span Color 1`] = `
 .c0 {
-  font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
   color: rgba(0,0,0,0.8);
+  font-size: px;
   color: #2185d0;
 }
 
@@ -855,116 +792,23 @@ exports[`Storyshots Atoms/Typography/Span Color 1`] = `
   className="c0"
   color="primary"
 >
-  Span
+  Test
 </span>
 `;
 
 exports[`Storyshots Atoms/Typography/Span Default 1`] = `
 .c0 {
-  font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
   color: rgba(0,0,0,0.8);
+  font-size: px;
 }
 
 <span
   className="c0"
 >
-  Span
+  Test
 </span>
-`;
-
-exports[`Storyshots Molecules/CardHeader Default 1`] = `
-.c1 {
-  width: 1.87rem;
-  height: 1.87rem;
-  border-radius: 100%;
-  background-color: #ececec;
-  overflow: hidden;
-}
-
-.c3 {
-  font-size: 1rem;
-  font-weight: normal;
-  line-height: 1.5;
-  color: rgba(0,0,0,0.8);
-  font-weight: bold;
-}
-
-.c5 {
-  font-size: 1rem;
-  font-weight: normal;
-  line-height: 1.5;
-  color: rgba(0,0,0,0.8);
-  color: rgba(0,0,0,0.4);
-}
-
-.c0 {
-  position: relative;
-  background-color: #fff;
-  padding: 0.93rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  margin-left: 0.75rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
-  position: absolute;
-  right: 0.93rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-    size="small"
-  />
-  <div
-    className="c2"
-  >
-    <span
-      className="c3"
-    >
-      Span
-    </span>
-  </div>
-  <div
-    className="c4"
-  >
-    <span
-      className="c5"
-      color="gray2"
-    >
-      Span
-    </span>
-  </div>
-</div>
 `;
 
 exports[`Storyshots Molecules/CompanyBanner/CompanyBannerInfo Default 1`] = `
@@ -2184,6 +2028,7 @@ exports[`Storyshots Molecules/Gnb/GnbButton Active 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   cursor: pointer;
   -webkit-user-drag: none;
   -moz-user-drag: none;
@@ -2197,12 +2042,12 @@ exports[`Storyshots Molecules/Gnb/GnbButton Active 1`] = `
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
+  -webkit-transition: 0.13s;
+  transition: 0.13s;
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
   color: rgba(0,0,0,0.6);
-  border-bottom: 2px solid #1b1c1d;
+  box-shadow: inset 0 -2px 0 #1b1c1d;
   color: #1b1c1d;
 }
 
@@ -2246,6 +2091,7 @@ exports[`Storyshots Molecules/Gnb/GnbButton Default 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   cursor: pointer;
   -webkit-user-drag: none;
   -moz-user-drag: none;
@@ -2259,8 +2105,8 @@ exports[`Storyshots Molecules/Gnb/GnbButton Default 1`] = `
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
+  -webkit-transition: 0.13s;
+  transition: 0.13s;
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
   color: rgba(0,0,0,0.6);
@@ -2309,6 +2155,7 @@ exports[`Storyshots Molecules/Gnb/GnbMenu Active 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   cursor: pointer;
   -webkit-user-drag: none;
   -moz-user-drag: none;
@@ -2322,12 +2169,12 @@ exports[`Storyshots Molecules/Gnb/GnbMenu Active 1`] = `
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
+  -webkit-transition: 0.13s;
+  transition: 0.13s;
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
   color: rgba(0,0,0,0.6);
-  border-bottom: 2px solid #1b1c1d;
+  box-shadow: inset 0 -2px 0 #1b1c1d;
   color: #1b1c1d;
 }
 
@@ -2391,6 +2238,7 @@ exports[`Storyshots Molecules/Gnb/GnbMenu Default 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   cursor: pointer;
   -webkit-user-drag: none;
   -moz-user-drag: none;
@@ -2404,8 +2252,8 @@ exports[`Storyshots Molecules/Gnb/GnbMenu Default 1`] = `
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
+  -webkit-transition: 0.13s;
+  transition: 0.13s;
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
   color: rgba(0,0,0,0.6);
@@ -2467,6 +2315,7 @@ exports[`Storyshots Molecules/Gnb/GnbProfile Default 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   cursor: pointer;
   -webkit-user-drag: none;
   -moz-user-drag: none;
@@ -2480,8 +2329,8 @@ exports[`Storyshots Molecules/Gnb/GnbProfile Default 1`] = `
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
+  -webkit-transition: 0.13s;
+  transition: 0.13s;
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
   color: rgba(0,0,0,0.6);
@@ -2552,6 +2401,8 @@ exports[`Storyshots Molecules/Gnb/GnbProfile Default 1`] = `
         className="c2"
         data-nimg="fill"
         decoding="async"
+        onError={[Function]}
+        onLoad={[Function]}
         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         style={
           Object {
@@ -3982,339 +3833,6 @@ exports[`Storyshots Molecules/JobList/JobListHeader Default 1`] = `
   >
     Jobs based on your Profile
   </p>
-</div>
-`;
-
-exports[`Storyshots Molecules/Snb/SnbProfileButton Default 1`] = `
-.c0 {
-  position: relative;
-  max-width: 225px;
-  background-color: #fff;
-  padding: 4px 12px;
-  cursor: pointer;
-  -webkit-user-drag: none;
-  -moz-user-drag: none;
-  -ms-user-drag: none;
-  user-drag: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  box-sizing: border-box;
-}
-
-.c0:hover {
-  background-color: rgba(0,0,0,0.1);
-}
-
-<div
-  className="c0"
->
-  Test Content
-</div>
-`;
-
-exports[`Storyshots Molecules/Snb/SnbProfileHeader Default 1`] = `
-.c6 {
-  font-weight: normal;
-  line-height: 1.5;
-  color: rgba(0,0,0,0.8);
-  margin: 0;
-  font-size: 16px;
-}
-
-.c8 {
-  font-weight: normal;
-  line-height: 1.5;
-  color: rgba(0,0,0,0.8);
-  margin: 0;
-  font-size: 12px;
-  color: rgba(0,0,0,0.6);
-}
-
-.c0 {
-  max-width: 225px;
-  background-color: #fff;
-  padding-bottom: 16px;
-  box-sizing: border-box;
-}
-
-.c1 {
-  position: relative;
-  width: 100%;
-  height: 56px;
-}
-
-.c2 {
-  -webkit-user-drag: none;
-  -moz-user-drag: none;
-  -ms-user-drag: none;
-  user-drag: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-}
-
-.c3 {
-  position: relative;
-  width: 72px;
-  height: 72px;
-  margin: 0 auto;
-  margin-top: -35px;
-  margin-bottom: 20px;
-  border-radius: 100%;
-  border: 3px solid #fff;
-}
-
-.c4 {
-  -webkit-user-drag: none;
-  -moz-user-drag: none;
-  -ms-user-drag: none;
-  user-drag: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  border-radius: 100%;
-}
-
-.c5 {
-  text-align: center;
-  cursor: pointer;
-  -webkit-user-drag: none;
-  -moz-user-drag: none;
-  -ms-user-drag: none;
-  user-drag: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
-  -webkit-transition-timing-function: ease;
-  transition-timing-function: ease;
-}
-
-.c5 p:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c7 {
-  text-align: center;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  >
-    <span
-      style={
-        Object {
-          "background": "none",
-          "border": 0,
-          "bottom": 0,
-          "boxSizing": "border-box",
-          "display": "block",
-          "height": "initial",
-          "left": 0,
-          "margin": 0,
-          "opacity": 1,
-          "overflow": "hidden",
-          "padding": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-          "width": "initial",
-        }
-      }
-    >
-      <img
-        className="c2"
-        data-nimg="fill"
-        decoding="async"
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-        style={
-          Object {
-            "border": "none",
-            "bottom": 0,
-            "boxSizing": "border-box",
-            "display": "block",
-            "height": 0,
-            "left": 0,
-            "margin": "auto",
-            "maxHeight": "100%",
-            "maxWidth": "100%",
-            "minHeight": "100%",
-            "minWidth": "100%",
-            "objectFit": "cover",
-            "objectPosition": undefined,
-            "padding": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "width": 0,
-          }
-        }
-      />
-      <noscript>
-        <img
-          className="c2"
-          data-nimg="fill"
-          decoding="async"
-          loading="lazy"
-          src="/img.jpg"
-          style={
-            Object {
-              "border": "none",
-              "bottom": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "height": 0,
-              "left": 0,
-              "margin": "auto",
-              "maxHeight": "100%",
-              "maxWidth": "100%",
-              "minHeight": "100%",
-              "minWidth": "100%",
-              "objectFit": "cover",
-              "objectPosition": undefined,
-              "padding": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "width": 0,
-            }
-          }
-        />
-      </noscript>
-    </span>
-  </div>
-  <div
-    className="c3"
-  >
-    <span
-      style={
-        Object {
-          "background": "none",
-          "border": 0,
-          "bottom": 0,
-          "boxSizing": "border-box",
-          "display": "block",
-          "height": "initial",
-          "left": 0,
-          "margin": 0,
-          "opacity": 1,
-          "overflow": "hidden",
-          "padding": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-          "width": "initial",
-        }
-      }
-    >
-      <img
-        className="c4"
-        data-nimg="fill"
-        decoding="async"
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-        style={
-          Object {
-            "border": "none",
-            "bottom": 0,
-            "boxSizing": "border-box",
-            "display": "block",
-            "height": 0,
-            "left": 0,
-            "margin": "auto",
-            "maxHeight": "100%",
-            "maxWidth": "100%",
-            "minHeight": "100%",
-            "minWidth": "100%",
-            "objectFit": "cover",
-            "objectPosition": undefined,
-            "padding": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "width": 0,
-          }
-        }
-      />
-      <noscript>
-        <img
-          className="c4"
-          data-nimg="fill"
-          decoding="async"
-          loading="lazy"
-          src="/img.jpg"
-          style={
-            Object {
-              "border": "none",
-              "bottom": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "height": 0,
-              "left": 0,
-              "margin": "auto",
-              "maxHeight": "100%",
-              "maxWidth": "100%",
-              "minHeight": "100%",
-              "minWidth": "100%",
-              "objectFit": "cover",
-              "objectPosition": undefined,
-              "padding": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "width": 0,
-            }
-          }
-        />
-      </noscript>
-    </span>
-  </div>
-  <div
-    className="c5"
-  >
-    <p
-      className="c6"
-      fontSize={16}
-    >
-      Test User
-    </p>
-  </div>
-  <div
-    className="c7"
-  >
-    <p
-      className="c8"
-      color="grayPoint6"
-      fontSize={12}
-    >
-      Test Description
-    </p>
-  </div>
 </div>
 `;
 
@@ -8224,358 +7742,219 @@ exports[`Storyshots Molecules/Timeline/TimelineProfile Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Organisms/Card Default 1`] = `
-.c2 {
-  width: 1.87rem;
-  height: 1.87rem;
-  border-radius: 100%;
-  background-color: #ececec;
-  overflow: hidden;
-}
-
+exports[`Storyshots Molecules/TutorialBox Default 1`] = `
 .c3 {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.c5 {
-  font-size: 1rem;
-  font-weight: normal;
-  line-height: 1.5;
-  color: rgba(0,0,0,0.8);
-  font-weight: bold;
-}
-
-.c7 {
-  font-size: 1rem;
-  font-weight: normal;
-  line-height: 1.5;
-  color: rgba(0,0,0,0.8);
-  color: rgba(0,0,0,0.4);
-}
-
-.c1 {
   position: relative;
-  background-color: #fff;
-  padding: 0.93rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
-  margin-left: 0.75rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  position: absolute;
-  right: 0.93rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  font-weight: normal;
+  line-height: 1.5;
+  color: rgba(0,0,0,0.8);
+  margin: 0;
+  font-size: 16px;
 }
 
 .c0 {
-  max-width: 18.31rem;
-  border-radius: 0.4rem;
-  background-color: #fff;
-  overflow: hidden;
-  box-shadow: rgb(243 243 243 / 44%) 0px 5px 16px, rgb(24 24 43 / 3%) 0px 1.3478px 6px,rgb(0 0 0 / 3%) 0px 2.0217px 16.6957px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
 }
 
-.c8 {
-  width: 100%;
-  height: 15rem;
+.c1 {
+  width: 200px;
+  height: 50px;
+  background-color: #80ff0027;
+  border: 1px solid #80ff009c;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  -webkit-animation: dnZhXA 2s ease-in-out 1s infinite;
+  animation: dnZhXA 2s ease-in-out 1s infinite;
+}
+
+.c2 {
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #80ff0042;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  padding: 8px 10px;
+  border-radius: 5px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  -webkit-animation: dnZhXA 2s ease-in-out 1s infinite;
+  animation: dnZhXA 2s ease-in-out 1s infinite;
 }
 
-<h1
+.c5 {
+  position: absolute;
+  top: -8px;
+  left: 16px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #80ff0042;
+  -webkit-animation: fruFAR 2s ease-in-out 1s infinite;
+  animation: fruFAR 2s ease-in-out 1s infinite;
+}
+
+.c4 {
+  cursor: pointer;
+  height: 20px;
+  margin-left: 3px;
+  color: #202020ab;
+}
+
+.c4:hover {
+  -webkit-transition: 0.13s;
+  transition: 0.13s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  background-color: #4158291a;
+  border-radius: 3px;
+}
+
+<div
   className="c0"
 >
   <div
-    className="c1"
+    className=""
   >
+    <div
+      className="c1"
+      height={50}
+      width={200}
+    />
     <div
       className="c2"
-      size="small"
     >
-      <span
-        style={
-          Object {
-            "background": "none",
-            "border": 0,
-            "boxSizing": "border-box",
-            "display": "inline-block",
-            "height": "initial",
-            "margin": 0,
-            "maxWidth": "100%",
-            "opacity": 1,
-            "overflow": "hidden",
-            "padding": 0,
-            "position": "relative",
-            "width": "initial",
-          }
-        }
-      >
-        <span
-          style={
-            Object {
-              "background": "none",
-              "border": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "height": "initial",
-              "margin": 0,
-              "maxWidth": "100%",
-              "opacity": 1,
-              "padding": 0,
-              "width": "initial",
-            }
-          }
-        >
-          <img
-            alt=""
-            aria-hidden={true}
-            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
-            style={
-              Object {
-                "background": "none",
-                "border": 0,
-                "display": "block",
-                "height": "initial",
-                "margin": 0,
-                "maxWidth": "100%",
-                "opacity": 1,
-                "padding": 0,
-                "width": "initial",
-              }
-            }
-          />
-        </span>
-        <img
-          className="c3"
-          data-nimg="intrinsic"
-          decoding="async"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          style={
-            Object {
-              "border": "none",
-              "bottom": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "height": 0,
-              "left": 0,
-              "margin": "auto",
-              "maxHeight": "100%",
-              "maxWidth": "100%",
-              "minHeight": "100%",
-              "minWidth": "100%",
-              "objectFit": undefined,
-              "objectPosition": undefined,
-              "padding": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "width": 0,
-            }
-          }
-        />
-        <noscript>
-          <img
-            className="c3"
-            data-nimg="intrinsic"
-            decoding="async"
-            loading="lazy"
-            src="static/media/public/images/avatar.png"
-            style={
-              Object {
-                "border": "none",
-                "bottom": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": 0,
-                "left": 0,
-                "margin": "auto",
-                "maxHeight": "100%",
-                "maxWidth": "100%",
-                "minHeight": "100%",
-                "minWidth": "100%",
-                "objectFit": undefined,
-                "objectPosition": undefined,
-                "padding": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-                "width": 0,
-              }
-            }
-          />
-        </noscript>
-      </span>
-    </div>
-    <div
-      className="c4"
-    >
-      <span
-        className="c5"
-      >
-        Dylan
-      </span>
-    </div>
-    <div
-      className="c6"
-    >
-      <span
-        className="c7"
-        color="gray2"
-      >
-        17h
-      </span>
-    </div>
-  </div>
-  <div
-    className="c8"
-  >
-    <span
-      style={
-        Object {
-          "background": "none",
-          "border": 0,
-          "bottom": 0,
-          "boxSizing": "border-box",
-          "display": "block",
-          "height": "initial",
-          "left": 0,
-          "margin": 0,
-          "opacity": 1,
-          "overflow": "hidden",
-          "padding": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-          "width": "initial",
-        }
-      }
-    >
-      <img
+      <div
         className=""
-        data-nimg="fill"
-        decoding="async"
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-        style={
-          Object {
-            "border": "none",
-            "bottom": 0,
-            "boxSizing": "border-box",
-            "display": "block",
-            "height": 0,
-            "left": 0,
-            "margin": "auto",
-            "maxHeight": "100%",
-            "maxWidth": "100%",
-            "minHeight": "100%",
-            "minWidth": "100%",
-            "objectFit": "cover",
-            "objectPosition": undefined,
-            "padding": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "width": 0,
-          }
-        }
+      >
+        <p
+          className="c3"
+          fontSize={16}
+        >
+          이곳에 위치한 버튼을 클릭해보세요.
+        </p>
+      </div>
+      <div
+        className="c4"
+        onClick={[Function]}
+      >
+        <p
+          className="c3"
+          fontSize={16}
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+            />
+          </svg>
+        </p>
+      </div>
+      <div
+        className="c5"
       />
-      <noscript>
-        <img
-          className=""
-          data-nimg="fill"
-          decoding="async"
-          loading="lazy"
-          src="/img.jpg"
-          style={
-            Object {
-              "border": "none",
-              "bottom": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "height": 0,
-              "left": 0,
-              "margin": "auto",
-              "maxHeight": "100%",
-              "maxWidth": "100%",
-              "minHeight": "100%",
-              "minWidth": "100%",
-              "objectFit": "cover",
-              "objectPosition": undefined,
-              "padding": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "width": 0,
-            }
-          }
-        />
-      </noscript>
-    </span>
+    </div>
   </div>
-</h1>
+</div>
 `;
 
 exports[`Storyshots Organisms/Gnb Default 1`] = `
-.c5 {
+.c13 {
+  width: 100%;
+  position: relative;
+}
+
+.c14 {
   width: 100%;
   line-height: 1.75;
   font-weight: 400;
-  padding: 8px 16px;
+  padding: 8px 16px 8px 40px;
   background-color: #eef3f8;
   border-radius: 0.4rem;
-  color: rgba(0,0,0,0.9);
   border: none;
+  color: #1b1c1d!important;
 }
 
-.c5::-webkit-input-placeholder {
-  color: rgba(0,0,0,0.5);
+.c14 {
+  width: 100%;
+  line-height: 1.75;
+  font-weight: 400;
+  padding: 8px 16px 8px 40px;
+  background-color: #eef3f8;
+  border-radius: 0.4rem;
+  border: none;
+  color: #1b1c1d!important;
 }
 
-.c5::-moz-placeholder {
-  color: rgba(0,0,0,0.5);
+.c14 {
+  width: 100%;
+  line-height: 1.75;
+  font-weight: 400;
+  padding: 8px 16px 8px 40px;
+  background-color: #eef3f8;
+  border-radius: 0.4rem;
+  border: none;
+  color: #1b1c1d!important;
 }
 
-.c5:-ms-input-placeholder {
-  color: rgba(0,0,0,0.5);
+.c14 {
+  width: 100%;
+  line-height: 1.75;
+  font-weight: 400;
+  padding: 8px 16px 8px 40px;
+  background-color: #eef3f8;
+  border-radius: 0.4rem;
+  border: none;
+  color: #1b1c1d!important;
 }
 
-.c5::placeholder {
-  color: rgba(0,0,0,0.5);
+.c15 {
+  position: absolute;
+  top: 9px;
+  left: 15px;
 }
 
-.c8 {
+.c15 svg {
+  font-size: 20px;
+  color: rgba(0,0,0,0.6);
+}
+
+.c5 {
+  position: relative;
+  font-weight: normal;
+  line-height: 1.5;
+  color: rgba(0,0,0,0.8);
+  margin: 0;
+  font-size: 16px;
+}
+
+.c20 {
   font-weight: normal;
   line-height: 1.5;
   color: rgba(0,0,0,0.8);
   font-size: 12px;
 }
 
-.c7 {
+.c19 {
   width: 80px;
   padding: 5px 0px;
   display: -webkit-box;
@@ -8589,6 +7968,7 @@ exports[`Storyshots Organisms/Gnb Default 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   cursor: pointer;
   -webkit-user-drag: none;
   -moz-user-drag: none;
@@ -8602,88 +7982,36 @@ exports[`Storyshots Organisms/Gnb Default 1`] = `
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
-  -webkit-transition-timing-function: ease;
-  transition-timing-function: ease;
-  color: rgba(0,0,0,0.6);
-  border-bottom: 2px solid #1b1c1d;
-  color: #1b1c1d;
-}
-
-.c7 span {
-  color: rgba(0,0,0,0.6);
-}
-
-.c7:hover {
-  color: #1b1c1d;
-}
-
-.c7:hover span {
-  color: #1b1c1d;
-}
-
-.c7 span {
-  color: #1b1c1d;
-}
-
-.c9 {
-  width: 80px;
-  padding: 5px 0px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  -webkit-user-drag: none;
-  -moz-user-drag: none;
-  -ms-user-drag: none;
-  user-drag: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
+  -webkit-transition: 0.13s;
+  transition: 0.13s;
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
   color: rgba(0,0,0,0.6);
 }
 
-.c9 span {
+.c19 span {
   color: rgba(0,0,0,0.6);
 }
 
-.c9:hover {
+.c19:hover {
   color: #1b1c1d;
 }
 
-.c9:hover span {
+.c19:hover span {
   color: #1b1c1d;
 }
 
-.c10 {
+.c21 {
   position: relative;
   width: 24px;
   height: 24px;
 }
 
-.c11 {
+.c22 {
   border-radius: 100%;
 }
 
-.c12 {
+.c23 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8691,14 +8019,101 @@ exports[`Storyshots Organisms/Gnb Default 1`] = `
   margin-top: -5px;
 }
 
-.c13 {
+.c24 {
   margin-top: 3px;
+}
+
+.c2 {
+  position: absolute;
+  top: 2px;
+  left: 655px;
+  z-index: 3;
+}
+
+.c8 {
+  position: absolute;
+  top: 2px;
+  left: 288px;
+  z-index: 3;
+}
+
+.c9 {
+  position: absolute;
+  top: 215px;
+  left: 315px;
+  z-index: 3;
+}
+
+.c3 {
+  width: 410px;
+  height: 50px;
+  background-color: #80ff0027;
+  border: 1px solid #80ff009c;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  -webkit-animation: dnZhXA 2s ease-in-out 1s infinite;
+  animation: dnZhXA 2s ease-in-out 1s infinite;
+}
+
+.c4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #80ff0042;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  padding: 8px 10px;
+  border-radius: 5px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  -webkit-animation: dnZhXA 2s ease-in-out 1s infinite;
+  animation: dnZhXA 2s ease-in-out 1s infinite;
+}
+
+.c7 {
+  position: absolute;
+  top: -8px;
+  left: 16px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #80ff0042;
+  -webkit-animation: fruFAR 2s ease-in-out 1s infinite;
+  animation: fruFAR 2s ease-in-out 1s infinite;
+}
+
+.c6 {
+  cursor: pointer;
+  height: 20px;
+  margin-left: 3px;
+  color: #202020ab;
+}
+
+.c6:hover {
+  -webkit-transition: 0.13s;
+  transition: 0.13s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  background-color: #4158291a;
+  border-radius: 3px;
 }
 
 .c0 {
   width: 100%;
   background-color: #fff;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 .c1 {
@@ -8715,7 +8130,7 @@ exports[`Storyshots Organisms/Gnb Default 1`] = `
   margin: 0 auto;
 }
 
-.c2 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8726,22 +8141,88 @@ exports[`Storyshots Organisms/Gnb Default 1`] = `
   align-items: center;
 }
 
-.c3 {
+.c11 {
   position: relative;
   width: 34px;
   height: 34px;
   margin: 0px 7px;
+  cursor: pointer;
 }
 
-.c4 {
+.c12 {
   min-width: 240px;
 }
 
-.c6 {
+.c18 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  right: -13px;
+}
+
+.c16 {
+  width: 50px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c17 {
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+  user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-transition: 0.13s;
+  transition: 0.13s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: rgba(0,0,0,0.1);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.c17:hover {
+  background-color: rgba(0,0,0,0.2);
 }
 
 <div
@@ -8754,7 +8235,66 @@ exports[`Storyshots Organisms/Gnb Default 1`] = `
       className="c2"
     >
       <div
-        className="c3"
+        className=""
+      >
+        <div
+          className="c3"
+          height={50}
+          width={410}
+        />
+        <div
+          className="c4"
+        >
+          <div
+            className=""
+          >
+            <p
+              className="c5"
+              fontSize={16}
+            >
+              이곳에서는 메뉴로 이동할 수 있습니다.
+            </p>
+          </div>
+          <div
+            className="c6"
+            onClick={[Function]}
+          >
+            <p
+              className="c5"
+              fontSize={16}
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                />
+              </svg>
+            </p>
+          </div>
+          <div
+            className="c7"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="c8"
+    />
+    <div
+      className="c9"
+    />
+    <div
+      className="c10"
+    >
+      <div
+        className="c11"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
       >
         <span
           style={
@@ -8781,7 +8321,9 @@ exports[`Storyshots Organisms/Gnb Default 1`] = `
             className=""
             data-nimg="fill"
             decoding="async"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/img.jpg"
             style={
               Object {
                 "border": "none",
@@ -8805,156 +8347,188 @@ exports[`Storyshots Organisms/Gnb Default 1`] = `
               }
             }
           />
-          <noscript>
-            <img
-              className=""
-              data-nimg="fill"
-              decoding="async"
-              loading="lazy"
-              src="/img.jpg"
-              style={
-                Object {
-                  "border": "none",
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "height": 0,
-                  "left": 0,
-                  "margin": "auto",
-                  "maxHeight": "100%",
-                  "maxWidth": "100%",
-                  "minHeight": "100%",
-                  "minWidth": "100%",
-                  "objectFit": "cover",
-                  "objectPosition": undefined,
-                  "padding": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </noscript>
         </span>
       </div>
       <div
-        className="c4"
+        className="c12"
       >
-        <input
-          className="c5"
-          placeholder="Search"
-        />
+        <div
+          className="c13"
+        >
+          <input
+            className="c14"
+            placeholder="Search"
+          />
+          <div
+            className="c15"
+          >
+            <svg
+              aria-hidden={true}
+              className="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div
+        className="c16"
+      >
+        <div
+          className="c17"
+          onClick={[Function]}
+        >
+          ☀️
+        </div>
       </div>
     </div>
     <div
-      className="c6"
+      className="c18"
     >
-      <div
-        className="c7"
-      >
-        <svg
-          aria-hidden={true}
-          className="MuiSvgIcon-root"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
-          />
-        </svg>
-        <span
-          className="c8"
-          fontSize={12}
-        >
-          Home
-        </span>
-      </div>
-      <div
-        className="c9"
-      >
-        <svg
-          aria-hidden={true}
-          className="MuiSvgIcon-root"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"
-          />
-        </svg>
-        <span
-          className="c8"
-          fontSize={12}
-        >
-          My Network
-        </span>
-      </div>
-      <div
-        className="c9"
-      >
-        <svg
-          aria-hidden={true}
-          className="MuiSvgIcon-root"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"
-          />
-        </svg>
-        <span
-          className="c8"
-          fontSize={12}
-        >
-          Jobs
-        </span>
-      </div>
-      <div
-        className="c9"
-      >
-        <svg
-          aria-hidden={true}
-          className="MuiSvgIcon-root"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"
-          />
-        </svg>
-        <span
-          className="c8"
-          fontSize={12}
-        >
-          Messaging
-        </span>
-      </div>
-      <div
-        className="c9"
-      >
-        <svg
-          aria-hidden={true}
-          className="MuiSvgIcon-root"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"
-          />
-        </svg>
-        <span
-          className="c8"
-          fontSize={12}
-        >
-          Notifications
-        </span>
-      </div>
-      <div
-        className="c9"
+      <a
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
       >
         <div
-          className="c10"
+          className="c19"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+            />
+          </svg>
+          <span
+            className="c20"
+            fontSize={12}
+          >
+            Home
+          </span>
+        </div>
+      </a>
+      <a
+        href="/network"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        <div
+          className="c19"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"
+            />
+          </svg>
+          <span
+            className="c20"
+            fontSize={12}
+          >
+            My Network
+          </span>
+        </div>
+      </a>
+      <a
+        href="/jobs?uid=1"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        <div
+          className="c19"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"
+            />
+          </svg>
+          <span
+            className="c20"
+            fontSize={12}
+          >
+            Jobs
+          </span>
+        </div>
+      </a>
+      <a
+        href="/message"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        <div
+          className="c19"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"
+            />
+          </svg>
+          <span
+            className="c20"
+            fontSize={12}
+          >
+            Messaging
+          </span>
+        </div>
+      </a>
+      <a
+        href="/notification"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        <div
+          className="c19"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"
+            />
+          </svg>
+          <span
+            className="c20"
+            fontSize={12}
+          >
+            Notifications
+          </span>
+        </div>
+      </a>
+      <div
+        className="c19"
+      >
+        <div
+          className="c21"
         >
           <span
             style={
@@ -8978,9 +8552,11 @@ exports[`Storyshots Organisms/Gnb Default 1`] = `
             }
           >
             <img
-              className="c11"
+              className="c22"
               data-nimg="fill"
               decoding="async"
+              onError={[Function]}
+              onLoad={[Function]}
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               style={
                 Object {
@@ -9007,7 +8583,7 @@ exports[`Storyshots Organisms/Gnb Default 1`] = `
             />
             <noscript>
               <img
-                className="c11"
+                className="c22"
                 data-nimg="fill"
                 decoding="async"
                 loading="lazy"
@@ -9039,13 +8615,13 @@ exports[`Storyshots Organisms/Gnb Default 1`] = `
           </span>
         </div>
         <div
-          className="c12"
+          className="c23"
         >
           <div
-            className="c13"
+            className="c24"
           >
             <span
-              className="c8"
+              className="c20"
               fontSize={12}
             >
               Me
